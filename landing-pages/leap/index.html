@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>LEAP Landing Page</title>
+  </head>
+
+  <body>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero__section">
+        <div class="hero__container">
+          <div class="slider">
+            <div class="slider__slide fade">
+              <img
+                src="https://www.letstute.com/s/pages/assets/images/leap-1.png"
+                alt=""
+                class="slider__bg-img"
+              />
+            </div>
+            <div class="slider__slide fade">
+              <img
+                src="https://www.letstute.com/s/pages/assets/images/leap-2.png"
+                alt=""
+                class="slider__bg-img"
+              />
+            </div>
+            <div class="slider__slide fade">
+              <img
+                src="https://www.letstute.com/s/pages/assets/images/leap-3.png"
+                alt=""
+                class="slider__bg-img"
+              />
+            </div>
+            <div class="slider__slide fade">
+              <img
+                src="https://www.letstute.com/s/pages/assets/images/banner_4_updated_new_v4_1-01.png"
+                alt=""
+                class="slider__bg-img"
+              />
+            </div>
+            <a class="slider__prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="slider__next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="slider__dots-box">
+              <span class="slider__dot" onclick="currentSlide(1)"></span>
+              <span class="slider__dot" onclick="currentSlide(2)"></span>
+              <span class="slider__dot" onclick="currentSlide(3)"></span>
+              <span class="slider__dot" onclick="currentSlide(4)"></span>
+              <!-- <span class="slider__dot" onclick="currentSlide(5)"></span> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- B2B Section -->
+      <section class="b2b__section">
+        <div class="b2b__container sec-container">
+          <div class="header">
+            <h2 class="header__title">Join and Get</h2>
+            <p class="header__desc">
+              Practical experience, career discovery, professional network,
+              potential job offer after successful completion of internship.
+            </p>
+          </div>
+          <div class="b2b__showreel-box margin-bottom-lg">
+            <div class="b2b__showreel-container">
+              <iframe
+                class="b2b__showreel"
+                src="https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="b2b__form" id="lead-form-sec">
+              <div class="b2b__form-container">
+                <h3 class="b2b__form-title">For Live Session Enquire Now!</h3>
+                <p class="b2b__form-desc">Minimum 20 students required*</p>
+                <form
+                  action="https://docs.google.com/forms/d/e/1FAIpQLSeZU-WG0ADExt1UfBL5pCQA-rE7BMIPaDcCYl2YX_5T6iIdcw/formResponse"
+                  method="POST"
+                  class="b2b__form"
+                  id="lead-form"
+                >
+                  <input
+                    type="text"
+                    name="entry.777309630"
+                    placeholder="Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="entry.1306997219"
+                    placeholder="Email"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="entry.771011241"
+                    placeholder="Phone Number"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="entry.25646744"
+                    placeholder="City"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="entry.308568052"
+                    placeholder="Source"
+                    class="form-element-source"
+                    id="lead-source"
+                  />
+                  <input
+                    type="text"
+                    name="entry.804171264"
+                    placeholder="Medium"
+                    class="form-element-source"
+                    id="lead-medium"
+                  />
+                  <input
+                    type="text"
+                    name="entry.1275838953"
+                    placeholder="Campaign"
+                    class="form-element-source"
+                    id="lead-campaign"
+                  />
+                  <button class="form__btn" type="submit">SUBMIT FORM</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="b2b__features-box">
+            <div class="icon-item">
+              <i class="icon-item__icon fa-solid fa-chalkboard-user"></i>
+              <div class="icon-item__content-box">
+                <h3 class="icon-item__title">30+</h3>
+                <p class="icon-item__desc">Online Courses</p>
+              </div>
+            </div>
+            <div class="icon-item">
+              <i class="icon-item__icon fa-solid fa-graduation-cap"></i>
+              <div class="icon-item__content-box">
+                <h3 class="icon-item__title">3K+</h3>
+                <p class="icon-item__desc">Courses Videos</p>
+              </div>
+            </div>
+            <div class="icon-item">
+              <i class="icon-item__icon fa-solid fa-medal"></i>
+              <div class="icon-item__content-box">
+                <h3 class="icon-item__title">1M+</h3>
+                <p class="icon-item__desc">Youtube Subs</p>
+              </div>
+            </div>
+            <div class="icon-item">
+              <i class="icon-item__icon fa-solid fa-mobile-screen"></i>
+              <div class="icon-item__content-box">
+                <h3 class="icon-item__title">21K</h3>
+                <p class="icon-item__desc">Enrolled Users</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Courses Section -->
+      <section class="courses__section">
+        <div class="courses__container sec-container">
+          <div class="header">
+            <h2 class="header__title">L.E.A.P Courses</h2>
+            <p class="header__desc">
+              The L.E.A.P Program offer everything from technical learning to
+              soft skill mastery, beginner to advanced level, all under one
+              roof.
+            </p>
+          </div>
+          <div class="courses__live-box margin-bottom-lg">
+            <div class="course-card--rec">
+              <div class="course-card--rec__img-box">
+                <img
+                  src="https://www.letstute.com/s/pages/assets/images/two-indian-business-man-suits-sitting-office-cafe-looking-laptop%20(1)%20(1)%20(1).jpg"
+                  alt=""
+                  class="course-card--rec__img"
+                />
+              </div>
+              <div class="course-card--rec__content-box">
+                <h4 class="course-card--rec__title">L.E.A.P Group Program</h4>
+                <p class="course-card--rec__desc">
+                  L.E.A.P LIVE Training Program is designed to cater learners
+                  with little or no prior accounting knowledge.
+                </p>
+                <ul class="course-card--rec__list">
+                  <li class="course-card--rec__item">
+                    - 60 Interactive LIVE Sessions
+                  </li>
+                  <li class="course-card--rec__item">
+                    - 370+ Pre-recorded Videos
+                  </li>
+                  <li class="course-card--rec__item">
+                    - Get Course Completion Certificate
+                  </li>
+                  <li class="course-card--rec__item">
+                    - Primary Test & Final Test
+                  </li>
+                  <li class="course-card--rec__item">
+                    - Available in Hindi & English Language
+                  </li>
+                  <li class="course-card--rec__item">
+                    - Minimum 20 Students Required
+                  </li>
+                </ul>
+                <a href="#lead-form-sec" class="course-card--rec__cta"
+                  >₹19,999/- (per student)</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="courses__courses-box">
+            <div class="course-card">
+              <div class="course-card__img-box">
+                <img
+                  src="https://www.letstute.com/s/pages/assets/images/businesspeople-working-finance-accounting-analyze-financi%20(1)%20(1)%20(1).jpg"
+                  alt=""
+                  class="course-card__img"
+                />
+              </div>
+              <div class="course-card__ribbon-box">
+                <span class="course-card__ribbon">₹3,499/-</span>
+              </div>
+              <div class="course-card__line"></div>
+              <div class="course-card__content-box">
+                <h4 class="course-card__title">L.E.A.P Combo Course</h4>
+                <ul class="course-card__list">
+                  <li class="course-card__item">- Include all 6 Courses</li>
+                  <li class="course-card__item">- 340+ Pre-recorded Videos</li>
+                  <li class="course-card__item">- 1 Year Validity</li>
+                  <li class="course-card__item">- Get Course Certificate</li>
+                </ul>
+                <a
+                  href="https://www.letstute.com/single-checkout/61276e550cf2efe4aac50075?pid=p1"
+                  class="course-card__cta"
+                  >Enroll Now (English)</a
+                >
+                <a
+                  href="https://www.letstute.com/single-checkout/6125d1ff0cf2b63498ef2120?pid=p1"
+                  class="course-card__cta course-card__cta--secondary"
+                  >Enroll Now (Hindi)</a
+                >
+              </div>
+            </div>
+            <div class="course-card">
+              <div class="course-card__img-box">
+                <img
+                  src="https://www.letstute.com/s/pages/assets/images/accounting.jpg"
+                  alt=""
+                  class="course-card__img"
+                />
+              </div>
+              <div class="course-card__ribbon-box">
+                <span class="course-card__ribbon">₹1,299/-</span>
+              </div>
+              <div class="course-card__line"></div>
+              <div class="course-card__content-box">
+                <h4 class="course-card__title">Bookkeeping & Accountancy</h4>
+                <ul class="course-card__list">
+                  <li class="course-card__item">- 150+ Pre-recorded Videos</li>
+                  <li class="course-card__item">- 30+ Hours Duration</li>
+                  <li class="course-card__item">- 6 Month Validity</li>
+                  <li class="course-card__item">- Get Course Certificate</li>
+                </ul>
+                <a
+                  href="https://www.letstute.com/single-checkout/61272f390cf2332ae9bca699?pid=p1"
+                  class="course-card__cta"
+                  >Enroll Now (English)</a
+                >
+                <a
+                  href="https://www.letstute.com/single-checkout/61272eb70cf2332ae9bca659?pid=p1"
+                  class="course-card__cta course-card__cta--secondary"
+                  >Enroll Now (Hindi)</a
+                >
+              </div>
+            </div>
+            <div class="course-card">
+              <div class="course-card__img-box">
+                <img
+                  src="https://www.letstute.com/s/pages/assets/images/gst.jpg"
+                  alt=""
+                  class="course-card__img"
+                />
+              </div>
+              <div class="course-card__ribbon-box">
+                <span class="course-card__ribbon">₹1,499/-</span>
+              </div>
+              <div class="course-card__line"></div>
+              <div class="course-card__content-box">
+                <h4 class="course-card__title">Goods & Services Tax (GST)</h4>
+                <ul class="course-card__list">
+                  <li class="course-card__item">- 15+ Pre-recorded Videos</li>
+                  <li class="course-card__item">- 2+ Hours Duration</li>
+                  <li class="course-card__item">- 6 Month Validity</li>
+                  <li class="course-card__item">- Get Course Certificate</li>
+                </ul>
+                <a
+                  href="https://www.letstute.com/single-checkout/6125d2830cf2b63498ef213d?pid=p1"
+                  class="course-card__cta"
+                  >Enroll Now (English)</a
+                >
+                <a
+                  href="https://www.letstute.com/single-checkout/612622700cf22831f812ba01?pid=p1"
+                  class="course-card__cta course-card__cta--secondary"
+                  >Enroll Now (Hindi)</a
+                >
+              </div>
+            </div>
+            <div class="course-card">
+              <div class="course-card__img-box">
+                <img
+                  src="https://www.letstute.com/s/pages/assets/images/income-tax.jpg"
+                  alt=""
+                  class="course-card__img"
+                />
+              </div>
+              <div class="course-card__ribbon-box">
+                <span class="course-card__ribbon">₹777/-</span>
+              </div>
+              <div class="course-card__line"></div>
+              <div class="course-card__content-box">
+                <h4 class="course-card__title">Income Tax & TDS</h4>
+                <ul class="course-card__list">
+                  <li class="course-card__item">- 25+ Pre-recorded Videos</li>
+                  <li class="course-card__item">- 9+ Hours Duration</li>
+                  <li class="course-card__item">- 6 Month Validity</li>
+                  <li class="course-card__item">- Get Course Certificate</li>
+                </ul>
+                <a href="#" class="course-card__cta course-card__cta--na"
+                  >Enroll Now (English)</a
+                >
+                <a
+                  href="https://www.letstute.com/single-checkout/612769400cf263a802a9d049?pid=p1"
+                  class="course-card__cta course-card__cta--secondary"
+                  >Enroll Now (Hindi)</a
+                >
+              </div>
+            </div>
+            <div class="course-card">
+              <div class="course-card__img-box">
+                <img
+                  src="https://www.letstute.com/s/pages/assets/images/tally.jpg"
+                  alt=""
+                  class="course-card__img"
+                />
+              </div>
+              <div class="course-card__ribbon-box">
+                <span class="course-card__ribbon">₹499/-</span>
+              </div>
+              <div class="course-card__line"></div>
+              <div class="course-card__content-box">
+                <h4 class="course-card__title">Tally.ERP 9</h4>
+                <ul class="course-card__list">
+                  <li class="course-card__item">- 20+ Pre-recorded Videos</li>
+                  <li class="course-card__item">- 2+ Hours Duration</li>
+                  <li class="course-card__item">- 6 Month Validity</li>
+                  <li class="course-card__item">- Get Course Certificate</li>
+                </ul>
+                <a
+                  href="https://www.letstute.com/single-checkout/612635090cf2807b4ee8256d?pid=p1"
+                  class="course-card__cta"
+                  >Enroll Now (English)</a
+                >
+                <a
+                  href="https://www.letstute.com/single-checkout/6125d4ac0cf22831f8129677?pid=p1"
+                  class="course-card__cta course-card__cta--secondary"
+                  >Enroll Now (Hindi)</a
+                >
+              </div>
+            </div>
+            <div class="course-card">
+              <div class="course-card__img-box">
+                <img
+                  src="https://www.letstute.com/s/pages/assets/images/excel.jpg"
+                  alt=""
+                  class="course-card__img"
+                />
+              </div>
+              <div class="course-card__ribbon-box">
+                <span class="course-card__ribbon">₹499/-</span>
+              </div>
+              <div class="course-card__line"></div>
+              <div class="course-card__content-box">
+                <h4 class="course-card__title">MS Excel</h4>
+                <ul class="course-card__list">
+                  <li class="course-card__item">- 95+ Pre-recorded Videos</li>
+                  <li class="course-card__item">- 11+ Hours Duration</li>
+                  <li class="course-card__item">- 6 Month Validity</li>
+                  <li class="course-card__item">- Get Course Certificate</li>
+                </ul>
+                <a
+                  href="https://www.letstute.com/single-checkout/612730c60cf263a802a9b8af?pid=p1"
+                  class="course-card__cta"
+                  >Enroll Now (English)</a
+                >
+                <a
+                  href="https://www.letstute.com/single-checkout/612f1e170cf2d67d9138357e?pid=p1"
+                  class="course-card__cta course-card__cta--secondary"
+                  >Enroll Now (Hindi)</a
+                >
+              </div>
+            </div>
+            <div class="course-card">
+              <div class="course-card__img-box">
+                <img
+                  src="https://www.letstute.com/s/pages/assets/images/spoken-english.jpg"
+                  alt=""
+                  class="course-card__img"
+                />
+              </div>
+              <div class="course-card__ribbon-box">
+                <span class="course-card__ribbon">₹599/-</span>
+              </div>
+              <div class="course-card__line"></div>
+              <div class="course-card__content-box">
+                <h4 class="course-card__title">Business English</h4>
+                <ul class="course-card__list">
+                  <li class="course-card__item">- 35+ Pre-recorded Videos</li>
+                  <li class="course-card__item">- 4+ Hours Duration</li>
+                  <li class="course-card__item">- 6 Month Validity</li>
+                  <li class="course-card__item">- Get Course Certificate</li>
+                </ul>
+                <a
+                  href="https://www.letstute.com/single-checkout/6173e9910cf21508250f48f1?pid=p1"
+                  class="course-card__cta"
+                  >Enroll Now (English)</a
+                >
+                <a
+                  href="#"
+                  class="course-card__cta course-card__cta--secondary course-card__cta--na"
+                  >Enroll Now (Hindi)</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Partners Section -->
+      <section class="partners__section">
+        <div class="partners__container sec-container">
+          <div class="header">
+            <h2 class="header__title">Our Growth Partners</h2>
+            <p class="header__desc">
+              See who's with us...Explore our 'Partners' section for a closer
+              look at our collaborators.
+            </p>
+          </div>
+          <div class="partners__img-box">
+            <img
+              src="https://www.letstute.com/s/pages/assets/images/1.png"
+              alt=""
+              class="partners__img partners__img--2"
+            />
+            <img
+              src="https://www.letstute.com/s/pages/assets/images/2.png"
+              alt=""
+              class="partners__img partners__img--3"
+            />
+            <img
+              src="https://www.letstute.com/s/pages/assets/images/3.jpg"
+              alt=""
+              class="partners__img partners__img--4"
+            />
+            <img
+              src="https://www.letstute.com/s/pages/assets/images/4.png"
+              alt=""
+              class="partners__img partners__img--5"
+            />
+            <img
+              src="https://www.letstute.com/s/pages/assets/images/5.png"
+              alt=""
+              class="partners__img partners__img--1"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- FAQs Section -->
+      <section class="faqs__section">
+        <div class="faqs__container sec-container">
+          <div class="header">
+            <h2 class="header__title">Frequently Asked Questions</h2>
+            <p class="header__desc">
+              Got Questions? We've got answers...check our FAQ section for clear
+              and quick information.
+            </p>
+          </div>
+          <div class="accordion">
+            <div class="accordion__item">
+              <p class="accordion__num">01</p>
+              <h4 class="accordion__title">
+                What is the duration of the LEAP Program?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                The duration of the LEAP Program typically ranges from two
+                months to six months, depending on the batch’s requirement and
+                depth of the topics covered.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">02</p>
+              <h4 class="accordion__title">
+                Is this LEAP Program suitable for beginners with no prior
+                accounting knowledge?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                Yes, the LEAP Program is designed to cater to learners with
+                little or no prior accounting knowledge. It will start with the
+                basics and gradually progress to more advanced concepts.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">03</p>
+              <h4 class="accordion__title">
+                Are there any prerequisites for the LEAP Program?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                There are typically no specific prerequisites for our LEAP
+                Program, but basic computer literacy and proficiency in using
+                the internet would be beneficial.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">04</p>
+              <h4 class="accordion__title">
+                How are the weekend classes conducted?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                Weekend classes are conducted online through live virtual
+                sessions. Students will receive login details and access to the
+                learning platform where they can attend classes, interact with
+                instructors, and participate in discussions.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">05</p>
+              <h4 class="accordion__title">
+                WilI I be provided internship during LEAP Program?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                YES, upon successful completion of FIRST month only of the LEAP
+                Program and any required assessments, you will receive an
+                internship offer, which may be valid during the duration of the
+                LEAP Program.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">06</p>
+              <h4 class="accordion__title">
+                Will I receive a certificate upon LEAP Program completion?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                Yes, upon successful completion of the LEAP Program and any
+                required assessments, you will receive a certificate, which may
+                mention the topics covered & the duration of the LEAP Program.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">07</p>
+              <h4 class="accordion__title">
+                What is covered in the business English section of the LEAP
+                Program?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                The business English section will focus on improving
+                communication skills specifically related to business contexts.
+                It may include topics such as writing professional emails,
+                business correspondence, and effective communication in meetings
+                and presentations.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">08</p>
+              <h4 class="accordion__title">
+                Will there be practical exercises or real-world examples in the
+                LEAP Program?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                Yes, as a part of Internship the LEAP Program includes practical
+                exercises, case studies, and real-world examples to enhance your
+                understanding and application of the concepts taught.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">09</p>
+              <h4 class="accordion__title">
+                Are the instructors qualified and experienced in their
+                respective fields?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                Yes, the instructors are typically qualified and experienced
+                professionals in the fields of accounting, bookkeeping, business
+                English, and related areas. They bring their expertise to the
+                LEAP Program to provide valuable insights and practical
+                knowledge.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">10</p>
+              <h4 class="accordion__title">
+                What study materials and resources will be provided for the
+                course?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                The course will provide access to study materials online on LEAP
+                website.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">11</p>
+              <h4 class="accordion__title">
+                Can I interact with other students during the course?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                Yes, online courses often provide opportunities for students to
+                interact with each other through discussion forums, group
+                projects, or virtual study groups, fostering a collaborative
+                learning environment.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">12</p>
+              <h4 class="accordion__title">
+                Will I have access to the course content after the course
+                completion?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                The students may get access for a specific period after
+                completion.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">13</p>
+              <h4 class="accordion__title">
+                Is there any support available if I face difficulties during the
+                course?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                Yes, we offer student support, which may include email or chat
+                support, discussion forums to ask questions, and periodic live
+                Q&A sessions with instructors.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">14</p>
+              <h4 class="accordion__title">
+                Are there any assessments or exams in the course?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                There are assessments or quizzes throughout the course to
+                evaluate your understanding of the material. LEAP has an
+                Internship exam and a final exam or project as part of the
+                evaluation process.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">15</p>
+              <h4 class="accordion__title">
+                Can I pursue LEAP alongside my job or other commitments?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                Yes, LEAP is designed to accommodate individuals with busy
+                schedules. The weekend format allows flexibility for working
+                professionals or students to balance their commitments.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">16</p>
+              <h4 class="accordion__title">
+                Can LEAP be beneficial for entrepreneurs and small business
+                owners?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                Yes, the course can be highly beneficial for entrepreneurs and
+                small business owners as it equips them with essential
+                accounting skills to manage their business finances effectively.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">17</p>
+              <h4 class="accordion__title">
+                Are there any networking opportunities in the course?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                YES, we may organize networking events or virtual meetups to
+                connect students with industry professionals, creating
+                networking opportunities within the course community.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <p class="accordion__num">17</p>
+              <h4 class="accordion__title">
+                How can I enroll in the LEAP Program and what is the LEAP
+                Program fee?
+              </h4>
+              <span class="accordion__icon">+</span>
+              <p class="accordion__content">
+                Enrollments are usually done through the LEAP website ………. The
+                LEAP Program fee and enrollment details will be available on it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Form Script -->
+    <script>
+      let urlString = window.location.search;
+      let urlParams = new URLSearchParams(urlString);
+      let leadSource = urlParams.get('utm_source');
+      let leadMedium = urlParams.get('utm_medium');
+      let leadCampaign = urlParams.get('utm_campaign');
+      let inputLeadSource = document.getElementById('lead-source');
+      let inputLeadMedium = document.getElementById('lead-medium');
+      let inputLeadCampaign = document.getElementById('lead-campaign');
+      const roleSelect = document.getElementById('role-select');
+      const roleInput = document.getElementById('role-input');
+      inputLeadSource.value = leadSource;
+      inputLeadMedium.value = leadMedium;
+      inputLeadCampaign.value = leadCampaign;
+      window.addEventListener('load', function () {
+        const form = document.getElementById('lead-form');
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          }).then(() => {
+            console.log('Form Submitted');
+          });
+          form.reset();
+          window.location.assign(
+            'https://www.letstute.com/s/pages/leap-thank-you-page'
+          );
+        });
+      });
+    </script>
+    <!-- Slider Script -->
+    <script>
+      const sliderSlides = document.querySelectorAll('.slider__slide');
+      const sliderDots = document.querySelectorAll('.slider__dot');
+      let counter = 1;
+      slidefun(counter);
+      let timer = setInterval(autoSlide, 4000);
+
+      function autoSlide() {
+        counter += 1;
+        slidefun(counter);
+      }
+
+      function plusSlides(n) {
+        counter += n;
+        slidefun(counter);
+        resetTimer();
+      }
+
+      function currentSlide(n) {
+        counter = n;
+        slidefun(counter);
+        resetTimer();
+      }
+
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(autoSlide, 5000);
+      }
+
+      function slidefun(n) {
+        let i;
+        for (i = 0; i < sliderSlides.length; i++) {
+          sliderSlides[i].style.display = 'none';
+        }
+        for (i = 0; i < sliderDots.length; i++) {
+          sliderDots[i].className = sliderDots[i].className.replace(
+            ' active',
+            ''
+          );
+        }
+        if (n > sliderSlides.length) {
+          counter = 1;
+        }
+        if (n < 1) {
+          counter = sliderSlides.length;
+        }
+        sliderSlides[counter - 1].style.display = 'block';
+        sliderDots[counter - 1].className += ' active';
+      }
+    </script>
+    <!-- Tabs -->
+    <script>
+      const tabsBtns = document.querySelectorAll('.tabs__btn');
+      const tabsContents = document.querySelectorAll('.tabs__content');
+      tabsBtns.forEach((tabsBtn, i) => {
+        tabsBtn.addEventListener('click', () => {
+          tabsBtns.forEach((tabsBtn) => {
+            tabsBtn.classList.remove('tabs__active--btn');
+          });
+          tabsBtn.classList.add('tabs__active--btn');
+          tabsContents.forEach((tabsContent) => {
+            tabsContent.classList.remove('tabs__active--content');
+          });
+          tabsContents[i].classList.add('tabs__active--content');
+        });
+      });
+    </script>
+    <!-- Accordion -->
+    <script>
+      const accordionItems = document.querySelectorAll('.accordion__item');
+      const accordionIcons = document.querySelectorAll('.accordion__icon');
+      accordionItems.forEach((accordionItem, i) => {
+        accordionItem.addEventListener('click', () => {
+          const isOpen = accordionItem.classList.contains('accordion__active');
+          if (!isOpen) {
+            accordionItems.forEach((accordionItem) => {
+              accordionItem.classList.remove('accordion__active');
+            });
+            accordionIcons.forEach((accordionIcon) => {
+              accordionIcon.innerHTML = '+';
+            });
+            accordionItem.classList.add('accordion__active');
+            accordionIcons[i].innerHTML = '-';
+            return;
+          } else {
+            accordionItem.classList.remove('accordion__active');
+            accordionIcons[i].innerHTML = '+';
+          }
+        });
+      });
+    </script>
+    <!-- NA Script -->
+    <script>
+      notAvailables = document.querySelectorAll('.course-card__cta--na');
+      notAvailables.forEach((notAvailable) => {
+        notAvailable.innerHTML = 'Available soon';
+        notAvailable.style.background = 'rgba(0,0,0,0.6)';
+      });
+    </script>
+  </body>
+</html>
