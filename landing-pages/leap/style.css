@@ -615,17 +615,28 @@ strong {
       list-style: none;
     }
 
-    .course-card--rec__cta:link,
-    .course-card--rec__cta:visited {
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      background: var(--color-primary);
-      color: var(--color-white);
-      border-radius: 0.7rem;
-      font-size: 1.5rem;
-      font-weight: 600;
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-      text-align: center;
+    .course-card--rec__cta-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+      gap: 2rem;
+
+      .course-card--rec__cta:link,
+      .course-card--rec__cta:visited {
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        background: var(--color-primary);
+        color: var(--color-white);
+        border-radius: 0.7rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      .course-card--rec__cta--secondary:link,
+      .course-card--rec__cta--secondary:visited {
+        background-color: var(--color-secondary);
+      }
     }
   }
 }
