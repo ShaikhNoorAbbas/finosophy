@@ -11,7 +11,7 @@
   --color-secondary-light-1: #fff;
   --color-secondary-dark-1: #fff;
 
-  --color-grey-light-1: #e6e6e6;
+  --color-grey-light-1: #fafafa;
   --color-grey-light-2: #cccccc;
   --color-grey-light-3: #b3b3b3;
 
@@ -327,6 +327,7 @@ strong {
 .btn,
 .btn:link,
 .btn:visited {
+  width: 100%;
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
@@ -341,6 +342,15 @@ strong {
   border: none;
   cursor: pointer;
   font-family: inherit;
+
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.btn span {
+  font-weight: 400;
+  color: #fafafa;
 }
 
 /* .btn:hover, .btn:active {} */

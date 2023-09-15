@@ -119,13 +119,14 @@
   font-size: 1.5rem;
 }
 
-.hero__btn {
-  background-color: var(--color-secondary);
-  color: var(--color-white);
-  text-align: center;
+/* FAQs Section */
+.faqs__section {
+  padding: 5rem 0;
+  background-color: var(--color-grey-light-1);
 }
 
-.hero__btn span {
-  font-weight: 400;
-  color: #fafafa;
+.faqs__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
