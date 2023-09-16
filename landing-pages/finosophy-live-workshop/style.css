@@ -2,27 +2,21 @@
   /* Colors */
   --color-black: #000;
   --color-white: #fff;
-
   --color-primary: #fe5b32;
   --color-primary-light-1: #000;
   --color-primary-dark-1: #000;
-
   --color-secondary: #15af48;
   --color-secondary-light-1: #fff;
   --color-secondary-dark-1: #fff;
-
   --color-grey-light-1: #fafafa;
   --color-grey-light-2: #cccccc;
   --color-grey-light-3: #b3b3b3;
-
   --color-grey-dark-1: #1a1a1a;
   --color-grey-dark-2: #333333;
   --color-grey-dark-3: #4d4d4d;
-
   /* Font Variables */
   --font-primary: 'Poppins', sans-serif;
   --font-heading: 'Poppins', sans-serif;
-
   /* Font Sizes */
   --font-size-h1: 4.6rem;
   --font-size-h2: 3.5rem;
@@ -31,10 +25,9 @@
   --font-size-h5: 1.4rem;
   --font-size-h6: 1.2rem;
   --font-size-sh: 2rem;
-  --font-size-para: 1.6rem;
+  --font-size-para: 1.8rem !important;
   --font-size-link: 1.6rem;
   --font-size-btn: 2rem;
-
   /* Font Weights */
   --font-weight-h1: 500;
   --font-weight-h2: 600;
@@ -209,7 +202,6 @@ body {
 }
 
 /* .link:hover, .link:active {} */
-
 .margin-top-sm {
   margin-top: 1.6rem !important;
 }
@@ -337,14 +329,12 @@ strong {
   font-weight: var(--font-weight-btn);
   transition: all 0.2s;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-
   /* For <button> element */
   border: none;
   cursor: pointer;
   font-family: inherit;
-
   background-color: var(--color-secondary);
-  color: var(--color-white);
+  color: var(--color-white) !important;
   text-align: center;
 }
 
@@ -354,3 +344,184 @@ strong {
 }
 
 /* .btn:hover, .btn:active {} */
+/* Header Section */
+.header__section {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 4rem 0;
+  border-bottom: 1rem solid var(--color-primary);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.header__logo {
+  display: block;
+  width: 6rem;
+}
+
+.header__desc {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+  font-size: 2rem;
+}
+
+.header__section svg {
+  fill: var(--color-primary);
+  width: 2rem;
+}
+
+.header__section span {
+  color: var(--color-primary);
+}
+
+/* Hero Section */
+.hero__section {
+  padding: 5rem 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url('https://www.letstute.com/s/pages/assets/images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 5rem;
+}
+
+.hero__showreel-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* for 16:9 ratio */
+  height: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.hero__showreel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
+}
+
+.hero__heading span {
+  font-weight: 700;
+}
+
+.hero__desc span {
+  font-weight: 600;
+}
+
+.hero__list {
+  list-style: none;
+}
+
+.hero__list-item {
+  font-size: 2rem !important;
+}
+
+.hero__list-item:not(:last-child) {
+  font-weight: 600;
+}
+
+.hero__list-item::before {
+  content: '\2713';
+  margin-right: 1.5rem;
+}
+
+.launch-time {
+  display: flex;
+  gap: 2rem;
+}
+
+.launch-time div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.launch-time div p {
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+.launch-time div span {
+  font-size: 1.5rem;
+}
+
+/* Topics Section */
+.topics__section {
+  padding: 5rem 0;
+  background-color: var(--color-grey-light-1);
+}
+
+.topics__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  column-gap: 5rem;
+}
+
+.topics__list-item {
+  font-size: 1.8rem !important;
+  list-style: square !important;
+}
+
+/* .topics__list-item::before { content: '\2713'; margin-right: 1.5rem; background-color: var(--color-secondary); padding: 0.5rem; border-radius: 10rem; color: #fff; } */
+/* FAQs Section */
+.faqs__section {
+  padding: 5rem 0;
+}
+
+.faqs__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+/* 1200px */
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* 1000px */
+/* @media only screen and (max-width: 62.5em) {} */
+/* 800px */
+/* @media only screen and (max-width: 50em) {} */
+/* 600px */
+@media only screen and (max-width: 37.5em) {
+  :root {
+    --font-size-h1: 3.8rem;
+  }
+
+  .hero__counter {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* 400px */
+/* @media only screen and (max-width: 25em) {} */
