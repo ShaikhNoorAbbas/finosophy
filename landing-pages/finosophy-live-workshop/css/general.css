@@ -25,8 +25,8 @@
 
   /* Font Sizes */
   --font-size-h1: 4.6rem;
-  --font-size-h2: 3rem;
-  --font-size-h3: 2.4rem;
+  --font-size-h2: 3.5rem;
+  --font-size-h3: 2.2rem;
   --font-size-h4: 1.8rem;
   --font-size-h5: 1.4rem;
   --font-size-h6: 1.2rem;
@@ -80,7 +80,7 @@ body {
 }
 
 /* Reuseable Classes */
-.container {
+.sec-container {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3rem;

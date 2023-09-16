@@ -1,5 +1,9 @@
 /* 1200px */
-/* @media only screen and (max-width: 75em) {} */
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 /* 1000px */
 /* @media only screen and (max-width: 62.5em) {} */
@@ -8,7 +12,16 @@
 /* @media only screen and (max-width: 50em) {} */
 
 /* 600px */
-/* @media only screen and (max-width: 37.5em) {} */
+@media only screen and (max-width: 37.5em) {
+  :root {
+    --font-size-h1: 3.8rem;
+  }
+
+  .hero__counter {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 /* 400px */
 /* @media only screen and (max-width: 25em) {} */
