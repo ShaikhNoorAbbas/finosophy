@@ -1,0 +1,185 @@
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('https://www.letstute.com/s/pages/assets/images/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .hero__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 100%;
+    color: white;
+
+    @media only screen and (max-width: 50em) {
+      grid-template-columns: 1fr;
+    }
+
+    .hero__content-box {
+      display: flex;
+      flex-direction: column;
+      row-gap: 3.5rem;
+
+      .hero__heading {
+        font-weight: 700;
+        display: block;
+        margin-bottom: 0;
+        background: -webkit-linear-gradient(#ff8888, #ffe79a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .hero__links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+/* Form Section */
+.form {
+  padding: 4rem 0 0 0;
+
+  .form__container {
+    .form__form {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      gap: 1rem;
+      background-image: linear-gradient(to right, #ff8888, #ffe79a);
+      padding: 1rem;
+      border-radius: 0.7rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    .form-element-source {
+      display: none;
+    }
+
+    .form__form input {
+      width: 100%;
+      padding: 1rem 2rem;
+      border-radius: 0.7rem;
+      border: none;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--color-grey-dark-3);
+    }
+
+    .form__form input::placeholder {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--color-grey-dark-3);
+    }
+
+    .form__btn {
+      display: block;
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      border-radius: 7px;
+      border: none;
+      background: var(--color-primary);
+      color: var(--color-white);
+      cursor: pointer;
+    }
+  }
+}
+
+/* Topics Section */
+.topics {
+  padding: 9rem 0;
+
+  .topics__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 0.3rem solid var(--color-primary);
+    border-radius: 1rem;
+    overflow: hidden;
+
+    @media only screen and (max-width: 37.5em) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .topics__gallery-img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+/* Features Section */
+.features {
+  padding: 9rem 0;
+  background-color: var(--color-grey-light-1);
+
+  .features__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+
+    .header {
+      grid-column: 1 / -1;
+    }
+
+    .features__list {
+      grid-column: 1 / 2;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      row-gap: 4.8rem;
+      list-style: none;
+
+      .features__list-item {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        column-gap: 1.5rem;
+
+        .features__list-icon {
+          color: var(--color-primary);
+          font-size: 3rem;
+        }
+
+        .features__list-text {
+          background-color: var(--color-secondary);
+          padding: 1rem 2rem;
+          border-radius: 1rem;
+          /* color: var(--color-white); */
+        }
+      }
+    }
+
+    .features__certificate {
+      grid-column: 2 / 3;
+      display: block;
+      width: 100%;
+      border-radius: 1rem;
+    }
+  }
+}
+
+/* Courses Section */
+.courses {
+  padding: 9rem 0;
+  /* background-color: var(--color-grey-light-1); */
+
+  .courses__container {
+    .courses__courses-box {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+      gap: 3rem;
+    }
+  }
+}
+
+/* FAQs Section */
+.faqs {
+  padding: 9rem 0;
+}
