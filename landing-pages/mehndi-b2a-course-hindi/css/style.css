@@ -95,7 +95,7 @@
 
 /* Topics Section */
 .topics {
-  padding: 9rem 0;
+  padding: 8rem 0;
 
   .topics__gallery {
     display: grid;
@@ -117,7 +117,7 @@
 
 /* Features Section */
 .features {
-  padding: 9rem 0;
+  padding: 8rem 0;
   background-color: var(--color-grey-light-1);
 
   .features__container {
@@ -136,6 +136,13 @@
       flex-direction: column;
       row-gap: 4.8rem;
       list-style: none;
+
+      @media only screen and (max-width: 62.5em) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+        grid-column: 1 / -1;
+        gap: 3rem;
+      }
 
       .features__list-item {
         display: grid;
@@ -161,14 +168,31 @@
       display: block;
       width: 100%;
       border-radius: 1rem;
+
+      @media only screen and (max-width: 62.5em) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        max-width: 50rem;
+      }
     }
+  }
+}
+
+/* Demo Section */
+.demo {
+  padding: 8rem 0;
+
+  .demo__video-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 3rem;
   }
 }
 
 /* Courses Section */
 .courses {
-  padding: 9rem 0;
-  /* background-color: var(--color-grey-light-1); */
+  padding: 8rem 0;
+  background-color: var(--color-grey-light-1);
 
   .courses__container {
     .courses__courses-box {
@@ -181,5 +205,5 @@
 
 /* FAQs Section */
 .faqs {
-  padding: 9rem 0;
+  padding: 8rem 0;
 }
