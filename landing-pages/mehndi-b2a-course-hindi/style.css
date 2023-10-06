@@ -441,14 +441,18 @@ strong {
     padding: 2rem;
 
     .course-card__title {
-      font-size: 1.5rem;
+      font-size: 2rem !important;
       font-weight: 600;
+      margin-bottom: 0 !important;
     }
 
     .course-card__list {
-      font-size: 1.3rem;
       color: var(--color-grey-dark-2);
       list-style: none;
+
+      .course-card__item {
+        font-size: 1.8rem !important;
+      }
     }
 
     .course-card__cta:link,
@@ -748,7 +752,7 @@ strong {
   .courses__container {
     .courses__courses-box {
       display: grid !important;
-      grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
       gap: 3rem;
     }
   }
