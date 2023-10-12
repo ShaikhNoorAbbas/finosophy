@@ -673,7 +673,6 @@ strong {
 /* Features Section */
 .features {
   padding: 8rem 0;
-  background-color: var(--color-grey-light-1);
 
   .features__container {
     display: grid;
@@ -736,6 +735,7 @@ strong {
 /* Demo Section */
 .demo {
   padding: 8rem 0;
+  background-color: var(--color-grey-light-1);
 
   .demo__video-container {
     display: grid !important;
