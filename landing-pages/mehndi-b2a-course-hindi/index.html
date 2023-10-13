@@ -24,6 +24,20 @@
   </head>
 
   <body>
+    <!-- Exit Popup -->
+    <div class="exit-popup">
+      <div class="exit-popup__container">
+        <h2 class="exit-popup__heading">Hey, Wait!</h2>
+        <span class="exit-popup__subheading subheading"
+          >Do you have any queries?</span
+        >
+        <p class="exit-popup__para">Contact Us: 9321421265</p>
+        <button onclick="closePopup()" class="exit-popup__btn">
+          No, thanks
+        </button>
+      </div>
+    </div>
+
     <main>
       <!-- Hero Section -->
       <section class="hero">
@@ -575,13 +589,56 @@
       accordion();
 
       const exitPopup = function () {
+        const showPopup = function () {
+          document.querySelector('.exit-popup').style.display = 'flex';
+        };
+
+        const closePopup = function () {
+          document.querySelector('.exit-popup').style.display = 'none';
+        };
+
         let hasPopupTriggered = false;
 
-        document.addEventListener('mousemove', (e) => {
-          if (!hasPopupTriggered && e.clientY <= 5) {
+        document.addEventListener('mouseout', (e) => {
+          if (
+            !hasPopupTriggered &&
+            e.relatedTarget === null &&
+            e.clientY <= 20
+          ) {
             hasPopupTriggered = true;
+            showPopup();
           }
         });
+
+        /* For mobile devices */
+        window.addEventListener('popstate', function (event) {
+          if (!hasPopupTriggered) {
+            hasPopupTriggered = true;
+            showPopup();
+            history.pushState(null, null, null);
+          }
+        });
+        history.pushState(null, null, null);
+
+        window.addEventListener('blur', function () {
+          if (!hasPopupTriggered) {
+            hasPopupTriggered = true;
+            showPopup();
+          }
+        });
+
+        /* Close popup */
+        window.closePopup = function () {
+          closePopup();
+        };
+
+        /* Auto popup */
+        setTimeout(() => {
+          if (!hasPopupTriggered) {
+            hasPopupTriggered = true;
+            showPopup();
+          }
+        }, 8000);
       };
       exitPopup();
     </script>
