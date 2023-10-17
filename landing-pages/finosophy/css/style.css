@@ -1,0 +1,35 @@
+/* Sections */
+/* Student */
+.student {
+  background-image: url('https://www.letstute.com/s/pages/assets/images/music-bg.png');
+  background-size: cover;
+  padding: 8rem 0;
+
+  .student__tabs-btn-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    > img {
+      display: block;
+      width: 75%;
+      border-radius: 0.7rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+
+      &.tabs__btn--active {
+        width: 100%;
+        border: 0.3rem solid var(--color-white);
+      }
+    }
+  }
+
+  .student__tabs-content {
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: 0.7rem;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+}
