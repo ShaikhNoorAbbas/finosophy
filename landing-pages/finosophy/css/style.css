@@ -1,11 +1,48 @@
+/* Nav Btn Section */
+.nav-btn {
+  padding: 0.9rem 0;
+
+  .nav-btn__container {
+    .nav-btn__btns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+
+      .nav-btn__btn:link,
+      .nav-btn__btn:visited {
+        background-color: var(--color-primary);
+        color: var(--color-white) !important;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .nav-btn__btn--active:link,
+      .nav-btn__btn--active:visited {
+        background-color: var(--color-secondary);
+      }
+    }
+  }
+}
+
 /* Hero Section */
 .hero {
-  padding: 5rem 0 0 0;
-
   .hero__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    align-items: center;
+    gap: 5rem;
+
+    .hero__content-container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 3rem;
+    }
 
     .hero__img {
       display: block;
@@ -38,14 +75,15 @@
 
     > img {
       display: block;
-      width: 75%;
+      width: 70%;
       border-radius: 0.7rem;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
       cursor: pointer;
+      transition: all 0.3s;
 
       &.tabs__btn--active {
         width: 100%;
-        border: 0.3rem solid var(--color-white);
+        border: 0.5rem solid var(--color-white);
       }
     }
   }
@@ -68,7 +106,7 @@
       .student__tabs-content-label {
         padding: 0.5rem 2rem;
         border-radius: 1rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 600;
         color: var(--color-white);
       }
@@ -134,4 +172,9 @@
       gap: 2rem;
     }
   }
+}
+
+/* FAQs Section */
+.faqs {
+  padding: 5rem 0;
 }

@@ -22,32 +22,32 @@
   --color-grey-dark-3: #4d4d4d;
 
   /* Font Variables */
-  --font-primary: 'Nunito', sans-serif;
-  --font-heading: 'Nunito', sans-serif;
+  --font-primary: 'Poppins', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
 
   /* Font Sizes */
-  --font-size-h1: 5rem;
-  --font-size-h2: 4rem;
-  --font-size-h3: 3rem;
+  --font-size-h1: 4rem;
+  --font-size-h2: 3.6rem;
+  --font-size-h3: 2.8rem;
   --font-size-h4: 1.8rem;
   --font-size-h5: 1.4rem;
   --font-size-h6: 1.2rem;
   --font-size-sh: 1.6rem;
-  --font-size-p: 1.8rem;
-  --font-size-a: 1.8rem;
-  --font-size-btn: 1.8rem;
+  --font-size-p: 1.6rem;
+  --font-size-a: 1.6rem;
+  --font-size-btn: 1.6rem;
 
   /* Font Weights */
-  --font-weight-h1: 900;
-  --font-weight-h2: 900;
+  --font-weight-h1: 700;
+  --font-weight-h2: 700;
   --font-weight-h3: 700;
-  --font-weight-h4: 500;
+  --font-weight-h4: 600;
   --font-weight-h5: 500;
   --font-weight-h6: 400;
   --font-weight-sh: 400;
   --font-weight-p: 400;
   --font-weight-a: 600;
-  --font-weight-btn: 800;
+  --font-weight-btn: 600;
 }
 
 *,
@@ -72,6 +72,7 @@ html {
 body {
   font-family: var(--font-primary);
   font-weight: 400;
+  background-color: var(--color-grey-light-1);
   /* line-height: 1.2; */
   /* overflow-x: hidden; */
 }
@@ -271,7 +272,7 @@ body {
 .btn:visited {
   display: inline-block;
   text-decoration: none;
-  padding: 1.2rem 2.4rem;
+  padding: 1rem 2rem;
   font-size: var(--font-size-btn);
   font-weight: var(--font-weight-btn);
 
@@ -286,7 +287,7 @@ body {
   color: var(--color-white);
 
   transition: background-color 0.3s;
-  overflow: hidden !important;
+  overflow: hidden;
   position: relative;
 }
 
@@ -322,13 +323,62 @@ body {
   color: var(--color-white);
 } */
 
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  background-color: var(--color-white);
+  width: 100%;
+  padding: 3rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+
+  .form__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
+
+    .form__para {
+      color: var(--color-secondary);
+      font-weight: 600;
+    }
+  }
+
+  .form__phone-input {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+
+    & select,
+    input[type='tel'] {
+      border: 1px solid #ccc;
+      padding: 1rem 2rem;
+      font-size: var(--font-size-p);
+      box-shadow: none;
+      border-radius: 0.7rem;
+      outline: none;
+    }
+  }
+
+  .form__phone-input select:focus,
+  .form__phone-input input[type='tel']:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .form__btn {
+    width: 100%;
+  }
+}
+
 /* Header */
 .header {
-  text-transform: uppercase;
   margin-bottom: 5rem;
   text-align: center;
 
-  .header__heading {
+  .header__heading--purple {
     color: var(--color-tertiary);
   }
 }
@@ -347,6 +397,54 @@ body {
 
     &.tabs__content--active {
       display: block;
+    }
+  }
+}
+
+/* Accordion */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .accordion__item.accordion__active {
+    border-top: 0.3rem solid var(--color-secondary);
+
+    .accordion__num,
+    .accordion__title,
+    .accordion__icon {
+      color: var(--color-secondary);
+    }
+
+    .accordion__content {
+      display: block;
+    }
+  }
+
+  .accordion__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 2rem;
+    background-color: var(--color-white);
+    padding: 2rem;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border-radius: 0.7rem;
+
+    .accordion__num,
+    .accordion__title,
+    .accordion__icon {
+      font-size: 1.8rem;
+    }
+
+    .accordion__title {
+      font-weight: 600;
+    }
+
+    .accordion__content {
+      font-size: 1.6rem;
+      display: none;
+      grid-column: 2 / 3;
     }
   }
 }
