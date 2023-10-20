@@ -9,6 +9,7 @@ const student = [
       img: 'http://127.0.0.1:8080/landing-pages/finosophy/assets/images/final.png',
     },
     coursesSection: {
+      header: 'Courses for Your Kids',
       courses: [
         {
           id: 1,
@@ -152,6 +153,7 @@ const teacher = [
       img: 'http://127.0.0.1:8080/landing-pages/finosophy/assets/images/final.png',
     },
     coursesSection: {
+      header: 'Courses for Your Students',
       courses: [
         {
           id: 1,
@@ -295,6 +297,7 @@ const school = [
       img: 'http://127.0.0.1:8080/landing-pages/finosophy/assets/images/final.png',
     },
     coursesSection: {
+      header: 'Courses for Your Kids',
       courses: [
         {
           id: 1,
@@ -496,6 +499,7 @@ const heroPara = document.querySelector('.hero__para');
 const heroImg = document.querySelector('.hero__img');
 
 // Courses section
+const coursesContainer = document.querySelector('.courses__container');
 const coursesTabsBtnContainer = document.querySelector(
   '.courses__tabs-btn-container'
 );
@@ -517,78 +521,87 @@ const renderContent = function (dataset) {
   heroImg.src = dataset[0].heroSection.img;
 
   // Courses section
+  const header = `
+    <div class="header">
+      <h2 class="header__heading header__heading--purple heading-2">
+        ${dataset[0].coursesSection.header}
+      </h2>
+    </div>
+  `;
+
   const courses = dataset[0].coursesSection.courses;
 
-  const courseTabs = courses
-    .map((c, i) => {
-      return `
-    <img
-      src=${c.thumbnail}
-      alt=""
-      class="tabs__btn tabs__btn--${i + 1} ${
-        i === 0 ? 'tabs__btn--active' : ''
-      }"
-      data-tabsbtn="${i + 1}"
-    />
-    `;
-    })
-    .join('');
-
-  const courseContents = courses
-    .map((course, i) => {
-      return `
-    <div class="tabs__content tabs__content--${i + 1} ${
-        i === 0 ? 'tabs__content--active' : ''
-      } courses__tabs-content">
-
-      <div class="courses__tabs-content-label-container">
-        <span class="courses__tabs-content-label courses__tabs-content-label--primary">${
-          course.name
-        }</span>
-        <span class="courses__tabs-content-label courses__tabs-content-label--secondary">${
-          course.age
-        }</span>
-      </div>
-    
-      <div class="courses__tabs-content-header">
-        <h3 class="courses__tabs-content-header__heading heading-3">About ${
-          course.name
-        }</h3>
-        <p class="courses__tabs-content-header__heading para">${course.desc}</p>
-      </div>
-
-      <ul class="courses__tabs-content-list">
-        ${course.features
-          .map((feature) => {
+  const tabs = `
+    <div class="tabs courses__tabs">
+      <div class="tabs__btn-container courses__tabs-btn-container">
+        ${courses
+          .map((c, i) => {
             return `
-          <li><i class="ri-verified-badge-fill"></i> <span>${feature}</span></li>
+            <img src=${c.thumbnail} alt="" class="tabs__btn tabs__btn--${
+              i + 1
+            } ${i === 0 ? 'tabs__btn--active' : ''}" data-tabsbtn="${i + 1}"/>
           `;
           })
           .join('')}
-      </ul>
-
-      <div class="courses__tabs-content-demo">
-        <img src="./assets/images/web-02.png" alt="">
-        <img src="./assets/images/web-01.png" alt="">
-        <img src="./assets/images/web-03.png" alt="">
       </div>
 
-      <div class="courses__tabs-content-ctas">
-        <a href="#" class="courses__tabs-content-cta btn btn--fill">Enroll Now for ${
-          course.price
-        }</a>
-
-        <a href="#" class="courses__tabs-content-cta btn btn--outline">Download Brochure</a>
+      ${courses
+        .map((c, i) => {
+          return `
+            <div class="tabs__content tabs__content--${i + 1} ${
+            i === 0 ? 'tabs__content--active' : ''
+          } courses__tabs-content">
+  
+              <div class="courses__tabs-content-label-container">
+                <span class="courses__tabs-content-label courses__tabs-content-label--primary">${
+                  c.name
+                }</span>
+                <span class="courses__tabs-content-label courses__tabs-content-label--secondary">${
+                  c.age
+                }</span>
+              </div>
+      
+        <div class="courses__tabs-content-header">
+          <h3 class="courses__tabs-content-header__heading heading-3">About ${
+            c.name
+          }</h3>
+          <p class="courses__tabs-content-header__heading para">${c.desc}</p>
+        </div>
+  
+        <ul class="courses__tabs-content-list">
+          ${c.features
+            .map((feature) => {
+              return `
+            <li><i class="ri-verified-badge-fill"></i> <span>${feature}</span></li>
+            `;
+            })
+            .join('')}
+        </ul>
+  
+        <div class="courses__tabs-content-demo">
+          <img src="./assets/images/web-02.png" alt="">
+          <img src="./assets/images/web-01.png" alt="">
+          <img src="./assets/images/web-03.png" alt="">
+        </div>
+  
+        <div class="courses__tabs-content-ctas">
+          <a href="#" class="courses__tabs-content-cta btn btn--fill">Enroll Now for ${
+            c.price
+          }</a>
+  
+          <a href="#" class="courses__tabs-content-cta btn btn--outline">Download Brochure</a>
+        </div>
       </div>
+        `;
+        })
+        .join('')}
     </div>
   `;
-    })
-    .join('');
 
-  coursesTabsBtnContainer.innerHTML = '';
+  coursesContainer.innerHTML = '';
 
-  insertDynamicCode(coursesTabsBtnContainer, 'beforeend', courseTabs);
-  insertDynamicCode(coursesTabsBtnContainer, 'afterend', courseContents);
+  insertDynamicCode(coursesContainer, 'beforeend', header);
+  insertDynamicCode(coursesContainer, 'beforeend', tabs);
 
   // FAQs section
   const faqs = dataset[0].faqsSection.faqs;
