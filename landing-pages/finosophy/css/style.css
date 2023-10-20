@@ -51,12 +51,12 @@
   }
 }
 
-/* Student Section */
-.student {
+/* Courses Section */
+.courses {
   position: relative;
   padding: 5rem 0;
 
-  .student__bg-img {
+  .courses__bg-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -66,7 +66,7 @@
     z-index: -1;
   }
 
-  .student__tabs-btn-container {
+  .courses__tabs-btn-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
@@ -88,7 +88,7 @@
     }
   }
 
-  .student__tabs-content {
+  .courses__tabs-content {
     position: relative;
     width: 100%;
     background-color: var(--color-white);
@@ -96,14 +96,14 @@
     padding: 5rem;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
 
-    .student__tabs-content-label-container {
+    .courses__tabs-content-label-container {
       display: flex;
       justify-content: center;
       gap: 2rem;
       margin-top: -7rem;
       margin-bottom: 5rem;
 
-      .student__tabs-content-label {
+      .courses__tabs-content-label {
         padding: 0.5rem 2rem;
         border-radius: 1rem;
         font-size: 1.8rem;
@@ -111,16 +111,16 @@
         color: var(--color-white);
       }
 
-      .student__tabs-content-label--primary {
+      .courses__tabs-content-label--primary {
         background-color: var(--color-tertiary);
       }
 
-      .student__tabs-content-label--secondary {
+      .courses__tabs-content-label--secondary {
         background-color: var(--color-secondary);
       }
     }
 
-    .student__tabs-content-header {
+    .courses__tabs-content-header {
       width: 75%;
       margin: 0 auto 2.5rem;
       display: flex;
@@ -128,12 +128,12 @@
       align-items: center;
       text-align: center;
 
-      .student__tabs-content-header__heading {
+      .courses__tabs-content-header__heading {
         margin-bottom: 1rem;
       }
     }
 
-    .student__tabs-content-list {
+    .courses__tabs-content-list {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
@@ -154,7 +154,7 @@
       }
     }
 
-    .student__tabs-content-demo {
+    .courses__tabs-content-demo {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
@@ -166,7 +166,7 @@
       }
     }
 
-    .student__tabs-content-ctas {
+    .courses__tabs-content-ctas {
       display: flex;
       justify-content: center;
       gap: 2rem;
