@@ -265,6 +265,10 @@ body {
   }
 }
 
+.move-in-top {
+  animation: moveInTop 2s;
+}
+
 /* Reuseable Components */
 /* Button */
 .btn,

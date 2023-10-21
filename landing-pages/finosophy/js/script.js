@@ -9,7 +9,7 @@ const student = [
       img: 'http://127.0.0.1:8080/landing-pages/finosophy/assets/images/final.png',
     },
     coursesSection: {
-      header: 'Courses for Your Kids',
+      header: 'Financial Literacy Courses',
       courses: [
         {
           id: 1,
@@ -297,7 +297,7 @@ const school = [
       img: 'http://127.0.0.1:8080/landing-pages/finosophy/assets/images/final.png',
     },
     coursesSection: {
-      header: 'Courses for Your Kids',
+      header: 'Courses for Your Students',
       courses: [
         {
           id: 1,
@@ -500,9 +500,6 @@ const heroImg = document.querySelector('.hero__img');
 
 // Courses section
 const coursesContainer = document.querySelector('.courses__container');
-const coursesTabsBtnContainer = document.querySelector(
-  '.courses__tabs-btn-container'
-);
 
 // FAQs section
 const faqsFaqsContainer = document.querySelector('.faqs__faqs-container');
@@ -523,7 +520,7 @@ const renderContent = function (dataset) {
   // Courses section
   const header = `
     <div class="header">
-      <h2 class="header__heading header__heading--purple heading-2">
+      <h2 class="header__heading header__heading--purple heading-2 move-in-top">
         ${dataset[0].coursesSection.header}
       </h2>
     </div>
@@ -532,8 +529,8 @@ const renderContent = function (dataset) {
   const courses = dataset[0].coursesSection.courses;
 
   const tabs = `
-    <div class="tabs courses__tabs">
-      <div class="tabs__btn-container courses__tabs-btn-container">
+    <div class="tabs">
+      <div class="tabs__btn-container">
         ${courses
           .map((c, i) => {
             return `
@@ -550,8 +547,7 @@ const renderContent = function (dataset) {
           return `
             <div class="tabs__content tabs__content--${i + 1} ${
             i === 0 ? 'tabs__content--active' : ''
-          } courses__tabs-content">
-  
+          }">
               <div class="courses__tabs-content-label-container">
                 <span class="courses__tabs-content-label courses__tabs-content-label--primary">${
                   c.name
@@ -561,38 +557,38 @@ const renderContent = function (dataset) {
                 }</span>
               </div>
       
-        <div class="courses__tabs-content-header">
-          <h3 class="courses__tabs-content-header__heading heading-3">About ${
-            c.name
-          }</h3>
-          <p class="courses__tabs-content-header__heading para">${c.desc}</p>
-        </div>
+              <div class="courses__tabs-content-header">
+                <h3 class="courses__tabs-content-heading heading-3">About ${
+                  c.name
+                }</h3>
+                <p class="courses__tabs-content-para para">${c.desc}</p>
+              </div>
   
-        <ul class="courses__tabs-content-list">
-          ${c.features
-            .map((feature) => {
-              return `
-            <li><i class="ri-verified-badge-fill"></i> <span>${feature}</span></li>
-            `;
-            })
-            .join('')}
-        </ul>
-  
-        <div class="courses__tabs-content-demo">
-          <img src="./assets/images/web-02.png" alt="">
-          <img src="./assets/images/web-01.png" alt="">
-          <img src="./assets/images/web-03.png" alt="">
-        </div>
-  
-        <div class="courses__tabs-content-ctas">
-          <a href="#" class="courses__tabs-content-cta btn btn--fill">Enroll Now for ${
-            c.price
-          }</a>
-  
-          <a href="#" class="courses__tabs-content-cta btn btn--outline">Download Brochure</a>
-        </div>
-      </div>
-        `;
+              <ul class="courses__tabs-content-list">
+                ${c.features
+                  .map((feature) => {
+                    return `
+                    <li><i class="ri-verified-badge-fill"></i> <span>${feature}</span></li>
+                  `;
+                  })
+                  .join('')}
+              </ul>
+              
+              <div class="courses__tabs-content-demo">
+                <img src="./assets/images/web-02.png" alt="">
+                <img src="./assets/images/web-01.png" alt="">
+                <img src="./assets/images/web-03.png" alt="">
+              </div>
+              
+              <div class="courses__tabs-content-ctas">
+                <a href="#" class="courses__tabs-content-cta btn btn--fill">Enroll Now for ${
+                  c.price
+                }</a>
+              
+                <a href="#" class="courses__tabs-content-cta btn btn--outline">Download Brochure</a>
+              </div>
+            </div>
+          `;
         })
         .join('')}
     </div>
