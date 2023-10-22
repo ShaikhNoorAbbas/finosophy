@@ -33,8 +33,8 @@
   --font-size-h5: 1.4rem;
   --font-size-h6: 1.2rem;
   --font-size-sh: 1.6rem;
-  --font-size-p: 1.6rem;
-  --font-size-a: 1.6rem;
+  --font-size-p: 1.8rem;
+  --font-size-a: 1.8rem;
   --font-size-btn: 1.6rem;
 
   /* Font Weights */
@@ -67,6 +67,10 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
+  @media only screen and (max-width: 75em) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -218,10 +222,6 @@ body {
     transform: translateX(10rem);
   }
 
-  80% {
-    transform: translateX(-1rem);
-  }
-
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -246,27 +246,26 @@ body {
     transform: translateX(-10rem);
   }
 
-  80% {
-    transform: translateX(1rem);
-  }
-
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-@keyframes slideGloss {
-  0% {
-    left: -50%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
 .move-in-top {
   animation: moveInTop 2s;
+}
+
+.move-in-right {
+  animation: moveInRight 2s;
+}
+
+.move-in-bottom {
+  animation: moveInBottom 2s;
+}
+
+.move-in-left {
+  animation: moveInLeft 2s;
 }
 
 /* Reuseable Components */
@@ -379,7 +378,7 @@ body {
 
 /* Header */
 .header {
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
   text-align: center;
 
   .header__heading--purple {
