@@ -513,6 +513,41 @@ const tabs = function () {
   });
 };
 
+// Slider
+const slider = function () {
+  const slider = document.querySelector('.slider');
+  const sliderLeftBtn = document.querySelector('.slider__btn--left');
+  const sliderRightBtn = document.querySelector('.slider__btn--right');
+  let sliderSlides = Array.from(document.querySelectorAll('.slider__slide'));
+
+  const updateSlides = function () {
+    sliderSlides.forEach((slide) => {
+      slider.appendChild(slide);
+    });
+  };
+
+  const rotateSliderLeft = function () {
+    const el = sliderSlides.shift();
+    sliderSlides.push(el);
+    updateSlides();
+  };
+
+  const rotateSliderRight = function () {
+    const el = sliderSlides.pop();
+    sliderSlides.unshift(el);
+    updateSlides();
+  };
+
+  sliderLeftBtn.addEventListener('click', rotateSliderRight);
+
+  sliderRightBtn.addEventListener('click', rotateSliderLeft);
+
+  document.addEventListener('keydown', function (e) {
+    e.key === 'ArrowLeft' && rotateSliderLeft();
+    e.key === 'ArrowRight' && rotateSliderRight();
+  });
+};
+
 // Accordion
 const accordion = function () {
   const accordionItems = document.querySelectorAll('.accordion__item');
@@ -634,16 +669,21 @@ const renderContent = function (dataset) {
 
   const tabs = `
     <div class="tabs">
-      <div class="tabs__btn-container">
+      <div class="tabs__btn-container slider">
         ${courses
           .map((c, i) => {
             return `
-            <img src=${c.thumbnail} alt="" class="tabs__btn tabs__btn--${
+            <div class="slider__slide">
+              <img src=${c.thumbnail} alt="" class="tabs__btn tabs__btn--${
               i + 1
             } ${i === 0 ? 'tabs__btn--active' : ''}" data-tabsbtn="${i + 1}"/>
+            </div>
           `;
           })
           .join('')}
+
+          <button class="slider__btn slider__btn--left"><i class="ri-arrow-left-s-fill"></i></button>
+          <button class="slider__btn slider__btn--right"><i class="ri-arrow-right-s-fill"></i></button>
       </div>
 
       ${courses
@@ -735,6 +775,7 @@ const renderContent = function (dataset) {
 // Init
 renderContent(student);
 tabs();
+slider();
 accordion();
 
 // Nav Btn Section
@@ -758,6 +799,7 @@ navBtns.forEach((nb, i, arr) => {
 
     renderContent(dataSet);
     tabs();
+    slider();
     accordion();
   });
 });

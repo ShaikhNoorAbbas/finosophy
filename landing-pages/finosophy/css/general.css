@@ -378,7 +378,7 @@ body {
 
 /* Header */
 .header {
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
   text-align: center;
 
   .header__heading--purple {
@@ -400,6 +400,32 @@ body {
 
     &.tabs__content--active {
       display: block;
+    }
+  }
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+  .slider__slide {
+    flex: 0 0 100%;
+  }
+
+  .slider__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+
+    &.slider__btn--left {
+      left: 0;
+    }
+
+    &.slider__btn--right {
+      right: 0;
     }
   }
 }
