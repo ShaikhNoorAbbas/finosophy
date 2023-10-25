@@ -6,7 +6,7 @@ const student = [
     heroSection: {
       heading: 'What is Finosophy?',
       para: 'Pathway to build financially literate and financially resilient students through scientifically curated course with lesson plans, interactive games, flashcards and live projects.',
-      img: './assets/images/final.png',
+      img: 'https://www.letstute.com/s/pages/assets/images/student-hero-img.jpg',
     },
     coursesSection: {
       header: 'Financial Literacy Courses',
@@ -181,7 +181,7 @@ const teacher = [
     heroSection: {
       heading: 'What is Finosophy?',
       para: 'Pathway to build financially literate and financially resilient Students through scientifically curated course with lesson plans, interactive games, flashcards and live projects.',
-      img: './assets/images/final2.png',
+      img: 'https://www.letstute.com/s/pages/assets/images/teacher-hero-img.jpg',
     },
     coursesSection: {
       header: 'Courses for Your Students',
@@ -337,7 +337,7 @@ const school = [
     heroSection: {
       heading: 'What is Finosophy?',
       para: 'Pathwayy to build financially literate and financially resilient Students through scientifically curated course with lesson plans, interactive games, flashcards and live projects.',
-      img: './assets/images/final.png',
+      img: 'https://www.letstute.com/s/pages/assets/images/teacher-hero-img.jpg',
     },
     coursesSection: {
       header: 'Courses for Your Students',
@@ -719,9 +719,9 @@ const renderContent = function (dataset) {
               </ul>
               
               <div class="courses__tabs-content-demo">
-                <img src="./assets/images/web-02.png" alt="">
-                <img src="./assets/images/web-01.png" alt="">
-                <img src="./assets/images/web-03.png" alt="">
+                <img src="https://www.letstute.com/s/pages/assets/images/interactive-activity-thumbnail.png" alt="">
+                <img src="https://www.letstute.com/s/pages/assets/images/video-thumbnail.png" alt="">
+                <img src="https://www.letstute.com/s/pages/assets/images/flashcard-thumbnail.png" alt="">
               </div>
               
               <div class="courses__tabs-content-ctas">
