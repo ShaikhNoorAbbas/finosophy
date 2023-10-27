@@ -7,6 +7,7 @@ const student = [
       heading: 'What is Finosophy?',
       para: 'Pathway to build financially literate and financially resilient students through scientifically curated course with lesson plans, interactive games, flashcards and live projects.',
       img: 'https://www.letstute.com/s/pages/assets/images/student-hero-img.jpg',
+      formBtnText: 'Enquire Now',
     },
     coursesSection: {
       header: 'Financial Literacy Courses',
@@ -24,7 +25,16 @@ const student = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
+          price: 'Enroll Now for ₹499/- per year',
+          purchaseLink:
+            'https://www.letstute.com/single-checkout/644fa8cfe4b04f2ff1c08255?pid=p1',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png',
         },
@@ -41,7 +51,16 @@ const student = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Enroll Now for ₹499/- per year',
+          purchaseLink:
+            'https://www.letstute.com/single-checkout/64817b66e4b09ba937123fb9?pid=p1',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png',
         },
@@ -58,7 +77,16 @@ const student = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Enroll Now for ₹499/- per year',
+          purchaseLink:
+            'https://www.letstute.com/single-checkout/64b7b516e4b067424cc6f47b?pid=p1',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
         },
@@ -75,7 +103,16 @@ const student = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Enroll Now for ₹499/- per year',
+          purchaseLink:
+            'https://www.letstute.com/single-checkout/64f02ffee4b0d0e2871bd909?pid=p1',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-4-cover.jpg',
         },
@@ -92,7 +129,16 @@ const student = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Enroll Now for ₹499/- per year',
+          purchaseLink:
+            'https://www.letstute.com/single-checkout/65325bb9e4b020072f2094ac?pid=p1',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-5-cover.jpg',
         },
@@ -109,7 +155,15 @@ const student = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Coming soon...',
+          purchaseLink: '#',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-6-cover.jpg',
         },
@@ -182,9 +236,10 @@ const teacher = [
       heading: 'What is Finosophy?',
       para: 'Pathway to build financially literate and financially resilient Students through scientifically curated course with lesson plans, interactive games, flashcards and live projects.',
       img: 'https://www.letstute.com/s/pages/assets/images/teacher-hero-img.jpg',
+      formBtnText: 'Enquire Now',
     },
     coursesSection: {
-      header: 'Courses for Your Students',
+      header: 'Finosophy Lesson Plans',
       courses: [
         {
           id: 1,
@@ -199,7 +254,16 @@ const teacher = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Enroll Now for FREE',
+          purchaseLink:
+            'https://www.letstute.com/single-checkout/64f81896e4b002bd529682a9?pid=p1',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png',
         },
@@ -216,7 +280,15 @@ const teacher = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Coming soon...',
+          purchaseLink: '#',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png',
         },
@@ -233,7 +305,15 @@ const teacher = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Coming soon...',
+          purchaseLink: '#',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
         },
@@ -250,7 +330,15 @@ const teacher = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink: '#',
+          price: 'Coming soon...',
+          purchaseLink:
+            'https://www.letstute.com/single-checkout/64f02ffee4b0d0e2871bd909?pid=p1',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-4-cover.jpg',
         },
@@ -267,7 +355,15 @@ const teacher = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Coming soon...',
+          purchaseLink: '#',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-5-cover.jpg',
         },
@@ -284,7 +380,15 @@ const teacher = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Coming soon...',
+          purchaseLink: '#',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-6-cover.jpg',
         },
@@ -338,9 +442,10 @@ const school = [
       heading: 'What is Finosophy?',
       para: 'Pathwayy to build financially literate and financially resilient Students through scientifically curated course with lesson plans, interactive games, flashcards and live projects.',
       img: 'https://www.letstute.com/s/pages/assets/images/teacher-hero-img.jpg',
+      formBtnText: 'Book a FREE Demo',
     },
     coursesSection: {
-      header: 'Courses for Your Students',
+      header: 'Financial Literacy Courses',
       courses: [
         {
           id: 1,
@@ -355,7 +460,16 @@ const school = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Enroll Now for FREE',
+          purchaseLink:
+            'https://www.letstute.com/single-checkout/64f81896e4b002bd529682a9?pid=p1',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png',
         },
@@ -372,7 +486,15 @@ const school = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Coming soon...',
+          purchaseLink: '#',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png',
         },
@@ -389,7 +511,15 @@ const school = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Coming soon...',
+          purchaseLink: '#',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
         },
@@ -406,7 +536,15 @@ const school = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink: '#',
+          price: 'Coming soon...',
+          purchaseLink:
+            'https://www.letstute.com/single-checkout/64f02ffee4b0d0e2871bd909?pid=p1',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-4-cover.jpg',
         },
@@ -423,7 +561,15 @@ const school = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Coming soon...',
+          purchaseLink: '#',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-5-cover.jpg',
         },
@@ -440,7 +586,15 @@ const school = [
             'Students Assessments',
             'Course Certificate',
           ],
-          price: '₹499/- per year',
+          game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+          flashcard:
+            'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+          videoLink:
+            'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+          price: 'Coming soon...',
+          purchaseLink: '#',
+          brochureLink:
+            'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
           thumbnail:
             'https://www.letstute.com/s/pages/assets/images/letstute-level-6-cover.jpg',
         },
@@ -489,6 +643,38 @@ const school = [
 ];
 
 // Components
+// Modal
+const modal = function () {
+  const modal = document.getElementById('modal');
+  const modalIframe = document.querySelector('.modal__iframe');
+  const modalOpenBtn = document.querySelectorAll('.modal-open-btn');
+  const modalCloseBtn = document.querySelector('.modal__close-btn');
+
+  function openModal(src) {
+    modalIframe.src = src;
+    modal.style.display = 'flex';
+  }
+
+  function closeModal() {
+    modal.style.display = 'none';
+    modalIframe.src = '';
+  }
+
+  modalOpenBtn.forEach((mob) => {
+    mob.addEventListener('click', function () {
+      openModal(mob.dataset.interactive);
+    });
+  });
+
+  modalCloseBtn.addEventListener('click', closeModal);
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      closeModal();
+    }
+  };
+};
+
 // Tabs
 const tabs = function () {
   const tabsBtnContainer = document.querySelector('.tabs__btn-container');
@@ -639,7 +825,7 @@ const renderContent = function (dataset) {
 
         <input
           type="submit"
-          value="Book a FREE Trail"
+          value="${dataset[0].heroSection.formBtnText}"
           class="form__btn btn btn--fill"
         />
       </form>
@@ -719,17 +905,35 @@ const renderContent = function (dataset) {
               </ul>
               
               <div class="courses__tabs-content-demo">
-                <img src="https://www.letstute.com/s/pages/assets/images/interactive-activity-thumbnail.png" alt="">
-                <img src="https://www.letstute.com/s/pages/assets/images/video-thumbnail.png" alt="">
-                <img src="https://www.letstute.com/s/pages/assets/images/flashcard-thumbnail.png" alt="">
+                <div class="courses__tabs-content-demo-img-container">
+                  <img src="https://www.letstute.com/s/pages/assets/images/interactive-activity-thumbnail.png" alt="">
+                  <a class="modal-open-btn" data-interactive="${
+                    c.game
+                  }">Play Now</a>
+                </div>
+                
+                <div class="video-player">
+                  <iframe class="video-player__video" src="https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="courses__tabs-content-demo-img-container">
+                  <img src="https://www.letstute.com/s/pages/assets/images/flashcard-thumbnail.png" alt="">
+                  <a class="modal-open-btn" data-interactive="${
+                    c.flashcard
+                  }">Open Now</a>
+                </div>
               </div>
               
               <div class="courses__tabs-content-ctas">
-                <a href="#" class="courses__tabs-content-cta btn btn--fill">Enroll Now for ${
-                  c.price
-                }</a>
+                <a href="${
+                  c.purchaseLink
+                }" class="courses__tabs-content-cta btn btn--fill">${
+            c.price
+          }</a>
               
-                <a href="#" class="courses__tabs-content-cta btn btn--outline">Download Brochure</a>
+                <a href="${
+                  c.brochureLink
+                }" class="courses__tabs-content-cta btn btn--outline">Download Brochure</a>
               </div>
             </div>
           `;
@@ -776,6 +980,7 @@ const renderContent = function (dataset) {
 renderContent(student);
 tabs();
 slider();
+modal();
 accordion();
 
 // Nav Btn Section
@@ -800,6 +1005,7 @@ navBtns.forEach((nb, i, arr) => {
     renderContent(dataSet);
     tabs();
     slider();
+    modal();
     accordion();
   });
 });
