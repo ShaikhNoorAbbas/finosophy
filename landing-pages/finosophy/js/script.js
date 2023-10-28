@@ -7,10 +7,11 @@ const student = [
       heading: 'What is Finosophy?',
       para: 'Pathway to build financially literate and financially resilient students through scientifically curated course with lesson plans, interactive games, flashcards and live projects.',
       img: 'https://www.letstute.com/s/pages/assets/images/student-hero-img.jpg',
+      formInputName: 'entry.1163976766',
       formBtnText: 'Enquire Now',
     },
     coursesSection: {
-      header: 'Financial Literacy Courses',
+      header: 'Finosophy Online Courses',
       courses: [
         {
           id: 1,
@@ -236,10 +237,11 @@ const teacher = [
       heading: 'What is Finosophy?',
       para: 'Pathway to build financially literate and financially resilient Students through scientifically curated course with lesson plans, interactive games, flashcards and live projects.',
       img: 'https://www.letstute.com/s/pages/assets/images/teacher-hero-img.jpg',
-      formBtnText: 'Enquire Now',
+      formInputName: 'entry.2136478927',
+      formBtnText: 'Book a FREE Demo',
     },
     coursesSection: {
-      header: 'Finosophy Lesson Plans',
+      header: 'Finosophy Course + Lesson Plan',
       courses: [
         {
           id: 1,
@@ -259,7 +261,7 @@ const teacher = [
             'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
           videoLink:
             'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-          price: 'Enroll Now for FREE',
+          price: 'Enroll Now for ₹999/- per year',
           purchaseLink:
             'https://www.letstute.com/single-checkout/64f81896e4b002bd529682a9?pid=p1',
           brochureLink:
@@ -442,10 +444,11 @@ const school = [
       heading: 'What is Finosophy?',
       para: 'Pathwayy to build financially literate and financially resilient Students through scientifically curated course with lesson plans, interactive games, flashcards and live projects.',
       img: 'https://www.letstute.com/s/pages/assets/images/teacher-hero-img.jpg',
+      formInputName: 'entry.1720144834',
       formBtnText: 'Book a FREE Demo',
     },
     coursesSection: {
-      header: 'Financial Literacy Courses',
+      header: 'Finosophy Course + Lesson Plan',
       courses: [
         {
           id: 1,
@@ -465,7 +468,7 @@ const school = [
             'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
           videoLink:
             'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-          price: 'Enroll Now for FREE',
+          price: 'Enroll Now for ₹999/- per year',
           purchaseLink:
             'https://www.letstute.com/single-checkout/64f81896e4b002bd529682a9?pid=p1',
           brochureLink:
@@ -675,6 +678,36 @@ const modal = function () {
   };
 };
 
+// Form
+const form = function () {
+  const countryCodeSelect = document.getElementById('country-code-select');
+  const countryCodeInput = document.getElementById('country-code-input');
+
+  countryCodeInput.value = countryCodeSelect.value;
+
+  const form = document.querySelector('.form');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+    const action = e.target.action;
+
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    }).then(() => {
+      console.log('Form Submitted');
+    });
+
+    form.reset();
+
+    window.location.assign(
+      'https://www.letstute.com/s/pages/finosophy-school-thank-you-page'
+    );
+  });
+};
+
 // Tabs
 const tabs = function () {
   const tabsBtnContainer = document.querySelector('.tabs__btn-container');
@@ -802,7 +835,7 @@ const renderContent = function (dataset) {
         class="hero__img hero__img--mob move-in-right"
       />
 
-      <form action="#" method="POST" class="form">
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSfY8H6CRg25IlVS_8B40Xwl02UjAaZdzeXKWuiqNkMePEH1eA/formResponse" method="POST" class="form">
         <div class="form__header">
           <h4 class="form__heading heading-4">
             Enquire Now for FREE Demo
@@ -811,13 +844,15 @@ const renderContent = function (dataset) {
         </div>
 
         <div class="form__phone-input">
-          <select name="countryCode">
+          <select name="country-code-select" id="country-code-select">
             <option value="+91">+91</option>
           </select>
 
+          <input type="text" name="entry.941018950" placeholder="Country Code" id="country-code-input" />
+
           <input
             type="tel"
-            name="phoneNumber"
+            name="${dataset[0].heroSection.formInputName}"
             placeholder="Phone number"
             required
           />
@@ -977,11 +1012,15 @@ const renderContent = function (dataset) {
 };
 
 // Init
-renderContent(student);
-tabs();
-slider();
-modal();
-accordion();
+const init = function (dataset) {
+  renderContent(dataset);
+  form();
+  tabs();
+  slider();
+  modal();
+  accordion();
+};
+init(student);
 
 // Nav Btn Section
 navBtns.forEach((nb, i, arr) => {
@@ -992,20 +1031,16 @@ navBtns.forEach((nb, i, arr) => {
 
     nb.classList.add('nav-btn__btn--active');
 
-    let dataSet;
+    let dataset;
 
     if (nb.textContent.trim() === 'Student') {
-      dataSet = student;
+      dataset = student;
     } else if (nb.textContent.trim() === 'Teacher') {
-      dataSet = teacher;
+      dataset = teacher;
     } else if (nb.textContent.trim() === 'School') {
-      dataSet = school;
+      dataset = school;
     }
 
-    renderContent(dataSet);
-    tabs();
-    slider();
-    modal();
-    accordion();
+    init(dataset);
   });
 });
