@@ -321,7 +321,7 @@ strong {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(61, 21, 21, 0.2);
+      /* background-color: rgba(61, 21, 21, 0.2); */
       z-index: 10;
     }
   }
@@ -650,9 +650,16 @@ strong {
   background-color: var(--color-primary);
 
   .hero-nav__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 3rem;
+
+    .hero-nav__tab-card {
+      min-width: 11.5rem;
+      max-width: 15rem;
+      flex: 0 1 auto;
+    }
   }
 }
 

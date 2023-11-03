@@ -26,10 +26,18 @@
       <section class="hero__section">
         <div class="hero__container">
           <a href="#courses__section"
-            ><img src="#" alt="" class="hero__img hero__img--desk" />
+            ><img
+              src="https://www.letstute.com/s/pages/assets/images/akndesk.jpg"
+              alt=""
+              class="hero__img hero__img--desk"
+            />
           </a>
           <a href="#courses__section"
-            ><img src="#" alt="" class="hero__img hero__img--mob" />
+            ><img
+              src="https://www.letstute.com/s/pages/assets/images/aknmob.jpg"
+              alt=""
+              class="hero__img hero__img--mob"
+            />
           </a>
         </div>
       </section>
@@ -37,7 +45,7 @@
       <!-- Hero Nav -->
       <section class="hero-nav">
         <div class="hero-nav__container sec-container">
-          <div class="tab-card hero__tab-card" data-tab-target="mehndi-tab">
+          <div class="tab-card hero-nav__tab-card" data-tab-target="mehndi-tab">
             <div class="tab-card__img-container">
               <img
                 src="https://www.letstute.com/s/pages/assets/images/mehndi.jpg"
@@ -49,7 +57,7 @@
             <h4 class="tab-card__heading">Mehndi</h4>
           </div>
 
-          <div class="tab-card hero__tab-card" data-tab-target="art-tab">
+          <div class="tab-card hero-nav__tab-card" data-tab-target="art-tab">
             <div class="tab-card__img-container">
               <img
                 src="https://www.letstute.com/s/pages/assets/images/art.jpg"
@@ -61,7 +69,10 @@
             <h4 class="tab-card__heading">Art & Craft</h4>
           </div>
 
-          <div class="tab-card hero__tab-card" data-tab-target="english-tab">
+          <div
+            class="tab-card hero-nav__tab-card"
+            data-tab-target="english-tab"
+          >
             <div class="tab-card__img-container">
               <img
                 src="https://www.letstute.com/s/pages/assets/images/english.jpg"
@@ -70,10 +81,13 @@
               />
               <div class="tab-card__img-overlay"></div>
             </div>
-            <h4 class="tab-card__heading">Spoken English</h4>
+            <h4 class="tab-card__heading">Spoken Eng</h4>
           </div>
 
-          <div class="tab-card hero__tab-card" data-tab-target="finosophy-tab">
+          <div
+            class="tab-card hero-nav__tab-card"
+            data-tab-target="finosophy-tab"
+          >
             <div class="tab-card__img-container">
               <img
                 src="https://www.letstute.com/s/pages/assets/images/finosophy.jpg"
@@ -85,7 +99,7 @@
             <h4 class="tab-card__heading">Finosophy</h4>
           </div>
 
-          <div class="tab-card hero__tab-card" data-tab-target="leap-tab">
+          <div class="tab-card hero-nav__tab-card" data-tab-target="leap-tab">
             <div class="tab-card__img-container">
               <img
                 src="https://www.letstute.com/s/pages/assets/images/leap.jpg"
@@ -1222,7 +1236,7 @@
         const coursesSection = document.getElementById('courses__section');
         const tabsBtns = document.querySelectorAll('.tabs__btn');
         const tabsContents = document.querySelectorAll('.tabs__content');
-        const heroTabCards = document.querySelectorAll('.hero__tab-card');
+        const heroTabCards = document.querySelectorAll('.hero-nav__tab-card');
 
         tabsBtns.forEach((tabsBtn, i) => {
           tabsBtn.addEventListener('click', () => {
