@@ -328,8 +328,8 @@ strong {
 
   .tab-card__heading {
     text-align: center;
-    padding: 1rem;
-    font-size: 1.6rem;
+    padding: 1rem 0.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
 }
@@ -653,12 +653,11 @@ strong {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
 
     .hero-nav__tab-card {
-      min-width: 11.5rem;
-      max-width: 15rem;
       flex: 0 1 auto;
+      max-width: 12rem;
     }
   }
 }
