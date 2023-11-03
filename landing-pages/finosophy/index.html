@@ -869,11 +869,13 @@
         const courses = dataset[0].coursesSection.courses;
         const tabs = ` <div class="tabs"> <div class="tabs__btn-container slider"> ${courses
           .map((c, i) => {
-            return ` <div class="slider__slide"> <img src=${
-              c.thumbnail
-            } alt="" class="tabs__btn tabs__btn--${i + 1} ${
-              i === 0 ? 'tabs__btn--active' : ''
-            }" data-tabsbtn="${i + 1}"/> </div> `;
+            return ` <div class="slider__slide">
+              <div class="courses__slider-slide-img tabs__btn tabs__btn--${
+                i + 1
+              } ${i === 0 ? 'tabs__btn--active' : ''}" data-tabsbtn="${i + 1}">
+              <img src=${c.thumbnail} alt="" /> 
+            </div>
+            </div> `;
           })
           .join(
             ''

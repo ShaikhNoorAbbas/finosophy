@@ -637,7 +637,7 @@ body {
       .slider {
         justify-items: center;
         align-items: center;
-        margin-bottom: 7rem;
+        margin-bottom: 1rem;
 
         .slider__slide {
           display: flex;
@@ -653,17 +653,38 @@ body {
             flex: 0 0 calc(100% / 3);
           }
 
-          & img {
-            display: block;
+          .courses__slider-slide-img {
+            position: relative;
             width: 60%;
             border-radius: 0.7rem;
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
             cursor: pointer;
             transition: all 0.3s;
+            margin-bottom: 5rem;
 
             &.tabs__btn--active {
               width: 90%;
               border: 0.5rem solid var(--color-white);
+              box-shadow: none;
+            }
+
+            &.tabs__btn--active::after {
+              content: '';
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%) rotate(45deg);
+              height: 4rem;
+              width: 4rem;
+              background-color: var(--color-white);
+              margin-top: -1.5rem;
+              z-index: -1;
+              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            }
+
+            > img {
+              display: block;
+              width: 100%;
+              z-index: 2 !important;
             }
           }
         }
