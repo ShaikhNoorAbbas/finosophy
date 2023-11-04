@@ -382,7 +382,7 @@ body {
 
   .slider__btn {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
     transform: translateY(-50%);
     z-index: 999;
 
@@ -676,7 +676,7 @@ body {
               height: 4rem;
               width: 4rem;
               background-color: var(--color-white);
-              margin-top: -1.5rem;
+              margin-top: -1.6rem;
               z-index: -1;
               box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
             }
