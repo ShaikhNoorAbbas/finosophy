@@ -37,6 +37,7 @@
         </div>
       </div>
     </div>
+
     <main>
       <!-- Nav Btn Section -->
       <section class="nav-btn">
@@ -48,12 +49,14 @@
           </div>
         </div>
       </section>
+
       <!-- Hero Section -->
       <section class="hero">
         <div class="hero__container sec-container">
           <!-- Dynamic content here... -->
         </div>
       </section>
+
       <!-- Courses Section -->
       <section class="courses">
         <img
@@ -65,6 +68,7 @@
           <!-- Dynamic content here... -->
         </div>
       </section>
+
       <!-- FAQs Section -->
       <section class="faqs">
         <div class="faqs__container sec-container">
@@ -79,6 +83,18 @@
         </div>
       </section>
     </main>
+
+    <!-- Popup -->
+    <div class="popup1">
+      <button class="popup1__btn">&times;</button>
+      <a href="#"
+        ><img
+          src="https://www.letstute.com/s/pages/assets/images/hero-banner%20(1).jpg"
+          alt=""
+          class="popup1__img"
+      /></a>
+    </div>
+
     <script>
       'use strict';
 
@@ -744,6 +760,23 @@
       ];
 
       /* Components */
+      /* Popup */
+      const popup = function () {
+        const popup1 = document.querySelector('.popup1');
+        const popup1Btn = document.querySelector('.popup1__btn');
+
+        popup1Btn.addEventListener('click', () => {
+          popup1.style.display = 'none';
+        });
+
+        window.addEventListener('load', () => {
+          setTimeout(() => {
+            popup1.style.display = 'block';
+          }, 7000);
+        });
+      };
+      popup();
+
       /* Modal */
       const modal = function () {
         const modal = document.getElementById('modal');
@@ -771,8 +804,9 @@
             closeModal();
           }
         };
-      }; /* Form */
+      };
 
+      /* Form */
       const form = function () {
         const countryCodeSelect = document.getElementById(
           'country-code-select'
@@ -795,8 +829,9 @@
             'https://www.letstute.com/s/pages/finosophy-school-thank-you-page'
           );
         });
-      }; /* Tabs */
+      };
 
+      /* Tabs */
       const tabs = function () {
         const tabsBtnContainer = document.querySelector('.tabs__btn-container');
         const tabsBtns = document.querySelectorAll('.tabs__btn');
@@ -814,8 +849,9 @@
           );
           tabsContent.classList.add('tabs__content--active');
         });
-      }; /* Slider */
+      };
 
+      /* Slider */
       const slider = function () {
         const slider = document.querySelector('.slider');
         const sliderLeftBtn = document.querySelector('.slider__btn--left');
@@ -844,46 +880,65 @@
           e.key === 'ArrowLeft' && rotateSliderLeft();
           e.key === 'ArrowRight' && rotateSliderRight();
         });
-      }; /* Accordion */
+      };
 
+      /* Accordion */
       const accordion = function () {
         const accordionItems = document.querySelectorAll('.accordion__item');
         const accordionIcons = document.querySelectorAll('.accordion__icon');
+
         accordionItems.forEach((accordionItem, i) => {
+          const isOpen = accordionItem.classList.contains('accordion__active');
+
+          if (isOpen) {
+            accordionIcons[i].innerHTML = '-';
+            return;
+          }
+
           accordionItem.addEventListener('click', () => {
-            const isOpen =
-              accordionItem.classList.contains('accordion__active');
             if (!isOpen) {
               accordionItems.forEach((accordionItem) => {
                 accordionItem.classList.remove('accordion__active');
               });
+
               accordionIcons.forEach((accordionIcon) => {
                 accordionIcon.innerHTML = '+';
               });
+
               accordionItem.classList.add('accordion__active');
+
               accordionIcons[i].innerHTML = '-';
+
               return;
             } else {
               accordionItem.classList.remove('accordion__active');
+
               accordionIcons[i].innerHTML = '+';
             }
           });
         });
-      }; /* Variables */ /* Nav btn section */
+      };
 
-      const navBtns =
-        document.querySelectorAll('.nav-btn__btn'); /* Hero section */
-      const heroContainer =
-        document.querySelector('.hero__container'); /* Courses section */
-      const coursesContainer = document.querySelector(
-        '.courses__container'
-      ); /* FAQs section */
-      const faqsFaqsContainer = document.querySelector(
-        '.faqs__faqs-container'
-      ); /* Functions */ /* Insert dynamic code */
+      /* Variables */
+      /* Nav btn section */
+      const navBtns = document.querySelectorAll('.nav-btn__btn');
+
+      /* Hero section */
+      const heroContainer = document.querySelector('.hero__container');
+
+      /* Courses section */
+      const coursesContainer = document.querySelector('.courses__container');
+
+      /* FAQs section */
+      const faqsFaqsContainer = document.querySelector('.faqs__faqs-container');
+
+      /* Functions */
+      /* Insert dynamic code */
       const insertDynamicCode = function (place, position, code) {
         place.insertAdjacentHTML(position, code);
-      }; /* Render content function */
+      };
+
+      /* Render content function */
       const renderContent = function (dataset) {
         /* Hero section */
         const heroCode = `
@@ -908,7 +963,9 @@
 
         /* Courses section */
         const header = ` <div class="header"> <h2 class="header__heading header__heading--purple heading-2 move-in-top"> ${dataset[0].coursesSection.header} </h2> </div> `;
+
         const courses = dataset[0].coursesSection.courses;
+
         const tabs = ` <div class="tabs"> <div class="tabs__btn-container slider"> ${courses
           .map((c, i) => {
             return ` <div class="slider__slide">
@@ -952,14 +1009,16 @@
             }</a> </div> </div> `;
           })
           .join('')} </div> `;
+
         coursesContainer.innerHTML = '';
+
         insertDynamicCode(coursesContainer, 'beforeend', header);
-        insertDynamicCode(
-          coursesContainer,
-          'beforeend',
-          tabs
-        ); /* FAQs section */
+
+        insertDynamicCode(coursesContainer, 'beforeend', tabs);
+
+        /* FAQs section */
         const faqs = dataset[0].faqsSection.faqs;
+
         const accordion = ` <div class="accordion"> ${faqs
           .map((f, i) => {
             return ` <div class="accordion__item ${
@@ -973,9 +1032,13 @@
             } </p> </div> `;
           })
           .join('')} </div> `;
+
         faqsFaqsContainer.innerHTML = '';
+
         insertDynamicCode(faqsFaqsContainer, 'beforeend', accordion);
-      }; /* Init */
+      };
+
+      /* Init */
       const init = function (dataset) {
         renderContent(dataset);
         form();
@@ -984,7 +1047,9 @@
         modal();
         accordion();
       };
-      init(student); /* Nav Btn Section */
+      init(student);
+
+      /* Nav Btn Section */
       navBtns.forEach((nb, i, arr) => {
         nb.addEventListener('click', () => {
           arr.forEach((i) => {
