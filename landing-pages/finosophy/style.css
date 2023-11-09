@@ -66,6 +66,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: var(--font-primary);
   font-weight: 400;
   background-color: var(--color-grey-light-1);
@@ -533,67 +534,70 @@ body {
 /* Popup */
 @keyframes grow {
   0% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
   }
 
   25% {
-    transform: translate(-50%, -50%) scale(1.03);
+    transform: scale(1.03);
   }
 
   50% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
   }
 
   75% {
-    transform: translate(-50%, -50%) scale(1.03);
+    transform: scale(1.03);
   }
 
   100% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
   }
 }
 
-.popup1 {
-  background-color: #fff;
-  width: 75rem;
-  padding: 0 0.5rem 0.5rem 0.5rem;
+.popup {
   position: fixed;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  border-radius: 0.45rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  z-index: 10000;
   display: none;
-  animation: grow 2s linear infinite;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
 
-  @media only screen and (max-width: 50em) {
-    width: 60%;
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    width: 80%;
-  }
-
-  .popup1__btn {
-    display: block;
-    margin: 0 0 0.5rem auto;
-    background-color: transparent;
-    font-size: 2.5rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-
-  .popup1__btn:hover {
-    color: #377dff;
-  }
-
-  .popup1__img {
-    display: block;
+  .popup__background {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    border-radius: 0.45rem;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: -1;
+  }
+
+  .popup__container {
+    width: 70rem;
+    padding: 1rem 2rem 2rem 2rem;
+    background-color: var(--color-white);
+    border-radius: 0.7rem;
+    margin: 0 4rem;
+    animation: grow 2s linear infinite;
+
+    .popup__btn {
+      display: block;
+      margin: 0 0 0.5rem auto;
+      background-color: transparent;
+      font-size: 2.5rem;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .popup__img {
+      display: block;
+      width: 100%;
+      border-radius: 0.7rem;
+    }
   }
 }
 

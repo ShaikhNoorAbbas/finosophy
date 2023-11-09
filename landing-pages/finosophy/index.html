@@ -38,6 +38,25 @@
       </div>
     </div>
 
+    <!-- Popup -->
+    <div class="popup">
+      <video autoplay loop muted class="popup__background">
+        <source src="./assets/fireworks.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="popup__container">
+        <button class="popup__btn">&times;</button>
+        <a
+          href="https://www.letstute.com/courses/financial-literacy-online-course-for-youth"
+          ><img
+            src="https://www.letstute.com/s/pages/assets/images/hero-banner%20(1).jpg"
+            alt=""
+            class="popup__img"
+        /></a>
+      </div>
+    </div>
+
     <main>
       <!-- Nav Btn Section -->
       <section class="nav-btn">
@@ -83,17 +102,6 @@
         </div>
       </section>
     </main>
-
-    <!-- Popup -->
-    <div class="popup1">
-      <button class="popup1__btn">&times;</button>
-      <a href="#"
-        ><img
-          src="https://www.letstute.com/s/pages/assets/images/hero-banner%20(1).jpg"
-          alt=""
-          class="popup1__img"
-      /></a>
-    </div>
 
     <script>
       'use strict';
@@ -762,17 +770,17 @@
       /* Components */
       /* Popup */
       const popup = function () {
-        const popup1 = document.querySelector('.popup1');
-        const popup1Btn = document.querySelector('.popup1__btn');
+        const popup = document.querySelector('.popup');
+        const popupBtn = document.querySelector('.popup__btn');
 
-        popup1Btn.addEventListener('click', () => {
-          popup1.style.display = 'none';
+        popupBtn.addEventListener('click', () => {
+          popup.style.display = 'none';
         });
 
         window.addEventListener('load', () => {
           setTimeout(() => {
-            popup1.style.display = 'block';
-          }, 7000);
+            popup.style.display = 'flex';
+          }, 5000);
         });
       };
       popup();
