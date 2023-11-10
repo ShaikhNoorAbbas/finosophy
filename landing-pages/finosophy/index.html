@@ -783,7 +783,7 @@
           }, 5000);
         });
       };
-      popup();
+      // popup();
 
       /* Modal */
       const modal = function () {
@@ -844,17 +844,24 @@
         const tabsBtnContainer = document.querySelector('.tabs__btn-container');
         const tabsBtns = document.querySelectorAll('.tabs__btn');
         const tabsContents = document.querySelectorAll('.tabs__content');
+
         tabsBtnContainer.addEventListener('click', function (e) {
           const tabsBtn = e.target.closest('.tabs__btn');
+
           if (!tabsBtn) return;
+
           tabsBtns.forEach((tb) => tb.classList.remove('tabs__btn--active'));
+
           tabsContents.forEach((tc) =>
             tc.classList.remove('tabs__content--active')
           );
+
           tabsBtn.classList.add('tabs__btn--active');
+
           const tabsContent = document.querySelector(
             `.tabs__content--${tabsBtn.dataset.tabsbtn}`
           );
+
           tabsContent.classList.add('tabs__content--active');
         });
       };
@@ -864,29 +871,55 @@
         const slider = document.querySelector('.slider');
         const sliderLeftBtn = document.querySelector('.slider__btn--left');
         const sliderRightBtn = document.querySelector('.slider__btn--right');
+
+        const tabsBtns = document.querySelectorAll('.tabs__btn');
+        const maxTabsBtns = tabsBtns.length;
+        let curIndex = 0;
+
         let sliderSlides = Array.from(
           document.querySelectorAll('.slider__slide')
         );
+
         const updateSlides = function () {
           sliderSlides.forEach((slide) => {
             slider.appendChild(slide);
           });
         };
+
         const rotateSliderLeft = function () {
           const el = sliderSlides.shift();
           sliderSlides.push(el);
           updateSlides();
+
+          if (curIndex === maxTabsBtns - 1) {
+            curIndex = 0;
+          } else {
+            curIndex++;
+          }
+
+          tabsBtns[curIndex].click();
         };
+
         const rotateSliderRight = function () {
           const el = sliderSlides.pop();
           sliderSlides.unshift(el);
           updateSlides();
+
+          if (curIndex === 0) {
+            curIndex = maxTabsBtns - 1;
+          } else {
+            curIndex--;
+          }
+
+          tabsBtns[curIndex].click();
         };
+
         sliderLeftBtn.addEventListener('click', rotateSliderRight);
         sliderRightBtn.addEventListener('click', rotateSliderLeft);
+
         document.addEventListener('keydown', function (e) {
-          e.key === 'ArrowLeft' && rotateSliderLeft();
-          e.key === 'ArrowRight' && rotateSliderRight();
+          e.key === 'ArrowLeft' && rotateSliderRight();
+          e.key === 'ArrowRight' && rotateSliderLeft();
         });
       };
 
