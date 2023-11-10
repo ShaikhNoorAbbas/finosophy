@@ -41,14 +41,17 @@
     <!-- Popup -->
     <div class="popup">
       <video autoplay loop muted class="popup__background">
-        <source src="./assets/fireworks.mp4" type="video/mp4" />
+        <source
+          src="https://player.vimeo.com/progressive_redirect/download/883228929/rendition/1080p/fireworks%20%281080p%29.mp4?loc=external&signature=4b69e44451168dc1519176d513d7e0cadf8a16875d80928e0c5b056bb85d2269"
+          type="video/mp4"
+        />
         Your browser does not support the video tag.
       </video>
 
       <div class="popup__container">
         <button class="popup__btn">&times;</button>
         <a
-          href="https://www.letstute.com/courses/financial-literacy-online-course-for-youth"
+          href="https://www.letstute.com/courses/financial-literacy-for-youth-book"
           ><img
             src="https://www.letstute.com/s/pages/assets/images/hero-banner%20(1).jpg"
             alt=""
@@ -783,7 +786,7 @@
           }, 5000);
         });
       };
-      // popup();
+      popup();
 
       /* Modal */
       const modal = function () {
@@ -1013,7 +1016,7 @@
               <div class="courses__slider-slide-img tabs__btn tabs__btn--${
                 i + 1
               } ${i === 0 ? 'tabs__btn--active' : ''}" data-tabsbtn="${i + 1}">
-              <img src=${c.thumbnail} alt="" /> 
+              <img src=${c.thumbnail} alt="" />
             </div>
             </div> `;
           })
