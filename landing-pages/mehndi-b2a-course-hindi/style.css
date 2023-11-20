@@ -590,50 +590,53 @@ strong {
   }
 }
 
+.info-card {
+  padding: 3rem;
+  border-radius: 0.7rem;
+  background-color: var(--color-white);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+
+  .info-card__heading {
+    text-align: center;
+  }
+
+  .info-card__btn {
+    width: 100%;
+  }
+}
+
 /* Sections */
 /* Hero Section */
 .hero {
-  height: 100vh;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url('https://www.letstute.com/s/pages/assets/images/hero.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  .hero__container {
+  .hero__bg-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    height: 100%;
-    color: white;
+    padding: 20rem 0;
+    background-image: url('https://www.letstute.com/s/pages/assets/images/hero-banner%20(1).png');
+    background-size: cover;
 
-    @media only screen and (max-width: 50em) {
-      grid-template-columns: 1fr;
-    }
-
-    .hero__content-box {
-      display: flex;
-      flex-direction: column;
-      row-gap: 3.5rem;
-
+    .hero__content-container {
       .hero__heading {
-        font-weight: 700;
-        display: block;
-        margin-bottom: 0;
-        background: -webkit-linear-gradient(#ff8888, #ffe79a);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        font-size: 3.6rem;
       }
 
-      .hero__links {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        gap: 2rem;
+      .hero__subheading {
+        display: block;
+
+        &.hero__subheading--1 {
+          text-align: center;
+          padding: 1rem;
+          background-color: var(--color-primary);
+        }
       }
     }
+  }
+
+  .hero__cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    transform: translateY(-20%);
   }
 }
 
