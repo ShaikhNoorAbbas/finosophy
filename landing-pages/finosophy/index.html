@@ -109,773 +109,767 @@
     <script>
       'use strict';
 
-      /* Datasets */
-      const student = [
-        {
-          heroSection: {
-            heading: 'What is Finosophy?',
-            para: 'Finosophy entails gaining financial knowledge and developing confidence to achieve financial independence. Our program benefits future students who are unsure about money management. The course includes engaging resources like interactive games, videos, flashcards, live projects, and assessments.',
-            img: 'https://www.letstute.com/s/pages/assets/images/student-hero-img.jpg',
-            formInputName: 'entry.1163976766',
-            formBtnText: 'Enquire Now',
-          },
-          coursesSection: {
-            header: 'Finosophy Online Courses',
-            courses: [
-              {
-                id: 0,
-                name: 'Finosophy for Youth',
-                age: 'Age group 15-25 yrs',
-                desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
-                features: [
-                  '25 Pre-recorded Videos',
-                  '31 Amazing Chapters',
-                  '24 Interactive Activities',
-                  '31 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-                price: 'Enroll Now for ₹499/- per year',
-                purchaseLink:
-                  'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p1',
-                downloadBtnText: 'Download Brochure',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/youth-thumbnail.png',
-              },
-              {
-                id: 1,
-                name: 'Finosophy Level 1',
-                age: 'Age group 8-9 yrs',
-                desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
-                features: [
-                  '8 Pre-recorded Videos',
-                  '14 Amazing Chapters',
-                  '8 Interactive Activities',
-                  '14 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-                price: 'Enroll Now for ₹499/- per year',
-                purchaseLink:
-                  'https://www.letstute.com/single-checkout/644fa8cfe4b04f2ff1c08255?pid=p1',
-                downloadBtnText: 'Download Curriculum',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1ukE9yeKfUNiNdE77Gimhg87DnOx5EqyV&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png',
-              },
-              {
-                id: 2,
-                name: 'Finosophy Level 2',
-                age: 'Age group 9-10 yrs',
-                desc: 'The Financial Literacy Online Course Level 2 is a thorough course that builds on Level 1, focusing on advanced concepts and strategies in finance, such as investing, retirement planning, and risk management, through interactive lessons and practical exercises.',
-                features: [
-                  '9 Pre-recorded Videos',
-                  '20 Amazing Chapters',
-                  '9 Interactive Activities',
-                  '20 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Enroll Now for ₹499/- per year',
-                purchaseLink:
-                  'https://www.letstute.com/single-checkout/64817b66e4b09ba937123fb9?pid=p1',
-                downloadBtnText: 'Download Curriculum',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1cA5XoK7OEK32O8myvZoL5mXifI-STEj9&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png',
-              },
-              {
-                id: 3,
-                name: 'Finosophy Level 3',
-                age: 'Age group 10-11 yrs',
-                desc: 'Master advanced finance in Level 3: from Household Economics to Securities Market. Gain expertise in Savings, Investments, and Behavior Aspects. Acquire practical skills for confident financial decision-making.',
-                features: [
-                  '11 Pre-recorded Videos',
-                  '22 Amazing Chapters',
-                  '11 Interactive Activities',
-                  '22 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Enroll Now for ₹499/- per year',
-                purchaseLink:
-                  'https://www.letstute.com/single-checkout/64b7b516e4b067424cc6f47b?pid=p1',
-                downloadBtnText: 'Download Curriculum',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=12RHA4KU-y9n6FNttFdnKkNK5-QEkIIY5&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
-              },
-              {
-                id: 4,
-                name: 'Finosophy Level 4',
-                age: 'Age group 11-12 yrs',
-                desc: 'Improve your financial understanding with Level 4. Discover complex subjects including banking and consumer protection, as well as investments and behavioral aspects. learn how to protect your assets and make good financial decisions.',
-                features: [
-                  '12 Pre-recorded Videos',
-                  '24 Amazing Chapters',
-                  '12 Interactive Activities',
-                  '24 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Enroll Now for ₹499/- per year',
-                purchaseLink:
-                  'https://www.letstute.com/single-checkout/64f02ffee4b0d0e2871bd909?pid=p1',
-                downloadBtnText: 'Download Curriculum',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1MWhfG5nOaiIrtYUcaqVCsH4ogTXpUmA1&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-4-cover.jpg',
-              },
-              {
-                id: 5,
-                name: 'Finosophy Level 5',
-                age: 'Age group 12-13 yrs',
-                desc: 'This Course takes your financial knowledge to new heights. Explore advanced banking, investment, and behavior aspects. Get savvy with asset allocation and risk assessment. Plan for retirement, safeguard against scams, and master tax return essentials.',
-                features: [
-                  '12 Pre-recorded Videos',
-                  '24 Amazing Chapters',
-                  '12 Interactive Activities',
-                  '24 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Enroll Now for ₹499/- per year',
-                purchaseLink:
-                  'https://www.letstute.com/single-checkout/65325bb9e4b020072f2094ac?pid=p1',
-                downloadBtnText: 'Download Curriculum',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=14tnfjFulbq_6sAOkWGFRVPYlgwU7iwG3&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-5-cover.jpg',
-              },
-              {
-                id: 6,
-                name: 'Finosophy Level 6',
-                age: 'Age group 13-14 yrs',
-                desc: "With Level 6, you'll be a financial expert. Explore the ways in which you can make informed financial decisions, including banking intricacies and investment strategies. Find out how to plan for retirement, avoid scams, and reduce taxes.",
-                features: [
-                  '11 Pre-recorded Videos',
-                  '28 Amazing Chapters',
-                  '11 Interactive Activities',
-                  '28 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Coming soon...',
-                purchaseLink: '#',
-                downloadBtnText: 'Download Curriculum',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1UKLJaAZBH6W3QfJam46mq0XlCf-gFWzA&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-6-cover.jpg',
-              },
-            ],
-          },
-          faqsSection: {
-            faqs: [
-              {
-                id: 1,
-                question: 'Why is financial literacy important for students?',
-                answer:
-                  'Financial literacy is crucial for students as it equips them with essential LIFE SKILLS to manage their finances effectively. It helps them make informed decisions about spending, saving, and investing money, which can have a significant impact on their financial well-being in the long run.',
-              },
-              {
-                id: 2,
-                question:
-                  'What topics are typically covered in a financial literacy course?',
-                answer:
-                  'A financial literacy course usually covers a range of topics, including budgeting, saving and investing, credit and debt management, taxes, insurance, retirement planning, and financial goal-setting. It may also touch upon topics like financial scams, consumer rights, and responsible spending.',
-              },
-              {
-                id: 3,
-                question:
-                  'How can financial literacy benefit me in my everyday life?',
-                answer:
-                  'Financial literacy can benefit you in numerous ways. It helps you develop good money management habits, make informed decisions about spending and saving, avoid debt traps, understand financial products and services, plan for major life events like buying a house or starting a family, investing in stocks etc and work towards achieving your financial goals.',
-              },
-              {
-                id: 4,
-                question: 'Can financial literacy help me in my career?',
-                answer:
-                  'Absolutely! Financial literacy can be valuable in your career, regardless of your field. Understanding financial concepts can help you make sound business decisions, manage personal finances during job transitions, negotiate salary and benefits effectively, in short it makes you stay ahead of your game and and builds confidence towards living a better financial life.',
-              },
-              {
-                id: 5,
-                question:
-                  'Are there any prerequisites for taking a financial literacy course?',
-                answer:
-                  'Most financial literacy courses are designed to be accessible to students without any prior financial knowledge. However, basic math and arithmetic skills are helpful for understanding financial calculations and concepts.',
-              },
-              {
-                id: 6,
-                question:
-                  'How can I apply what I learn in a financial literacy course to my own life?',
-                answer:
-                  'To apply what you learn, start by assessing your current financial situation, setting specific financial goals, and creating a budget. Implement the strategies and techniques learned in the course, such as saving a portion of your income, tracking your expenses, and making informed decisions about spending. Regularly review your progress and make adjustments as needed.',
-              },
-              {
-                id: 7,
-                question:
-                  'How can I continue to improve my financial literacy after completing the course?',
-                answer:
-                  'Financial literacy is an ongoing learning process. After completing the course, you can continue to enhance your knowledge by reading personal finance books, following financial blogs, attending workshops or webinars, and staying updated on financial news and trends. Joining online communities or forums dedicated to personal finance can also provide opportunities for learning and sharing experiences.',
-              },
-              {
-                id: 8,
-                question:
-                  'Can financial literacy help me avoid financial scams and frauds?',
-                answer:
-                  'Yes, financial literacy can help you identify and avoid common financial scams and frauds. By understanding how scams operate and being aware of warning signs, you can protect yourself and your finances from fraudulent activities. Additionally, learning about consumer rights and financial regulations can empower you to make informed decisions and take appropriate action when necessary.',
-              },
-            ],
-          },
+      /* DATASETS */
+      const student = {
+        heroSection: {
+          heading: 'What is Finosophy?',
+          para: 'Finosophy entails gaining financial knowledge and developing confidence to achieve financial independence. Our program benefits future students who are unsure about money management. The course includes engaging resources like interactive games, videos, flashcards, live projects, and assessments.',
+          img: 'https://www.letstute.com/s/pages/assets/images/student-hero-img.jpg',
+          formInputName: 'entry.1163976766',
+          formBtnText: 'Enquire Now',
         },
-      ];
-
-      const teacher = [
-        {
-          heroSection: {
-            heading: 'Become a Certified Teacher',
-            para: "In our Financial Literacy for Teacher's program, an educator, provides a complete curriculum designed to empower students with critical financial skills. By adding this curriculum into your classroom, you are not only meeting educational goals but also giving children the necessary skill set for long-term financial well-being.",
-            img: 'https://www.letstute.com/s/pages/assets/images/teacher-hero-img.jpg',
-            formInputName: 'entry.2136478927',
-            formBtnText: 'Book a FREE Demo',
-          },
-          coursesSection: {
-            header: 'Finosophy Courses + Lesson Plan',
-            courses: [
-              {
-                id: 1,
-                name: 'Finosophy Level 1 & Lesson Plan',
-                age: 'Age group 8-9 yrs',
-                desc: "Introduce your students to the basics of handling money with our Level 1 course. It's like giving them a strong foundation for managing their own finances. We've made it easy to understand by using everyday examples and hands-on activities that will keep them interested and help them grasp important money management skills.",
-                features: [
-                  '8 Pre-recorded Videos',
-                  '14 Amazing Chapters',
-                  '8 Interactive Activities',
-                  '14 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Enroll Now for ₹999/- per year',
-                purchaseLink:
-                  'https://www.letstute.com/single-checkout/64f81896e4b002bd529682a9?pid=p1',
-                downloadBtnText: 'Sample Lesson Plan',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png',
-              },
-              {
-                id: 2,
-                name: 'Finosophy Level 2 & Lesson Plan',
-                age: 'Age group 9-10 yrs',
-                desc: 'Now that we’ve got the basics down, it’s time to dive a bit deeper. We’ll guide them on how to plan, invest, and even take calculated risks. We’ll show them how to make smart money choices all on their own, so they feel confident about their financial future!',
-                features: [
-                  '9 Pre-recorded Videos',
-                  '20 Amazing Chapters',
-                  '9 Interactive Activities',
-                  '20 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Coming soon...',
-                purchaseLink: '#',
-                downloadBtnText: 'Sample Lesson Plan',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png',
-              },
-              {
-                id: 3,
-                name: 'Finosophy Level 3 & Lesson Plan',
-                age: 'Age group 10-11 yrs',
-                desc: 'This level is intended to broaden your perspectives on financial knowledge. It will cover everything from family budgeting to savings, ensuring that children acquire both theory and practical skills for a financially secure future.',
-                features: [
-                  '11 Pre-recorded Videos',
-                  '22 Amazing Chapters',
-                  '11 Interactive Activities',
-                  '22 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Coming soon...',
-                purchaseLink: '#',
-                downloadBtnText: 'Sample Lesson Plan',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
-              },
-              {
-                id: 4,
-                name: 'Finosophy Level 4 & Lesson Plan',
-                age: 'Age group 11-12 yrs',
-                desc: 'Here, we will prepare your students for advanced financial scenarios. This course covers topics ranging from banking to consumer protection and provides insights into investing, behavioral issues, and more. Equip your students with practical skills for making sound financial decisions.',
-                features: [
-                  '12 Pre-recorded Videos',
-                  '24 Amazing Chapters',
-                  '12 Interactive Activities',
-                  '24 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink: '#',
-                price: 'Coming soon...',
-                purchaseLink:
-                  'https://www.letstute.com/single-checkout/64f02ffee4b0d0e2871bd909?pid=p1',
-                downloadBtnText: 'Sample Lesson Plan',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-4-cover.jpg',
-              },
-              {
-                id: 5,
-                name: 'Finosophy Level 5 & Lesson Plan',
-                age: 'Age group 12-13 yrs',
-                desc: 'In this level, students will improve their financial comprehension. We’ll look at important topics like banking and the stock market, as well as ideas like CIBIL, tax payments, and retirement planning. This course will provide your students with the knowledge and abilities they need to confidently navigate the complex world of finance.',
-                features: [
-                  '12 Pre-recorded Videos',
-                  '24 Amazing Chapters',
-                  '12 Interactive Activities',
-                  '24 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Coming soon...',
-                purchaseLink: '#',
-                downloadBtnText: 'Sample Lesson Plan',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-5-cover.jpg',
-              },
-              {
-                id: 6,
-                name: 'Finosophy Level 6 & Lesson Plan',
-                age: 'Age group 13-14 yrs',
-                desc: 'Great you’re now an expert! This level is a culmination of your financial journey. It consolidates all the knowledge and skills acquired from previous levels. Your students will graduate as capable financial decision-makers, fully prepared to ensure their financial future.',
-                features: [
-                  '11 Pre-recorded Videos',
-                  '28 Amazing Chapters',
-                  '11 Interactive Activities',
-                  '28 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Coming soon...',
-                purchaseLink: '#',
-                downloadBtnText: 'Sample Lesson Plan',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-6-cover.jpg',
-              },
-            ],
-          },
-          faqsSection: {
-            faqs: [
-              {
-                id: 1,
-                question:
-                  'What resources does Letstute provide to assist teachers in teaching the financial literacy course?',
-                answer:
-                  'Letstute offers comprehensive teacher lesson plans designed to guide educators through each level of the financial literacy course. These plans include detailed outlines, teaching strategies, and supplementary materials.',
-              },
-              {
-                id: 2,
-                question:
-                  'How are the teacher lesson plans structured for the six-level financial literacy course?',
-                answer:
-                  "Letstute's teacher lesson plans are meticulously structured, breaking down each level into modules or sections, providing a step-by-step guide for educators to effectively teach financial concepts.",
-              },
-              {
-                id: 3,
-                question:
-                  'Are the teacher lesson plans flexible enough to accommodate different teaching styles and classroom settings?',
-                answer:
-                  "Yes, Letstute's teacher lesson plans are designed with flexibility in mind, allowing educators to adapt the materials to suit various teaching styles, classroom sizes, and student needs.",
-              },
-              {
-                id: 4,
-                question:
-                  'What support does Letstute offer to ensure educators are prepared to teach the financial literacy course effectively?',
-                answer:
-                  'Letstute offers training sessions or workshops specifically tailored for educators, focusing on how to effectively utilize the lesson plans, engage students, and navigate challenging concepts.',
-              },
-              {
-                id: 5,
-                question:
-                  'Do the teacher lesson plans include assessment tools or methods to gauge student learning?',
-                answer:
-                  "Yes, Letstute's teacher lesson plans might include assessment tools such as quizzes, worksheets, or suggested evaluation methods, enabling educators to assess students' understanding of the financial concepts taught.",
-              },
-              {
-                id: 6,
-                question:
-                  'Can educators access additional resources or materials to supplement the teacher lesson plans?',
-                answer:
-                  "Letstute provides supplementary resources, including presentations, videos, or interactive activities, to complement the teacher lesson plans and enhance students' learning experiences.",
-              },
-              {
-                id: 7,
-                question:
-                  'How can educators provide feedback or share experiences with Letstute regarding the teacher lesson plans?',
-                answer:
-                  'Letstute offers forums or platforms where educators can provide feedback, share success stories, and exchange experiences with implementing the lesson plans, fostering a collaborative teaching community.',
-              },
-              {
-                id: 8,
-                question:
-                  'Are the teacher lesson plans aligned with educational standards or guidelines?',
-                answer:
-                  "Letstute's teacher lesson plans totally align with national or international educational standards, ensuring that the financial literacy course meets educational benchmarks and objectives.",
-              },
-              {
-                id: 9,
-                question:
-                  'Can the teacher lesson plans be accessed and utilized beyond the classroom environment?',
-                answer:
-                  "Yes, Letstute's teacher lesson plans are designed to be versatile, allowing educators to adapt and utilize them in diverse settings such as workshops, seminars, or extracurricular programs specific to our Finosophy course.",
-              },
-              {
-                id: 10,
-                question:
-                  "How can educators get access to Letstute's teacher lesson plans for the financial literacy course?",
-                answer:
-                  "Educators can typically access Letstute's teacher lesson plans online through Finosophy Landing Page or direct communication with Letstute team.",
-              },
-            ],
-          },
+        coursesSection: {
+          header: 'Finosophy Online Courses',
+          courses: [
+            {
+              id: 0,
+              name: 'Finosophy for Youth',
+              age: 'Age group 15-25 yrs',
+              desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
+              features: [
+                '25 Pre-recorded Videos',
+                '31 Amazing Chapters',
+                '24 Interactive Activities',
+                '31 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
+              price: 'Enroll Now for ₹499/- per year',
+              purchaseLink:
+                'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p1',
+              downloadBtnText: 'Download Brochure',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/youth-thumbnail.png',
+            },
+            {
+              id: 1,
+              name: 'Finosophy Level 1',
+              age: 'Age group 8-9 yrs',
+              desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
+              features: [
+                '8 Pre-recorded Videos',
+                '14 Amazing Chapters',
+                '8 Interactive Activities',
+                '14 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
+              price: 'Enroll Now for ₹499/- per year',
+              purchaseLink:
+                'https://www.letstute.com/single-checkout/644fa8cfe4b04f2ff1c08255?pid=p1',
+              downloadBtnText: 'Download Curriculum',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1ukE9yeKfUNiNdE77Gimhg87DnOx5EqyV&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png',
+            },
+            {
+              id: 2,
+              name: 'Finosophy Level 2',
+              age: 'Age group 9-10 yrs',
+              desc: 'The Financial Literacy Online Course Level 2 is a thorough course that builds on Level 1, focusing on advanced concepts and strategies in finance, such as investing, retirement planning, and risk management, through interactive lessons and practical exercises.',
+              features: [
+                '9 Pre-recorded Videos',
+                '20 Amazing Chapters',
+                '9 Interactive Activities',
+                '20 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Enroll Now for ₹499/- per year',
+              purchaseLink:
+                'https://www.letstute.com/single-checkout/64817b66e4b09ba937123fb9?pid=p1',
+              downloadBtnText: 'Download Curriculum',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1cA5XoK7OEK32O8myvZoL5mXifI-STEj9&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png',
+            },
+            {
+              id: 3,
+              name: 'Finosophy Level 3',
+              age: 'Age group 10-11 yrs',
+              desc: 'Master advanced finance in Level 3: from Household Economics to Securities Market. Gain expertise in Savings, Investments, and Behavior Aspects. Acquire practical skills for confident financial decision-making.',
+              features: [
+                '11 Pre-recorded Videos',
+                '22 Amazing Chapters',
+                '11 Interactive Activities',
+                '22 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Enroll Now for ₹499/- per year',
+              purchaseLink:
+                'https://www.letstute.com/single-checkout/64b7b516e4b067424cc6f47b?pid=p1',
+              downloadBtnText: 'Download Curriculum',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=12RHA4KU-y9n6FNttFdnKkNK5-QEkIIY5&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
+            },
+            {
+              id: 4,
+              name: 'Finosophy Level 4',
+              age: 'Age group 11-12 yrs',
+              desc: 'Improve your financial understanding with Level 4. Discover complex subjects including banking and consumer protection, as well as investments and behavioral aspects. learn how to protect your assets and make good financial decisions.',
+              features: [
+                '12 Pre-recorded Videos',
+                '24 Amazing Chapters',
+                '12 Interactive Activities',
+                '24 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Enroll Now for ₹499/- per year',
+              purchaseLink:
+                'https://www.letstute.com/single-checkout/64f02ffee4b0d0e2871bd909?pid=p1',
+              downloadBtnText: 'Download Curriculum',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1MWhfG5nOaiIrtYUcaqVCsH4ogTXpUmA1&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-4-cover.jpg',
+            },
+            {
+              id: 5,
+              name: 'Finosophy Level 5',
+              age: 'Age group 12-13 yrs',
+              desc: 'This Course takes your financial knowledge to new heights. Explore advanced banking, investment, and behavior aspects. Get savvy with asset allocation and risk assessment. Plan for retirement, safeguard against scams, and master tax return essentials.',
+              features: [
+                '12 Pre-recorded Videos',
+                '24 Amazing Chapters',
+                '12 Interactive Activities',
+                '24 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Enroll Now for ₹499/- per year',
+              purchaseLink:
+                'https://www.letstute.com/single-checkout/65325bb9e4b020072f2094ac?pid=p1',
+              downloadBtnText: 'Download Curriculum',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=14tnfjFulbq_6sAOkWGFRVPYlgwU7iwG3&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-5-cover.jpg',
+            },
+            {
+              id: 6,
+              name: 'Finosophy Level 6',
+              age: 'Age group 13-14 yrs',
+              desc: "With Level 6, you'll be a financial expert. Explore the ways in which you can make informed financial decisions, including banking intricacies and investment strategies. Find out how to plan for retirement, avoid scams, and reduce taxes.",
+              features: [
+                '11 Pre-recorded Videos',
+                '28 Amazing Chapters',
+                '11 Interactive Activities',
+                '28 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Coming soon...',
+              purchaseLink: '#',
+              downloadBtnText: 'Download Curriculum',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1UKLJaAZBH6W3QfJam46mq0XlCf-gFWzA&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-6-cover.jpg',
+            },
+          ],
         },
-      ];
-
-      const school = [
-        {
-          heroSection: {
-            heading: 'Become a Finosophy School',
-            para: 'Introducing our Financial Literacy for School program, a fun way to teach students the fundamentals of money management. We inculcate key skills that will set students on a path to financial security through engaging activities and specialized information. Begin your student’s financial empowerment journey today!',
-            img: 'https://www.letstute.com/s/pages/assets/images/school-hero-img.jpg',
-            formInputName: 'entry.1720144834',
-            formBtnText: 'Book a FREE Demo',
-          },
-          coursesSection: {
-            header: 'Finosophy Course + Lesson Plan',
-            courses: [
-              {
-                id: 1,
-                name: 'Finosophy Level 1 & Lesson Plan',
-                age: 'Age group 8-9 yrs',
-                desc: "Introduce your students to the basics of handling money with our Level 1 course. It's like giving them a strong foundation for managing their own finances. We've made it easy to understand by using everyday examples and hands-on activities that will keep them interested and help them grasp important money management skills.",
-                features: [
-                  '8 Pre-recorded Videos',
-                  '14 Amazing Chapters',
-                  '8 Interactive Activities',
-                  '14 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Enroll Now for ₹999/- per year',
-                purchaseLink:
-                  'https://www.letstute.com/single-checkout/64f81896e4b002bd529682a9?pid=p1',
-                downloadBtnText: 'Sample Lesson Plan',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png',
-              },
-              {
-                id: 2,
-                name: 'Finosophy Level 2 & Lesson Plan',
-                age: 'Age group 9-10 yrs',
-                desc: 'Now that we’ve got the basics down, it’s time to dive a bit deeper. We’ll guide them on how to plan, invest, and even take calculated risks. We’ll show them how to make smart money choices all on their own, so they feel confident about their financial future!',
-                features: [
-                  '9 Pre-recorded Videos',
-                  '20 Amazing Chapters',
-                  '9 Interactive Activities',
-                  '20 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Coming soon...',
-                purchaseLink: '#',
-                downloadBtnText: 'Sample Lesson Plan',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png',
-              },
-              {
-                id: 3,
-                name: 'Finosophy Level 3 & Lesson Plan',
-                age: 'Age group 10-11 yrs',
-                desc: 'This level is intended to broaden your perspectives on financial knowledge. It will cover everything from family budgeting to savings, ensuring that children acquire both theory and practical skills for a financially secure future.',
-                features: [
-                  '11 Pre-recorded Videos',
-                  '22 Amazing Chapters',
-                  '11 Interactive Activities',
-                  '22 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Coming soon...',
-                purchaseLink: '#',
-                downloadBtnText: 'Sample Lesson Plan',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
-              },
-              {
-                id: 4,
-                name: 'Finosophy Level 4 & Lesson Plan',
-                age: 'Age group 11-12 yrs',
-                desc: 'Here, we will prepare your students for advanced financial scenarios. This course covers topics ranging from banking to consumer protection and provides insights into investing, behavioral issues, and more. Equip your students with practical skills for making sound financial decisions.',
-                features: [
-                  '12 Pre-recorded Videos',
-                  '24 Amazing Chapters',
-                  '12 Interactive Activities',
-                  '24 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink: '#',
-                price: 'Coming soon...',
-                purchaseLink:
-                  'https://www.letstute.com/single-checkout/64f02ffee4b0d0e2871bd909?pid=p1',
-                downloadBtnText: 'Sample Lesson Plan',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-4-cover.jpg',
-              },
-              {
-                id: 5,
-                name: 'Finosophy Level 5 & Lesson Plan',
-                age: 'Age group 12-13 yrs',
-                desc: 'In this level, students will improve their financial comprehension. We’ll look at important topics like banking and the stock market, as well as ideas like CIBIL, tax payments, and retirement planning. This course will provide your students with the knowledge and abilities they need to confidently navigate the complex world of finance.',
-                features: [
-                  '12 Pre-recorded Videos',
-                  '24 Amazing Chapters',
-                  '12 Interactive Activities',
-                  '24 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Coming soon...',
-                purchaseLink: '#',
-                downloadBtnText: 'Sample Lesson Plan',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-5-cover.jpg',
-              },
-              {
-                id: 6,
-                name: 'Finosophy Level 6 & Lesson Plan',
-                age: 'Age group 13-14 yrs',
-                desc: 'Great you’re now an expert! This level is a culmination of your financial journey. It consolidates all the knowledge and skills acquired from previous levels. Your students will graduate as capable financial decision-makers, fully prepared to ensure their financial future.',
-                features: [
-                  '11 Pre-recorded Videos',
-                  '28 Amazing Chapters',
-                  '11 Interactive Activities',
-                  '28 Interactive Flashcards',
-                  'Students Assessments',
-                  'Course Certificate',
-                ],
-                game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-                flashcard:
-                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-                videoLink:
-                  'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-                price: 'Coming soon...',
-                purchaseLink: '#',
-                downloadBtnText: 'Sample Lesson Plan',
-                downloadBtnLink:
-                  'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
-                thumbnail:
-                  'https://www.letstute.com/s/pages/assets/images/letstute-level-6-cover.jpg',
-              },
-            ],
-          },
-          faqsSection: {
-            faqs: [
-              {
-                id: 1,
-                question:
-                  "How can Letstute's financial literacy program - Finosophy benefit schools and students?",
-                answer:
-                  "Letstute's program offers a structured and engaging curriculum designed to impart essential financial knowledge to students, fostering responsible financial behavior and decision-making skills.",
-              },
-              {
-                id: 2,
-                question:
-                  "What distinguishes Letstute's financial literacy program from other educational resources?",
-                answer:
-                  "Letstute's program employs interactive and visually engaging teaching methods, such as animated videos and practical exercises, ensuring student engagement and comprehension of financial concepts.",
-              },
-              {
-                id: 3,
-                question:
-                  "Will Letstute's program be seamlessly integrated into our existing curriculum?",
-                answer:
-                  "Yes, Letstute's program is designed for easy integration into school curricula, providing flexibility for educators to incorporate it into subjects like mathematics, social studies, or economics.",
-              },
-              {
-                id: 4,
-                question:
-                  'Are there resources available for educators to facilitate teaching the financial literacy program effectively?',
-                answer:
-                  'Letstute might provide comprehensive teaching materials, including lesson plans, worksheets, and assessments, to support educators in delivering the program effectively and engagingly.',
-              },
-              {
-                id: 5,
-                question:
-                  "How can Letstute's program encourage parental involvement in students' financial education?",
-                answer:
-                  'Letstute offers resources or workshops for parents to reinforce financial learning at home, ensuring a collaborative approach between school and home environments.',
-              },
-              {
-                id: 6,
-                question:
-                  "Can Letstute's financial literacy program be customized to cater to different age groups or grades?",
-                answer:
-                  "Yes, Letstute's program offers 6 modules tailored to grades 6-11 and relatable age groups within the school, ensuring that the content is age-appropriate and relevant to each grade level.s",
-              },
-              {
-                id: 7,
-                question:
-                  "Will there be support or training provided to educators for implementing Letstute's program?",
-                answer:
-                  "Letstute offers training sessions and can also offer workshops for educators to familiarize them with the program's content, teaching methodologies, and best practices for effective implementation.",
-              },
-              {
-                id: 8,
-                question:
-                  "How will Letstute's program measure students' progress and understanding of financial concepts?",
-                answer:
-                  "The program includes assessments, quizzes, oand progress tracking tools to evaluate students' comprehension and progress throughout the course, allowing educators to monitor their development.",
-              },
-              {
-                id: 9,
-                question:
-                  "Can Letstute's financial literacy program contribute to extracurricular activities or student clubs?",
-                answer:
-                  "Letstute's program offers supplementary materials and guidance for establishing financial literacy clubs or organizing related extracurricular activities within the school.",
-              },
-              {
-                id: 10,
-                question:
-                  "What ongoing support or resources will be available to the school after implementing Letstute's financial literacy program?",
-                answer:
-                  'Letstute provides continuous support, access to updated materials, and forums for educators to exchange ideas and experiences, ensuring the sustainability and effectiveness of the program.',
-              },
-              {
-                id: 11,
-                question: 'WHat is a Finosophy School?',
-                answer:
-                  "Partnering with Letstute for our financial literacy program  offers schools a comprehensive and engaging solution to enrich students' financial education, empowering them with essential life skills,talented pool of certified Financially Literate Teachers garnering respect amongst peer school  and become a Finosophy School.",
-              },
-            ],
-          },
+        faqsSection: {
+          faqs: [
+            {
+              id: 1,
+              question: 'Why is financial literacy important for students?',
+              answer:
+                'Financial literacy is crucial for students as it equips them with essential LIFE SKILLS to manage their finances effectively. It helps them make informed decisions about spending, saving, and investing money, which can have a significant impact on their financial well-being in the long run.',
+            },
+            {
+              id: 2,
+              question:
+                'What topics are typically covered in a financial literacy course?',
+              answer:
+                'A financial literacy course usually covers a range of topics, including budgeting, saving and investing, credit and debt management, taxes, insurance, retirement planning, and financial goal-setting. It may also touch upon topics like financial scams, consumer rights, and responsible spending.',
+            },
+            {
+              id: 3,
+              question:
+                'How can financial literacy benefit me in my everyday life?',
+              answer:
+                'Financial literacy can benefit you in numerous ways. It helps you develop good money management habits, make informed decisions about spending and saving, avoid debt traps, understand financial products and services, plan for major life events like buying a house or starting a family, investing in stocks etc and work towards achieving your financial goals.',
+            },
+            {
+              id: 4,
+              question: 'Can financial literacy help me in my career?',
+              answer:
+                'Absolutely! Financial literacy can be valuable in your career, regardless of your field. Understanding financial concepts can help you make sound business decisions, manage personal finances during job transitions, negotiate salary and benefits effectively, in short it makes you stay ahead of your game and and builds confidence towards living a better financial life.',
+            },
+            {
+              id: 5,
+              question:
+                'Are there any prerequisites for taking a financial literacy course?',
+              answer:
+                'Most financial literacy courses are designed to be accessible to students without any prior financial knowledge. However, basic math and arithmetic skills are helpful for understanding financial calculations and concepts.',
+            },
+            {
+              id: 6,
+              question:
+                'How can I apply what I learn in a financial literacy course to my own life?',
+              answer:
+                'To apply what you learn, start by assessing your current financial situation, setting specific financial goals, and creating a budget. Implement the strategies and techniques learned in the course, such as saving a portion of your income, tracking your expenses, and making informed decisions about spending. Regularly review your progress and make adjustments as needed.',
+            },
+            {
+              id: 7,
+              question:
+                'How can I continue to improve my financial literacy after completing the course?',
+              answer:
+                'Financial literacy is an ongoing learning process. After completing the course, you can continue to enhance your knowledge by reading personal finance books, following financial blogs, attending workshops or webinars, and staying updated on financial news and trends. Joining online communities or forums dedicated to personal finance can also provide opportunities for learning and sharing experiences.',
+            },
+            {
+              id: 8,
+              question:
+                'Can financial literacy help me avoid financial scams and frauds?',
+              answer:
+                'Yes, financial literacy can help you identify and avoid common financial scams and frauds. By understanding how scams operate and being aware of warning signs, you can protect yourself and your finances from fraudulent activities. Additionally, learning about consumer rights and financial regulations can empower you to make informed decisions and take appropriate action when necessary.',
+            },
+          ],
         },
-      ];
+      };
 
-      /* Components */
+      const teacher = {
+        heroSection: {
+          heading: 'Become a Certified Teacher',
+          para: "In our Financial Literacy for Teacher's program, an educator, provides a complete curriculum designed to empower students with critical financial skills. By adding this curriculum into your classroom, you are not only meeting educational goals but also giving children the necessary skill set for long-term financial well-being.",
+          img: 'https://www.letstute.com/s/pages/assets/images/teacher-hero-img.jpg',
+          formInputName: 'entry.2136478927',
+          formBtnText: 'Book a FREE Demo',
+        },
+        coursesSection: {
+          header: 'Finosophy Courses + Lesson Plan',
+          courses: [
+            {
+              id: 1,
+              name: 'Finosophy Level 1 & Lesson Plan',
+              age: 'Age group 8-9 yrs',
+              desc: "Introduce your students to the basics of handling money with our Level 1 course. It's like giving them a strong foundation for managing their own finances. We've made it easy to understand by using everyday examples and hands-on activities that will keep them interested and help them grasp important money management skills.",
+              features: [
+                '8 Pre-recorded Videos',
+                '14 Amazing Chapters',
+                '8 Interactive Activities',
+                '14 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Enroll Now for ₹999/- per year',
+              purchaseLink:
+                'https://www.letstute.com/single-checkout/64f81896e4b002bd529682a9?pid=p1',
+              downloadBtnText: 'Sample Lesson Plan',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png',
+            },
+            {
+              id: 2,
+              name: 'Finosophy Level 2 & Lesson Plan',
+              age: 'Age group 9-10 yrs',
+              desc: 'Now that we’ve got the basics down, it’s time to dive a bit deeper. We’ll guide them on how to plan, invest, and even take calculated risks. We’ll show them how to make smart money choices all on their own, so they feel confident about their financial future!',
+              features: [
+                '9 Pre-recorded Videos',
+                '20 Amazing Chapters',
+                '9 Interactive Activities',
+                '20 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Coming soon...',
+              purchaseLink: '#',
+              downloadBtnText: 'Sample Lesson Plan',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png',
+            },
+            {
+              id: 3,
+              name: 'Finosophy Level 3 & Lesson Plan',
+              age: 'Age group 10-11 yrs',
+              desc: 'This level is intended to broaden your perspectives on financial knowledge. It will cover everything from family budgeting to savings, ensuring that children acquire both theory and practical skills for a financially secure future.',
+              features: [
+                '11 Pre-recorded Videos',
+                '22 Amazing Chapters',
+                '11 Interactive Activities',
+                '22 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Coming soon...',
+              purchaseLink: '#',
+              downloadBtnText: 'Sample Lesson Plan',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
+            },
+            {
+              id: 4,
+              name: 'Finosophy Level 4 & Lesson Plan',
+              age: 'Age group 11-12 yrs',
+              desc: 'Here, we will prepare your students for advanced financial scenarios. This course covers topics ranging from banking to consumer protection and provides insights into investing, behavioral issues, and more. Equip your students with practical skills for making sound financial decisions.',
+              features: [
+                '12 Pre-recorded Videos',
+                '24 Amazing Chapters',
+                '12 Interactive Activities',
+                '24 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink: '#',
+              price: 'Coming soon...',
+              purchaseLink:
+                'https://www.letstute.com/single-checkout/64f02ffee4b0d0e2871bd909?pid=p1',
+              downloadBtnText: 'Sample Lesson Plan',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-4-cover.jpg',
+            },
+            {
+              id: 5,
+              name: 'Finosophy Level 5 & Lesson Plan',
+              age: 'Age group 12-13 yrs',
+              desc: 'In this level, students will improve their financial comprehension. We’ll look at important topics like banking and the stock market, as well as ideas like CIBIL, tax payments, and retirement planning. This course will provide your students with the knowledge and abilities they need to confidently navigate the complex world of finance.',
+              features: [
+                '12 Pre-recorded Videos',
+                '24 Amazing Chapters',
+                '12 Interactive Activities',
+                '24 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Coming soon...',
+              purchaseLink: '#',
+              downloadBtnText: 'Sample Lesson Plan',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-5-cover.jpg',
+            },
+            {
+              id: 6,
+              name: 'Finosophy Level 6 & Lesson Plan',
+              age: 'Age group 13-14 yrs',
+              desc: 'Great you’re now an expert! This level is a culmination of your financial journey. It consolidates all the knowledge and skills acquired from previous levels. Your students will graduate as capable financial decision-makers, fully prepared to ensure their financial future.',
+              features: [
+                '11 Pre-recorded Videos',
+                '28 Amazing Chapters',
+                '11 Interactive Activities',
+                '28 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Coming soon...',
+              purchaseLink: '#',
+              downloadBtnText: 'Sample Lesson Plan',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-6-cover.jpg',
+            },
+          ],
+        },
+        faqsSection: {
+          faqs: [
+            {
+              id: 1,
+              question:
+                'What resources does Letstute provide to assist teachers in teaching the financial literacy course?',
+              answer:
+                'Letstute offers comprehensive teacher lesson plans designed to guide educators through each level of the financial literacy course. These plans include detailed outlines, teaching strategies, and supplementary materials.',
+            },
+            {
+              id: 2,
+              question:
+                'How are the teacher lesson plans structured for the six-level financial literacy course?',
+              answer:
+                "Letstute's teacher lesson plans are meticulously structured, breaking down each level into modules or sections, providing a step-by-step guide for educators to effectively teach financial concepts.",
+            },
+            {
+              id: 3,
+              question:
+                'Are the teacher lesson plans flexible enough to accommodate different teaching styles and classroom settings?',
+              answer:
+                "Yes, Letstute's teacher lesson plans are designed with flexibility in mind, allowing educators to adapt the materials to suit various teaching styles, classroom sizes, and student needs.",
+            },
+            {
+              id: 4,
+              question:
+                'What support does Letstute offer to ensure educators are prepared to teach the financial literacy course effectively?',
+              answer:
+                'Letstute offers training sessions or workshops specifically tailored for educators, focusing on how to effectively utilize the lesson plans, engage students, and navigate challenging concepts.',
+            },
+            {
+              id: 5,
+              question:
+                'Do the teacher lesson plans include assessment tools or methods to gauge student learning?',
+              answer:
+                "Yes, Letstute's teacher lesson plans might include assessment tools such as quizzes, worksheets, or suggested evaluation methods, enabling educators to assess students' understanding of the financial concepts taught.",
+            },
+            {
+              id: 6,
+              question:
+                'Can educators access additional resources or materials to supplement the teacher lesson plans?',
+              answer:
+                "Letstute provides supplementary resources, including presentations, videos, or interactive activities, to complement the teacher lesson plans and enhance students' learning experiences.",
+            },
+            {
+              id: 7,
+              question:
+                'How can educators provide feedback or share experiences with Letstute regarding the teacher lesson plans?',
+              answer:
+                'Letstute offers forums or platforms where educators can provide feedback, share success stories, and exchange experiences with implementing the lesson plans, fostering a collaborative teaching community.',
+            },
+            {
+              id: 8,
+              question:
+                'Are the teacher lesson plans aligned with educational standards or guidelines?',
+              answer:
+                "Letstute's teacher lesson plans totally align with national or international educational standards, ensuring that the financial literacy course meets educational benchmarks and objectives.",
+            },
+            {
+              id: 9,
+              question:
+                'Can the teacher lesson plans be accessed and utilized beyond the classroom environment?',
+              answer:
+                "Yes, Letstute's teacher lesson plans are designed to be versatile, allowing educators to adapt and utilize them in diverse settings such as workshops, seminars, or extracurricular programs specific to our Finosophy course.",
+            },
+            {
+              id: 10,
+              question:
+                "How can educators get access to Letstute's teacher lesson plans for the financial literacy course?",
+              answer:
+                "Educators can typically access Letstute's teacher lesson plans online through Finosophy Landing Page or direct communication with Letstute team.",
+            },
+          ],
+        },
+      };
+
+      const school = {
+        heroSection: {
+          heading: 'Become a Finosophy School',
+          para: 'Introducing our Financial Literacy for School program, a fun way to teach students the fundamentals of money management. We inculcate key skills that will set students on a path to financial security through engaging activities and specialized information. Begin your student’s financial empowerment journey today!',
+          img: 'https://www.letstute.com/s/pages/assets/images/school-hero-img.jpg',
+          formInputName: 'entry.1720144834',
+          formBtnText: 'Book a FREE Demo',
+        },
+        coursesSection: {
+          header: 'Finosophy Course + Lesson Plan',
+          courses: [
+            {
+              id: 1,
+              name: 'Finosophy Level 1 & Lesson Plan',
+              age: 'Age group 8-9 yrs',
+              desc: "Introduce your students to the basics of handling money with our Level 1 course. It's like giving them a strong foundation for managing their own finances. We've made it easy to understand by using everyday examples and hands-on activities that will keep them interested and help them grasp important money management skills.",
+              features: [
+                '8 Pre-recorded Videos',
+                '14 Amazing Chapters',
+                '8 Interactive Activities',
+                '14 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Enroll Now for ₹999/- per year',
+              purchaseLink:
+                'https://www.letstute.com/single-checkout/64f81896e4b002bd529682a9?pid=p1',
+              downloadBtnText: 'Sample Lesson Plan',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png',
+            },
+            {
+              id: 2,
+              name: 'Finosophy Level 2 & Lesson Plan',
+              age: 'Age group 9-10 yrs',
+              desc: 'Now that we’ve got the basics down, it’s time to dive a bit deeper. We’ll guide them on how to plan, invest, and even take calculated risks. We’ll show them how to make smart money choices all on their own, so they feel confident about their financial future!',
+              features: [
+                '9 Pre-recorded Videos',
+                '20 Amazing Chapters',
+                '9 Interactive Activities',
+                '20 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Coming soon...',
+              purchaseLink: '#',
+              downloadBtnText: 'Sample Lesson Plan',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png',
+            },
+            {
+              id: 3,
+              name: 'Finosophy Level 3 & Lesson Plan',
+              age: 'Age group 10-11 yrs',
+              desc: 'This level is intended to broaden your perspectives on financial knowledge. It will cover everything from family budgeting to savings, ensuring that children acquire both theory and practical skills for a financially secure future.',
+              features: [
+                '11 Pre-recorded Videos',
+                '22 Amazing Chapters',
+                '11 Interactive Activities',
+                '22 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Coming soon...',
+              purchaseLink: '#',
+              downloadBtnText: 'Sample Lesson Plan',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
+            },
+            {
+              id: 4,
+              name: 'Finosophy Level 4 & Lesson Plan',
+              age: 'Age group 11-12 yrs',
+              desc: 'Here, we will prepare your students for advanced financial scenarios. This course covers topics ranging from banking to consumer protection and provides insights into investing, behavioral issues, and more. Equip your students with practical skills for making sound financial decisions.',
+              features: [
+                '12 Pre-recorded Videos',
+                '24 Amazing Chapters',
+                '12 Interactive Activities',
+                '24 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink: '#',
+              price: 'Coming soon...',
+              purchaseLink:
+                'https://www.letstute.com/single-checkout/64f02ffee4b0d0e2871bd909?pid=p1',
+              downloadBtnText: 'Sample Lesson Plan',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-4-cover.jpg',
+            },
+            {
+              id: 5,
+              name: 'Finosophy Level 5 & Lesson Plan',
+              age: 'Age group 12-13 yrs',
+              desc: 'In this level, students will improve their financial comprehension. We’ll look at important topics like banking and the stock market, as well as ideas like CIBIL, tax payments, and retirement planning. This course will provide your students with the knowledge and abilities they need to confidently navigate the complex world of finance.',
+              features: [
+                '12 Pre-recorded Videos',
+                '24 Amazing Chapters',
+                '12 Interactive Activities',
+                '24 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Coming soon...',
+              purchaseLink: '#',
+              downloadBtnText: 'Sample Lesson Plan',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-5-cover.jpg',
+            },
+            {
+              id: 6,
+              name: 'Finosophy Level 6 & Lesson Plan',
+              age: 'Age group 13-14 yrs',
+              desc: 'Great you’re now an expert! This level is a culmination of your financial journey. It consolidates all the knowledge and skills acquired from previous levels. Your students will graduate as capable financial decision-makers, fully prepared to ensure their financial future.',
+              features: [
+                '11 Pre-recorded Videos',
+                '28 Amazing Chapters',
+                '11 Interactive Activities',
+                '28 Interactive Flashcards',
+                'Students Assessments',
+                'Course Certificate',
+              ],
+              game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+              flashcard:
+                'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              videoLink:
+                'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+              price: 'Coming soon...',
+              purchaseLink: '#',
+              downloadBtnText: 'Sample Lesson Plan',
+              downloadBtnLink:
+                'https://drive.google.com/uc?id=1V-gfHgjf3dQROKCgVjegupgqNFUSQx6V&export=download',
+              thumbnail:
+                'https://www.letstute.com/s/pages/assets/images/letstute-level-6-cover.jpg',
+            },
+          ],
+        },
+        faqsSection: {
+          faqs: [
+            {
+              id: 1,
+              question:
+                "How can Letstute's financial literacy program - Finosophy benefit schools and students?",
+              answer:
+                "Letstute's program offers a structured and engaging curriculum designed to impart essential financial knowledge to students, fostering responsible financial behavior and decision-making skills.",
+            },
+            {
+              id: 2,
+              question:
+                "What distinguishes Letstute's financial literacy program from other educational resources?",
+              answer:
+                "Letstute's program employs interactive and visually engaging teaching methods, such as animated videos and practical exercises, ensuring student engagement and comprehension of financial concepts.",
+            },
+            {
+              id: 3,
+              question:
+                "Will Letstute's program be seamlessly integrated into our existing curriculum?",
+              answer:
+                "Yes, Letstute's program is designed for easy integration into school curricula, providing flexibility for educators to incorporate it into subjects like mathematics, social studies, or economics.",
+            },
+            {
+              id: 4,
+              question:
+                'Are there resources available for educators to facilitate teaching the financial literacy program effectively?',
+              answer:
+                'Letstute might provide comprehensive teaching materials, including lesson plans, worksheets, and assessments, to support educators in delivering the program effectively and engagingly.',
+            },
+            {
+              id: 5,
+              question:
+                "How can Letstute's program encourage parental involvement in students' financial education?",
+              answer:
+                'Letstute offers resources or workshops for parents to reinforce financial learning at home, ensuring a collaborative approach between school and home environments.',
+            },
+            {
+              id: 6,
+              question:
+                "Can Letstute's financial literacy program be customized to cater to different age groups or grades?",
+              answer:
+                "Yes, Letstute's program offers 6 modules tailored to grades 6-11 and relatable age groups within the school, ensuring that the content is age-appropriate and relevant to each grade level.s",
+            },
+            {
+              id: 7,
+              question:
+                "Will there be support or training provided to educators for implementing Letstute's program?",
+              answer:
+                "Letstute offers training sessions and can also offer workshops for educators to familiarize them with the program's content, teaching methodologies, and best practices for effective implementation.",
+            },
+            {
+              id: 8,
+              question:
+                "How will Letstute's program measure students' progress and understanding of financial concepts?",
+              answer:
+                "The program includes assessments, quizzes, oand progress tracking tools to evaluate students' comprehension and progress throughout the course, allowing educators to monitor their development.",
+            },
+            {
+              id: 9,
+              question:
+                "Can Letstute's financial literacy program contribute to extracurricular activities or student clubs?",
+              answer:
+                "Letstute's program offers supplementary materials and guidance for establishing financial literacy clubs or organizing related extracurricular activities within the school.",
+            },
+            {
+              id: 10,
+              question:
+                "What ongoing support or resources will be available to the school after implementing Letstute's financial literacy program?",
+              answer:
+                'Letstute provides continuous support, access to updated materials, and forums for educators to exchange ideas and experiences, ensuring the sustainability and effectiveness of the program.',
+            },
+            {
+              id: 11,
+              question: 'WHat is a Finosophy School?',
+              answer:
+                "Partnering with Letstute for our financial literacy program  offers schools a comprehensive and engaging solution to enrich students' financial education, empowering them with essential life skills,talented pool of certified Financially Literate Teachers garnering respect amongst peer school  and become a Finosophy School.",
+            },
+          ],
+        },
+      };
+
+      /* COMPONENTS */
       /* Popup */
       const popup = function () {
         const popup = document.querySelector('.popup');
@@ -891,7 +885,7 @@
           }, 5000);
         });
       };
-      popup();
+      // popup();
 
       /* Modal */
       const modal = function () {
@@ -1059,41 +1053,36 @@
         });
       };
 
-      /* Variables */
-      /* Nav btn section */
+      /* VARIABLES */
+      /* Nav Btn Section */
       const navBtns = document.querySelectorAll('.nav-btn__btn');
 
-      /* Hero section */
+      /* Hero Section */
       const heroContainer = document.querySelector('.hero__container');
 
-      /* Courses section */
+      /* Courses Section */
       const coursesContainer = document.querySelector('.courses__container');
 
-      /* FAQs section */
+      /* FAQs Section */
       const faqsFaqsContainer = document.querySelector('.faqs__faqs-container');
 
-      /* Functions */
-      /* Insert dynamic code */
+      /* FUNCTIONS */
+      /* Insert Dynamic Code */
       const insertDynamicCode = function (place, position, code) {
         place.insertAdjacentHTML(position, code);
       };
 
-      /* Render content function */
+      /* Render Content */
       const renderContent = function (dataset) {
-        /* Hero section */
+        /* Hero Section */
         const heroCode = `
-          <div class="hero__header">
-            <h1 class="hero__heading heading-1">${dataset[0].heroSection.heading}</h1>
-            <p class="hero__para para"> ${dataset[0].heroSection.para} </p>
+          <div class="hero__content-container">
+            <h1 class="hero__heading heading-1"></h1>
+            <p class="hero__para para"></p>
           </div>
 
-          <div class="hero__content-container">
-            <img src="${dataset[0].heroSection.img}" alt="" class="hero__img hero__img--mob move-in-right" />
-
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfY8H6CRg25IlVS_8B40Xwl02UjAaZdzeXKWuiqNkMePEH1eA/formResponse" method="POST" class="form move-in-left"> <div class="form__header"> <h4 class="form__heading heading-4"> Enquire Now for FREE Demo </h4> <p class="form__para para">Or, call +91 93214 21265</p> </div> <div class="form__phone-input"> <select name="country-code-select" id="country-code-select"> <option value="+91">+91</option> </select> <input type="text" name="entry.941018950" placeholder="Country Code" id="country-code-input" /> <input type="tel" name="${dataset[0].heroSection.formInputName}" placeholder="Phone number" required /> </div> <input type="submit" value="${dataset[0].heroSection.formBtnText}" class="form__btn btn btn--fill" />
-            </form>
-
-            <img src="${dataset[0].heroSection.img}" alt="" class="hero__img hero__img--desk move-in-right" />
+          <div class="hero__img-container">
+            <img src="${dataset.heroSection.img}" alt="" class="hero__img" />
           </div>
         `;
 
@@ -1101,10 +1090,10 @@
 
         insertDynamicCode(heroContainer, 'beforeend', heroCode);
 
-        /* Courses section */
-        const header = ` <div class="header"> <h2 class="header__heading header__heading--purple heading-2 move-in-top"> ${dataset[0].coursesSection.header} </h2> </div> `;
+        /* Courses Section */
+        const header = ` <div class="header"> <h2 class="header__heading header__heading--purple heading-2 move-in-top"> ${dataset.coursesSection.header} </h2> </div> `;
 
-        const courses = dataset[0].coursesSection.courses;
+        const courses = dataset.coursesSection.courses;
 
         const tabs = ` <div class="tabs"> <div class="tabs__btn-container slider"> ${courses
           .map((c, i) => {
@@ -1156,14 +1145,14 @@
 
         insertDynamicCode(coursesContainer, 'beforeend', tabs);
 
-        /* FAQs section */
-        const faqs = dataset[0].faqsSection.faqs;
+        /* FAQs Section */
+        const faqs = dataset.faqsSection.faqs;
 
         const accordion = ` <div class="accordion"> ${faqs
           .map((f, i) => {
             return ` <div class="accordion__item ${
               i == 0 ? 'accordion__active' : ''
-            }"> <p class="accordion__num">0${
+            }"> <p class="accordion__num">${i <= 8 ? '0' : ''}${
               i + 1
             }</p> <h4 class="accordion__title"> ${
               f.question
@@ -1181,7 +1170,7 @@
       /* Init */
       const init = function (dataset) {
         renderContent(dataset);
-        form();
+        // form();
         tabs();
         slider();
         modal();
@@ -1189,6 +1178,7 @@
       };
       init(student);
 
+      /* SECTIONS */
       /* Nav Btn Section */
       navBtns.forEach((nb, i, arr) => {
         nb.addEventListener('click', () => {
