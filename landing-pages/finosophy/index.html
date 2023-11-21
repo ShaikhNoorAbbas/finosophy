@@ -1037,31 +1037,22 @@
         const accordionIcons = document.querySelectorAll('.accordion__icon');
 
         accordionItems.forEach((accordionItem, i) => {
-          const isOpen = accordionItem.classList.contains('accordion__active');
+          let isOpen = accordionItem.classList.contains('accordion__active');
 
-          if (isOpen) {
-            accordionIcons[i].innerHTML = '-';
-            return;
-          }
+          if (isOpen) accordionIcons[i].innerHTML = '-';
 
           accordionItem.addEventListener('click', () => {
+            isOpen = accordionItem.classList.contains('accordion__active');
+
             if (!isOpen) {
-              accordionItems.forEach((accordionItem) => {
-                accordionItem.classList.remove('accordion__active');
-              });
-
-              accordionIcons.forEach((accordionIcon) => {
-                accordionIcon.innerHTML = '+';
-              });
-
+              accordionItems.forEach((item) =>
+                item.classList.remove('accordion__active')
+              );
+              accordionIcons.forEach((icon) => (icon.innerHTML = '+'));
               accordionItem.classList.add('accordion__active');
-
               accordionIcons[i].innerHTML = '-';
-
-              return;
             } else {
               accordionItem.classList.remove('accordion__active');
-
               accordionIcons[i].innerHTML = '+';
             }
           });
