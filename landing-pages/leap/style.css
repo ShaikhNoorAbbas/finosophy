@@ -542,7 +542,7 @@ strong {
   text-decoration: none;
   padding: 0.5rem 1rem;
   background: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-white) !important;
   border-radius: 0.7rem;
   font-size: 1.5rem;
   font-weight: 600;
@@ -553,7 +553,7 @@ strong {
 .course-card__cta--secondary:link,
 .course-card__cta--secondary:visited {
   background: var(--color-secondary);
-  color: var(--color-white);
+  color: var(--color-white) !important;
 }
 
 .course-card--rec {
@@ -609,7 +609,7 @@ strong {
   text-decoration: none;
   padding: 0.5rem 1rem;
   background: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-white) !;
   border-radius: 0.7rem;
   font-size: 1.5rem;
   font-weight: 600;
@@ -620,6 +620,7 @@ strong {
 .course-card--rec__cta--secondary:link,
 .course-card--rec__cta--secondary:visited {
   background-color: var(--color-secondary);
+  color: var(--color-white) !important;
 }
 
 /* Accordion */
