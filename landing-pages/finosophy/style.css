@@ -663,6 +663,16 @@ input[type='tel'] {
   color: var(--color-primary);
 }
 
+.hero__btns-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero__btn {
+  font-size: 2rem !important;
+}
+
 .hero__btn--outline {
   border-radius: 10rem;
   background-color: var(--color-white) !important;
@@ -877,7 +887,43 @@ input[type='tel'] {
   }
 }
 
+@media only screen and (max-width: 62.5em) {
+  .hero {
+    padding-top: 5rem;
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__content-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__heading--2 {
+    font-size: 5rem;
+  }
+
+  .hero__img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero__img {
+    width: 40rem;
+  }
+}
+
 @media only screen and (max-width: 50em) {
+  .hero__heading--2 {
+    font-size: 3.7rem;
+  }
+
+  .hero__btns-container {
+    justify-content: center;
+  }
+
   .courses .slider__slide {
     flex: 0 0 calc(100% / 4);
   }
