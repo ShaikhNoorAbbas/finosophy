@@ -1,56 +1,60 @@
 :root {
-  /* Colors */
+  /* COLOR SCHEME */
   --color-black: #000;
   --color-white: #fff;
-  --color-primary: #ff8d1a;
+
+  --color-primary: #000;
   --color-primary-light-1: #000;
   --color-primary-dark-1: #000;
-  --color-secondary: #00b5ce;
+
+  --color-secondary: #fff;
   --color-secondary-light-1: #fff;
   --color-secondary-dark-1: #fff;
-  --color-tertiary: #5b3fe7;
-  --color-grey-light-1: #fafafa;
+
+  --color-grey-light-1: #e6e6e6;
   --color-grey-light-2: #cccccc;
   --color-grey-light-3: #b3b3b3;
+
   --color-grey-dark-1: #1a1a1a;
   --color-grey-dark-2: #333333;
   --color-grey-dark-3: #4d4d4d;
 
-  /* Font Variables */
+  /* TYPOGRAPHY */
+  /* Font Family */
   --font-primary: 'Poppins', sans-serif;
   --font-heading: 'Poppins', sans-serif;
 
-  /* Font Sizes */
-  --font-size-h1: 4rem;
-  --font-size-h2: 3.6rem;
-  --font-size-h3: 2.8rem;
+  /* Font Size */
+  --font-size-h1: 3.6rem;
+  --font-size-h2: 3rem;
+  --font-size-h3: 2.4rem;
   --font-size-h4: 1.8rem;
   --font-size-h5: 1.4rem;
   --font-size-h6: 1.2rem;
   --font-size-sh: 1.6rem;
-  --font-size-p: 1.8rem;
-  --font-size-a: 1.8rem;
-  --font-size-btn: 1.8rem;
+  --font-size-p: 1.6rem;
+  --font-size-a: 1.6rem;
+  --font-size-btn: 1.6rem;
 
-  /* Font Weights */
+  /* Font Weight */
   --font-weight-h1: 700;
-  --font-weight-h2: 700;
-  --font-weight-h3: 700;
-  --font-weight-h4: 600;
+  --font-weight-h2: 600;
+  --font-weight-h3: 600;
+  --font-weight-h4: 500;
   --font-weight-h5: 500;
   --font-weight-h6: 400;
   --font-weight-sh: 400;
   --font-weight-p: 400;
-  --font-weight-a: 600;
-  --font-weight-btn: 600;
+  --font-weight-a: 400;
+  --font-weight-btn: 400;
 }
 
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 ::selection {
@@ -65,19 +69,103 @@ html {
 }
 
 body {
-  background-color: var(--color-grey-light-1);
+  /* overflow-x: hidden; */
   font-family: var(--font-primary);
   font-weight: 400;
+  line-height: 1.2;
   transition: background-color 0.3s ease, color 0.3s ease;
-  /* line-height: 1.2; */
-  /* overflow-x: hidden; */
 }
 
-/* Reuseable Classes */
+/* ANIMATIONS */
+/* Fade In */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s;
+}
+
+/* Slide In */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 1s;
+}
+
+/* Grow */
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.grow {
+  animation: grow 1s;
+}
+
+/* Rotate */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 2s infinite linear;
+}
+
+/* Bounce */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2rem);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+/* UTILITY CLASSES */
 .container {
   max-width: 120rem;
-  margin: 0 auto;
   padding: 0 3rem;
+  margin: 0 auto;
 }
 
 .heading-1 {
@@ -117,8 +205,8 @@ body {
 }
 
 .subheading {
-  font-family: var(--font-heading);
   display: block;
+  font-family: var(--font-heading);
   font-size: var(--font-size-sh);
   font-weight: var(--font-weight-sh);
 }
@@ -131,10 +219,10 @@ body {
 .link:link,
 .link:visited {
   display: inline-block;
-  text-decoration: none;
-  color: var(--color-primary);
   font-size: var(--font-size-a);
   font-weight: var(--font-weight-a);
+  text-decoration: none;
+  color: var(--color-primary);
   transition: all 0.2s;
 }
 
@@ -195,102 +283,52 @@ body {
   text-align: center !important;
 }
 
-/* Animations */
-@keyframes moveInTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-3rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-
-  80% {
-    transform: translateX(-1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-
-  80% {
-    transform: translateX(1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.move-in-top {
-  animation: moveInTop 2s;
-}
-
-.move-in-right {
-  animation: moveInRight 2s;
-}
-
-.move-in-bottom {
-  animation: moveInBottom 2s;
-}
-
-.move-in-left {
-  animation: moveInLeft 2s;
-}
-
-/* Reuseable Components */
+/* UI COMPONENTS */
 /* Button */
 .btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
-  text-decoration: none;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.6rem;
   font-size: var(--font-size-btn);
   font-weight: var(--font-weight-btn);
+  text-decoration: none;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+
   /* For <button> element */
   border: none;
-  cursor: pointer;
   font-family: inherit;
+  cursor: pointer;
 }
 
-.btn--fill {
-  background-color: var(--color-primary) !important;
-  color: var(--color-white) !important;
+.btn:hover,
+.btn:active {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
-.btn--outline {
-  background-color: var(--color-white) !important;
-  color: var(--color-primary) !important;
-  box-shadow: inset 0 0 0 0.3rem var(--color-primary) !important;
+/* Tabs */
+.tabs {
+  .tabs__btn-container {
+    .tabs__btn {
+      cursor: pointer;
+
+      &.tabs__btn--active {
+        background-color: var(--color-black);
+        color: var(--color-white);
+      }
+    }
+  }
+
+  .tabs__content {
+    display: none;
+
+    &.tabs__content--active {
+      display: block;
+    }
+  }
 }
