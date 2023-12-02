@@ -8,7 +8,7 @@ const categories = {
       heading2: 'Everything You Need is Here!!',
       heading3:
         'Make Your Child Financially Confident with <span>Finosophy</span>',
-      img: 'https://www.letstute.com/s/pages/assets/images/student-hero-img.jpg',
+      img: 'https://www.letstute.com/s/pages/assets/images/kids-white.jpg',
     },
   },
   youth: {
@@ -16,7 +16,7 @@ const categories = {
       heading1: 'Looking for Financial Literacy Program?',
       heading2: 'Everything You Need is Here!!',
       heading3: 'Learn to Grow Your Money with <span>Finosophy</span>',
-      img: 'https://www.letstute.com/s/pages/assets/images/student-hero-img.jpg',
+      img: 'https://www.letstute.com/s/pages/assets/images/kids-white.jpg',
     },
   },
   teacher: {
@@ -25,7 +25,7 @@ const categories = {
       heading2: 'Everything You Need is Here!!',
       heading3:
         'Teach Your Students Financial Literacy with <span>Finosophy</span>',
-      img: 'https://www.letstute.com/s/pages/assets/images/teacher-hero-img.jpg',
+      img: 'https://www.letstute.com/s/pages/assets/images/teacher-white.jpg',
     },
   },
   school: {
@@ -33,7 +33,7 @@ const categories = {
       heading1: 'Looking for Financial Literacy Program?',
       heading2: 'Everything You Need is Here!!',
       heading3: 'Craft Financially Savvy Students with <span>Finosophy</span>',
-      img: 'https://www.letstute.com/s/pages/assets/images/school-hero-img.jpg',
+      img: 'https://www.letstute.com/s/pages/assets/images/school-white.jpg',
     },
   },
 };
@@ -348,7 +348,9 @@ const renderContent = function (key) {
   } else if (key === 'youth' || key === 'school') {
     coursesSectionCode = `
       <div class="tabs__content">
-        <h2>Content ${key}</h2>
+        <div class="courses__courses-container container">
+          <h2>Some content here...</h2>
+        </div>
       </div>
     `;
   }

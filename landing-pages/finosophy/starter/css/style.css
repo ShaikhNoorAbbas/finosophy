@@ -1,0 +1,29 @@
+/* SECTIONS */
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: var(--color-black);
+}
+
+.navbar__heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+#switcher__dropdown {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+/* Hero */
+.hero__container {
+  background-color: var(--color-white);
+}
