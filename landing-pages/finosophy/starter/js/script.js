@@ -283,38 +283,75 @@ const renderContent = function (key) {
   heroContainer.innerHTML = '';
   insertDynamicCode(heroContainer, 'beforeend', heroSectionCode);
 
-  const coursesSectionCode = `
-    <div class="tabs">
-      <div class="tabs__btn-container">
+  let coursesSectionCode;
+
+  if (key === 'kids' || key === 'teacher') {
+    coursesSectionCode = `
+      <div class="header container">
+        <h2 class="header__heading heading-2">Finosophy Online Courses</h2>
+        <p class="header__para para">Choose Level from Below List:</p>
+      </div>
+
+      <div class="tabs">
+        <div class="tabs__btn-container container">
+          ${courses['academic']
+            .map((c, i) => {
+              return `
+                <button
+                  class="tabs__btn tabs__btn--${i + 1} ${
+                i === 0 && 'tabs__btn--active'
+              }"
+                  data-tabsbtn="${i + 1}"
+                >
+                ${c.name}
+                </button>
+              `;
+            })
+            .join('')}
+        </div>
+
         ${courses['academic']
           .map((c, i) => {
             return `
-              <button
-                class="tabs__btn tabs__btn--${i + 1} ${
-              i === 0 && 'tabs__btn--active'
-            }"
-                data-tabsbtn="${i + 1}"
-              >
-              ${c.name}
-              </button>
-            `;
+            <div class="tabs__content tabs__content--${i + 1} ${
+              i === 0 && 'tabs__content--active'
+            }">
+              <img
+                src="https://www.letstute.com/s/pages/assets/images/music-bg.png"
+                alt=""
+                class="courses__bg-img"
+              />
+
+              <div class="courses__courses-container container">
+                <div class="courses__course-img-container">
+                  <img src="${
+                    c.thumbnail
+                  }" alt="" class="courses__course-img" />
+                </div>
+    
+                <h3 class="courses__course-heading heading-3">
+                  Welcome to Finosophy ${c.name}
+                </h3>
+
+                <div class="courses__course-container">
+                  <span class="courses__course-label">Suitable for ${
+                    c.age
+                  }</span>
+                </div>
+              </div>
+            </div>
+          `;
           })
           .join('')}
       </div>
-
-      ${courses['academic']
-        .map((c, i) => {
-          return `
-          <div class="tabs__content tabs__content--${i + 1} ${
-            i === 0 && 'tabs__content--active'
-          }">
-            <h2>Content ${i + 1}</h2>
-          </div>
-        `;
-        })
-        .join('')}
-    </div>
   `;
+  } else if (key === 'youth' || key === 'school') {
+    coursesSectionCode = `
+      <div class="tabs__content">
+        <h2>Content ${key}</h2>
+      </div>
+    `;
+  }
 
   coursesContainer.innerHTML = '';
   insertDynamicCode(coursesContainer, 'beforeend', coursesSectionCode);
