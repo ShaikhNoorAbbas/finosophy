@@ -65,6 +65,7 @@ const courses = {
         'https://drive.google.com/uc?id=1ukE9yeKfUNiNdE77Gimhg87DnOx5EqyV&export=download',
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png',
+      colorCode: '#53c7f8',
     },
     {
       name: 'Level 2',
@@ -91,6 +92,7 @@ const courses = {
         'https://drive.google.com/uc?id=1cA5XoK7OEK32O8myvZoL5mXifI-STEj9&export=download',
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png',
+      colorCode: '#b1cd67',
     },
     {
       name: 'Level 3',
@@ -117,6 +119,7 @@ const courses = {
         'https://drive.google.com/uc?id=12RHA4KU-y9n6FNttFdnKkNK5-QEkIIY5&export=download',
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
+      colorCode: '#fabf37',
     },
     {
       name: 'Level 4',
@@ -143,6 +146,7 @@ const courses = {
         'https://drive.google.com/uc?id=1MWhfG5nOaiIrtYUcaqVCsH4ogTXpUmA1&export=download',
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/letstute-level-4-cover.jpg',
+      colorCode: '#f06ea6',
     },
     {
       name: 'Level 5',
@@ -169,6 +173,7 @@ const courses = {
         'https://drive.google.com/uc?id=14tnfjFulbq_6sAOkWGFRVPYlgwU7iwG3&export=download',
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/letstute-level-5-cover.jpg',
+      colorCode: '#49c085',
     },
     {
       name: 'Level 6',
@@ -194,6 +199,7 @@ const courses = {
         'https://drive.google.com/uc?id=1UKLJaAZBH6W3QfJam46mq0XlCf-gFWzA&export=download',
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/letstute-level-6-cover.jpg',
+      colorCode: '#fd906f',
     },
   ],
   youth: {
@@ -263,19 +269,18 @@ const insertDynamicCode = function (place, position, code) {
 /* Render Content */
 const renderContent = function (key) {
   const heroSectionCode = `
-    <div class="hero__content-container move-in-left">
-      <h2 class="hero__heading hero__heading--1">${categories[key].heroSection.heading1}</h2>
-      <h2 class="hero__heading hero__heading--2">${categories[key].heroSection.heading2}</h2>
-      <h2 class="hero__heading hero__heading--3">${categories[key].heroSection.heading3}</h2>
+    <div class="hero__content-container fade-in">
+      <h2 class="hero__heading--1">${categories[key].heroSection.heading1}</h2>
+      <h2 class="hero__heading--2">${categories[key].heroSection.heading2}</h2>
+      <h2 class="hero__heading--3">${categories[key].heroSection.heading3}</h2>
+
+      <div class="hero__btns-container">
+        <a href="#" class="btn hero__btn hero__btn--outline">Download Complete Brochure</a>
+        <a href="#courses" class="btn hero__btn hero__btn--fill">Explore Finosophy Courses</a>
+      </div>
     </div>
 
-    <div class="hero__btns-container">
-      <a href="#courses" class="btn hero__btn hero__btn--fill">Explore Finosophy Courses</a>
-      <a href="#" class="btn hero__btn hero__btn--outline">Download Complete Brochure</a>
-      <a href="#contact" class="btn hero__btn hero__btn--fill">Enquire About Finosophy</a>
-    </div>
-
-    <div class="hero__img-container move-in-right">
+    <div class="hero__img-container fade-in">
       <img src="${categories[key].heroSection.img}" alt="" class="hero__img" />
     </div>
   `;
@@ -289,7 +294,7 @@ const renderContent = function (key) {
     coursesSectionCode = `
       <div class="header container">
         <h2 class="header__heading heading-2">Finosophy Online Courses</h2>
-        <p class="header__para para">Choose Level from Below List:</p>
+        <p class="header__para">Choose individual course level or combo:</p>
       </div>
 
       <div class="tabs">
@@ -316,27 +321,33 @@ const renderContent = function (key) {
             <div class="tabs__content tabs__content--${i + 1} ${
               i === 0 && 'tabs__content--active'
             }">
-              <img
-                src="https://www.letstute.com/s/pages/assets/images/music-bg.png"
-                alt=""
-                class="courses__bg-img"
-              />
+              <div class="courses__bg-img-container">
+                <img
+                  src="https://www.letstute.com/s/pages/assets/images/music-bg.png"
+                  alt=""
+                  class="courses__bg-img"
+                />
+              </div>
 
-              <div class="courses__courses-container container">
-                <div class="courses__course-img-container">
-                  <img src="${
-                    c.thumbnail
-                  }" alt="" class="courses__course-img" />
+              <div class="courses__courses-container container fade-in">
+                <div class="courses__course-header">
+                  <div class="courses__course-img-container">
+                    <img src="${
+                      c.thumbnail
+                    }" alt="" class="courses__course-img" />
+                  </div>
+      
+                  <h3 class="courses__course-heading heading-3" style="background-color: ${
+                    c.colorCode
+                  }">
+                    Welcome to Finosophy ${c.name}
+                  </h3>
                 </div>
-    
-                <h3 class="courses__course-heading heading-3">
-                  Welcome to Finosophy ${c.name}
-                </h3>
 
-                <div class="courses__course-container">
-                  <span class="courses__course-label">Suitable for ${
-                    c.age
-                  }</span>
+                <div class="courses__course-container" style="border-top: 1rem solid ${
+                  c.colorCode
+                }">
+                  
                 </div>
               </div>
             </div>
