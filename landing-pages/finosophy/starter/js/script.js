@@ -10,6 +10,30 @@ const categories = {
         'Make Your Child Financially Confident with <span>Finosophy</span>',
       img: 'https://www.letstute.com/s/pages/assets/images/kids-white.jpg',
     },
+    featuresSection: {
+      features: [
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Build Financial Knowledge',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Manage Finance Effectively',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Self-paced Learning',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Course Completion Certificate',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Weekly Live Sessions',
+        },
+      ],
+    },
   },
   youth: {
     heroSection: {
@@ -17,6 +41,30 @@ const categories = {
       heading2: 'Everything You Need is Here!!',
       heading3: 'Learn to Grow Your Money with <span>Finosophy</span>',
       img: 'https://www.letstute.com/s/pages/assets/images/kids-white.jpg',
+    },
+    featuresSection: {
+      features: [
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Set Clear Financial Goals',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Gain Practical Knowledge',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Self-paced Learning',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Course Completion Certificate',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Weekly Live Sessions',
+        },
+      ],
     },
   },
   teacher: {
@@ -27,6 +75,30 @@ const categories = {
         'Teach Your Students Financial Literacy with <span>Finosophy</span>',
       img: 'https://www.letstute.com/s/pages/assets/images/teacher-white.jpg',
     },
+    featuresSection: {
+      features: [
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Online/Offline Training',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Guided Teaching Resources',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Learn While Teaching',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Course Completion Certificate',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Weekly Live Sessions',
+        },
+      ],
+    },
   },
   school: {
     heroSection: {
@@ -34,6 +106,30 @@ const categories = {
       heading2: 'Everything You Need is Here!!',
       heading3: 'Craft Financially Savvy Students with <span>Finosophy</span>',
       img: 'https://www.letstute.com/s/pages/assets/images/school-white.jpg',
+    },
+    featuresSection: {
+      features: [
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'NEP Encourage Financial Literacy',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Teacher Training Available',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Monitoring Dashboard Tool',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Track Students Progress',
+        },
+        {
+          icon: './assets/icons/diploma.gif',
+          heading: 'Weekly Live Sessions',
+        },
+      ],
     },
   },
 };
@@ -233,6 +329,7 @@ const courses = {
 /* VARIABLES */
 const switcherDropdown = document.getElementById('switcher__dropdown');
 const heroContainer = document.querySelector('.hero__container');
+const featuresContainer = document.querySelector('.features__container');
 const coursesContainer = document.querySelector('.courses__container');
 
 /* COMPONENTS */
@@ -288,13 +385,36 @@ const renderContent = function (key) {
   heroContainer.innerHTML = '';
   insertDynamicCode(heroContainer, 'beforeend', heroSectionCode);
 
+  const featuresSectionCode = `
+    <div class="header">
+      <h2 class="header__heading">Why<br /><span>Finosophy?</span></h2>
+    </div>
+
+    ${categories[key].featuresSection.features
+      .map((f) => {
+        return `
+          <div class="icon-card">
+            <img
+              src="${f.icon}"
+              alt=""
+              class="icon-card__icon"
+            />
+            <h3 class="icon-card__heading">${f.heading}</h3>
+          </div>
+        `;
+      })
+      .join('')}
+  `;
+
+  featuresContainer.innerHTML = '';
+  insertDynamicCode(featuresContainer, 'beforeend', featuresSectionCode);
+
   let coursesSectionCode;
 
   if (key === 'kids' || key === 'teacher') {
     coursesSectionCode = `
       <div class="header container">
-        <h2 class="header__heading heading-2">Finosophy Online Courses</h2>
-        <p class="header__para">Choose individual course level or combo:</p>
+        <h2 class="header__heading">Finosophy Online Courses</h2>
       </div>
 
       <div class="tabs">
