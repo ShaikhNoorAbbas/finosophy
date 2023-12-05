@@ -138,14 +138,13 @@ const courses = {
   academic: [
     {
       name: 'Level 1',
-      age: 'Age group 8-9 yrs',
+      age: '10-11',
       desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
       features: [
         '8 Pre-recorded Videos',
         '14 Amazing Chapters',
         '8 Interactive Activities',
         '14 Interactive Flashcards',
-        'Students Assessments',
         'Course Certificate',
       ],
       game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
@@ -165,14 +164,13 @@ const courses = {
     },
     {
       name: 'Level 2',
-      age: 'Age group 9-10 yrs',
+      age: '11-12',
       desc: 'The Financial Literacy Online Course Level 2 is a thorough course that builds on Level 1, focusing on advanced concepts and strategies in finance, such as investing, retirement planning, and risk management, through interactive lessons and practical exercises.',
       features: [
         '9 Pre-recorded Videos',
         '20 Amazing Chapters',
         '9 Interactive Activities',
         '20 Interactive Flashcards',
-        'Students Assessments',
         'Course Certificate',
       ],
       game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
@@ -192,14 +190,13 @@ const courses = {
     },
     {
       name: 'Level 3',
-      age: 'Age group 10-11 yrs',
+      age: '12-13',
       desc: 'Master advanced finance in Level 3: from Household Economics to Securities Market. Gain expertise in Savings, Investments, and Behavior Aspects. Acquire practical skills for confident financial decision-making.',
       features: [
         '11 Pre-recorded Videos',
         '22 Amazing Chapters',
         '11 Interactive Activities',
         '22 Interactive Flashcards',
-        'Students Assessments',
         'Course Certificate',
       ],
       game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
@@ -219,14 +216,13 @@ const courses = {
     },
     {
       name: 'Level 4',
-      age: 'Age group 11-12 yrs',
+      age: '13-14',
       desc: 'Improve your financial understanding with Level 4. Discover complex subjects including banking and consumer protection, as well as investments and behavioral aspects. learn how to protect your assets and make good financial decisions.',
       features: [
         '12 Pre-recorded Videos',
         '24 Amazing Chapters',
         '12 Interactive Activities',
         '24 Interactive Flashcards',
-        'Students Assessments',
         'Course Certificate',
       ],
       game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
@@ -246,14 +242,13 @@ const courses = {
     },
     {
       name: 'Level 5',
-      age: 'Age group 12-13 yrs',
+      age: '14-15',
       desc: 'This Course takes your financial knowledge to new heights. Explore advanced banking, investment, and behavior aspects. Get savvy with asset allocation and risk assessment. Plan for retirement, safeguard against scams, and master tax return essentials.',
       features: [
         '12 Pre-recorded Videos',
         '24 Amazing Chapters',
         '12 Interactive Activities',
         '24 Interactive Flashcards',
-        'Students Assessments',
         'Course Certificate',
       ],
       game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
@@ -273,14 +268,13 @@ const courses = {
     },
     {
       name: 'Level 6',
-      age: 'Age group 13-14 yrs',
+      age: '15-16',
       desc: "With Level 6, you'll be a financial expert. Explore the ways in which you can make informed financial decisions, including banking intricacies and investment strategies. Find out how to plan for retirement, avoid scams, and reduce taxes.",
       features: [
         '11 Pre-recorded Videos',
         '28 Amazing Chapters',
         '11 Interactive Activities',
         '28 Interactive Flashcards',
-        'Students Assessments',
         'Course Certificate',
       ],
       game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
@@ -388,18 +382,19 @@ const renderContent = function (key) {
   const featuresSectionCode = `
     <div class="header">
       <h2 class="header__heading">Why<br /><span>Finosophy?</span></h2>
+      <div class="header__underline"></div>
     </div>
 
     ${categories[key].featuresSection.features
       .map((f) => {
         return `
-          <div class="icon-card">
+          <div class="feature-card">
             <img
               src="${f.icon}"
               alt=""
-              class="icon-card__icon"
+              class="feature-card__icon"
             />
-            <h3 class="icon-card__heading">${f.heading}</h3>
+            <h3 class="feature-card__heading">${f.heading}</h3>
           </div>
         `;
       })
@@ -415,6 +410,7 @@ const renderContent = function (key) {
     coursesSectionCode = `
       <div class="header container">
         <h2 class="header__heading">Finosophy Online Courses</h2>
+        <div class="header__underline"></div>
       </div>
 
       <div class="tabs">
@@ -457,17 +453,42 @@ const renderContent = function (key) {
                     }" alt="" class="courses__course-img" />
                   </div>
       
+                  <div class="courses__course-content-container">
                   <h3 class="courses__course-heading heading-3" style="background-color: ${
                     c.colorCode
                   }">
-                    Welcome to Finosophy ${c.name}
+                    Learn About Finosophy ${c.name}
                   </h3>
+                  <span class="courses__course-subheading">Suitable for the age group ${
+                    c.age
+                  } years</span>
+                  </div>
                 </div>
 
                 <div class="courses__course-container" style="border-top: 1rem solid ${
                   c.colorCode
                 }">
-                  
+                  <p class="courses__course-desc para">${c.desc}</p>
+
+                  <div class="courses__course-features-container">
+                    <div class="header">
+                      <h2 class="header__heading">What You'll Get</h2>
+                      <div class="header__underline" style="background-color: ${
+                        c.colorCode
+                      }"></div>
+                    </div>
+
+                    ${c.features
+                      .map((f) => {
+                        return `
+                        <div class="feature-card">                        
+                        <h3 class="feature-card__heading">${f}</h3>
+                        <a href="#" class="feature-card__btn" style="color: ${c.colorCode}">> Preview</a>
+                      </div>
+                      `;
+                      })
+                      .join('')}
+                  </div>
                 </div>
               </div>
             </div>

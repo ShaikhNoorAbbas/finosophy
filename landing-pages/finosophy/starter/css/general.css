@@ -34,7 +34,7 @@
   --font-size-h5: 1.4rem;
   --font-size-h6: 1.2rem;
   --font-size-sh: 1.6rem;
-  --font-size-p: 1.6rem;
+  --font-size-p: 2rem;
   --font-size-a: 1.6rem;
   --font-size-btn: 1.6rem;
 
@@ -327,44 +327,49 @@ h6 {
 /* Header */
 .header {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .header__heading {
-  font-size: 4rem;
   font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
-.header__heading::after {
-  content: '';
-  display: block;
-  margin-top: 2rem;
-  width: 9rem;
+.header__underline {
+  width: 7rem;
   height: 0.5rem;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 /* Icon Card */
-.icon-card {
+.feature-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 2rem;
+  row-gap: 1rem;
   border-radius: 0.7rem;
   padding: 3rem;
   background-color: rgba(255, 141, 26, 0.05);
   box-shadow: 0 0 1rem rgba(255, 141, 26, 0.5);
 }
 
-.icon-card__icon {
+.feature-card__icon {
   width: 10rem;
 }
 
-.icon-card__heading {
+.feature-card__heading {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
+}
+
+.feature-card__btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 /* Tabs */
