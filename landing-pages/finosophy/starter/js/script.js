@@ -13,23 +13,23 @@ const categories = {
     featuresSection: {
       features: [
         {
-          icon: './assets/icons/diploma.gif',
+          icon: './assets/icons/growth.png',
           heading: 'Build Financial Knowledge',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: './assets/icons/equilibrium.png',
           heading: 'Manage Finance Effectively',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: './assets/icons/audio-book.png',
           heading: 'Self-paced Learning',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: './assets/icons/certificate.png',
           heading: 'Course Completion Certificate',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: './assets/icons/work-from-home.png',
           heading: 'Weekly Live Sessions',
         },
       ],
