@@ -34,6 +34,56 @@ const categories = {
         },
       ],
     },
+    faqsSection: {
+      faqs: [
+        {
+          question: 'Why is financial literacy important for students?',
+          answer:
+            'Financial literacy is crucial for students as it equips them with essential LIFE SKILLS to manage their finances effectively. It helps them make informed decisions about spending, saving, and investing money, which can have a significant impact on their financial well-being in the long run.',
+        },
+        {
+          question:
+            'What topics are typically covered in a financial literacy course?',
+          answer:
+            'A financial literacy course usually covers a range of topics, including budgeting, saving and investing, credit and debt management, taxes, insurance, retirement planning, and financial goal-setting. It may also touch upon topics like financial scams, consumer rights, and responsible spending.',
+        },
+        {
+          question:
+            'How can financial literacy benefit me in my everyday life?',
+          answer:
+            'Financial literacy can benefit you in numerous ways. It helps you develop good money management habits, make informed decisions about spending and saving, avoid debt traps, understand financial products and services, plan for major life events like buying a house or starting a family, investing in stocks etc and work towards achieving your financial goals.',
+        },
+        {
+          question: 'Can financial literacy help me in my career?',
+          answer:
+            'Absolutely! Financial literacy can be valuable in your career, regardless of your field. Understanding financial concepts can help you make sound business decisions, manage personal finances during job transitions, negotiate salary and benefits effectively, in short it makes you stay ahead of your game and and builds confidence towards living a better financial life.',
+        },
+        {
+          question:
+            'Are there any prerequisites for taking a financial literacy course?',
+          answer:
+            'Most financial literacy courses are designed to be accessible to students without any prior financial knowledge. However, basic math and arithmetic skills are helpful for understanding financial calculations and concepts.',
+        },
+        {
+          question:
+            'How can I apply what I learn in a financial literacy course to my own life?',
+          answer:
+            'To apply what you learn, start by assessing your current financial situation, setting specific financial goals, and creating a budget. Implement the strategies and techniques learned in the course, such as saving a portion of your income, tracking your expenses, and making informed decisions about spending. Regularly review your progress and make adjustments as needed.',
+        },
+        {
+          question:
+            'How can I continue to improve my financial literacy after completing the course?',
+          answer:
+            'Financial literacy is an ongoing learning process. After completing the course, you can continue to enhance your knowledge by reading personal finance books, following financial blogs, attending workshops or webinars, and staying updated on financial news and trends. Joining online communities or forums dedicated to personal finance can also provide opportunities for learning and sharing experiences.',
+        },
+        {
+          question:
+            'Can financial literacy help me avoid financial scams and frauds?',
+          answer:
+            'Yes, financial literacy can help you identify and avoid common financial scams and frauds. By understanding how scams operate and being aware of warning signs, you can protect yourself and your finances from fraudulent activities. Additionally, learning about consumer rights and financial regulations can empower you to make informed decisions and take appropriate action when necessary.',
+        },
+      ],
+    },
   },
   youth: {
     heroSection: {
@@ -99,6 +149,70 @@ const categories = {
         },
       ],
     },
+    faqsSection: {
+      faqs: [
+        {
+          question:
+            'What resources does Letstute provide to assist teachers in teaching the financial literacy course?',
+          answer:
+            'Letstute offers comprehensive teacher lesson plans designed to guide educators through each level of the financial literacy course. These plans include detailed outlines, teaching strategies, and supplementary materials.',
+        },
+        {
+          question:
+            'How are the teacher lesson plans structured for the six-level financial literacy course?',
+          answer:
+            "Letstute's teacher lesson plans are meticulously structured, breaking down each level into modules or sections, providing a step-by-step guide for educators to effectively teach financial concepts.",
+        },
+        {
+          question:
+            'Are the teacher lesson plans flexible enough to accommodate different teaching styles and classroom settings?',
+          answer:
+            "Yes, Letstute's teacher lesson plans are designed with flexibility in mind, allowing educators to adapt the materials to suit various teaching styles, classroom sizes, and student needs.",
+        },
+        {
+          question:
+            'What support does Letstute offer to ensure educators are prepared to teach the financial literacy course effectively?',
+          answer:
+            'Letstute offers training sessions or workshops specifically tailored for educators, focusing on how to effectively utilize the lesson plans, engage students, and navigate challenging concepts.',
+        },
+        {
+          question:
+            'Do the teacher lesson plans include assessment tools or methods to gauge student learning?',
+          answer:
+            "Yes, Letstute's teacher lesson plans might include assessment tools such as quizzes, worksheets, or suggested evaluation methods, enabling educators to assess students' understanding of the financial concepts taught.",
+        },
+        {
+          question:
+            'Can educators access additional resources or materials to supplement the teacher lesson plans?',
+          answer:
+            "Letstute provides supplementary resources, including presentations, videos, or interactive activities, to complement the teacher lesson plans and enhance students' learning experiences.",
+        },
+        {
+          question:
+            'How can educators provide feedback or share experiences with Letstute regarding the teacher lesson plans?',
+          answer:
+            'Letstute offers forums or platforms where educators can provide feedback, share success stories, and exchange experiences with implementing the lesson plans, fostering a collaborative teaching community.',
+        },
+        {
+          question:
+            'Are the teacher lesson plans aligned with educational standards or guidelines?',
+          answer:
+            "Letstute's teacher lesson plans totally align with national or international educational standards, ensuring that the financial literacy course meets educational benchmarks and objectives.",
+        },
+        {
+          question:
+            'Can the teacher lesson plans be accessed and utilized beyond the classroom environment?',
+          answer:
+            "Yes, Letstute's teacher lesson plans are designed to be versatile, allowing educators to adapt and utilize them in diverse settings such as workshops, seminars, or extracurricular programs specific to our Finosophy course.",
+        },
+        {
+          question:
+            "How can educators get access to Letstute's teacher lesson plans for the financial literacy course?",
+          answer:
+            "Educators can typically access Letstute's teacher lesson plans online through Finosophy Landing Page or direct communication with Letstute team.",
+        },
+      ],
+    },
   },
   school: {
     heroSection: {
@@ -128,6 +242,75 @@ const categories = {
         {
           icon: './assets/icons/diploma.gif',
           heading: 'Weekly Live Sessions',
+        },
+      ],
+    },
+    faqsSection: {
+      faqs: [
+        {
+          question:
+            "How can Letstute's financial literacy program - Finosophy benefit schools and students?",
+          answer:
+            "Letstute's program offers a structured and engaging curriculum designed to impart essential financial knowledge to students, fostering responsible financial behavior and decision-making skills.",
+        },
+        {
+          question:
+            "What distinguishes Letstute's financial literacy program from other educational resources?",
+          answer:
+            "Letstute's program employs interactive and visually engaging teaching methods, such as animated videos and practical exercises, ensuring student engagement and comprehension of financial concepts.",
+        },
+        {
+          question:
+            "Will Letstute's program be seamlessly integrated into our existing curriculum?",
+          answer:
+            "Yes, Letstute's program is designed for easy integration into school curricula, providing flexibility for educators to incorporate it into subjects like mathematics, social studies, or economics.",
+        },
+        {
+          question:
+            'Are there resources available for educators to facilitate teaching the financial literacy program effectively?',
+          answer:
+            'Letstute might provide comprehensive teaching materials, including lesson plans, worksheets, and assessments, to support educators in delivering the program effectively and engagingly.',
+        },
+        {
+          question:
+            "How can Letstute's program encourage parental involvement in students' financial education?",
+          answer:
+            'Letstute offers resources or workshops for parents to reinforce financial learning at home, ensuring a collaborative approach between school and home environments.',
+        },
+        {
+          question:
+            "Can Letstute's financial literacy program be customized to cater to different age groups or grades?",
+          answer:
+            "Yes, Letstute's program offers 6 modules tailored to grades 6-11 and relatable age groups within the school, ensuring that the content is age-appropriate and relevant to each grade level.s",
+        },
+        {
+          question:
+            "Will there be support or training provided to educators for implementing Letstute's program?",
+          answer:
+            "Letstute offers training sessions and can also offer workshops for educators to familiarize them with the program's content, teaching methodologies, and best practices for effective implementation.",
+        },
+        {
+          question:
+            "How will Letstute's program measure students' progress and understanding of financial concepts?",
+          answer:
+            "The program includes assessments, quizzes, oand progress tracking tools to evaluate students' comprehension and progress throughout the course, allowing educators to monitor their development.",
+        },
+        {
+          question:
+            "Can Letstute's financial literacy program contribute to extracurricular activities or student clubs?",
+          answer:
+            "Letstute's program offers supplementary materials and guidance for establishing financial literacy clubs or organizing related extracurricular activities within the school.",
+        },
+        {
+          question:
+            "What ongoing support or resources will be available to the school after implementing Letstute's financial literacy program?",
+          answer:
+            'Letstute provides continuous support, access to updated materials, and forums for educators to exchange ideas and experiences, ensuring the sustainability and effectiveness of the program.',
+        },
+        {
+          question: 'WHat is a Finosophy School?',
+          answer:
+            "Partnering with Letstute for our financial literacy program  offers schools a comprehensive and engaging solution to enrich students' financial education, empowering them with essential life skills,talented pool of certified Financially Literate Teachers garnering respect amongst peer school  and become a Finosophy School.",
         },
       ],
     },
@@ -325,6 +508,7 @@ const switcherDropdown = document.getElementById('switcher__dropdown');
 const heroContainer = document.querySelector('.hero__container');
 const featuresContainer = document.querySelector('.features__container');
 const coursesContainer = document.querySelector('.courses__container');
+const faqsContainer = document.querySelector('.faqs__container');
 
 /* COMPONENTS */
 /* Tabs */
@@ -351,6 +535,34 @@ const tabs = function () {
   });
 };
 
+/* Accordion */
+const accordion = function () {
+  const accordionItems = document.querySelectorAll('.accordion__item');
+  const accordionIcons = document.querySelectorAll('.accordion__icon');
+
+  accordionItems.forEach((accordionItem, i) => {
+    let isOpen = accordionItem.classList.contains('accordion__active');
+
+    if (isOpen) accordionIcons[i].innerHTML = '-';
+
+    accordionItem.addEventListener('click', () => {
+      isOpen = accordionItem.classList.contains('accordion__active');
+
+      if (!isOpen) {
+        accordionItems.forEach((item) =>
+          item.classList.remove('accordion__active')
+        );
+        accordionIcons.forEach((icon) => (icon.innerHTML = '+'));
+        accordionItem.classList.add('accordion__active');
+        accordionIcons[i].innerHTML = '-';
+      } else {
+        accordionItem.classList.remove('accordion__active');
+        accordionIcons[i].innerHTML = '+';
+      }
+    });
+  });
+};
+
 /* FUNCTIONS */
 /* Insert Dynamic Code */
 const insertDynamicCode = function (place, position, code) {
@@ -366,8 +578,8 @@ const renderContent = function (key) {
       <h2 class="hero__heading--3">${categories[key].heroSection.heading3}</h2>
 
       <div class="hero__btns-container">
-        <a href="#" class="btn hero__btn hero__btn--outline">Download Complete Brochure</a>
-        <a href="#courses" class="btn hero__btn hero__btn--fill">Explore Finosophy Courses</a>
+        <a href="#" class="hero__btn btn btn--outline">Download Complete Brochure</a>
+        <a href="#courses" class="hero__btn btn btn--fill">Explore Finosophy Courses</a>
       </div>
     </div>
 
@@ -404,111 +616,137 @@ const renderContent = function (key) {
   featuresContainer.innerHTML = '';
   insertDynamicCode(featuresContainer, 'beforeend', featuresSectionCode);
 
-  let coursesSectionCode;
+  const coursesSectionCode = `
+  <div class="header container">
+    <h2 class="header__heading">Finosophy Online Courses</h2>
+    <div class="header__underline"></div>
+  </div>
 
-  if (key === 'kids' || key === 'teacher') {
-    coursesSectionCode = `
-      <div class="header container">
-        <h2 class="header__heading">Finosophy Online Courses</h2>
-        <div class="header__underline"></div>
-      </div>
+  <div class="tabs">
+    <div class="tabs__btn-container container">
+      ${courses['academic']
+        .map((c, i) => {
+          return `
+            <button
+              class="tabs__btn tabs__btn--${i + 1} ${
+            i === 0 && 'tabs__btn--active'
+          }"
+              data-tabsbtn="${i + 1}"
+            >
+            ${c.name}
+            </button>
+          `;
+        })
+        .join('')}
+    </div>
 
-      <div class="tabs">
-        <div class="tabs__btn-container container">
-          ${courses['academic']
-            .map((c, i) => {
-              return `
-                <button
-                  class="tabs__btn tabs__btn--${i + 1} ${
-                i === 0 && 'tabs__btn--active'
-              }"
-                  data-tabsbtn="${i + 1}"
-                >
-                ${c.name}
-                </button>
-              `;
-            })
-            .join('')}
-        </div>
+    ${courses['academic']
+      .map((c, i) => {
+        return `
+        <div class="tabs__content tabs__content--${i + 1} ${
+          i === 0 && 'tabs__content--active'
+        }">
+          <div class="courses__bg-img-container">
+            <img
+              src="https://www.letstute.com/s/pages/assets/images/music-bg.png"
+              alt=""
+              class="courses__bg-img"
+            />
+          </div>
 
-        ${courses['academic']
-          .map((c, i) => {
-            return `
-            <div class="tabs__content tabs__content--${i + 1} ${
-              i === 0 && 'tabs__content--active'
-            }">
-              <div class="courses__bg-img-container">
-                <img
-                  src="https://www.letstute.com/s/pages/assets/images/music-bg.png"
-                  alt=""
-                  class="courses__bg-img"
-                />
+          <div class="courses__courses-container container fade-in">
+            <div class="courses__course-header">
+              <div class="courses__course-img-container">
+                <img src="${c.thumbnail}" alt="" class="courses__course-img" />
               </div>
-
-              <div class="courses__courses-container container fade-in">
-                <div class="courses__course-header">
-                  <div class="courses__course-img-container">
-                    <img src="${
-                      c.thumbnail
-                    }" alt="" class="courses__course-img" />
-                  </div>
-      
-                  <div class="courses__course-content-container">
-                  <h3 class="courses__course-heading heading-3" style="background-color: ${
-                    c.colorCode
-                  }">
-                    Learn About Finosophy ${c.name}
-                  </h3>
-                  <span class="courses__course-subheading">Suitable for the age group ${
-                    c.age
-                  } years</span>
-                  </div>
-                </div>
-
-                <div class="courses__course-container" style="border-top: 1rem solid ${
-                  c.colorCode
-                }">
-                  <p class="courses__course-desc para">${c.desc}</p>
-
-                  <div class="courses__course-features-container">
-                    <div class="header">
-                      <h2 class="header__heading">What You'll Get</h2>
-                      <div class="header__underline" style="background-color: ${
-                        c.colorCode
-                      }"></div>
-                    </div>
-
-                    ${c.features
-                      .map((f) => {
-                        return `
-                        <div class="feature-card">                        
-                        <h3 class="feature-card__heading">${f}</h3>
-                        <a href="#" class="feature-card__btn" style="color: ${c.colorCode}">> Preview</a>
-                      </div>
-                      `;
-                      })
-                      .join('')}
-                  </div>
-                </div>
+  
+              <div class="courses__course-content-container">
+              <h3 class="courses__course-heading heading-3" style="background-color: ${
+                c.colorCode
+              }">
+                Learn About Finosophy ${c.name}
+              </h3>
+              <span class="courses__course-subheading">Suitable for the age group ${
+                c.age
+              } years</span>
               </div>
             </div>
-          `;
-          })
-          .join('')}
-      </div>
-  `;
-  } else if (key === 'youth' || key === 'school') {
-    coursesSectionCode = `
-      <div class="tabs__content">
-        <div class="courses__courses-container container">
-          <h2>Some content here...</h2>
+
+            <div class="courses__course-container" style="border-top: 1rem solid ${
+              c.colorCode
+            }">
+              <p class="courses__course-desc para">${c.desc}</p>
+
+              <div class="courses__course-features-container">
+                <div class="header">
+                  <h2 class="header__heading">What You'll Get</h2>
+                  <div class="header__underline" style="background-color: ${
+                    c.colorCode
+                  }"></div>
+                </div>
+
+                ${c.features
+                  .map((f) => {
+                    return `
+                    <div class="feature-card">                        
+                    <h3 class="feature-card__heading">${f}</h3>
+                    <a href="#" class="feature-card__btn" style="color: ${c.colorCode}">> Preview</a>
+                  </div>
+                  `;
+                  })
+                  .join('')}
+              </div>
+
+              <div class="courses__course-btns-container">
+              <a href="${
+                c.downloadBtnLink
+              }" class="courses__course-btn btn btn--outline">${
+          c.downloadBtnText
+        }</a>
+                <a href="${
+                  c.purchaseLink
+                }" class="courses__course-btn btn btn--fill">${c.price}</a>
+              </div>
+              
+            </div>
+          </div>
         </div>
-      </div>
-    `;
-  }
+      `;
+      })
+      .join('')}
+  </div>
+`;
 
   coursesContainer.innerHTML = '';
   insertDynamicCode(coursesContainer, 'beforeend', coursesSectionCode);
+
+  const faqsSectionCode = `
+    <div class="header">
+      <h2 class="header__heading">Frequently Asked Questions</h2>
+      <div class="header__underline"></div>
+    </div>
+
+    <div class="accordion">
+      ${categories[key].faqsSection.faqs
+        .map((f, i) => {
+          return `
+          <div class="accordion__item ${
+            i == 0 && 'accordion__active'
+          }"> <p class="accordion__num">${i <= 8 ? '0' : ''}${
+            i + 1
+          }</p> <h4 class="accordion__title"> ${
+            f.question
+          } </h4> <span class="accordion__icon">+</span> <p class="accordion__content"> ${
+            f.answer
+          } </p> </div>
+        `;
+        })
+        .join('')}
+    </div>
+  `;
+
+  faqsContainer.innerHTML = '';
+  insertDynamicCode(faqsContainer, 'beforeend', faqsSectionCode);
 };
 
 /* Init */
@@ -520,6 +758,7 @@ const init = function (category) {
   }
 
   tabs();
+  accordion();
 };
 
 /* Update Dropdown and Hash */

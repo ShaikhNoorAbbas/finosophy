@@ -86,24 +86,6 @@
   flex-wrap: wrap;
 }
 
-.hero__btn {
-  font-size: 2rem !important;
-}
-
-.hero__btn--outline {
-  border-radius: 10rem !important;
-  border: 0.2rem solid var(--color-grey-dark-3) !important;
-  background-color: var(--color-white) !important;
-  color: var(--color-grey-dark-3) !important;
-}
-
-.hero__btn--fill {
-  border-radius: 10rem !important;
-  border: 0.2rem solid var(--color-grey-dark-3);
-  background-color: var(--color-grey-dark-3) !important;
-  color: var(--color-white) !important;
-}
-
 .hero__img {
   display: block;
   width: 100%;
@@ -121,22 +103,14 @@
   align-items: center;
 }
 
-.features .header__heading {
-  font-size: 4rem;
-}
-
-.features .header__underline {
-  background-color: var(--color-secondary);
-}
-
 /* Courses */
+.courses {
+  padding-bottom: 9rem;
+}
+
 .courses .header {
   align-items: center;
-  margin-bottom: 3rem;
-}
-
-.courses .header__heading {
-  font-size: 4rem;
+  margin-bottom: 5rem;
 }
 
 .courses .tabs__btn-container {
@@ -248,7 +222,7 @@
 }
 
 .courses__course-desc {
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
   text-align: center;
 }
 
@@ -257,8 +231,37 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 3rem;
+  margin-bottom: 5rem;
 }
 
 .courses__course-features-container .header__heading {
   font-size: 3rem;
+}
+
+.courses__course-btns-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.courses__course-btns-container .btn {
+  border: 0.2rem solid var(--color-primary);
+}
+
+.courses__course-btns-container .btn--outline {
+  color: var(--color-primary);
+}
+
+.courses__course-btns-container .btn--fill {
+  background-color: var(--color-primary);
+}
+
+/* FAQs */
+.faqs {
+  padding-bottom: 9rem;
+}
+
+.faqs .header {
+  align-items: center;
+  margin-bottom: 5rem;
 }
