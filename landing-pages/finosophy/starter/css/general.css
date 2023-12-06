@@ -336,6 +336,8 @@ h6 {
 .header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__heading {
@@ -345,7 +347,7 @@ h6 {
 }
 
 .header__underline {
-  width: 7rem;
+  width: 5rem;
   height: 0.5rem;
   background-color: var(--color-primary);
 }

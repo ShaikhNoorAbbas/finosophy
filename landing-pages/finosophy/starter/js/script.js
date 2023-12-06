@@ -593,7 +593,7 @@ const renderContent = function (key) {
 
   const featuresSectionCode = `
     <div class="header">
-      <h2 class="header__heading">Why<br /><span>Finosophy?</span></h2>
+      <h2 class="header__heading">Why Finosophy?</h2>
       <div class="header__underline"></div>
     </div>
 

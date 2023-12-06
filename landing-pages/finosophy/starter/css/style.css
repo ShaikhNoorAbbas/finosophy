@@ -109,7 +109,6 @@
 }
 
 .courses .header {
-  align-items: center;
   margin-bottom: 5rem;
 }
 
@@ -232,6 +231,10 @@
   align-items: center;
   gap: 3rem;
   margin-bottom: 5rem;
+}
+
+.courses__course-features-container .header {
+  margin-bottom: 0;
 }
 
 .courses__course-features-container .header__heading {
