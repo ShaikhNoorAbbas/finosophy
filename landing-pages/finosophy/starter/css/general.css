@@ -376,10 +376,12 @@ h6 {
 }
 
 .feature-card__btn {
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 0.7rem;
+  border: 0.2rem dashed var(--color-primary);
   font-size: 1.6rem;
   font-weight: 600;
+  color: var(--color-primary);
   text-decoration: none;
 }
 

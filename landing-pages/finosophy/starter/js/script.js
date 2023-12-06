@@ -26,7 +26,7 @@ const categories = {
         },
         {
           icon: './assets/icons/certificate.png',
-          heading: 'Course Completion Certificate',
+          heading: 'Get Course Certificate',
         },
         {
           icon: './assets/icons/work-from-home.png',
@@ -108,7 +108,7 @@ const categories = {
         },
         {
           icon: './assets/icons/diploma.gif',
-          heading: 'Course Completion Certificate',
+          heading: 'Get Course Certificate',
         },
         {
           icon: './assets/icons/diploma.gif',
@@ -128,23 +128,23 @@ const categories = {
     featuresSection: {
       features: [
         {
-          icon: './assets/icons/diploma.gif',
+          icon: './assets/icons/online-learning.png',
           heading: 'Online/Offline Training',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: './assets/icons/books.png',
           heading: 'Guided Teaching Resources',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: './assets/icons/teacher.png',
           heading: 'Learn While Teaching',
         },
         {
-          icon: './assets/icons/diploma.gif',
-          heading: 'Course Completion Certificate',
+          icon: './assets/icons/certificate.png',
+          heading: 'Get Course Certificate',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: './assets/icons/work-from-home.png',
           heading: 'Weekly Live Sessions',
         },
       ],
@@ -325,7 +325,7 @@ const courses = {
       desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
       features: [
         '8 Pre-recorded Videos',
-        '14 Amazing Chapters',
+        '14 Chapters E-book',
         '8 Interactive Activities',
         '14 Interactive Flashcards',
         'Course Certificate',
@@ -351,7 +351,7 @@ const courses = {
       desc: 'The Financial Literacy Online Course Level 2 is a thorough course that builds on Level 1, focusing on advanced concepts and strategies in finance, such as investing, retirement planning, and risk management, through interactive lessons and practical exercises.',
       features: [
         '9 Pre-recorded Videos',
-        '20 Amazing Chapters',
+        '20 Chapters E-book',
         '9 Interactive Activities',
         '20 Interactive Flashcards',
         'Course Certificate',
@@ -377,7 +377,7 @@ const courses = {
       desc: 'Master advanced finance in Level 3: from Household Economics to Securities Market. Gain expertise in Savings, Investments, and Behavior Aspects. Acquire practical skills for confident financial decision-making.',
       features: [
         '11 Pre-recorded Videos',
-        '22 Amazing Chapters',
+        '22 Chapters E-book',
         '11 Interactive Activities',
         '22 Interactive Flashcards',
         'Course Certificate',
@@ -403,7 +403,7 @@ const courses = {
       desc: 'Improve your financial understanding with Level 4. Discover complex subjects including banking and consumer protection, as well as investments and behavioral aspects. learn how to protect your assets and make good financial decisions.',
       features: [
         '12 Pre-recorded Videos',
-        '24 Amazing Chapters',
+        '24 Chapters E-book',
         '12 Interactive Activities',
         '24 Interactive Flashcards',
         'Course Certificate',
@@ -429,7 +429,7 @@ const courses = {
       desc: 'This Course takes your financial knowledge to new heights. Explore advanced banking, investment, and behavior aspects. Get savvy with asset allocation and risk assessment. Plan for retirement, safeguard against scams, and master tax return essentials.',
       features: [
         '12 Pre-recorded Videos',
-        '24 Amazing Chapters',
+        '24 Chapters E-book',
         '12 Interactive Activities',
         '24 Interactive Flashcards',
         'Course Certificate',
@@ -455,7 +455,7 @@ const courses = {
       desc: "With Level 6, you'll be a financial expert. Explore the ways in which you can make informed financial decisions, including banking intricacies and investment strategies. Find out how to plan for retirement, avoid scams, and reduce taxes.",
       features: [
         '11 Pre-recorded Videos',
-        '28 Amazing Chapters',
+        '28 Chapters E-book',
         '11 Interactive Activities',
         '28 Interactive Flashcards',
         'Course Certificate',
@@ -690,7 +690,7 @@ const renderContent = function (key) {
                     return `
                     <div class="feature-card">                        
                     <h3 class="feature-card__heading">${f}</h3>
-                    <a href="#" class="feature-card__btn" style="color: ${c.colorCode}">> Preview</a>
+                    <a href="#" class="feature-card__btn">> Preview</a>
                   </div>
                   `;
                   })
