@@ -116,6 +116,56 @@ const categories = {
         },
       ],
     },
+    faqsSection: {
+      faqs: [
+        {
+          question: 'Why is financial literacy important for students?',
+          answer:
+            'Financial literacy is crucial for students as it equips them with essential LIFE SKILLS to manage their finances effectively. It helps them make informed decisions about spending, saving, and investing money, which can have a significant impact on their financial well-being in the long run.',
+        },
+        {
+          question:
+            'What topics are typically covered in a financial literacy course?',
+          answer:
+            'A financial literacy course usually covers a range of topics, including budgeting, saving and investing, credit and debt management, taxes, insurance, retirement planning, and financial goal-setting. It may also touch upon topics like financial scams, consumer rights, and responsible spending.',
+        },
+        {
+          question:
+            'How can financial literacy benefit me in my everyday life?',
+          answer:
+            'Financial literacy can benefit you in numerous ways. It helps you develop good money management habits, make informed decisions about spending and saving, avoid debt traps, understand financial products and services, plan for major life events like buying a house or starting a family, investing in stocks etc and work towards achieving your financial goals.',
+        },
+        {
+          question: 'Can financial literacy help me in my career?',
+          answer:
+            'Absolutely! Financial literacy can be valuable in your career, regardless of your field. Understanding financial concepts can help you make sound business decisions, manage personal finances during job transitions, negotiate salary and benefits effectively, in short it makes you stay ahead of your game and and builds confidence towards living a better financial life.',
+        },
+        {
+          question:
+            'Are there any prerequisites for taking a financial literacy course?',
+          answer:
+            'Most financial literacy courses are designed to be accessible to students without any prior financial knowledge. However, basic math and arithmetic skills are helpful for understanding financial calculations and concepts.',
+        },
+        {
+          question:
+            'How can I apply what I learn in a financial literacy course to my own life?',
+          answer:
+            'To apply what you learn, start by assessing your current financial situation, setting specific financial goals, and creating a budget. Implement the strategies and techniques learned in the course, such as saving a portion of your income, tracking your expenses, and making informed decisions about spending. Regularly review your progress and make adjustments as needed.',
+        },
+        {
+          question:
+            'How can I continue to improve my financial literacy after completing the course?',
+          answer:
+            'Financial literacy is an ongoing learning process. After completing the course, you can continue to enhance your knowledge by reading personal finance books, following financial blogs, attending workshops or webinars, and staying updated on financial news and trends. Joining online communities or forums dedicated to personal finance can also provide opportunities for learning and sharing experiences.',
+        },
+        {
+          question:
+            'Can financial literacy help me avoid financial scams and frauds?',
+          answer:
+            'Yes, financial literacy can help you identify and avoid common financial scams and frauds. By understanding how scams operate and being aware of warning signs, you can protect yourself and your finances from fraudulent activities. Additionally, learning about consumer rights and financial regulations can empower you to make informed decisions and take appropriate action when necessary.',
+        },
+      ],
+    },
   },
   teacher: {
     heroSection: {
@@ -395,7 +445,7 @@ const courses = {
         'https://drive.google.com/uc?id=12RHA4KU-y9n6FNttFdnKkNK5-QEkIIY5&export=download',
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
-      colorCode: '#fabf37',
+      colorCode: '#f5b51f',
     },
     {
       name: 'Level 4',
@@ -475,32 +525,81 @@ const courses = {
       colorCode: '#fd906f',
     },
   ],
-  youth: {
-    name: 'Finosophy for Youth',
-    age: 'Age group 15-25 yrs',
-    desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
-    features: [
-      '25 Pre-recorded Videos',
-      '31 Amazing Chapters',
-      '24 Interactive Activities',
-      '31 Interactive Flashcards',
-      'Students Assessments',
-      'Course Certificate',
-    ],
-    game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
-    flashcard:
-      'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
-    videoLink:
-      'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-    price: 'Enroll Now for ₹499/- per year',
-    purchaseLink:
-      'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p1',
-    downloadBtnText: 'Download Brochure',
-    downloadBtnLink:
-      'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
-    thumbnail:
-      'https://www.letstute.com/s/pages/assets/images/youth-thumbnail.png',
-  },
+  youth: [
+    {
+      name: 'Online Course',
+      age: '16+',
+      desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
+      features: [
+        '25 Pre-recorded Videos',
+        '31 Amazing Chapters',
+        '24 Interactive Activities',
+        '31 Interactive Flashcards',
+        'Course Certificate',
+      ],
+      game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+      flashcard:
+        'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+      videoLink:
+        'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
+      price: 'Enroll Now for ₹499/- per year',
+      purchaseLink:
+        'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p1',
+      downloadBtnText: 'Download Brochure',
+      downloadBtnLink:
+        'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
+      thumbnail:
+        'https://www.letstute.com/s/pages/assets/images/youth-thumbnail.png',
+      colorCode: '#f5b51f',
+    },
+    {
+      name: 'Book / eBook',
+      age: '16+',
+      desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
+      features: ['31 Chapters Book / eBook', '10+ Complementary Videos'],
+      game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+      flashcard:
+        'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+      videoLink:
+        'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
+      price: 'Enroll Now for ₹499/- per year',
+      purchaseLink:
+        'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p1',
+      downloadBtnText: 'Download Brochure',
+      downloadBtnLink:
+        'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
+      thumbnail:
+        'https://www.letstute.com/s/pages/assets/images/youth-thumbnail.png',
+      colorCode: '#f5b51f',
+    },
+  ],
+  school: [
+    {
+      name: 'Level 1-6 Combo',
+      age: '16+',
+      desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
+      features: [
+        '25 Pre-recorded Videos',
+        '31 Amazing Chapters',
+        '24 Interactive Activities',
+        '31 Interactive Flashcards',
+        'Course Certificate',
+      ],
+      game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+      flashcard:
+        'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+      videoLink:
+        'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
+      price: 'Enroll Now for ₹499/- per year',
+      purchaseLink:
+        'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p1',
+      downloadBtnText: 'Download Brochure',
+      downloadBtnLink:
+        'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
+      thumbnail:
+        'https://www.letstute.com/s/pages/assets/images/youth-thumbnail.png',
+    },
+  ],
 };
 
 /* VARIABLES */
@@ -579,7 +678,7 @@ const renderContent = function (key) {
 
       <div class="hero__btns-container">
         <a href="#" class="hero__btn btn btn--outline">Download Complete Brochure</a>
-        <a href="#courses" class="hero__btn btn btn--fill">Explore Finosophy Courses</a>
+        <a href="#courses" class="hero__btn btn btn--fill">Explore Finosophy Products</a>
       </div>
     </div>
 
@@ -617,14 +716,20 @@ const renderContent = function (key) {
   insertDynamicCode(featuresContainer, 'beforeend', featuresSectionCode);
 
   const coursesSectionCode = `
-  <div class="header container">
-    <h2 class="header__heading">Finosophy Online Courses</h2>
-    <div class="header__underline"></div>
-  </div>
+    <div class="header container">
+      <h2 class="header__heading">Choose Your Finosophy Product</h2>
+      <div class="header__underline"></div>
+    </div>
 
   <div class="tabs">
     <div class="tabs__btn-container container">
-      ${courses['academic']
+      ${courses[
+        key === 'kids' || key === 'teacher'
+          ? 'academic'
+          : key === 'youth'
+          ? 'youth'
+          : 'school'
+      ]
         .map((c, i) => {
           return `
             <button
@@ -640,7 +745,13 @@ const renderContent = function (key) {
         .join('')}
     </div>
 
-    ${courses['academic']
+    ${courses[
+      key === 'kids' || key === 'teacher'
+        ? 'academic'
+        : key === 'youth'
+        ? 'youth'
+        : 'school'
+    ]
       .map((c, i) => {
         return `
         <div class="tabs__content tabs__content--${i + 1} ${
@@ -714,8 +825,8 @@ const renderContent = function (key) {
       `;
       })
       .join('')}
-  </div>
-`;
+    </div>
+  `;
 
   coursesContainer.innerHTML = '';
   insertDynamicCode(coursesContainer, 'beforeend', coursesSectionCode);
