@@ -13,23 +13,23 @@ const categories = {
     featuresSection: {
       features: [
         {
-          icon: './assets/icons/growth.png',
+          icon: 'https://www.letstute.com/s/pages/assets/images/growth.png',
           heading: 'Build Financial Knowledge',
         },
         {
-          icon: './assets/icons/equilibrium.png',
+          icon: 'https://www.letstute.com/s/pages/assets/images/equilibrium.png',
           heading: 'Manage Finance Effectively',
         },
         {
-          icon: './assets/icons/audio-book.png',
+          icon: 'https://www.letstute.com/s/pages/assets/images/audio-book.png',
           heading: 'Self-paced Learning',
         },
         {
-          icon: './assets/icons/certificate.png',
+          icon: 'https://www.letstute.com/s/pages/assets/images/certificate.png',
           heading: 'Course Completion Certificate',
         },
         {
-          icon: './assets/icons/work-from-home.png',
+          icon: 'https://www.letstute.com/s/pages/assets/images/work-from-home.png',
           heading: 'Weekly Live Sessions',
         },
       ],
@@ -95,23 +95,23 @@ const categories = {
     featuresSection: {
       features: [
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/plan.png',
           heading: 'Set Clear Financial Goals',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/study.png',
           heading: 'Gain Practical Knowledge',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/audio-book.png',
           heading: 'Self-paced Learning',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/certificate.png',
           heading: 'Course Completion Certificate',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/work-from-home.png',
           heading: 'Weekly Live Sessions',
         },
       ],
@@ -128,23 +128,23 @@ const categories = {
     featuresSection: {
       features: [
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/online-learning.png',
           heading: 'Online/Offline Training',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/books.png',
           heading: 'Guided Teaching Resources',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/teaching.png',
           heading: 'Learn While Teaching',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/certificate.png',
           heading: 'Course Completion Certificate',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/work-from-home.png',
           heading: 'Weekly Live Sessions',
         },
       ],
@@ -224,23 +224,23 @@ const categories = {
     featuresSection: {
       features: [
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/deal.png',
           heading: 'NEP Encourage Financial Literacy',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/online-learning.png',
           heading: 'Teacher Training Available',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/analysis.png',
           heading: 'Monitoring Dashboard Tool',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/elearning.png',
           heading: 'Track Students Progress',
         },
         {
-          icon: './assets/icons/diploma.gif',
+          icon: 'https://www.letstute.com/s/pages/assets/images/work-from-home.png',
           heading: 'Weekly Live Sessions',
         },
       ],
@@ -690,7 +690,7 @@ const renderContent = function (key) {
                     return `
                     <div class="feature-card">                        
                     <h3 class="feature-card__heading">${f}</h3>
-                    <a href="#" class="feature-card__btn" style="color: ${c.colorCode}">> Preview</a>
+                    <a href="#" class="feature-card__btn">> Preview</a>
                   </div>
                   `;
                   })

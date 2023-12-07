@@ -380,6 +380,8 @@ h6 {
   border-radius: 0.7rem;
   font-size: 1.6rem;
   font-weight: 600;
+  color: var(--color-primary);
+  border: 0.2rem dashed var(--color-primary);
   text-decoration: none;
 }
 
