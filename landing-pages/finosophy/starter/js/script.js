@@ -587,10 +587,10 @@ const courses = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-      price: 'Enroll Now for ₹499/- per year',
+      price: 'Buy Physical Copy for ₹499/-',
       purchaseLink:
         'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p1',
-      downloadBtnText: 'Download Brochure',
+      downloadBtnText: 'Buy eBook for ₹299/-',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
       thumbnail:
