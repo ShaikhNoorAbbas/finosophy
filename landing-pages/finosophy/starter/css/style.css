@@ -62,7 +62,7 @@
 .hero__heading--2 {
   margin-bottom: 1rem;
   font-weight: 600;
-  font-size: 5.5rem;
+  font-size: 5.3rem;
   line-height: 1.1;
   color: var(--color-secondary);
 }
@@ -98,7 +98,7 @@
 
 .features__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 3rem;
   align-items: center;
 }
@@ -145,6 +145,10 @@
 .courses__bg-img {
   display: block;
   width: 100%;
+  height: 43.6rem;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
 }
 
 .courses__courses-container {
@@ -229,7 +233,7 @@
 
 .courses__course-features-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: center;
   gap: 3rem;
   margin-bottom: 5rem;
@@ -270,3 +274,23 @@
   align-items: center;
   margin-bottom: 5rem;
 }
+
+/* MEDIA QUERIES */
+/* 1200px */
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* 1000px */
+/* @media only screen and (max-width: 62.5em) {} */
+
+/* 800px */
+/* @media only screen and (max-width: 50em) {} */
+
+/* 600px */
+/* @media only screen and (max-width: 37.5em) {} */
+
+/* 400px */
+/* @media only screen and (max-width: 25em) {} */

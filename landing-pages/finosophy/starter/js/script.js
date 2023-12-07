@@ -26,7 +26,7 @@ const categories = {
         },
         {
           icon: 'https://www.letstute.com/s/pages/assets/images/certificate.png',
-          heading: 'Course Completion Certificate',
+          heading: 'Get Course Certificate',
         },
         {
           icon: 'https://www.letstute.com/s/pages/assets/images/work-from-home.png',
@@ -108,7 +108,7 @@ const categories = {
         },
         {
           icon: 'https://www.letstute.com/s/pages/assets/images/certificate.png',
-          heading: 'Course Completion Certificate',
+          heading: 'Get Course Certificate',
         },
         {
           icon: 'https://www.letstute.com/s/pages/assets/images/work-from-home.png',
@@ -119,50 +119,75 @@ const categories = {
     faqsSection: {
       faqs: [
         {
-          question: 'Why is financial literacy important for students?',
+          question:
+            'Why is financial literacy important for young people in India?',
           answer:
-            'Financial literacy is crucial for students as it equips them with essential LIFE SKILLS to manage their finances effectively. It helps them make informed decisions about spending, saving, and investing money, which can have a significant impact on their financial well-being in the long run.',
+            'Financial literacy is crucial as it empowers young individuals to make informed decisions aout money management, investments, and financial planning. In India, it helps navigate the complexities of diverse financial instruments and fosters a responsible approach to personal finance from an early age.',
+        },
+        {
+          question: 'What topics does the financial literacy course cover?',
+          answer:
+            'The course covers a range of topics tailored to the Indian context, including budgeting, saving strategies, understanding financial institutions (banks, stock markets, etc.), basics of taxation, investments, loans, and managing debt responsibly.',
         },
         {
           question:
-            'What topics are typically covered in a financial literacy course?',
+            'How will this course benefit young people in their future?',
           answer:
-            'A financial literacy course usually covers a range of topics, including budgeting, saving and investing, credit and debt management, taxes, insurance, retirement planning, and financial goal-setting. It may also touch upon topics like financial scams, consumer rights, and responsible spending.',
+            'By equipping them with financial literacy, young individuals can cultivate good financial habits early on, leading to better decision-making, reduced debt burden, improved saving and investment strategies, and overall financial stability in their lives.',
         },
         {
           question:
-            'How can financial literacy benefit me in my everyday life?',
+            'Is this course accessible to individuals with no prior financial knowledge?',
           answer:
-            'Financial literacy can benefit you in numerous ways. It helps you develop good money management habits, make informed decisions about spending and saving, avoid debt traps, understand financial products and services, plan for major life events like buying a house or starting a family, investing in stocks etc and work towards achieving your financial goals.',
-        },
-        {
-          question: 'Can financial literacy help me in my career?',
-          answer:
-            'Absolutely! Financial literacy can be valuable in your career, regardless of your field. Understanding financial concepts can help you make sound business decisions, manage personal finances during job transitions, negotiate salary and benefits effectively, in short it makes you stay ahead of your game and and builds confidence towards living a better financial life.',
+            'Yes, the course is designed for beginners and covers fundamental concepts in simple language, ensuring accessibility to those without prior financial knowledge.',
         },
         {
           question:
-            'Are there any prerequisites for taking a financial literacy course?',
+            'Will this course address specific financial challenges faced by the youth in India?',
           answer:
-            'Most financial literacy courses are designed to be accessible to students without any prior financial knowledge. However, basic math and arithmetic skills are helpful for understanding financial calculations and concepts.',
+            'Absolutely. It will address challenges like understanding government schemes, managing expenses in a diverse and dynamic economy, handling peer pressure related to spending, and making informed choices amidst a wide array of financial products available.',
         },
         {
           question:
-            'How can I apply what I learn in a financial literacy course to my own life?',
+            "What sets Letstute's financial literacy course for youth apart from others?",
           answer:
-            'To apply what you learn, start by assessing your current financial situation, setting specific financial goals, and creating a budget. Implement the strategies and techniques learned in the course, such as saving a portion of your income, tracking your expenses, and making informed decisions about spending. Regularly review your progress and make adjustments as needed.',
+            "Letstute's financial literacy course is tailored for youth, employing interactive and engaging teaching methods like animated videos, quizzes, and real-life examples. It aims to simplify complex financial concepts to make them easily understandable for young learners.",
         },
         {
           question:
-            'How can I continue to improve my financial literacy after completing the course?',
+            'How does Letstute address the unique needs of Indian youth in their financial education?',
           answer:
-            'Financial literacy is an ongoing learning process. After completing the course, you can continue to enhance your knowledge by reading personal finance books, following financial blogs, attending workshops or webinars, and staying updated on financial news and trends. Joining online communities or forums dedicated to personal finance can also provide opportunities for learning and sharing experiences.',
+            "Letstute's course incorporates examples and case studies relevant to the Indian context, ensuring that the content resonates with the experiences and challenges faced by young individuals in India's diverse socio-economic landscape.",
         },
         {
           question:
-            'Can financial literacy help me avoid financial scams and frauds?',
+            "Are there specific modules within Letstute's course that focus on practical money management skills?",
           answer:
-            'Yes, financial literacy can help you identify and avoid common financial scams and frauds. By understanding how scams operate and being aware of warning signs, you can protect yourself and your finances from fraudulent activities. Additionally, learning about consumer rights and financial regulations can empower you to make informed decisions and take appropriate action when necessary.',
+            "Yes, Letstute's course emphasizes practical money management skills, including budgeting, saving strategies, understanding financial institutions in India, and making informed decisions about investments and loans.",
+        },
+        {
+          question:
+            "Does Letstute's financial literacy course cover the learnings for a better financial future?",
+          answer:
+            'Absolutely. The course covers the basics of investing, different types of investments suitable for young individuals, and the importance of saving and planning for future financial goals.',
+        },
+        {
+          question:
+            "How accessible is Letstute's financial literacy course for students with varying levels of financial knowledge?",
+          answer:
+            "Letstute's course is designed for individuals with varying levels of financial knowledge. It starts with foundational concepts and gradually progresses to more advanced topics, ensuring accessibility for beginners while offering valuable insights to those with some financial understanding.",
+        },
+        {
+          question:
+            'Are there any additional resources or support provided by Letstute after completing the course?',
+          answer:
+            'Letstute may offer additional resources such as e-books, webinars, or forums where students can continue learning and seeking guidance even after completing the course. This ongoing support enhances the overall learning experience.',
+        },
+        {
+          question:
+            'Can participants interact with instructors or seek clarifications during the course?',
+          answer:
+            'Depending on the course structure, participants might have opportunities to interact with instructors through Q&A sessions or our Youtube, allowing them to seek clarification on concepts or discuss specific financial queries.',
         },
       ],
     },
@@ -191,7 +216,7 @@ const categories = {
         },
         {
           icon: 'https://www.letstute.com/s/pages/assets/images/certificate.png',
-          heading: 'Course Completion Certificate',
+          heading: 'Get Course Certificate',
         },
         {
           icon: 'https://www.letstute.com/s/pages/assets/images/work-from-home.png',
