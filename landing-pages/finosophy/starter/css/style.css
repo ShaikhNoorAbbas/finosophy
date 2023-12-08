@@ -53,14 +53,14 @@
 }
 
 .hero__heading--1 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-weight: 600;
   font-size: 2.4rem;
   color: var(--color-primary);
 }
 
 .hero__heading--2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-weight: 600;
   font-size: 5.3rem;
   line-height: 1.1;
@@ -88,7 +88,7 @@
 
 .hero__img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* Features */
@@ -292,15 +292,43 @@
 /* 1000px */
 /* @media only screen and (max-width: 62.5em) {} */
 
+/* 900px */
+@media only screen and (max-width: 56.25em) {
+  .hero__container {
+    padding: 5rem 5rem 0;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .hero__content-container {
+    align-items: center;
+  }
+
+  .hero__heading--1,
+  .hero__heading--2,
+  .hero__heading--3 {
+    text-align: center;
+  }
+
+  .hero__heading--2 {
+    font-size: 4rem;
+  }
+
+  .hero__btns-container {
+    justify-content: center;
+  }
+
+  .hero__img {
+    max-width: 40rem;
+  }
+}
+
 /* 800px */
 /* @media only screen and (max-width: 50em) {} */
 
 /* 600px */
 @media only screen and (max-width: 37.5em) {
-  .container {
-    padding: 0 3rem;
-  }
-
   .courses .tabs__btn {
     font-size: 1.8rem;
   }
