@@ -631,6 +631,7 @@ const courses = {
 const switcherDropdown = document.getElementById('switcher__dropdown');
 const heroContainer = document.querySelector('.hero__container');
 const featuresContainer = document.querySelector('.features__container');
+const coursesSection = document.getElementById('courses-section');
 const coursesContainer = document.querySelector('.courses__container');
 const faqsContainer = document.querySelector('.faqs__container');
 
@@ -688,6 +689,26 @@ const accordion = function () {
 };
 
 /* FUNCTIONS */
+/* ScrollTo */
+const scrollTo = function () {
+  const heroBtnScrollToCourses = document.querySelector(
+    '.hero__btn--scroll-to-courses'
+  );
+
+  heroBtnScrollToCourses.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const sectionPosition =
+      coursesSection.getBoundingClientRect().top + window.pageYOffset;
+    const offset = 100;
+
+    window.scrollTo({
+      top: sectionPosition - offset,
+      behavior: 'smooth',
+    });
+  });
+};
+
 /* Insert Dynamic Code */
 const insertDynamicCode = function (place, position, code) {
   place.insertAdjacentHTML(position, code);
@@ -703,7 +724,7 @@ const renderContent = function (key) {
 
       <div class="hero__btns-container">
         <a href="#" class="hero__btn btn btn--outline">Download Complete Brochure</a>
-        <a href="#courses" class="hero__btn btn btn--fill">Explore Finosophy Products</a>
+        <a href="#" class="hero__btn hero__btn--scroll-to-courses btn btn--fill">Explore Finosophy Products</a>
       </div>
     </div>
 
@@ -893,6 +914,7 @@ const init = function (category) {
     alert('Category not found!');
   }
 
+  scrollTo();
   tabs();
   accordion();
 };
