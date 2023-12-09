@@ -1,19 +1,16 @@
 /* SECTIONS */
 /* Navbar */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
+.navbar2 {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: var(--color-grey-dark-3);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   z-index: 999;
 }
 
-.navbar__heading {
+.navbar2__heading {
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--color-white);
@@ -32,7 +29,6 @@
 /* Hero */
 .hero {
   padding-bottom: 9rem;
-  margin-top: 5.6rem;
 }
 
 .hero__container {
@@ -84,6 +80,14 @@
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+}
+
+.hero__btn--outline {
+  color: var(--color-grey-dark-3) !important;
+}
+
+.hero__btn--fill {
+  color: var(--color-white) !important;
 }
 
 .hero__img {
@@ -264,11 +268,12 @@
 }
 
 .courses__course-btns-container .btn--outline {
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
 }
 
 .courses__course-btns-container .btn--fill {
   background-color: var(--color-primary);
+  color: var(--color-white) !important;
 }
 
 /* FAQs */
