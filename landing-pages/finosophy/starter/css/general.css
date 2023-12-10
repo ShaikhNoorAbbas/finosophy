@@ -303,6 +303,69 @@ h6 {
 }
 
 /* UI COMPONENTS */
+/* Modal */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+}
+
+.modal__close-btn {
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.7rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+  z-index: 999;
+}
+
+.modal__container {
+  position: relative;
+  border-radius: 0.7rem;
+  background-color: var(--color-white);
+  box-shadow: 0 0 1rem var(--color-primary);
+  overflow: hidden;
+}
+
+.modal__container--landscape {
+  width: 960px;
+}
+
+.modal__container--portrait {
+  width: 480px;
+}
+
+.modal__iframe-container {
+  width: 100%;
+}
+
+.modal__iframe-container--landscape {
+  padding-top: 56.25%;
+}
+
+.modal__iframe-container--portrait {
+  padding-top: 177.78%;
+}
+
+.modal__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Button */
 .btn,
 .btn:link,
