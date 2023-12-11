@@ -20,10 +20,10 @@
   </head>
 
   <body>
-    <!-- Modal -->
-    <div class="modal">
-      <span class="modal__close-btn">Close &times;</span>
-      <div class="modal__dynamic-code-container">
+    <!-- Modal1 -->
+    <div class="modal1">
+      <span class="modal1__close-btn">Close &times;</span>
+      <div class="modal1__dynamic-code-container">
         <!-- Dynamic code here... -->
       </div>
     </div>
@@ -965,39 +965,39 @@
       const faqsContainer = document.querySelector('.faqs__container');
 
       /* COMPONENTS */
-      /* Modal */
-      const modal = function (iframeMode, iframeURL) {
-        const modal = document.querySelector('.modal');
-        const modalCloseBtn = document.querySelector('.modal__close-btn');
-        const modalDynamicCodeContainer = document.querySelector(
-          '.modal__dynamic-code-container'
+      /* Modal1 */
+      const modal1 = function (iframeMode, iframeURL) {
+        const modal1 = document.querySelector('.modal1');
+        const modal1CloseBtn = document.querySelector('.modal1__close-btn');
+        const modal1DynamicCodeContainer = document.querySelector(
+          '.modal1__dynamic-code-container'
         );
 
-        const modalComponentCode = `
-          <div class="modal__container modal__container--${iframeMode}">
-            <div class="modal__iframe-container modal__iframe-container--${iframeMode}">
+        const modal1ComponentCode = `
+          <div class="modal1__container modal1__container--${iframeMode}">
+            <div class="modal1__iframe-container modal1__iframe-container--${iframeMode}">
               <iframe
                 src="${iframeURL}"
                 frameborder="0"
-                class="modal__iframe"
+                class="modal1__iframe"
               ></iframe>
             </div>
           </div>
         `;
 
-        modalDynamicCodeContainer.innerHTML = '';
+        modal1DynamicCodeContainer.innerHTML = '';
 
         insertDynamicCode(
-          modalDynamicCodeContainer,
+          modal1DynamicCodeContainer,
           'beforeend',
-          modalComponentCode
+          modal1ComponentCode
         );
 
-        modal.style.display = 'flex';
+        modal1.style.display = 'flex';
 
-        modalCloseBtn.addEventListener('click', function () {
-          modalDynamicCodeContainer.innerHTML = '';
-          modal.style.display = 'none';
+        modal1CloseBtn.addEventListener('click', function () {
+          modal1DynamicCodeContainer.innerHTML = '';
+          modal1.style.display = 'none';
         });
       };
 
@@ -1188,7 +1188,7 @@
                     return `
                     <div class="feature-card">                        
                     <h3 class="feature-card__heading">${f.name}</h3>
-                    <button onclick="modal('${f.iframeType}', '${f.iframeURL}')" class="feature-card__btn">> Preview</button>
+                    <button onclick="modal1('${f.iframeType}', '${f.iframeURL}')" class="feature-card__btn">> Preview</button>
                   </div>
                   `;
                   })

@@ -159,7 +159,7 @@
 
 .courses__courses-container {
   position: relative;
-  margin-top: -40rem;
+  margin-top: -40rem !important;
   z-index: 2;
 }
 
@@ -292,14 +292,6 @@
   html {
     font-size: 50%;
   }
-
-  .modal__container--landscape {
-    width: 90%;
-  }
-
-  .modal__container--portrait {
-    width: 90%;
-  }
 }
 
 /* 1000px */
@@ -338,7 +330,11 @@
 }
 
 /* 800px */
-/* @media only screen and (max-width: 50em) {} */
+@media only screen and (max-width: 50em) {
+  .modal1__container--landscape {
+    width: 90%;
+  }
+}
 
 /* 600px */
 @media only screen and (max-width: 37.5em) {

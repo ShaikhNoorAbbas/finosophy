@@ -304,7 +304,7 @@ h6 {
 
 /* UI COMPONENTS */
 /* Modal */
-.modal {
+.modal1 {
   position: fixed;
   left: 0;
   top: 0;
@@ -318,7 +318,13 @@ h6 {
   z-index: 999;
 }
 
-.modal__close-btn {
+.modal1__dynamic-code-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.modal1__close-btn {
   padding: 0.5rem 1rem;
   margin-bottom: 2rem;
   border-radius: 0.7rem;
@@ -330,7 +336,7 @@ h6 {
   z-index: 999;
 }
 
-.modal__container {
+.modal1__container {
   position: relative;
   border-radius: 0.7rem;
   background-color: var(--color-white);
@@ -338,27 +344,27 @@ h6 {
   overflow: hidden;
 }
 
-.modal__container--landscape {
-  width: 960px;
+.modal1__container--landscape {
+  width: 90rem;
 }
 
-.modal__container--portrait {
-  width: 480px;
+.modal1__container--portrait {
+  width: 34rem;
 }
 
-.modal__iframe-container {
+.modal1__iframe-container {
   width: 100%;
 }
 
-.modal__iframe-container--landscape {
+.modal1__iframe-container--landscape {
   padding-top: 56.25%;
 }
 
-.modal__iframe-container--portrait {
+.modal1__iframe-container--portrait {
   padding-top: 177.78%;
 }
 
-.modal__iframe {
+.modal1__iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -441,13 +447,14 @@ h6 {
 
 .feature-card__btn {
   padding: 0.4rem 0.8rem;
-  border-radius: 0.7rem;
   border: 0.2rem dashed var(--color-primary);
+  border-radius: 0.7rem;
   font-size: 1.6rem;
   font-weight: 600;
-  color: var(--color-primary) !important;
-  border: 0.2rem dashed var(--color-primary);
   text-decoration: none;
+  background-color: var(--color-white);
+  color: var(--color-primary) !important;
+  cursor: pointer;
 }
 
 /* Tabs */
