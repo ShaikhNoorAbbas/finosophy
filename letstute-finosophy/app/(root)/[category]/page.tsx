@@ -13,10 +13,10 @@ export default function Category() {
           </h1>
           <span className="subheading">
             Make Your Child Financially Confident with{' '}
-            <span className="text-primary text-3xl font-bold">Finosophy</span>
+            <span className="text-tertiary text-3xl font-bold">Finosophy</span>
           </span>
         </div>
-        <div>{/* Other content */}</div>
+        <div>{/* Video here... */}</div>
       </div>
     </div>
   );

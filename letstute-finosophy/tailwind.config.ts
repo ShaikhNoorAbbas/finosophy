@@ -21,7 +21,7 @@ const config: Config = {
           dark: '#171944',
         },
         secondary: '#ffc503',
-        tertiary: '#f4313f',
+        tertiary: '#fe5b32',
         quaternary: '#00a09b',
       },
     },

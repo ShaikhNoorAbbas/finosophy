@@ -12,6 +12,26 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link href="/kids" className="link">
+              for Kids
+            </Link>
+          </li>
+          <li>
+            <Link href="/youth" className="link">
+              for Youth
+            </Link>
+          </li>
+          <li>
+            <Link href="/teachers" className="link">
+              for Teachers
+            </Link>
+          </li>
+          <li>
+            <Link href="/school" className="link">
+              for School
+            </Link>
+          </li>
+          <li>
             <Link href="/about" className="link">
               About
             </Link>

@@ -4,11 +4,11 @@
 
 @layer utilities {
   .button {
-    @apply bg-secondary font-normal text-base inline-block rounded-full px-6 py-2 shadow-md;
+    @apply inline-block px-6 py-2 text-base font-medium rounded-full bg-secondary shadow-md;
   }
 
   .link {
-    @apply text-primary font-semibold text-lg hover:text-tertiary;
+    @apply text-lg hover:text-tertiary font-medium text-primary;
   }
 
   .h1-bold {
