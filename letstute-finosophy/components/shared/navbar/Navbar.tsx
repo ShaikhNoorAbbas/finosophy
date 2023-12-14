@@ -1,25 +1,29 @@
 import Link from 'next/link';
+import Button from '../button/Button';
 
 export default function Navbar() {
   return (
-    <nav className="bg-gray-800 p-4 text-white">
-      <ul className="flex space-x-4">
-        <li>
-          <Link href="/" className="hover:text-gray-300">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link href="/about" className="hover:text-gray-300">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact" className="hover:text-gray-300">
-            Contact
-          </Link>
-        </li>
-      </ul>
+    <nav className="py-4 shadow-md">
+      <div className="container flex items-center justify-between">
+        <ul className="flex gap-10">
+          <li>
+            <Link href="/" className="link">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" className="link">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="link">
+              Contact
+            </Link>
+          </li>
+        </ul>
+        <Button href="#" text="Book a Visit" />
+      </div>
     </nav>
   );
 }

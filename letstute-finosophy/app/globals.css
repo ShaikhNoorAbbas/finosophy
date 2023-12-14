@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .button {
+    @apply bg-secondary font-normal text-base inline-block rounded-full px-6 py-2 shadow-md;
+  }
+
+  .link {
+    @apply text-primary font-semibold text-lg hover:text-tertiary;
+  }
+
+  .h1-bold {
+    @apply text-5xl font-bold leading-tight;
+  }
+
+  .h2-bold {
+    @apply text-2xl font-bold leading-tight;
+  }
+
+  .subheading {
+    @apply inline-block text-2xl font-medium;
+  }
+
+  .subheading--fill {
+    @apply inline-block rounded-full px-6 py-2 text-2xl font-semibold bg-quaternary text-white;
+  }
+
+  .paragraph {
+    @apply text-xl;
+  }
+}
