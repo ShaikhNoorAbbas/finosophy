@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
-
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,9 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
-
     <title>Letstute Finosophy</title>
   </head>
 
@@ -27,7 +24,6 @@
         <!-- Dynamic code here... -->
       </div>
     </div>
-
     <main>
       <!-- SECTIONS -->
       <!-- Navbar -->
@@ -47,28 +43,24 @@
           >
         </div>
       </section>
-
       <!-- Hero -->
       <section class="hero">
         <div class="hero__container sec-container">
           <!-- Dynamic code here... -->
         </div>
       </section>
-
       <!-- Features -->
       <section class="features">
         <div class="features__container sec-container">
           <!-- Dynamic code here... -->
         </div>
       </section>
-
       <!-- Courses -->
       <section class="courses" id="courses-section">
         <div class="courses__container">
           <!-- Dynamic code here... -->
         </div>
       </section>
-
       <!-- FAQs -->
       <section class="faqs">
         <div class="faqs__container sec-container">
@@ -76,11 +68,8 @@
         </div>
       </section>
     </main>
-
     <script>
-      'use strict';
-
-      /* DATASETS */
+      'use strict'; /* DATASETS */
       const categories = {
         kids: {
           heroSection: {
@@ -467,13 +456,12 @@
               {
                 question: 'WHat is a Finosophy School?',
                 answer:
-                  "Partnering with Letstute for our financial literacy program  offers schools a comprehensive and engaging solution to enrich students' financial education, empowering them with essential life skills,talented pool of certified Financially Literate Teachers garnering respect amongst peer school  and become a Finosophy School.",
+                  "Partnering with Letstute for our financial literacy program offers schools a comprehensive and engaging solution to enrich students' financial education, empowering them with essential life skills,talented pool of certified Financially Literate Teachers garnering respect amongst peer school and become a Finosophy School.",
               },
             ],
           },
         },
       };
-
       const courses = {
         academic: [
           {
@@ -928,118 +916,79 @@
             colorCode: '#8c52ff',
           },
         ],
-      };
-
-      /* FUNCTIONS */
-      /* ScrollTo */
+      }; /* FUNCTIONS */ /* ScrollTo */
       const scrollTo = function () {
         const heroBtnScrollToCourses = document.querySelector(
           '.hero__btn--scroll-to-courses'
         );
-
         heroBtnScrollToCourses.addEventListener('click', function (e) {
           e.preventDefault();
-
           const sectionPosition =
             coursesSection.getBoundingClientRect().top + window.pageYOffset;
           const offset = 50;
-
           window.scrollTo({
             top: sectionPosition - offset,
             behavior: 'smooth',
           });
         });
-      };
-
-      /* Insert Dynamic Code */
+      }; /* Insert Dynamic Code */
       const insertDynamicCode = function (place, position, code) {
         place.insertAdjacentHTML(position, code);
-      };
-
-      /* VARIABLES */
+      }; /* VARIABLES */
       const switcherDropdown = document.getElementById('switcher__dropdown');
       const heroContainer = document.querySelector('.hero__container');
       const featuresContainer = document.querySelector('.features__container');
       const coursesSection = document.getElementById('courses-section');
       const coursesContainer = document.querySelector('.courses__container');
-      const faqsContainer = document.querySelector('.faqs__container');
-
-      /* COMPONENTS */
-      /* Modal1 */
+      const faqsContainer =
+        document.querySelector(
+          '.faqs__container'
+        ); /* COMPONENTS */ /* Modal1 */
       const modal1 = function (iframeMode, iframeURL) {
         const modal1 = document.querySelector('.modal1');
         const modal1CloseBtn = document.querySelector('.modal1__close-btn');
         const modal1DynamicCodeContainer = document.querySelector(
           '.modal1__dynamic-code-container'
         );
-
-        const modal1ComponentCode = `
-          <div class="modal1__container modal1__container--${iframeMode}">
-            <div class="modal1__iframe-container modal1__iframe-container--${iframeMode}">
-              <iframe
-                src="${iframeURL}"
-                frameborder="0"
-                class="modal1__iframe"
-              ></iframe>
-            </div>
-          </div>
-        `;
-
+        const modal1ComponentCode = ` <div class="modal1__container modal1__container--${iframeMode}"> <div class="modal1__iframe-container modal1__iframe-container--${iframeMode}"> <iframe src="${iframeURL}" frameborder="0" class="modal1__iframe" ></iframe> </div> </div> `;
         modal1DynamicCodeContainer.innerHTML = '';
-
         insertDynamicCode(
           modal1DynamicCodeContainer,
           'beforeend',
           modal1ComponentCode
         );
-
         modal1.style.display = 'flex';
-
         modal1CloseBtn.addEventListener('click', function () {
           modal1DynamicCodeContainer.innerHTML = '';
           modal1.style.display = 'none';
         });
-      };
-
-      /* Tabs */
+      }; /* Tabs */
       const tabs = function () {
         const btnContainer = document.querySelector('.tabs__btn-container');
         const btns = document.querySelectorAll('.tabs__btn');
         const contents = document.querySelectorAll('.tabs__content');
-
         btnContainer.addEventListener('click', function (e) {
           const btn = e.target.closest('.tabs__btn');
-
           if (!btn) return;
-
           btns.forEach((tb) => tb.classList.remove('tabs__btn--active'));
           contents.forEach((tc) =>
             tc.classList.remove('tabs__content--active')
           );
-
           btn.classList.add('tabs__btn--active');
-
           const content = document.querySelector(
             `.tabs__content--${btn.dataset.tabsbtn}`
           );
-
           content.classList.add('tabs__content--active');
         });
-      };
-
-      /* Accordion */
+      }; /* Accordion */
       const accordion = function () {
         const accordionItems = document.querySelectorAll('.accordion__item');
         const accordionIcons = document.querySelectorAll('.accordion__icon');
-
         accordionItems.forEach((accordionItem, i) => {
           let isOpen = accordionItem.classList.contains('accordion__active');
-
           if (isOpen) accordionIcons[i].innerHTML = '-';
-
           accordionItem.addEventListener('click', () => {
             isOpen = accordionItem.classList.contains('accordion__active');
-
             if (!isOpen) {
               accordionItems.forEach((item) =>
                 item.classList.remove('accordion__active')
@@ -1053,236 +1002,117 @@
             }
           });
         });
-      };
-
-      /* Render Content */
+      }; /* Render Content */
       const renderContent = function (key) {
-        const heroSectionCode = `
-    <div class="hero__content-container fade-in">
-      <h2 class="hero__heading--1">${categories[key].heroSection.heading1}</h2>
-      <h2 class="hero__heading--2">${categories[key].heroSection.heading2}</h2>
-      <h2 class="hero__heading--3">${categories[key].heroSection.heading3}</h2>
-
-      <div class="hero__btns-container">
-        <a href="#" class="hero__btn hero__btn--outline btn btn--outline">Download Complete Brochure</a>
-        <a href="#" class="hero__btn hero__btn--fill btn btn--fill hero__btn--scroll-to-courses">Explore Finosophy Products</a>
-      </div>
-    </div>
-
-    <div class="hero__img-container fade-in">
-      <img src="${categories[key].heroSection.img}" alt="" class="hero__img" />
-    </div>
-  `;
-
+        const heroSectionCode = ` <div class="hero__content-container fade-in"> <h2 class="hero__heading--1">${categories[key].heroSection.heading1}</h2> <h2 class="hero__heading--2">${categories[key].heroSection.heading2}</h2> <h2 class="hero__heading--3">${categories[key].heroSection.heading3}</h2> <div class="hero__btns-container"> <a href="#" class="hero__btn hero__btn--outline btn btn--outline">Download Complete Brochure</a> <a href="#" class="hero__btn hero__btn--fill btn btn--fill hero__btn--scroll-to-courses">Explore Finosophy Products</a> </div> </div> <div class="hero__img-container fade-in"> <img src="${categories[key].heroSection.img}" alt="" class="hero__img" /> </div> `;
         heroContainer.innerHTML = '';
         insertDynamicCode(heroContainer, 'beforeend', heroSectionCode);
-
-        const featuresSectionCode = `
-    <div class="header">
-      <h2 class="header__heading">Why Finosophy?</h2>
-      <div class="header__underline"></div>
-    </div>
-
-    ${categories[key].featuresSection.features
-      .map((f) => {
-        return `
-          <div class="feature-card">
-            <img
-              src="${f.icon}"
-              alt=""
-              class="feature-card__icon"
-            />
-            <h3 class="feature-card__heading">${f.heading}</h3>
-          </div>
-        `;
-      })
-      .join('')}
-  `;
-
+        const featuresSectionCode = ` <div class="header"> <h2 class="header__heading">Why Finosophy?</h2> <div class="header__underline"></div> </div> ${categories[
+          key
+        ].featuresSection.features
+          .map((f) => {
+            return ` <div class="feature-card"> <img src="${f.icon}" alt="" class="feature-card__icon" /> <h3 class="feature-card__heading">${f.heading}</h3> </div> `;
+          })
+          .join('')} `;
         featuresContainer.innerHTML = '';
         insertDynamicCode(featuresContainer, 'beforeend', featuresSectionCode);
-
-        const coursesSectionCode = `
-    <div class="header sec-container">
-      <h2 class="header__heading">Choose Your Finosophy Product</h2>
-      <div class="header__underline"></div>
-    </div>
-
-  <div class="tabs">
-    <div class="tabs__btn-container sec-container">
-      ${courses[
-        key === 'kids' || key === 'teacher'
-          ? 'academic'
-          : key === 'youth'
-          ? 'youth'
-          : 'school'
-      ]
-        .map((c, i) => {
-          return `
-            <button
-              class="tabs__btn tabs__btn--${i + 1} ${
-            i === 0 && 'tabs__btn--active'
-          }"
-              data-tabsbtn="${i + 1}"
-            >
-            ${c.name}
-            </button>
-          `;
-        })
-        .join('')}
-    </div>
-
-    ${courses[
-      key === 'kids' || key === 'teacher'
-        ? 'academic'
-        : key === 'youth'
-        ? 'youth'
-        : 'school'
-    ]
-      .map((c, i) => {
-        return `
-        <div class="tabs__content tabs__content--${i + 1} ${
-          i === 0 && 'tabs__content--active'
-        }">
-          <div class="courses__bg-img-container">
-            <img
-              src="https://www.letstute.com/s/pages/assets/images/music-bg.png"
-              alt=""
-              class="courses__bg-img"
-            />
-          </div>
-
-          <div class="courses__courses-container sec-container fade-in">
-            <div class="courses__course-header">
-              <div class="courses__course-img-container">
-                <img src="${c.thumbnail}" alt="" class="courses__course-img" />
-              </div>
-  
-              <div class="courses__course-content-container">
-              <h3 class="courses__course-heading heading-3" style="background-color: ${
-                c.colorCode
-              }">
-                Learn About Finosophy ${c.name}
-              </h3>
-              <span class="courses__course-subheading">Suitable for the age group ${
-                c.age
-              } years</span>
-              </div>
-            </div>
-
-            <div class="courses__course-container" style="border-top: 1rem solid ${
+        const coursesSectionCode = ` <div class="header sec-container"> <h2 class="header__heading">Choose Your Finosophy Product</h2> <div class="header__underline"></div> </div> <div class="tabs"> <div class="tabs__btn-container sec-container"> ${courses[
+          key === 'kids' || key === 'teacher'
+            ? 'academic'
+            : key === 'youth'
+            ? 'youth'
+            : 'school'
+        ]
+          .map((c, i) => {
+            return ` <button class="tabs__btn tabs__btn--${i + 1} ${
+              i === 0 && 'tabs__btn--active'
+            }" data-tabsbtn="${i + 1}" > ${c.name} </button> `;
+          })
+          .join('')} </div> ${courses[
+          key === 'kids' || key === 'teacher'
+            ? 'academic'
+            : key === 'youth'
+            ? 'youth'
+            : 'school'
+        ]
+          .map((c, i) => {
+            return ` <div class="tabs__content tabs__content--${i + 1} ${
+              i === 0 && 'tabs__content--active'
+            }"> <div class="courses__bg-img-container"> <img src="https://www.letstute.com/s/pages/assets/images/music-bg.png" alt="" class="courses__bg-img" /> </div> <div class="courses__courses-container sec-container fade-in"> <div class="courses__course-header"> <div class="courses__course-img-container"> <img src="${
+              c.thumbnail
+            }" alt="" class="courses__course-img" /> </div> <div class="courses__course-content-container"> <h3 class="courses__course-heading heading-3" style="background-color: ${
               c.colorCode
-            }">
-              <p class="courses__course-desc para">${c.desc}</p>
-
-              <div class="courses__course-features-container">
-                <div class="header">
-                  <h2 class="header__heading">What You'll Get</h2>
-                  <div class="header__underline" style="background-color: ${
-                    c.colorCode
-                  }"></div>
-                </div>
-
-                ${c.features
-                  .map((f) => {
-                    return `
-                    <div class="feature-card">                        
-                    <h3 class="feature-card__heading">${f.name}</h3>
-                    <button onclick="modal1('${f.iframeType}', '${f.iframeURL}')" class="feature-card__btn">> Preview</button>
-                  </div>
-                  `;
-                  })
-                  .join('')}
-              </div>
-
-              <div class="courses__course-btns-container">
-              <a href="${
-                c.downloadBtnLink
-              }" class="courses__course-btn btn btn--outline">${
-          c.downloadBtnText
-        }</a>
-                <a href="${
-                  c.purchaseLink
-                }" class="courses__course-btn btn btn--fill">${c.price}</a>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      `;
-      })
-      .join('')}
-    </div>
-  `;
-
+            }"> Learn About Finosophy ${
+              c.name
+            } </h3> <span class="courses__course-subheading">Suitable for the age group ${
+              c.age
+            } years</span> </div> </div> <div class="courses__course-container" style="border-top: 1rem solid ${
+              c.colorCode
+            }"> <p class="courses__course-desc para">${
+              c.desc
+            }</p> <div class="courses__course-features-container"> <div class="header"> <h2 class="header__heading">What You'll Get</h2> <div class="header__underline" style="background-color: ${
+              c.colorCode
+            }"></div> </div> ${c.features
+              .map((f) => {
+                return ` <div class="feature-card"> <h3 class="feature-card__heading">${f.name}</h3> <button onclick="modal1('${f.iframeType}', '${f.iframeURL}')" class="feature-card__btn">> Preview</button> </div> `;
+              })
+              .join(
+                ''
+              )} </div> <div class="courses__course-btns-container"> <a href="${
+              c.downloadBtnLink
+            }" class="courses__course-btn btn btn--outline">${
+              c.downloadBtnText
+            }</a> <a href="${
+              c.purchaseLink
+            }" class="courses__course-btn btn btn--fill">${
+              c.price
+            }</a> </div> </div> </div> </div> `;
+          })
+          .join('')} </div> `;
         coursesContainer.innerHTML = '';
         insertDynamicCode(coursesContainer, 'beforeend', coursesSectionCode);
-
-        const faqsSectionCode = `
-    <div class="header">
-      <h2 class="header__heading">Frequently Asked Questions</h2>
-      <div class="header__underline"></div>
-    </div>
-
-    <div class="accordion">
-      ${categories[key].faqsSection.faqs
-        .map((f, i) => {
-          return `
-          <div class="accordion__item ${
-            i == 0 && 'accordion__active'
-          }"> <p class="accordion__num">${i <= 8 ? '0' : ''}${
-            i + 1
-          }</p> <h4 class="accordion__title"> ${
-            f.question
-          } </h4> <span class="accordion__icon">+</span> <p class="accordion__content"> ${
-            f.answer
-          } </p> </div>
-        `;
-        })
-        .join('')}
-    </div>
-  `;
-
+        const faqsSectionCode = ` <div class="header"> <h2 class="header__heading">Frequently Asked Questions</h2> <div class="header__underline"></div> </div> <div class="accordion"> ${categories[
+          key
+        ].faqsSection.faqs
+          .map((f, i) => {
+            return ` <div class="accordion__item ${
+              i == 0 && 'accordion__active'
+            }"> <p class="accordion__num">${i <= 8 ? '0' : ''}${
+              i + 1
+            }</p> <h4 class="accordion__title"> ${
+              f.question
+            } </h4> <span class="accordion__icon">+</span> <p class="accordion__content"> ${
+              f.answer
+            } </p> </div> `;
+          })
+          .join('')} </div> `;
         faqsContainer.innerHTML = '';
         insertDynamicCode(faqsContainer, 'beforeend', faqsSectionCode);
-      };
-
-      /* Init */
+      }; /* Init */
       const init = function (category) {
         if (categories[category]) {
           renderContent(category);
         } else {
           alert('Category not found!');
         }
-
         scrollTo();
         tabs();
         accordion();
-      };
-
-      /* Update Dropdown and Hash */
+      }; /* Update Dropdown and Hash */
       const updateSwitcherDropdownAndURL = function (category) {
         switcherDropdown.value = category;
         window.location.hash = category;
-
         init(category);
-      };
-
-      /* Load Content Based on URL Hash */
+      }; /* Load Content Based on URL Hash */
       window.addEventListener('load', function () {
         let categoryURL = window.location.hash.substring(1);
-
         if (!categories[categoryURL]) {
           let defaultCategory = Object.keys(categories)[0];
-
           updateSwitcherDropdownAndURL(defaultCategory);
         } else {
           updateSwitcherDropdownAndURL(categoryURL);
         }
-      });
-
-      /* SECTIONS */
-      /* Switcher Section */
+      }); /* SECTIONS */ /* Switcher Section */
       switcherDropdown.addEventListener('change', function () {
         updateSwitcherDropdownAndURL(this.value);
       });
