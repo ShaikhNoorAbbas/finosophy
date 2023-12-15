@@ -22,8 +22,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/teachers" className="link">
-              for Teachers
+            <Link href="/teacher" className="link">
+              for Teacher
             </Link>
           </li>
           <li>
