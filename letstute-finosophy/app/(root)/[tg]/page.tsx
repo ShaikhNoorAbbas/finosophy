@@ -1,4 +1,6 @@
+import Button from '@/components/shared/button/Button';
 import FeatureCard from '@/components/shared/feature-card/FeatureCard';
+import SectionHeader from '@/components/shared/header/sectionHeader';
 import { tgs } from '@/datasets/tgs';
 
 interface TgProps {
@@ -26,10 +28,15 @@ export default function Tg({ params }: TgProps) {
             <h1 className="h1-bold text-primary">{tg.heroSection.heading2}</h1>
             <span className="subheading">
               {`${tg.heroSection.heading3.split(' ').slice(0, -1).join(' ')}`}{' '}
-              <span className="text-secondary text-3xl font-bold">
+              <span className="text-primary text-3xl font-bold">
                 {`${tg.heroSection.heading3.split(' ').pop()}`}
               </span>
             </span>
+            <Button
+              href="#"
+              text={`Explore Products for ${tg.name}`}
+              style="py-3 px-6 text-xl font-bold bg-secondary text-white"
+            />
           </div>
           <div>{/* Video here... */}</div>
         </div>
@@ -38,12 +45,10 @@ export default function Tg({ params }: TgProps) {
       {/* Features Section */}
       <section className="py-20">
         <div className="container flex flex-col gap-y-16">
-          <div className="flex flex-col items-center gap-y-3">
-            <span className="subheading--secondary">Overview</span>
-            <h2 className="h2-bold text-primary">
-              Why Finosophy for {tg.name}
-            </h2>
-          </div>
+          <SectionHeader
+            subheading="Overview"
+            heading={`Why Finosophy for ${tg.name}?`}
+          />
 
           <div className="grid grid-cols-3 gap-10">
             <FeatureCard
@@ -60,6 +65,21 @@ export default function Tg({ params }: TgProps) {
               heading="Self-paced Learning"
             />
           </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section className="relative py-20">
+        <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
+        <div className="bg-primary-dark absolute inset-0 opacity-[.8]"></div>
+        <div className="container relative z-10 flex flex-col gap-y-16">
+          <SectionHeader
+            subheading="Affordable"
+            heading={`Finosophy Products for ${tg.name}`}
+            headingStyle="text-white"
+          />
+
+          <div className="grid grid-cols-3"></div>
         </div>
       </section>
     </>

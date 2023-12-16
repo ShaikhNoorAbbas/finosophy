@@ -42,7 +42,11 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-        <Button href="#" text="Book a Visit" />
+        <Button
+          href="#"
+          text="Book a Visit"
+          style="py-2 px-4 text-lg font-medium bg-secondary text-white"
+        />
       </div>
     </nav>
   );

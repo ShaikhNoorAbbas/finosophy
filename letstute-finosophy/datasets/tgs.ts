@@ -87,7 +87,7 @@ export const tgs = [
     heroSection: {
       heading1: 'Looking for Financial Literacy Program?',
       heading2: 'Everything You Need is Here!!',
-      heading3: 'Learn to Grow Your Money with Finosophy',
+      heading3: 'Learn to Grow and Manage Your Money with Finosophy',
       img: 'https://www.letstute.com/s/pages/assets/images/youth2.jpg',
     },
     featuresSection: {
@@ -292,7 +292,7 @@ export const tgs = [
     heroSection: {
       heading1: 'Looking for Financial Literacy Program?',
       heading2: 'Everything You Need is Here!!',
-      heading3: 'Craft Financially Savvy Students with Finosophy',
+      heading3: 'Create Financially Confident Students with Finosophy',
       img: 'https://www.letstute.com/s/pages/assets/images/school-white.jpg',
     },
     featuresSection: {
