@@ -20,7 +20,7 @@
   }
 
   .subheading {
-    @apply inline-block text-2xl font-medium;
+    @apply inline-block text-2xl font-medium text-gray-700;
   }
 
   .subheading--secondary {

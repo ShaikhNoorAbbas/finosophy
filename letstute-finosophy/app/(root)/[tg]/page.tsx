@@ -1,3 +1,4 @@
+import FeatureCard from '@/components/shared/feature-card/FeatureCard';
 import { tgs } from '@/datasets/tgs';
 
 interface TgProps {
@@ -36,12 +37,28 @@ export default function Tg({ params }: TgProps) {
 
       {/* Features Section */}
       <section className="py-20">
-        <div className="container">
+        <div className="container flex flex-col gap-y-16">
           <div className="flex flex-col items-center gap-y-3">
             <span className="subheading--secondary">Overview</span>
             <h2 className="h2-bold text-primary">
               Why Finosophy for {tg.name}
             </h2>
+          </div>
+
+          <div className="grid grid-cols-3 gap-10">
+            <FeatureCard
+              imgSrc="https://www.letstute.com/s/pages/assets/images/growth.png"
+              heading="Build Financial Knowledge
+"
+            />
+            <FeatureCard
+              imgSrc="https://www.letstute.com/s/pages/assets/images/equilibrium.png"
+              heading="Manage Finance Effectively"
+            />
+            <FeatureCard
+              imgSrc="https://www.letstute.com/s/pages/assets/images/audio-book.png"
+              heading="Self-paced Learning"
+            />
           </div>
         </div>
       </section>
