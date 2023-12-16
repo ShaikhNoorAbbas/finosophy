@@ -1,28 +1,17 @@
-'use client';
-
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import { tg } from '@/data/tg';
+import { tgs } from '@/datasets/tgs';
 
 interface TgProps {
   params: {
-    tg: keyof typeof tg;
+    tg: string;
   };
 }
 
+export async function generateStaticParams() {
+  return tgs.map((tg) => ({ tg: tg.name.toLowerCase() }));
+}
+
 export default function Tg({ params }: TgProps) {
-  const data = tg[params.tg];
-  const router = useRouter();
-
-  useEffect(() => {
-    if (!data) {
-      router.push('/404');
-    }
-  }, [data, router]);
-
-  if (!data) {
-    return null;
-  }
+  const [tg] = tgs.filter((tg) => tg.name.toLowerCase() === params.tg);
 
   return (
     <>
@@ -32,16 +21,12 @@ export default function Tg({ params }: TgProps) {
         <div className="absolute inset-0 bg-black opacity-[.07]"></div>
         <div className="container relative z-10 grid grid-cols-2 gap-14">
           <div className="flex flex-col items-start gap-y-5">
-            <span className="subheading--fill">
-              {data.heroSection.heading1}
-            </span>
-            <h1 className="h1-bold text-primary">
-              {data.heroSection.heading2}
-            </h1>
+            <span className="subheading--fill">{tg.heroSection.heading1}</span>
+            <h1 className="h1-bold text-primary">{tg.heroSection.heading2}</h1>
             <span className="subheading">
-              {`${data.heroSection.heading3.split(' ').slice(0, -1).join(' ')}`}{' '}
+              {`${tg.heroSection.heading3.split(' ').slice(0, -1).join(' ')}`}{' '}
               <span className="text-secondary text-3xl font-bold">
-                {`${data.heroSection.heading3.split(' ').pop()}`}
+                {`${tg.heroSection.heading3.split(' ').pop()}`}
               </span>
             </span>
           </div>
@@ -55,8 +40,7 @@ export default function Tg({ params }: TgProps) {
           <div className="flex flex-col items-center gap-y-3">
             <span className="subheading--secondary">Overview</span>
             <h2 className="h2-bold text-primary">
-              Why Finosophy for{' '}
-              {params.tg.split('')[0].toUpperCase() + params.tg.slice(1)}?
+              Why Finosophy for {tg.name}
             </h2>
           </div>
         </div>

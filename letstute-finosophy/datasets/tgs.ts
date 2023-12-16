@@ -1,5 +1,6 @@
-export const tg = {
-  kids: {
+export const tgs = [
+  {
+    name: 'Kids',
     heroSection: {
       heading1: 'Seeking Financial Education for Your Kid?',
       heading2: 'Everything You Need is Here!!',
@@ -81,7 +82,8 @@ export const tg = {
       ],
     },
   },
-  youth: {
+  {
+    name: 'Youth',
     heroSection: {
       heading1: 'Looking for Financial Literacy Program?',
       heading2: 'Everything You Need is Here!!',
@@ -188,7 +190,8 @@ export const tg = {
       ],
     },
   },
-  teacher: {
+  {
+    name: 'Teacher',
     heroSection: {
       heading1: 'Want to Become a Certified Financial Tutor?',
       heading2: 'Everything You Need is Here!!',
@@ -284,7 +287,8 @@ export const tg = {
       ],
     },
   },
-  school: {
+  {
+    name: 'School',
     heroSection: {
       heading1: 'Looking for Financial Literacy Program?',
       heading2: 'Everything You Need is Here!!',
@@ -385,4 +389,4 @@ export const tg = {
       ],
     },
   },
-};
+];
