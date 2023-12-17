@@ -1,5 +1,6 @@
 import Button from '@/components/shared/button/Button';
-import FeatureCard from '@/components/shared/feature-card/FeatureCard';
+import CourseCard from '@/components/shared/cards/CourseCard';
+import FeatureCard from '@/components/shared/cards/FeatureCard';
 import SectionHeader from '@/components/shared/header/sectionHeader';
 import { tgs } from '@/datasets/tgs';
 
@@ -33,7 +34,7 @@ export default function Tg({ params }: TgProps) {
               </span>
             </span>
             <Button
-              href="#"
+              href="#products"
               text={`Explore Products for ${tg.name}`}
               style="py-3 px-6 text-xl font-bold bg-secondary text-white"
             />
@@ -69,17 +70,30 @@ export default function Tg({ params }: TgProps) {
       </section>
 
       {/* Products Section */}
-      <section className="relative py-20">
+      <section className="relative py-20" id="products">
         <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
         <div className="bg-primary-dark absolute inset-0 opacity-[.8]"></div>
         <div className="container relative z-10 flex flex-col gap-y-16">
           <SectionHeader
-            subheading="Affordable"
+            subheading="Purchase Now!"
             heading={`Finosophy Products for ${tg.name}`}
             headingStyle="text-white"
           />
 
-          <div className="grid grid-cols-3"></div>
+          <div className="grid grid-cols-3 gap-10">
+            <CourseCard
+              cardLink="#"
+              imgSrc="https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png"
+            />
+            <CourseCard
+              cardLink="#"
+              imgSrc="https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png"
+            />
+            <CourseCard
+              cardLink="#"
+              imgSrc="https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png"
+            />
+          </div>
         </div>
       </section>
     </>
