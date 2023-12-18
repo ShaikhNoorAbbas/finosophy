@@ -3,19 +3,27 @@ import Link from 'next/link';
 import Button from '../button/Button';
 
 interface CourseCardProps {
+  style?: string;
   cardLink: string;
   imgSrc: string;
 }
 
-export default function CourseCard({ cardLink, imgSrc }: CourseCardProps) {
+export default function CourseCard({
+  style,
+  cardLink,
+  imgSrc,
+}: CourseCardProps) {
   return (
-    <Link href={cardLink} className="flex gap-x-5 overflow-hidden rounded-lg">
+    <Link
+      href={cardLink}
+      className={`flex gap-x-5 overflow-hidden rounded-lg ${style}`}
+    >
       <Image
         src={imgSrc}
         width={522}
         height={702}
         alt=""
-        className="max-w-[110px] self-start rounded-lg"
+        className="w-[110px] self-start rounded-lg"
       />
 
       <div className="before--arrow-left relative flex w-full flex-col gap-y-5 rounded-lg bg-white p-5">

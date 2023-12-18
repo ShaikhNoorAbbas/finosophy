@@ -10,22 +10,27 @@ export const tgs = [
     featuresSection: {
       features: [
         {
+          id: 1,
           icon: 'https://www.letstute.com/s/pages/assets/images/growth.png',
           heading: 'Build Financial Knowledge',
         },
         {
+          id: 2,
           icon: 'https://www.letstute.com/s/pages/assets/images/equilibrium.png',
           heading: 'Manage Finance Effectively',
         },
         {
+          id: 3,
           icon: 'https://www.letstute.com/s/pages/assets/images/audio-book.png',
           heading: 'Self-paced Learning',
         },
         {
+          id: 4,
           icon: 'https://www.letstute.com/s/pages/assets/images/certificate.png',
           heading: 'Get Course Certificate',
         },
         {
+          id: 5,
           icon: 'https://www.letstute.com/s/pages/assets/images/work-from-home.png',
           heading: 'Weekly Live Sessions',
         },
@@ -93,22 +98,27 @@ export const tgs = [
     featuresSection: {
       features: [
         {
+          id: 1,
           icon: 'https://www.letstute.com/s/pages/assets/images/plan.png',
           heading: 'Set Clear Financial Goals',
         },
         {
+          id: 2,
           icon: 'https://www.letstute.com/s/pages/assets/images/study.png',
           heading: 'Gain Practical Knowledge',
         },
         {
+          id: 3,
           icon: 'https://www.letstute.com/s/pages/assets/images/audio-book.png',
           heading: 'Self-paced Learning',
         },
         {
+          id: 4,
           icon: 'https://www.letstute.com/s/pages/assets/images/certificate.png',
           heading: 'Get Course Certificate',
         },
         {
+          id: 5,
           icon: 'https://www.letstute.com/s/pages/assets/images/work-from-home.png',
           heading: 'Weekly Live Sessions',
         },
@@ -201,22 +211,27 @@ export const tgs = [
     featuresSection: {
       features: [
         {
+          id: 1,
           icon: 'https://www.letstute.com/s/pages/assets/images/online-learning.png',
           heading: 'Online/Offline Training',
         },
         {
+          id: 2,
           icon: 'https://www.letstute.com/s/pages/assets/images/books.png',
           heading: 'Guided Teaching Resources',
         },
         {
+          id: 3,
           icon: 'https://www.letstute.com/s/pages/assets/images/teaching.png',
           heading: 'Learn While Teaching',
         },
         {
+          id: 4,
           icon: 'https://www.letstute.com/s/pages/assets/images/certificate.png',
           heading: 'Get Course Certificate',
         },
         {
+          id: 5,
           icon: 'https://www.letstute.com/s/pages/assets/images/work-from-home.png',
           heading: 'Weekly Live Sessions',
         },
@@ -298,22 +313,27 @@ export const tgs = [
     featuresSection: {
       features: [
         {
+          id: 1,
           icon: 'https://www.letstute.com/s/pages/assets/images/deal.png',
           heading: 'NEP Encourage Financial Literacy',
         },
         {
+          id: 2,
           icon: 'https://www.letstute.com/s/pages/assets/images/online-learning.png',
           heading: 'Teacher Training Available',
         },
         {
+          id: 3,
           icon: 'https://www.letstute.com/s/pages/assets/images/analysis.png',
           heading: 'Monitoring Dashboard Tool',
         },
         {
+          id: 4,
           icon: 'https://www.letstute.com/s/pages/assets/images/elearning.png',
           heading: 'Track Students Progress',
         },
         {
+          id: 5,
           icon: 'https://www.letstute.com/s/pages/assets/images/work-from-home.png',
           heading: 'Weekly Live Sessions',
         },

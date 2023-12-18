@@ -52,19 +52,9 @@ export default function Tg({ params }: TgProps) {
           />
 
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-            <FeatureCard
-              imgSrc="https://www.letstute.com/s/pages/assets/images/growth.png"
-              heading="Build Financial Knowledge
-"
-            />
-            <FeatureCard
-              imgSrc="https://www.letstute.com/s/pages/assets/images/equilibrium.png"
-              heading="Manage Finance Effectively"
-            />
-            <FeatureCard
-              imgSrc="https://www.letstute.com/s/pages/assets/images/audio-book.png"
-              heading="Self-paced Learning"
-            />
+            {tg.featuresSection.features.map((f) => (
+              <FeatureCard key={f.id} imgSrc={f.icon} heading={f.heading} />
+            ))}
           </div>
         </div>
       </section>
@@ -75,24 +65,48 @@ export default function Tg({ params }: TgProps) {
         <div className="bg-primary-dark absolute inset-0 opacity-[.8]"></div>
         <div className="container relative z-10 flex flex-col gap-y-16">
           <SectionHeader
-            subheading="Purchase Now!"
+            subheading="Affordable"
             heading={`Finosophy Products for ${tg.name}`}
             headingStyle="text-white"
           />
 
-          <div className="flex flex-wrap justify-center gap-10">
+          <div className="flex flex-wrap justify-center gap-x-10 gap-y-20">
             <CourseCard
+              style="flex-1 min-w-[385px] max-w-[418.67px]"
               cardLink="#"
               imgSrc="https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png"
             />
             <CourseCard
+              style="flex-1 min-w-[385px] max-w-[418.67px]"
               cardLink="#"
               imgSrc="https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png"
             />
             <CourseCard
+              style="flex-1 min-w-[385px] max-w-[418.67px]"
               cardLink="#"
               imgSrc="https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20">
+        <div className="container flex flex-col gap-y-16">
+          <SectionHeader
+            subheading="Overview"
+            heading={`Why Finosophy for ${tg.name}?`}
+          />
+
+          <div className="flex flex-wrap justify-center gap-10">
+            {tg.featuresSection.features.map((f) => (
+              <FeatureCard
+                key={f.id}
+                style="flex-1 min-w-[320px] max-w-[418.67px]"
+                imgSrc={f.icon}
+                heading={f.heading}
+              />
+            ))}
           </div>
         </div>
       </section>
