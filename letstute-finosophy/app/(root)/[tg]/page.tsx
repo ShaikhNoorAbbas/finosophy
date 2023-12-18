@@ -51,7 +51,7 @@ export default function Tg({ params }: TgProps) {
             heading={`Why Finosophy for ${tg.name}?`}
           />
 
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
             <FeatureCard
               imgSrc="https://www.letstute.com/s/pages/assets/images/growth.png"
               heading="Build Financial Knowledge
@@ -80,7 +80,7 @@ export default function Tg({ params }: TgProps) {
             headingStyle="text-white"
           />
 
-          <div className="grid grid-cols-3 gap-10">
+          <div className="flex flex-wrap justify-center gap-10">
             <CourseCard
               cardLink="#"
               imgSrc="https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png"

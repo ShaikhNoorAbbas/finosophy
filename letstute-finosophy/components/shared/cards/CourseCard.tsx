@@ -9,26 +9,27 @@ interface CourseCardProps {
 
 export default function CourseCard({ cardLink, imgSrc }: CourseCardProps) {
   return (
-    <Link
-      href={cardLink}
-      className="grid grid-cols-2 overflow-hidden rounded-lg bg-white shadow-lg"
-    >
+    <Link href={cardLink} className="flex gap-x-5 overflow-hidden rounded-lg">
       <Image
         src={imgSrc}
         width={522}
         height={702}
         alt=""
-        className="rounded-lg"
+        className="max-w-[110px] self-start rounded-lg"
       />
-      <div className="flex flex-col gap-y-5 p-5">
+
+      <div className="before--arrow-left relative flex w-full flex-col gap-y-5 rounded-lg bg-white p-5">
         <h3 className="border-primary text-primary rounded-lg border-2 border-dashed py-[2px] text-center text-base font-semibold">
-          Online Course
+          Level 1 Course
         </h3>
 
-        <p className="text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-          molestiae omnis quis repellat doloribus
-        </p>
+        <ul className="flex list-inside list-disc flex-col text-gray-500">
+          <li>8 Pre-recorded Videos</li>
+          <li>14 Chapters eBook</li>
+          <li>8 Interactive Activities</li>
+          <li>14 Interactive Flashcards</li>
+          <li>Course Certificate</li>
+        </ul>
 
         <Button
           href="#"

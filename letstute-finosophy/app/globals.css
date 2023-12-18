@@ -32,10 +32,28 @@ body {
   }
 
   .subheading--fill {
-    @apply inline-block rounded-full px-6 py-2 text-2xl font-semibold bg-quaternary text-white;
+    @apply inline-block rounded-full px-6 py-2 text-2xl font-semibold bg-tertiary text-white;
   }
 
   .paragraph {
     @apply text-xl;
+  }
+
+  .before--arrow-left::before {
+    content: '';
+    position: absolute;
+    top: 5;
+    left: 0;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 50%;
   }
 }
