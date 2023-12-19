@@ -28,7 +28,8 @@ export default function Tg({ params }: TgProps) {
             <span className="subheading--fill">{tg.heroSection.heading1}</span>
             <h1 className="h1-bold text-primary">{tg.heroSection.heading2}</h1>
             <span className="subheading">
-              {`${tg.heroSection.heading3.split(' ').slice(0, -1).join(' ')}`}{' '}
+              {`${tg.heroSection.heading3.split(' ').slice(0, -1).join(' ')}`}
+              <br />
               <span className="text-primary text-3xl font-bold">
                 {`${tg.heroSection.heading3.split(' ').pop()}`}
               </span>
@@ -73,17 +74,14 @@ export default function Tg({ params }: TgProps) {
           <div className="flex flex-wrap justify-center gap-x-10 gap-y-20">
             <CourseCard
               style="flex-1 min-w-[385px] max-w-[418.67px]"
-              cardLink="#"
               imgSrc="https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png"
             />
             <CourseCard
               style="flex-1 min-w-[385px] max-w-[418.67px]"
-              cardLink="#"
               imgSrc="https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png"
             />
             <CourseCard
               style="flex-1 min-w-[385px] max-w-[418.67px]"
-              cardLink="#"
               imgSrc="https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png"
             />
           </div>

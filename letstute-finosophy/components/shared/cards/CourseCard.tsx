@@ -1,23 +1,14 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Button from '../button/Button';
 
 interface CourseCardProps {
   style?: string;
-  cardLink: string;
   imgSrc: string;
 }
 
-export default function CourseCard({
-  style,
-  cardLink,
-  imgSrc,
-}: CourseCardProps) {
+export default function CourseCard({ style, imgSrc }: CourseCardProps) {
   return (
-    <Link
-      href={cardLink}
-      className={`flex gap-x-5 overflow-hidden rounded-lg ${style}`}
-    >
+    <div className={`flex gap-x-5 overflow-hidden rounded-lg ${style}`}>
       <Image
         src={imgSrc}
         width={522}
@@ -45,6 +36,6 @@ export default function CourseCard({
           style="py-1 text-base text-center bg-secondary text-white"
         />
       </div>
-    </Link>
+    </div>
   );
 }
