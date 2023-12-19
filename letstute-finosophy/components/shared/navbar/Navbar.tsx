@@ -3,7 +3,7 @@ import Button from '../button/Button';
 
 export default function Navbar() {
   return (
-    <nav className="bg-white py-2 shadow-md">
+    <nav className="bg-white py-3 shadow-md">
       <div className="container flex items-center justify-between">
         <ul className="flex gap-10">
           <li>
@@ -45,7 +45,7 @@ export default function Navbar() {
         <Button
           href="#"
           text="Book a Visit"
-          style="py-2 px-4 text-lg font-medium bg-secondary text-white"
+          style="py-1 px-4 text-lg font-medium bg-secondary text-white"
         />
       </div>
     </nav>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import IconList from '../icon-list/IconList';
+import IconList from '../icon/IconList';
 
 export default function Footer() {
   return (

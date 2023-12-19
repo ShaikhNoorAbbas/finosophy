@@ -56,7 +56,7 @@ export default function Tg({ params }: TgProps) {
             {tg.featuresSection.features.map((f) => (
               <FeatureCard
                 key={f.id}
-                style="flex-1 min-w-[320px] max-w-[418.67px]"
+                style="flex-1 min-w-[320px] max-w-[418.67px] bg-white"
                 imgSrc={f.icon}
                 heading={f.heading}
               />
