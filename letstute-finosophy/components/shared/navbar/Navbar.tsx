@@ -3,7 +3,7 @@ import Button from '../button/Button';
 
 export default function Navbar() {
   return (
-    <nav className="py-4 shadow-md">
+    <nav className="bg-white py-2 shadow-md">
       <div className="container flex items-center justify-between">
         <ul className="flex gap-10">
           <li>

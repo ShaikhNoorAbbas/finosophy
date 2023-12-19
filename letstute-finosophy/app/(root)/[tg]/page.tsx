@@ -37,7 +37,7 @@ export default function Tg({ params }: TgProps) {
             <Button
               href="#products"
               text={`Explore Products for ${tg.name}`}
-              style="py-3 px-6 text-xl font-bold bg-secondary text-white"
+              style="py-3 px-6 text-xl font-bold text-white"
             />
           </div>
           <div>{/* Video here... */}</div>
@@ -52,9 +52,14 @@ export default function Tg({ params }: TgProps) {
             heading={`Why Finosophy for ${tg.name}?`}
           />
 
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="flex flex-wrap justify-center gap-10">
             {tg.featuresSection.features.map((f) => (
-              <FeatureCard key={f.id} imgSrc={f.icon} heading={f.heading} />
+              <FeatureCard
+                key={f.id}
+                style="flex-1 min-w-[320px] max-w-[418.67px]"
+                imgSrc={f.icon}
+                heading={f.heading}
+              />
             ))}
           </div>
         </div>
@@ -100,7 +105,7 @@ export default function Tg({ params }: TgProps) {
             {tg.featuresSection.features.map((f) => (
               <FeatureCard
                 key={f.id}
-                style="flex-1 min-w-[320px] max-w-[418.67px]"
+                style="flex-1 min-w-[320px] max-w-[418.67px] bg-white"
                 imgSrc={f.icon}
                 heading={f.heading}
               />
