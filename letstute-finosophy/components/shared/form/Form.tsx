@@ -21,8 +21,9 @@ interface FormProps {
   inputContainerStyle?: string;
   inputs: Inputs[];
   inputStyle?: string;
-  textareas: TextAreas[];
+  textareas?: TextAreas[];
   btnStyle?: string;
+  btnText: string;
 }
 
 export default function Form({
@@ -31,6 +32,7 @@ export default function Form({
   inputStyle,
   textareas,
   btnStyle,
+  btnText,
 }: FormProps) {
   return (
     <form action="" className={`${formStyle}`}>
@@ -45,7 +47,7 @@ export default function Form({
         />
       ))}
 
-      {textareas.map((textarea, i) => (
+      {textareas?.map((textarea, i) => (
         <textarea
           key={i}
           id={textarea.id}
@@ -58,9 +60,9 @@ export default function Form({
       ))}
 
       <Button
-        text="Send My Message"
+        text={`${btnText}`}
         href="#"
-        style={`px-6 py-3 text-lg text-center text-white ${btnStyle}`}
+        style={`text-center text-white ${btnStyle}`}
       />
     </form>
   );

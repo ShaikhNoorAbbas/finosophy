@@ -47,7 +47,7 @@ export default function Contact() {
 
       {/* Map/Form Section */}
       <section className="pb-20">
-        <div className="container grid grid-cols-2 gap-20">
+        <div className="container grid gap-14 md:grid-cols-2">
           <Map />
           <div className="flex flex-col gap-y-8">
             <SectionHeader
@@ -87,7 +87,8 @@ export default function Contact() {
                   style: 'col-span-2',
                 },
               ]}
-              btnStyle="col-span-2"
+              btnStyle="col-span-2 px-6 py-3 text-lg"
+              btnText="Send My Message"
             />
           </div>
         </div>

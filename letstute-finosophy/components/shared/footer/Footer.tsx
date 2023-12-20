@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import IconList from '../icon/IconList';
+import Icon from '../icon/Icon';
+import Form from '../form/Form';
 
 export default function Footer() {
   return (
@@ -20,7 +22,28 @@ export default function Footer() {
               Efficitur potenti maecenas consectetuer mollis tempus ornare erat
               cursus.
             </p>
-            <div className="flex">fb insta x</div>
+            <div className="flex gap-2">
+              <Icon
+                link="#"
+                style="bg-primary"
+                icon="assets/icons/facebook-f.svg"
+              />
+              <Icon
+                link="#"
+                style="bg-tertiary"
+                icon="assets/icons/instagram.svg"
+              />
+              <Icon
+                link="#"
+                style="bg-primary-dark"
+                icon="assets/icons/x-twitter.svg"
+              />
+              <Icon
+                link="#"
+                style="bg-secondary"
+                icon="assets/icons/youtube.svg"
+              />
+            </div>
           </div>
 
           <div className="flex flex-col gap-y-5">
@@ -97,12 +120,28 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="">
+          <div className="flex flex-col gap-y-5">
             <h4 className="text-primary-dark text-xl font-semibold">
               Subscribe Newsletter
             </h4>
+
+            <Form
+              formStyle="flex flex-col gap-2"
+              inputs={[
+                { id: 'name', type: 'text', name: 'name', placeholder: 'Name' },
+                {
+                  id: 'email',
+                  type: 'email',
+                  name: 'email',
+                  placeholder: 'Email',
+                },
+              ]}
+              btnStyle="self-start px-[1rem] py-[.3rem] text-base"
+              btnText="Submit"
+            />
           </div>
         </div>
+
         <p className="relative top-[-2rem] text-center text-gray-400">
           Copyright © 2024 Finosophy, All rights reserved. Presented by Letstute
         </p>
