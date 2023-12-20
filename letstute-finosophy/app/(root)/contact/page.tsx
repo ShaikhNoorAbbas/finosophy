@@ -11,7 +11,7 @@ export default function Contact() {
         <div className="container">
           <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
           <div className="absolute inset-0 bg-black opacity-[.07]"></div>
-          <div className="relative z-10 grid grid-cols-2 gap-14 ">
+          <div className="relative z-10 grid grid-cols-2 gap-14">
             <div className="flex flex-col items-start gap-y-5">
               <h2 className="h1-bold text-primary">Contact Us</h2>
             </div>
@@ -49,12 +49,46 @@ export default function Contact() {
       <section className="pb-20">
         <div className="container grid grid-cols-2 gap-20">
           <Map />
-          <div>
+          <div className="flex flex-col gap-y-8">
             <SectionHeader
               subheading="24/7 Support"
               heading="Get in Touch Now!"
             />
-            <Form />
+            <Form
+              formStyle="grid grid-cols-2 gap-6"
+              inputs={[
+                { id: 'name', type: 'text', name: 'name', placeholder: 'Name' },
+                {
+                  id: 'phone',
+                  type: 'text',
+                  name: 'phone',
+                  placeholder: 'Phone',
+                },
+                {
+                  id: 'email',
+                  type: 'email',
+                  name: 'email',
+                  placeholder: 'Email',
+                },
+                {
+                  id: 'subject',
+                  type: 'text',
+                  name: 'subject',
+                  placeholder: 'Subject',
+                },
+              ]}
+              textareas={[
+                {
+                  id: 'message',
+                  name: 'message',
+                  cols: 30,
+                  rows: 8,
+                  placeholder: 'Message',
+                  style: 'col-span-2',
+                },
+              ]}
+              btnStyle="col-span-2"
+            />
           </div>
         </div>
       </section>

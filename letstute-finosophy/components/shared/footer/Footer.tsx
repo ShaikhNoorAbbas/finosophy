@@ -8,12 +8,14 @@ export default function Footer() {
       <div className="container">
         <div className="border-primary-dark relative top-[-4rem] grid grid-cols-4 gap-10 rounded-b-3xl border-t-8 bg-white p-10 shadow-lg">
           <div className="flex flex-col gap-y-5">
-            <Image
-              src="/assets/images/logo.png"
-              width={150}
-              height={32}
-              alt="Finosophy"
-            />
+            <Link href="/">
+              <Image
+                src="/assets/images/logo-dark.png"
+                width={150}
+                height={32}
+                alt="Finosophy"
+              />
+            </Link>
             <p>
               Efficitur potenti maecenas consectetuer mollis tempus ornare erat
               cursus.
