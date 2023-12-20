@@ -13,14 +13,14 @@ interface TextAreas {
   cols: number;
   rows: number;
   placeholder: string;
-  style?: string;
 }
 
 interface FormProps {
   formStyle?: string;
   inputContainerStyle?: string;
-  inputs: Inputs[];
   inputStyle?: string;
+  inputs?: Inputs[];
+  textareaStyle?: string;
   textareas?: TextAreas[];
   btnStyle?: string;
   btnText: string;
@@ -28,22 +28,23 @@ interface FormProps {
 
 export default function Form({
   formStyle,
-  inputs,
   inputStyle,
+  inputs,
+  textareaStyle,
   textareas,
   btnStyle,
   btnText,
 }: FormProps) {
   return (
     <form action="" className={`${formStyle}`}>
-      {inputs.map((input, i) => (
+      {inputs?.map((input, i) => (
         <input
           key={i}
           type={input.type}
           name={input.name}
           id={input.id}
           placeholder={input.placeholder}
-          className={`focus:border-secondary text-bold w-full rounded-3xl border-2 border-gray-300 px-4 py-2 outline-none ${inputStyle}`}
+          className={`focus:border-secondary w-full rounded-3xl border-2 border-gray-300 outline-none ${inputStyle}`}
         />
       ))}
 
@@ -55,7 +56,7 @@ export default function Form({
           cols={textarea.cols}
           rows={textarea.rows}
           placeholder={textarea.placeholder}
-          className={`focus:border-secondary text-bold w-full rounded-3xl border-2 border-gray-300 px-4 py-2 outline-none ${textarea.style}`}
+          className={`focus:border-secondary w-full rounded-3xl border-2 border-gray-300 outline-none ${textareaStyle}`}
         ></textarea>
       ))}
 

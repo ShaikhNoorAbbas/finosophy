@@ -127,6 +127,7 @@ export default function Footer() {
 
             <Form
               formStyle="flex flex-col gap-2"
+              inputStyle="px-[1rem] py-[.3rem] text-base"
               inputs={[
                 { id: 'name', type: 'text', name: 'name', placeholder: 'Name' },
                 {

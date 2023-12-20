@@ -56,6 +56,7 @@ export default function Contact() {
             />
             <Form
               formStyle="grid grid-cols-2 gap-6"
+              inputStyle="text-bold px-4 py-2"
               inputs={[
                 { id: 'name', type: 'text', name: 'name', placeholder: 'Name' },
                 {
@@ -77,6 +78,7 @@ export default function Contact() {
                   placeholder: 'Subject',
                 },
               ]}
+              textareaStyle="col-span-2 text-bold px-4 py-2"
               textareas={[
                 {
                   id: 'message',
@@ -84,7 +86,6 @@ export default function Contact() {
                   cols: 30,
                   rows: 8,
                   placeholder: 'Message',
-                  style: 'col-span-2',
                 },
               ]}
               btnStyle="col-span-2 px-6 py-3 text-lg"
