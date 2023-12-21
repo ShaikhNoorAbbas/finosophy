@@ -51,8 +51,10 @@ export default function Contact() {
           <Map />
           <div className="flex flex-col gap-y-8">
             <SectionHeader
+              style="items-center"
               subheading="24/7 Support"
               heading="Get in Touch Now!"
+              headingStyle="text-center"
             />
             <Form
               formStyle="grid grid-cols-2 gap-6"

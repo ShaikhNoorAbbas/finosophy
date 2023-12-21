@@ -48,8 +48,10 @@ export default function Tg({ params }: TgProps) {
       <section className="py-20">
         <div className="container flex flex-col gap-y-16">
           <SectionHeader
+            style="items-center"
             subheading="Overview"
             heading={`Why Finosophy for ${tg.name}?`}
+            headingStyle="text-center"
           />
 
           <div className="flex flex-wrap justify-center gap-10">
@@ -71,9 +73,10 @@ export default function Tg({ params }: TgProps) {
         <div className="bg-primary-dark absolute inset-0 opacity-[.8]"></div>
         <div className="container relative z-10 flex flex-col gap-y-16">
           <SectionHeader
+            style="items-center"
             subheading="Affordable"
             heading={`Finosophy Products for ${tg.name}`}
-            headingStyle="text-white"
+            headingStyle="text-center text-white"
           />
 
           <div className="flex flex-wrap justify-center gap-x-10 gap-y-20">
@@ -97,8 +100,10 @@ export default function Tg({ params }: TgProps) {
       <section className="py-20">
         <div className="container flex flex-col gap-y-16">
           <SectionHeader
+            style="items-center"
             subheading="Overview"
             heading={`Why Finosophy for ${tg.name}?`}
+            headingStyle="text-center"
           />
 
           <div className="flex flex-wrap justify-center gap-10">

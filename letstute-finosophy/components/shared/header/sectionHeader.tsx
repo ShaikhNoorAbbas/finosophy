@@ -1,18 +1,20 @@
 interface SectionHeaderProps {
+  style?: string;
   subheading: string;
   heading: string;
   headingStyle?: string;
 }
 
 export default function SectionHeader({
+  style,
   subheading,
   heading,
   headingStyle,
 }: SectionHeaderProps) {
   return (
-    <header className="flex flex-col items-center gap-y-3">
+    <header className={`flex flex-col gap-y-3 ${style}`}>
       <span className="subheading--secondary">{subheading}</span>
-      <h2 className={`h2-bold text-center ${headingStyle}`}>{heading}</h2>
+      <h2 className={`h2-bold ${headingStyle}`}>{heading}</h2>
     </header>
   );
 }
