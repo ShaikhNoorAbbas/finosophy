@@ -80,18 +80,15 @@ export default function Tg({ params }: TgProps) {
           />
 
           <div className="flex flex-wrap justify-center gap-x-10 gap-y-20">
-            <CourseCard
-              style="flex-1 min-w-[385px] max-w-[418.67px]"
-              imgSrc="https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png"
-            />
-            <CourseCard
-              style="flex-1 min-w-[385px] max-w-[418.67px]"
-              imgSrc="https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png"
-            />
-            <CourseCard
-              style="flex-1 min-w-[385px] max-w-[418.67px]"
-              imgSrc="https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png"
-            />
+            {tg.coursesSection.products.map((product, i) => (
+              <CourseCard
+                key={i}
+                style="flex-1 min-w-[385px] max-w-[418.67px]"
+                imgSrc={product.thumbnail}
+                heading={product.name}
+                listItems={product.features}
+              />
+            ))}
           </div>
         </div>
       </section>
