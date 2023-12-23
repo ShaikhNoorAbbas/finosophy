@@ -6,6 +6,7 @@ interface CourseCardProps {
   imgSrc: string;
   heading: string;
   listItems: string[];
+  link: string;
 }
 
 export default function CourseCard({
@@ -13,6 +14,7 @@ export default function CourseCard({
   imgSrc,
   heading,
   listItems,
+  link,
 }: CourseCardProps) {
   return (
     <div className={`flex gap-x-5 overflow-hidden rounded-lg ${style}`}>
@@ -36,7 +38,7 @@ export default function CourseCard({
         </ul>
 
         <Button
-          href="#"
+          href={link}
           text="Learn More"
           style="py-1 text-base text-center bg-secondary text-white"
         />

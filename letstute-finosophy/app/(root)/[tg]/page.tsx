@@ -1,3 +1,4 @@
+import ClientOnlyComponent from '@/components/ClientOnlyComponent';
 import Button from '@/components/shared/button/Button';
 import CourseCard from '@/components/shared/cards/CourseCard';
 import FeatureCard from '@/components/shared/cards/FeatureCard';
@@ -16,6 +17,10 @@ export async function generateStaticParams() {
 
 export default function Tg({ params }: TgProps) {
   const [tg] = tgs.filter((tg) => tg.name.toLowerCase() === params.tg);
+
+  if (!tg) {
+    return <ClientOnlyComponent redirectPath="/custom404" />;
+  }
 
   return (
     <>
@@ -55,12 +60,12 @@ export default function Tg({ params }: TgProps) {
           />
 
           <div className="flex flex-wrap justify-center gap-10">
-            {tg.featuresSection.features.map((f) => (
+            {tg.featuresSection.features.map((feature) => (
               <FeatureCard
-                key={f.id}
+                key={feature.id}
                 style="flex-1 min-w-[320px] max-w-[418.67px] bg-white"
-                imgSrc={f.icon}
-                heading={f.heading}
+                imgSrc={feature.icon}
+                heading={feature.heading}
               />
             ))}
           </div>
@@ -87,6 +92,7 @@ export default function Tg({ params }: TgProps) {
                 imgSrc={product.thumbnail}
                 heading={product.name}
                 listItems={product.features}
+                link={`${params.tg}/${product.slug}`}
               />
             ))}
           </div>
@@ -104,12 +110,12 @@ export default function Tg({ params }: TgProps) {
           />
 
           <div className="flex flex-wrap justify-center gap-10">
-            {tg.featuresSection.features.map((f) => (
+            {tg.featuresSection.features.map((feature) => (
               <FeatureCard
-                key={f.id}
+                key={feature.id}
                 style="flex-1 min-w-[320px] max-w-[418.67px] bg-white"
-                imgSrc={f.icon}
-                heading={f.heading}
+                imgSrc={feature.icon}
+                heading={feature.heading}
               />
             ))}
           </div>
