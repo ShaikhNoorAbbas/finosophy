@@ -1,9 +1,9 @@
-import ClientOnlyComponent from '@/components/ClientOnlyComponent';
 import Button from '@/components/shared/button/Button';
 import CourseCard from '@/components/shared/cards/CourseCard';
 import FeatureCard from '@/components/shared/cards/FeatureCard';
 import SectionHeader from '@/components/shared/header/sectionHeader';
 import { tgs } from '@/datasets/tgs';
+import { notFound } from 'next/navigation';
 
 interface TgProps {
   params: {
@@ -18,9 +18,7 @@ export async function generateStaticParams() {
 export default function Tg({ params }: TgProps) {
   const [tg] = tgs.filter((tg) => tg.name.toLowerCase() === params.tg);
 
-  if (!tg) {
-    return <ClientOnlyComponent redirectPath="/custom404" />;
-  }
+  if (!tg) notFound();
 
   return (
     <>

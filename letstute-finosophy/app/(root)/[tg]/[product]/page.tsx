@@ -1,5 +1,5 @@
-import ClientOnlyComponent from '@/components/ClientOnlyComponent';
 import { products } from '@/datasets/products';
+import { notFound } from 'next/navigation';
 
 interface ProductProps {
   params: {
@@ -17,7 +17,7 @@ export default function Product({ params }: ProductProps) {
   const productSlug = params.product;
   const product = allProducts.find((p) => p.slug === productSlug);
 
-  if (!product) return <ClientOnlyComponent redirectPath="/custom404" />;
+  if (!product) notFound();
 
   return <div className="container">Product</div>;
 }
