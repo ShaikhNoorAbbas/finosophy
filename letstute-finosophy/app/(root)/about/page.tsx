@@ -11,7 +11,7 @@ export default function About() {
           <div className="absolute inset-0 bg-black opacity-[.07]"></div>
           <div className="relative z-10 grid grid-cols-2 gap-14">
             <div className="flex flex-col items-start gap-y-5">
-              <h2 className="h1-bold text-primary">About Us</h2>
+              <h1 className="h1-bold text-primary">About Us</h1>
             </div>
           </div>
         </div>

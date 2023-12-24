@@ -90,7 +90,7 @@ export default function Tg({ params }: TgProps) {
                 imgSrc={product.thumbnail}
                 heading={product.name}
                 listItems={product.features}
-                link={`${params.tg}/${product.slug}`}
+                link={`/${params.tg}/${product.slug}`}
               />
             ))}
           </div>
