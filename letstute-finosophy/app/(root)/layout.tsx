@@ -12,10 +12,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <SideNavbar
-        setIsSideNavbar={setIsSideNavbar}
         isSideNavbar={isSideNavbar}
+        setIsSideNavbar={setIsSideNavbar}
       />
-      <Header setIsSideNavbar={setIsSideNavbar} isSideNavbar={isSideNavbar} />
+      <Header isSideNavbar={isSideNavbar} setIsSideNavbar={setIsSideNavbar} />
       <Navbar />
       <main>{children}</main>
       <Footer />

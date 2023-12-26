@@ -4,11 +4,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 interface HeaderProps {
-  setIsSideNavbar: (value: boolean) => void;
   isSideNavbar: boolean;
+  setIsSideNavbar: (value: boolean) => void;
 }
 
-export default function Header({ setIsSideNavbar, isSideNavbar }: HeaderProps) {
+export default function Header({ isSideNavbar, setIsSideNavbar }: HeaderProps) {
   return (
     <header className="bg-primary-dark py-5">
       <div className="container flex justify-between">

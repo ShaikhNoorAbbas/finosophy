@@ -4,8 +4,8 @@ import Link from 'next/link';
 import Button from '../button/Button';
 
 interface SideNavbarProps {
-  setIsSideNavbar: any;
   isSideNavbar: any;
+  setIsSideNavbar: (value: boolean) => void;
 }
 
 export default function SideNavbar({
@@ -19,7 +19,10 @@ export default function SideNavbar({
       }`}
     >
       <div className="flex flex-col gap-10">
-        <button onClick={() => setIsSideNavbar(false)} className="text-lg">
+        <button
+          onClick={() => setIsSideNavbar(false)}
+          className="self-center border-2 border-dashed border-gray-200 px-2 text-lg font-bold"
+        >
           Close X
         </button>
 
