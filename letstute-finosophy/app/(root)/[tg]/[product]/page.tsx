@@ -7,6 +7,7 @@ import { products } from '@/datasets/products';
 import { notFound } from 'next/navigation';
 import CourseCard from '@/components/shared/cards/CourseCard';
 import Tabs from '@/components/shared/tabs/Tabs';
+import Image from 'next/image';
 
 interface ProductProps {
   params: {
@@ -39,7 +40,7 @@ export default function Product({ params }: ProductProps) {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20">
+      <section className="relative pt-20">
         <div className="container">
           <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
           <div className="absolute inset-0 bg-black opacity-[.07]"></div>
@@ -62,7 +63,15 @@ export default function Product({ params }: ProductProps) {
                 style="py-3 px-6 text-xl font-bold text-white"
               />
             </div>
-            <div className="">{/* Image here... */}</div>
+            <div className="flex items-center justify-center">
+              <Image
+                src="/assets/images/finosophy-level-1.png"
+                width={500}
+                height={500}
+                alt="Level 1 Course"
+                className="w-[65%]"
+              />
+            </div>
           </div>
         </div>
       </section>
