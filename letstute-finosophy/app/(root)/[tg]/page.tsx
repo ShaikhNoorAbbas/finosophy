@@ -72,8 +72,8 @@ export default function Tg({ params }: TgProps) {
 
       {/* Products Section */}
       <section className="relative py-20" id="products">
-        <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
-        <div className="bg-primary-dark absolute inset-0 opacity-[.8]"></div>
+        <div className="absolute inset-0 bg-[url('/assets/images/section-bg-img.jpg')] bg-cover bg-center opacity-30"></div>
+        <div className="bg-primary-dark absolute inset-0 opacity-[.85]"></div>
         <div className="container relative z-10 flex flex-col gap-y-16">
           <SectionHeader
             style="items-center"
