@@ -65,11 +65,11 @@ export default function Product({ params }: ProductProps) {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/assets/images/finosophy-level-1.png"
+                src={product.heroImg}
                 width={500}
                 height={500}
                 alt="Level 1 Course"
-                className="w-[65%]"
+                className="w-[85%]"
               />
             </div>
           </div>

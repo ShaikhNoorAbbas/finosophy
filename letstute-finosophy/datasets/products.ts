@@ -25,6 +25,7 @@ export const products = {
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png',
       colorCode: '#53c7f8',
+      heroImg: '/assets/images/academic-level-1.png',
       slug: 'financial-literacy-online-course-level-1',
     },
     {
@@ -52,6 +53,7 @@ export const products = {
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png',
       colorCode: '#b1cd67',
+      heroImg: '/assets/images/academic-level-2.png',
       slug: 'financial-literacy-online-course-level-2',
     },
     {
@@ -79,6 +81,7 @@ export const products = {
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
       colorCode: '#f5b51f',
+      heroImg: '/assets/images/academic-level-3.png',
       slug: 'financial-literacy-online-course-level-3',
     },
     {
@@ -106,6 +109,7 @@ export const products = {
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/letstute-level-4-cover.jpg',
       colorCode: '#f06ea6',
+      heroImg: '/assets/images/academic-level-4.png',
       slug: 'financial-literacy-online-course-level-4',
     },
     {
@@ -133,6 +137,7 @@ export const products = {
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/letstute-level-5-cover.jpg',
       colorCode: '#49c085',
+      heroImg: '/assets/images/academic-level-5.png',
       slug: 'financial-literacy-online-course-level-5',
     },
     {
@@ -159,6 +164,7 @@ export const products = {
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/letstute-level-6-cover.jpg',
       colorCode: '#fd906f',
+      heroImg: '/assets/images/academic-level-6.png',
       slug: 'financial-literacy-online-course-level-6',
     },
   ],
@@ -187,6 +193,7 @@ export const products = {
     thumbnail:
       'https://www.letstute.com/s/pages/assets/images/1-6-combo-pack.jpg',
     colorCode: '#8c52ff',
+    heroImg: '/assets/images/academic-level-1-6-combo-pack.png',
     slug: 'financial-literacy-level-1-to-6-combo-pack',
   },
   youth: [
@@ -215,6 +222,7 @@ export const products = {
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/youth-thumbnail.png',
       colorCode: '#f5b51f',
+      heroImg: '/assets/images/youth.png',
       slug: 'financial-literacy-online-course-for-youth',
     },
     {
@@ -242,6 +250,7 @@ export const products = {
       thumbnail:
         'https://www.letstute.com/s/pages/assets/images/youth-thumbnail.png',
       colorCode: '#f5b51f',
+      heroImg: '/assets/images/youth.png',
       slug: 'financial-literacy-ebook',
     },
   ],
