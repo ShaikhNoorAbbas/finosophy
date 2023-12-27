@@ -1,4 +1,5 @@
 import SectionHeader from '@/components/shared/header/sectionHeader';
+import IconList from '@/components/shared/icon/IconList';
 import Quiz from '@/components/shared/quiz/Quiz';
 import Image from 'next/image';
 
@@ -19,7 +20,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ShowReel Section */}
+      {/* Showreel Section */}
       <section className="relative py-20">
         <div className="absolute inset-0 bg-[url('/assets/images/section-bg-img.jpg')] bg-cover bg-center opacity-30"></div>
         <div className="bg-primary-dark absolute inset-0 opacity-[.85]"></div>
@@ -31,62 +32,34 @@ export default function Home() {
             headingStyle="text-center text-white"
           />
           <ul className="grid grid-cols-4">
-            <li className="">
-              <span className="flex items-center gap-4">
-                <Image
-                  src={'/assets/icons/check-badge.svg'}
-                  alt="->"
-                  width={35}
-                  height={35}
-                  className="text-tertiary inline-block"
-                />
-                <span className="text-xl font-bold text-white">
-                  Interactive Games
-                </span>
-              </span>
-            </li>
-            <li className="">
-              <span className="flex items-center gap-4">
-                <Image
-                  src={'/assets/icons/check-badge.svg'}
-                  alt="->"
-                  width={35}
-                  height={35}
-                  className="text-tertiary inline-block"
-                />
-                <span className="text-xl font-bold text-white">
-                  Interactive Flashcards
-                </span>
-              </span>
-            </li>
-            <li className="">
-              <span className="flex items-center gap-4">
-                <Image
-                  src={'/assets/icons/check-badge.svg'}
-                  alt="->"
-                  width={35}
-                  height={35}
-                  className="text-tertiary inline-block"
-                />
-                <span className="text-xl font-bold text-white">
-                  Test/Assessments
-                </span>
-              </span>
-            </li>
-            <li className="">
-              <span className="flex items-center gap-4">
-                <Image
-                  src={'/assets/icons/check-badge.svg'}
-                  alt="->"
-                  width={35}
-                  height={35}
-                  className="text-tertiary inline-block"
-                />
-                <span className="text-xl font-bold text-white">
-                  Pre-Recorded Videos
-                </span>
-              </span>
-            </li>
+            <IconList
+              icon="assets/icons/check-badge.svg"
+              iconStyle="h-9 w-9"
+              alt="Check badge icon"
+              desc="Interactive Games"
+              descStyle="text-xl font-bold text-white"
+            />
+            <IconList
+              icon="assets/icons/check-badge.svg"
+              iconStyle="h-9 w-9"
+              alt="Check badge icon"
+              desc="Interactive Games"
+              descStyle="text-xl font-bold text-white"
+            />
+            <IconList
+              icon="assets/icons/check-badge.svg"
+              iconStyle="h-9 w-9"
+              alt="Check badge icon"
+              desc="Interactive Games"
+              descStyle="text-xl font-bold text-white"
+            />
+            <IconList
+              icon="assets/icons/check-badge.svg"
+              iconStyle="h-9 w-9"
+              alt="Check badge icon"
+              desc="Interactive Games"
+              descStyle="text-xl font-bold text-white"
+            />
           </ul>
 
           <div className="flex items-center justify-center">
@@ -98,6 +71,11 @@ export default function Home() {
             </video>
           </div>
         </div>
+      </section>
+
+      {/* Tgs Section */}
+      <section className="py-20">
+        <div className="container"></div>
       </section>
     </>
   );

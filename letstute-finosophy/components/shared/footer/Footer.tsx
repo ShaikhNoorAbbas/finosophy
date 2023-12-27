@@ -74,16 +74,19 @@ export default function Footer() {
             <ul className="flex flex-col gap-y-2">
               <IconList
                 icon="assets/icons/location-dot-solid.svg"
+                iconStyle="h-9 w-9 p-2"
                 alt="Location"
                 desc="Taikalwadi, Joshi Marg Mahim West, Mumbai - 400016"
               />
               <IconList
                 icon="assets/icons/envelope-solid.svg"
+                iconStyle="h-9 w-9 p-2"
                 alt="Mail"
                 desc="info@letstute.co.in"
               />
               <IconList
                 icon="assets/icons/phone-solid.svg"
+                iconStyle="h-9 w-9 p-2"
                 alt="Phone"
                 desc="+91 93214 21265"
               />
