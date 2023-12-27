@@ -86,4 +86,8 @@ body {
   .bg-gradient {
     background-image: linear-gradient(to right, #fe5b32 50%, #fe8332 100%);
   }
+
+  .bg-gradient--tertiary {
+    background-image: linear-gradient(to right, #b3e3e1 50%, #cceceb 100%);
+  }
 }

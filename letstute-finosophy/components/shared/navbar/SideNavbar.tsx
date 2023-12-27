@@ -28,7 +28,7 @@ export default function SideNavbar({
 
         <ul
           onClick={() => setIsSideNavbar(false)}
-          className="flex flex-col gap-4"
+          className="flex flex-col items-center gap-4"
         >
           <li>
             <Link href="/" className="link">
