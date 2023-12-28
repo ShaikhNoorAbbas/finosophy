@@ -77,7 +77,7 @@ const QuizComponent = () => {
   const { number, question, options } = demoQuestions[currentQuestionIndex];
 
   return (
-    <div className="bg-gradient--tertiary border-tertiary flex flex-col items-center justify-center rounded-lg border-t-8 p-10 shadow-lg">
+    <div className="bg-tertiary-light border-tertiary flex flex-col items-center justify-center rounded-lg border-t-8 p-10 shadow-lg">
       <div className="bg-tertiary mb-4 rounded-lg px-4 py-1 text-xl font-bold text-white">{`Question No. ${number}`}</div>
       <div className="mb-8 text-2xl font-bold text-gray-600">{question}</div>
       {options.map((option, index) => (

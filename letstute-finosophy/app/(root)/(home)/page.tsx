@@ -1,14 +1,19 @@
+import Button from '@/components/shared/button/Button';
+import ImgCard from '@/components/shared/cards/ImgCard';
 import SectionHeader from '@/components/shared/header/sectionHeader';
 import IconList from '@/components/shared/icon/IconList';
 import Quiz from '@/components/shared/quiz/Quiz';
+import Quote from '@/components/shared/quote/Quote';
 import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white py-20 shadow-lg">
-        <div className="container grid grid-cols-2">
+      <section className="relative py-20">
+        <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
+        <div className="absolute inset-0 bg-black opacity-[.07]"></div>
+        <div className="container relative z-10 grid grid-cols-2 gap-14">
           <Image
             src="/assets/images/hero-img-default.png"
             width={1500}
@@ -31,51 +36,78 @@ export default function Home() {
             heading="What is Finosophy?"
             headingStyle="text-center text-white"
           />
-          <ul className="grid grid-cols-4">
-            <IconList
-              icon="assets/icons/check-badge.svg"
-              iconStyle="h-9 w-9"
-              alt="Check badge icon"
-              desc="Interactive Games"
-              descStyle="text-xl font-bold text-white"
-            />
-            <IconList
-              icon="assets/icons/check-badge.svg"
-              iconStyle="h-9 w-9"
-              alt="Check badge icon"
-              desc="Interactive Games"
-              descStyle="text-xl font-bold text-white"
-            />
-            <IconList
-              icon="assets/icons/check-badge.svg"
-              iconStyle="h-9 w-9"
-              alt="Check badge icon"
-              desc="Interactive Games"
-              descStyle="text-xl font-bold text-white"
-            />
-            <IconList
-              icon="assets/icons/check-badge.svg"
-              iconStyle="h-9 w-9"
-              alt="Check badge icon"
-              desc="Interactive Games"
-              descStyle="text-xl font-bold text-white"
-            />
-          </ul>
+
+          <div className="grid grid-cols-2 items-center gap-14">
+            <div className="flex items-center justify-center">
+              <video className="w-full rounded-lg" autoPlay loop muted controls>
+                <source
+                  src="/assets/videos/finosophy-showreel.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+
+            <ul className="flex flex-col gap-8">
+              <IconList
+                icon="assets/icons/check-badge.svg"
+                iconStyle="h-9 w-9"
+                alt="Check badge icon"
+                desc="Fun & interactive way to learn financial literacy."
+                descStyle="text-xl font-bold text-white"
+              />
+              <IconList
+                icon="assets/icons/check-badge.svg"
+                iconStyle="h-9 w-9"
+                alt="Check badge icon"
+                desc="Learn money management, investing, budgeting."
+                descStyle="text-xl font-bold text-white"
+              />
+              <IconList
+                icon="assets/icons/check-badge.svg"
+                iconStyle="h-9 w-9"
+                alt="Check badge icon"
+                desc="Online courses suitable for all age groups."
+                descStyle="text-xl font-bold text-white"
+              />
+              <IconList
+                icon="assets/icons/check-badge.svg"
+                iconStyle="h-9 w-9"
+                alt="Check badge icon"
+                desc="Best & easy way to step into financial world."
+                descStyle="text-xl font-bold text-white"
+              />
+              <IconList
+                icon="assets/icons/check-badge.svg"
+                iconStyle="h-9 w-9"
+                alt="Check badge icon"
+                desc="Videos, Games, Flashcards, Assessments etc."
+                descStyle="text-xl font-bold text-white"
+              />
+            </ul>
+          </div>
 
           <div className="flex items-center justify-center">
-            <video className="w-[60%] rounded-2xl" autoPlay loop muted controls>
-              <source
-                src="/assets/videos/finosophy-showreel.mp4"
-                type="video/mp4"
-              />
-            </video>
+            <Button
+              href="/kids#products"
+              text="Explore Products for Kids"
+              style="py-3 px-6 text-xl font-bold text-white"
+            />
           </div>
         </div>
       </section>
 
       {/* Tgs Section */}
       <section className="py-20">
-        <div className="container"></div>
+        <div className="container flex flex-col gap-y-16">
+          <Quote />
+
+          <div className="grid grid-cols-4 gap-10">
+            <ImgCard />
+            <ImgCard />
+            <ImgCard />
+            <ImgCard />
+          </div>
+        </div>
       </section>
     </>
   );
