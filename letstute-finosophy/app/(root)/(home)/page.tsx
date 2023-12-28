@@ -102,10 +102,38 @@ export default function Home() {
           <Quote />
 
           <div className="grid grid-cols-4 gap-10">
-            <ImgCard />
-            <ImgCard />
-            <ImgCard />
-            <ImgCard />
+            <ImgCard
+              heading="for Kids"
+              imgSrc="/assets/images/img-card-kids.jpg"
+              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
+          aliquid perspiciatis nisi rem labore."
+              btnLink="/kids"
+              btnText="Learn more"
+            />
+            <ImgCard
+              heading="for Youth"
+              imgSrc="/assets/images/img-card-youth.jpg"
+              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
+          aliquid perspiciatis nisi rem labore."
+              btnLink="/youth"
+              btnText="Learn more"
+            />
+            <ImgCard
+              heading="for Teacher"
+              imgSrc="/assets/images/img-card-teacher.jpg"
+              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
+          aliquid perspiciatis nisi rem labore."
+              btnLink="/teacher"
+              btnText="Learn more"
+            />
+            <ImgCard
+              heading="for School"
+              imgSrc="/assets/images/img-card-school.jpg"
+              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
+          aliquid perspiciatis nisi rem labore."
+              btnLink="/school"
+              btnText="Learn more"
+            />
           </div>
         </div>
       </section>

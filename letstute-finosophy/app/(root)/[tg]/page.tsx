@@ -1,6 +1,7 @@
 import Button from '@/components/shared/button/Button';
 import CourseCard from '@/components/shared/cards/CourseCard';
 import FeatureCard from '@/components/shared/cards/FeatureCard';
+import ImgCard from '@/components/shared/cards/ImgCard';
 import SectionHeader from '@/components/shared/header/sectionHeader';
 import { tgs } from '@/datasets/tgs';
 import { notFound } from 'next/navigation';
@@ -52,20 +53,36 @@ export default function Tg({ params }: TgProps) {
         <div className="container flex flex-col gap-y-16">
           <SectionHeader
             style="items-center"
-            subheading="Overview"
-            heading={`Why Finosophy for ${tg.name}?`}
+            subheading="Playful Resources"
+            heading="Learn With Lots of Fun!!"
             headingStyle="text-center"
           />
 
-          <div className="flex flex-wrap justify-center gap-10">
-            {tg.featuresSection.features.map((feature) => (
-              <FeatureCard
-                key={feature.id}
-                style="flex-1 min-w-[320px] max-w-[418.67px] bg-white"
-                imgSrc={feature.icon}
-                heading={feature.heading}
-              />
-            ))}
+          <div className="grid grid-cols-3 gap-10">
+            <ImgCard
+              heading="Interactive Activities"
+              imgSrc="/assets/images/img-card-kids.jpg"
+              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
+          aliquid perspiciatis nisi rem labore."
+              btnLink="/kids"
+              btnText="Learn more"
+            />
+            <ImgCard
+              heading="High-Quality Videos"
+              imgSrc="/assets/images/img-card-youth.jpg"
+              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
+          aliquid perspiciatis nisi rem labore."
+              btnLink="/youth"
+              btnText="Learn more"
+            />
+            <ImgCard
+              heading="Interactive Flashcards"
+              imgSrc="/assets/images/img-card-teacher.jpg"
+              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
+          aliquid perspiciatis nisi rem labore."
+              btnLink="/teacher"
+              btnText="Learn more"
+            />
           </div>
         </div>
       </section>
