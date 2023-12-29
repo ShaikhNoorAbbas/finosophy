@@ -26,22 +26,22 @@ export default function Footer() {
               <Icon
                 link="#"
                 style="bg-primary"
-                icon="assets/icons/facebook-f.svg"
+                icon="/assets/icons/facebook-f.svg"
               />
               <Icon
                 link="#"
                 style="bg-tertiary"
-                icon="assets/icons/instagram.svg"
+                icon="/assets/icons/instagram.svg"
               />
               <Icon
                 link="#"
                 style="bg-primary-dark"
-                icon="assets/icons/x-twitter.svg"
+                icon="/assets/icons/x-twitter.svg"
               />
               <Icon
                 link="#"
                 style="bg-secondary"
-                icon="assets/icons/youtube.svg"
+                icon="/assets/icons/youtube.svg"
               />
             </div>
           </div>
@@ -73,19 +73,19 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-y-2">
               <IconList
-                icon="assets/icons/location-dot-solid.svg"
+                icon="/assets/icons/location-dot-solid.svg"
                 iconStyle="h-9 w-9 p-2"
                 alt="Location"
                 desc="Taikalwadi, Joshi Marg Mahim West, Mumbai - 400016"
               />
               <IconList
-                icon="assets/icons/envelope-solid.svg"
+                icon="/assets/icons/envelope-solid.svg"
                 iconStyle="h-9 w-9 p-2"
                 alt="Mail"
                 desc="info@letstute.co.in"
               />
               <IconList
-                icon="assets/icons/phone-solid.svg"
+                icon="/assets/icons/phone-solid.svg"
                 iconStyle="h-9 w-9 p-2"
                 alt="Phone"
                 desc="+91 93214 21265"

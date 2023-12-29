@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 interface IconListProps {
+  style?: string;
   icon: string;
   iconStyle?: string;
   alt: string;
@@ -10,6 +11,7 @@ interface IconListProps {
 }
 
 export default function IconList({
+  style,
   icon,
   iconStyle,
   alt,
@@ -17,7 +19,7 @@ export default function IconList({
   descStyle,
 }: IconListProps) {
   return (
-    <li className="icon-list">
+    <li className={`icon-list ${style}`}>
       <Image
         src={icon}
         width={10}

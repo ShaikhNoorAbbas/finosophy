@@ -8,6 +8,7 @@ import { notFound } from 'next/navigation';
 import CourseCard from '@/components/shared/cards/CourseCard';
 import Tabs from '@/components/shared/tabs/Tabs';
 import Image from 'next/image';
+import IconList from '@/components/shared/icon/IconList';
 
 interface ProductProps {
   params: {
@@ -31,7 +32,60 @@ export default function Product({ params }: ProductProps) {
   if (!product) notFound();
 
   const tabItems = [
-    { label: 'Details', content: <p>Content of Tab 1</p> },
+    {
+      label: 'Details',
+      content: (
+        <div className="flex flex-col gap-y-10">
+          <span className="bg-tertiary-light rounded-lg p-6 text-center text-xl">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+            accusantium libero consequuntur voluptas omnis ullam est! Fuga
+            officiis itaque blanditiis omnis commodi enim necessitatibus cumque
+            illum eligendi quibusdam. Iusto, quia?
+          </span>
+
+          <div className="grid grid-cols-4 gap-10">
+            <div className="flex items-center justify-center rounded-lg border-2 border-dashed p-2">
+              <IconList
+                icon="/assets/icons/check-badge.svg"
+                iconStyle="h-9 w-9"
+                alt="Check badge icon"
+                desc="English Language"
+                descStyle="text-xl"
+              />
+            </div>
+            <IconList
+              icon="/assets/icons/check-badge.svg"
+              iconStyle="h-9 w-9"
+              alt="Check badge icon"
+              desc="One Year Validity"
+              descStyle="text-xl"
+            />
+            <IconList
+              icon="/assets/icons/check-badge.svg"
+              iconStyle="h-9 w-9"
+              alt="Check badge icon"
+              desc="24/7 Course Access"
+              descStyle="text-xl"
+            />
+            <IconList
+              icon="/assets/icons/check-badge.svg"
+              iconStyle="h-9 w-9"
+              alt="Check badge icon"
+              desc="Course Certificate"
+              descStyle="text-xl"
+            />
+          </div>
+
+          <div className="flex items-center justify-center">
+            <Button
+              href="/kids#products"
+              text="Explore Products for Kids"
+              style="py-3 px-6 text-xl font-bold text-white"
+            />
+          </div>
+        </div>
+      ),
+    },
     { label: 'Curriculum', content: <p>Content of Tab 2</p> },
     { label: 'Reviews', content: <p>Content of Tab 3</p> },
   ];

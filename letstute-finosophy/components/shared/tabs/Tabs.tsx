@@ -32,7 +32,9 @@ export default function Tabs({ items }: TabsProps) {
       </div>
 
       {/* Tab content */}
-      <div className="bg-white p-8 shadow-lg">{items[activeTab].content}</div>
+      <div className="rounded-lg bg-white p-8 shadow-lg">
+        {items[activeTab].content}
+      </div>
     </div>
   );
 }
