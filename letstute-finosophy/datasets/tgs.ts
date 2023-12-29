@@ -7,7 +7,7 @@ export const tgs = [
       heading1: 'Seeking Financial Education for Your Kid?',
       heading2: 'Everything You Need is Here!!',
       heading3: 'Make Your Child Financially Confident with Finosophy',
-      img: 'https://www.letstute.com/s/pages/assets/images/kids-white.jpg',
+      img: '/assets/images/kids-hero-img.png',
     },
     featuresSection: {
       features: [
@@ -98,7 +98,7 @@ export const tgs = [
       heading1: 'Looking for Financial Literacy Program?',
       heading2: 'Everything You Need is Here!!',
       heading3: 'Learn to Grow and Manage Your Money with Finosophy',
-      img: 'https://www.letstute.com/s/pages/assets/images/youth2.jpg',
+      img: '/assets/images/kids-hero-img.png',
     },
     featuresSection: {
       features: [
@@ -214,7 +214,7 @@ export const tgs = [
       heading1: 'Want to Become a Certified Financial Tutor?',
       heading2: 'Everything You Need is Here!!',
       heading3: 'Teach Your Students Financial Literacy with Finosophy',
-      img: 'https://www.letstute.com/s/pages/assets/images/teacher-white.jpg',
+      img: '/assets/images/teacher-hero-img.png',
     },
     featuresSection: {
       features: [
@@ -319,7 +319,7 @@ export const tgs = [
       heading1: 'Looking for Financial Literacy Program?',
       heading2: 'Everything You Need is Here!!',
       heading3: 'Create Financially Confident Students with Finosophy',
-      img: 'https://www.letstute.com/s/pages/assets/images/school-white.jpg',
+      img: '/assets/images/teacher-hero-img.png',
     },
     featuresSection: {
       features: [

@@ -44,7 +44,7 @@ export default function Navbar() {
         </ul>
         <Button
           href="#"
-          text="Book a Visit"
+          text="Enquire Now!"
           style="py-1 px-4 text-lg font-medium bg-secondary text-white"
         />
       </div>

@@ -48,7 +48,7 @@ export default function Tg({ params }: TgProps) {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="/assets/images/kids-hero-img.png"
+              src={tg.heroSection.img}
               width={500}
               height={500}
               alt="Level 1 Course"
