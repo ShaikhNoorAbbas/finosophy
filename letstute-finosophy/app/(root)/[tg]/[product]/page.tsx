@@ -34,7 +34,6 @@ export default function Product({ params }: ProductProps) {
     { label: 'Details', content: <p>Content of Tab 1</p> },
     { label: 'Curriculum', content: <p>Content of Tab 2</p> },
     { label: 'Reviews', content: <p>Content of Tab 3</p> },
-    // Add more tabs as needed
   ];
 
   return (

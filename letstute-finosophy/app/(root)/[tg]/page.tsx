@@ -2,8 +2,10 @@ import Button from '@/components/shared/button/Button';
 import CourseCard from '@/components/shared/cards/CourseCard';
 import FeatureCard from '@/components/shared/cards/FeatureCard';
 import ImgCard from '@/components/shared/cards/ImgCard';
+import VideoCard from '@/components/shared/cards/VideoCard';
 import SectionHeader from '@/components/shared/header/sectionHeader';
 import { tgs } from '@/datasets/tgs';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
 interface TgProps {
@@ -24,7 +26,7 @@ export default function Tg({ params }: TgProps) {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20">
+      <section className="relative pt-20">
         <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
         <div className="absolute inset-0 bg-black opacity-[.07]"></div>
         <div className="container relative z-10 grid grid-cols-2 gap-14">
@@ -44,7 +46,15 @@ export default function Tg({ params }: TgProps) {
               style="py-3 px-6 text-xl font-bold text-white"
             />
           </div>
-          <div>{/* Video here... */}</div>
+          <div className="flex items-center justify-center">
+            <Image
+              src="/assets/images/kids-hero-img.png"
+              width={500}
+              height={500}
+              alt="Level 1 Course"
+              className="w-[90%]"
+            />
+          </div>
         </div>
       </section>
 
@@ -58,30 +68,33 @@ export default function Tg({ params }: TgProps) {
             headingStyle="text-center"
           />
 
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-3 items-start gap-10">
             <ImgCard
+              headerStyle="flex-col-reverse"
               heading="Interactive Activities"
-              imgSrc="/assets/images/img-card-kids.jpg"
+              imgSrc="/assets/images/img-card-activity.png"
               desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
           aliquid perspiciatis nisi rem labore."
               btnLink="/kids"
-              btnText="Learn more"
+              btnText="Play Now"
             />
-            <ImgCard
+            <VideoCard
+              headerStyle="flex-col-reverse"
               heading="High-Quality Videos"
-              imgSrc="/assets/images/img-card-youth.jpg"
+              videoSrc="/assets/videos/superman.mp4"
               desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
           aliquid perspiciatis nisi rem labore."
               btnLink="/youth"
-              btnText="Learn more"
+              btnText="Watch Now"
             />
             <ImgCard
+              headerStyle="flex-col-reverse"
               heading="Interactive Flashcards"
-              imgSrc="/assets/images/img-card-teacher.jpg"
+              imgSrc="/assets/images/img-card-flashcard.png"
               desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
           aliquid perspiciatis nisi rem labore."
               btnLink="/teacher"
-              btnText="Learn more"
+              btnText="Open Now"
             />
           </div>
         </div>

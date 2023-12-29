@@ -103,6 +103,8 @@ export default function Home() {
 
           <div className="grid grid-cols-4 gap-10">
             <ImgCard
+              style="bg-tertiary"
+              headerStyle="flex-col"
               heading="for Kids"
               imgSrc="/assets/images/img-card-kids.jpg"
               desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
@@ -111,6 +113,8 @@ export default function Home() {
               btnText="Learn more"
             />
             <ImgCard
+              style="bg-tertiary"
+              headerStyle="flex-col"
               heading="for Youth"
               imgSrc="/assets/images/img-card-youth.jpg"
               desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
@@ -119,6 +123,8 @@ export default function Home() {
               btnText="Learn more"
             />
             <ImgCard
+              style="bg-tertiary"
+              headerStyle="flex-col"
               heading="for Teacher"
               imgSrc="/assets/images/img-card-teacher.jpg"
               desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
@@ -127,6 +133,8 @@ export default function Home() {
               btnText="Learn more"
             />
             <ImgCard
+              style="bg-tertiary"
+              headerStyle="flex-col"
               heading="for School"
               imgSrc="/assets/images/img-card-school.jpg"
               desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat

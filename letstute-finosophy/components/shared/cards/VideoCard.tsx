@@ -1,25 +1,24 @@
-import Image from 'next/image';
 import Button from '../button/Button';
 
-interface ImgCardProps {
+interface VideoCardProps {
   style?: string;
   headerStyle: string;
   heading: string;
-  imgSrc: string;
+  videoSrc: string;
   desc: string;
   btnLink: string;
   btnText: string;
 }
 
-export default function ImgCard({
+export default function VideoCard({
   style,
   headerStyle,
   heading,
-  imgSrc,
+  videoSrc,
   desc,
   btnLink,
   btnText,
-}: ImgCardProps) {
+}: VideoCardProps) {
   return (
     <div className={`overflow-hidden rounded-lg shadow-lg ${style}`}>
       <div className={`flex ${headerStyle}`}>
@@ -28,7 +27,7 @@ export default function ImgCard({
             {heading}
           </h3>
         </div>
-        <Image src={`${imgSrc}`} width={960} height={540} alt="Tg image" />
+        <video src={`${videoSrc}`} loop muted autoPlay></video>
       </div>
       <div className="bg-tertiary-light flex flex-col gap-4 px-4 pb-6 pt-4">
         <p className="flex text-center text-gray-600">{desc}</p>
