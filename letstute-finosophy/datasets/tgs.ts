@@ -2,12 +2,12 @@ import { products } from './products';
 
 export const tgs = [
   {
-    name: 'Kids',
+    name: 'Student',
     heroSection: {
-      heading1: 'Seeking Financial Education for Your Kid?',
+      heading1: 'Seeking Financial Education for Your Child?',
       heading2: 'Everything You Need is Here!!',
       heading3: 'Make Your Child Financially Confident with Finosophy',
-      img: '/assets/images/kids-hero-img.png',
+      img: '/assets/images/student-hero-img.png',
     },
     featuresSection: {
       features: [
@@ -98,7 +98,7 @@ export const tgs = [
       heading1: 'Looking for Financial Literacy Program?',
       heading2: 'Everything You Need is Here!!',
       heading3: 'Learn to Grow and Manage Your Money with Finosophy',
-      img: '/assets/images/kids-hero-img.png',
+      img: '/assets/images/youth-hero-img.png',
     },
     featuresSection: {
       features: [
@@ -319,7 +319,7 @@ export const tgs = [
       heading1: 'Looking for Financial Literacy Program?',
       heading2: 'Everything You Need is Here!!',
       heading3: 'Create Financially Confident Students with Finosophy',
-      img: '/assets/images/teacher-hero-img.png',
+      img: '/assets/images/school-hero-img.png',
     },
     featuresSection: {
       features: [

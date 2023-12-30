@@ -12,8 +12,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/kids" className="link">
-              for Kids
+            <Link href="/student" className="link">
+              for Student
             </Link>
           </li>
           <li>

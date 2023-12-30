@@ -88,8 +88,8 @@ export default function Home() {
 
           <div className="flex items-center justify-center">
             <Button
-              href="/kids#products"
-              text="Explore Products for Kids"
+              href="/student#products"
+              text="Explore Products for Student"
               style="py-3 px-6 text-xl font-bold text-white"
             />
           </div>
@@ -105,11 +105,11 @@ export default function Home() {
             <ImgCard
               style="bg-tertiary"
               headerStyle="flex-col"
-              heading="for Kids"
+              heading="for Student"
               imgSrc="/assets/images/img-card-kids.jpg"
               desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
           aliquid perspiciatis nisi rem labore."
-              btnLink="/kids"
+              btnLink="/student"
               btnText="Learn more"
             />
             <ImgCard

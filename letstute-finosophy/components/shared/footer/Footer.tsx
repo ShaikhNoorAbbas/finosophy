@@ -56,7 +56,7 @@ export default function Footer() {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/kids">for Kids</Link>
+                <Link href="/student">for Student</Link>
               </li>
               <li>
                 <Link href="/youth">for Youth</Link>

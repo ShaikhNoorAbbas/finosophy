@@ -30,7 +30,7 @@ export default function Tg({ params }: TgProps) {
         <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
         <div className="absolute inset-0 bg-black opacity-[.07]"></div>
         <div className="container relative z-10 grid grid-cols-2 gap-14">
-          <div className="flex flex-col items-start gap-y-5">
+          <div className="flex flex-col items-start gap-y-6">
             <span className="subheading--fill">{tg.heroSection.heading1}</span>
             <h1 className="h1-bold text-primary">{tg.heroSection.heading2}</h1>
             <span className="subheading">

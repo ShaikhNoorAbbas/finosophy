@@ -20,6 +20,8 @@ interface ProductProps {
 export default function Product({ params }: ProductProps) {
   const [tg] = tgs.filter((tg) => tg.name.toLowerCase() === params.tg);
 
+  if (!tg) notFound();
+
   const allProducts = [
     ...products.academic,
     products.academicCombo,
@@ -35,51 +37,36 @@ export default function Product({ params }: ProductProps) {
     {
       label: 'Details',
       content: (
-        <div className="flex flex-col gap-y-10">
-          <span className="bg-tertiary-light rounded-lg p-6 text-center text-xl">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
-            accusantium libero consequuntur voluptas omnis ullam est! Fuga
-            officiis itaque blanditiis omnis commodi enim necessitatibus cumque
-            illum eligendi quibusdam. Iusto, quia?
+        <div className="flex flex-col gap-y-14">
+          <span className="bg-tertiary-light border-tertiary rounded-lg border-t-4 p-6 text-center text-xl">
+            {product.desc}
           </span>
 
-          <div className="grid grid-cols-4 gap-10">
-            <div className="flex items-center justify-center rounded-lg border-2 border-dashed p-2">
+          <div className="grid grid-cols-3 gap-10">
+            {product.features.map((feature, i) => (
               <IconList
+                key={i}
                 icon="/assets/icons/check-badge.svg"
                 iconStyle="h-9 w-9"
                 alt="Check badge icon"
-                desc="English Language"
+                desc={feature}
                 descStyle="text-xl"
               />
-            </div>
+            ))}
+
             <IconList
               icon="/assets/icons/check-badge.svg"
               iconStyle="h-9 w-9"
               alt="Check badge icon"
-              desc="One Year Validity"
-              descStyle="text-xl"
-            />
-            <IconList
-              icon="/assets/icons/check-badge.svg"
-              iconStyle="h-9 w-9"
-              alt="Check badge icon"
-              desc="24/7 Course Access"
-              descStyle="text-xl"
-            />
-            <IconList
-              icon="/assets/icons/check-badge.svg"
-              iconStyle="h-9 w-9"
-              alt="Check badge icon"
-              desc="Course Certificate"
+              desc="24/7 Content Access"
               descStyle="text-xl"
             />
           </div>
 
           <div className="flex items-center justify-center">
             <Button
-              href="/kids#products"
-              text="Explore Products for Kids"
+              href={product.purchaseLink}
+              text={product.price}
               style="py-3 px-6 text-xl font-bold text-white"
             />
           </div>
@@ -94,37 +81,62 @@ export default function Product({ params }: ProductProps) {
     <>
       {/* Hero Section */}
       <section className="relative pt-20">
-        <div className="container">
-          <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
-          <div className="absolute inset-0 bg-black opacity-[.07]"></div>
-          <div className="relative z-10 grid grid-cols-2 gap-14">
-            <div className="flex flex-col items-start gap-y-5">
-              <h2 className="h2-bold text-primary">
-                {`Financial Literacy ${product.name}`}
-              </h2>
-              <span className="subheading--fill">
-                {`Suitable for age group ${product.age} years`}
-              </span>
-              <span className="subheading">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptas eaque cupiditate, expedita porro nesciunt nostrum
-                facilis ratione obcaecati.
-              </span>
-              <Button
-                href="#products"
-                text={`${product.price}`}
-                style="py-3 px-6 text-xl font-bold text-white"
+        <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
+        <div className="absolute inset-0 bg-black opacity-[.07]"></div>
+        <div className="container relative z-10 grid grid-cols-2 gap-14">
+          <div className="flex flex-col items-start gap-y-6">
+            <h2 className="h2-bold text-primary">
+              {`Financial Literacy ${product.name}`}
+            </h2>
+            <span className="subheading--fill">
+              {`Suitable for age group ${product.age} years`}
+            </span>
+            <ul className="grid grid-cols-2 gap-4">
+              <IconList
+                icon="/assets/icons/globe.svg"
+                iconStyle="h-8 w-8"
+                alt="Check badge icon"
+                desc="English Language"
+                descStyle="text-xl font-semibold"
               />
-            </div>
-            <div className="flex items-center justify-center">
-              <Image
-                src={product.heroImg}
-                width={500}
-                height={500}
-                alt="Level 1 Course"
-                className="w-[85%]"
+              <IconList
+                icon="/assets/icons/award.svg"
+                iconStyle="h-8 w-8"
+                alt="Check badge icon"
+                desc="Course Certificate"
+                descStyle="text-xl font-semibold"
               />
-            </div>
+              <IconList
+                icon="/assets/icons/laptop-2.svg"
+                iconStyle="h-8 w-8"
+                alt="Check badge icon"
+                desc="24/7 Access"
+                descStyle="text-xl font-semibold"
+              />
+              <IconList
+                icon="/assets/icons/clock.svg"
+                iconStyle="h-8 w-8"
+                alt="Check badge icon"
+                desc={`${
+                  product.name === 'eBook' ? 'Lifetime' : '1 Year'
+                } Validity`}
+                descStyle="text-xl font-semibold"
+              />
+            </ul>
+            <Button
+              href={product.purchaseLink}
+              text={`${product.price}`}
+              style="py-3 px-6 text-xl font-bold text-white"
+            />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image
+              src={product.heroImg}
+              width={500}
+              height={500}
+              alt="Level 1 Course"
+              className="w-[85%]"
+            />
           </div>
         </div>
       </section>

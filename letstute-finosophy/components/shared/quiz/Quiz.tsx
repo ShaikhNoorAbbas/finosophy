@@ -12,25 +12,20 @@ interface Question {
 const demoQuestions: Question[] = [
   {
     number: '1',
-    question: 'When money was invented?',
-    options: ['3', '4', '5', '6'],
+    question: 'Loans from money lenders are typically?',
+    options: ['Regulated', 'Costly', 'Long-Term', 'Safe'],
     answer: 1,
   },
   {
     number: '2',
-    question: 'What is the capital of France?',
-    options: ['Berlin', 'Paris', 'Rome', 'Madrid'],
-    answer: 1,
+    question: 'Bank charges interest on?',
+    options: ['Deposits', 'Withdrawals', 'Loans', 'Transfers'],
+    answer: 2,
   },
   {
     number: '3',
-    question: 'Who wrote Hamlet?',
-    options: [
-      'Charles Dickens',
-      'J.K. Rowling',
-      'William Shakespeare',
-      'Mark Twain',
-    ],
+    question: 'Payment of cheque can be stopped by?',
+    options: ['Beneficiary', 'Nominee', 'Drawer of cheque', 'All of above'],
     answer: 2,
   },
 ];

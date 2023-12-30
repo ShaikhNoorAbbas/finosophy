@@ -232,16 +232,16 @@ export const products = {
       features: [
         '31 Amazing Chapters',
         '10 Complementary Videos',
-        'Access Anytime Anywhere',
+        'Chapter Summaries',
+        'Real-life Examples',
         'Get Lifetime Validity',
-        'For Just ₹499/- Only',
       ],
       game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
       flashcard:
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-      price: 'Buy Physical Copy for ₹499/-',
+      price: 'Buy eBook for ₹499/-',
       purchaseLink:
         'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p1',
       downloadBtnText: 'Buy eBook for ₹299/-',
