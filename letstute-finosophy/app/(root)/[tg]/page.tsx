@@ -58,7 +58,7 @@ export default function Tg({ params }: TgProps) {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Play Section */}
       <section className="py-20">
         <div className="container flex flex-col gap-y-16">
           <SectionHeader
@@ -77,6 +77,7 @@ export default function Tg({ params }: TgProps) {
           aliquid perspiciatis nisi rem labore."
               btnLink="/kids"
               btnText="Play Now"
+              modal
             />
             <VideoCard
               headerStyle="flex-col-reverse"
@@ -95,6 +96,7 @@ export default function Tg({ params }: TgProps) {
           aliquid perspiciatis nisi rem labore."
               btnLink="/teacher"
               btnText="Open Now"
+              modal
             />
           </div>
         </div>

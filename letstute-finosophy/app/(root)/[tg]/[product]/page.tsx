@@ -1,5 +1,3 @@
-'use client';
-
 import Button from '@/components/shared/button/Button';
 import SectionHeader from '@/components/shared/header/sectionHeader';
 import { tgs } from '@/datasets/tgs';
@@ -17,16 +15,16 @@ interface ProductProps {
   };
 }
 
+const allProducts = [
+  ...products.academic,
+  products.academicCombo,
+  ...products.youth,
+];
+
 export default function Product({ params }: ProductProps) {
   const [tg] = tgs.filter((tg) => tg.name.toLowerCase() === params.tg);
 
   if (!tg) notFound();
-
-  const allProducts = [
-    ...products.academic,
-    products.academicCombo,
-    ...products.youth,
-  ];
 
   const productSlug = params.product;
   const product = allProducts.find((p) => p.slug === productSlug);

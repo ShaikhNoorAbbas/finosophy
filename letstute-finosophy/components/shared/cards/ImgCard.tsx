@@ -9,6 +9,7 @@ interface ImgCardProps {
   desc: string;
   btnLink: string;
   btnText: string;
+  modal?: boolean;
 }
 
 export default function ImgCard({
@@ -19,6 +20,7 @@ export default function ImgCard({
   desc,
   btnLink,
   btnText,
+  modal,
 }: ImgCardProps) {
   return (
     <div className={`overflow-hidden rounded-lg shadow-lg ${style}`}>
@@ -33,11 +35,20 @@ export default function ImgCard({
       <div className="bg-tertiary-light flex flex-col gap-4 px-4 pb-6 pt-4">
         <p className="flex text-center text-gray-600">{desc}</p>
 
-        <Button
-          href={`${btnLink}`}
-          text={`${btnText}`}
-          style="py-1 px-4 text-lg font-medium bg-secondary text-white self-center"
-        />
+        {!modal ? (
+          <Button
+            href={`${btnLink}`}
+            text={`${btnText}`}
+            style="py-1 px-4 text-lg font-medium bg-secondary text-white self-center"
+          />
+        ) : (
+          <Button
+            href="#"
+            text={`${btnText}`}
+            style="py-1 px-4 text-lg font-medium bg-secondary text-white self-center"
+            modal
+          />
+        )}
       </div>
     </div>
   );
