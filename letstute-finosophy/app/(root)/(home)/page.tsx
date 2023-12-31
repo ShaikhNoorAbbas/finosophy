@@ -13,7 +13,7 @@ export default function Home() {
       <section className="relative py-20">
         <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
         <div className="absolute inset-0 bg-black opacity-[.07]"></div>
-        <div className="container relative z-10 grid grid-cols-2 gap-14">
+        <div className="container relative z-10 grid grid-cols-2 items-center gap-14">
           <Image
             src="/assets/images/hero-img-default.png"
             width={1500}

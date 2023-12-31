@@ -23,6 +23,10 @@ body {
   @apply bg-gray-50 text-gray-600;
 }
 
+.grid-cols-auto {
+  grid-template-columns: 1fr 1.5fr;
+}
+
 .footer-nav li:hover {
   @apply text-secondary;
 }
