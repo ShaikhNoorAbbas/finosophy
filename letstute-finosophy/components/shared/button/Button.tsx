@@ -34,6 +34,7 @@ export default function Button({ href, text, style, modal }: ButtonProps) {
           open
           src="https://creations.letstute.com/articulate/level-1/game/story.html"
           onClose={handleCloseModal}
+          modalConfig={{ orientation: 'portrait' }}
         />
       )}
     </>

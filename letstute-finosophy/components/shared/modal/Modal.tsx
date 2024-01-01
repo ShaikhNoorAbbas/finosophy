@@ -1,12 +1,17 @@
 import { useEffect, useState } from 'react';
 
+interface ModalConfig {
+  orientation: 'portrait' | 'landscape';
+}
+
 interface ModalProps {
   open: boolean;
   src: string;
   onClose: () => void;
+  modalConfig: ModalConfig;
 }
 
-export default function Modal({ open, src, onClose }: ModalProps) {
+export default function Modal({ open, src, onClose, modalConfig }: ModalProps) {
   const [isOpen, setIsOpen] = useState(open);
 
   useEffect(() => {
@@ -20,22 +25,29 @@ export default function Modal({ open, src, onClose }: ModalProps) {
 
   if (!isOpen) return null;
 
+  // Calculate paddingBottom based on orientation
+  const paddingBottom =
+    modalConfig.orientation === 'portrait' ? (16 / 9) * 100 : (9 / 16) * 100;
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="max-h-full max-w-xl overflow-auto rounded-lg bg-white p-6 shadow-lg">
-        <button
-          className="mb-4 rounded bg-red-500 p-2 text-white"
-          onClick={handleClose}
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black bg-opacity-80 p-8">
+      <button
+        className="mb-4 rounded bg-red-500 p-2 text-white"
+        onClick={handleClose}
+      >
+        Close X
+      </button>
+      <div className="w-full max-w-4xl overflow-auto rounded-lg bg-white shadow-lg">
+        <div
+          className="relative"
+          style={{ paddingBottom: `${paddingBottom}%` }}
         >
-          Close
-        </button>
-        <iframe
-          src={src}
-          width="100%"
-          height="500px"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
+          <iframe
+            className="absolute inset-0 h-full w-full"
+            src={src}
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
     </div>
   );
