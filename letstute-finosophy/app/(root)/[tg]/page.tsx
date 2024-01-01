@@ -75,9 +75,12 @@ export default function Tg({ params }: TgProps) {
               imgSrc="/assets/images/img-card-activity.png"
               desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
           aliquid perspiciatis nisi rem labore."
-              btnLink="/kids"
               btnText="Play Now"
-              modal
+              modalConfig={{
+                orientation: 'landscape',
+                iframeSrc:
+                  'https://creations.letstute.com/articulate/level-1/game/story.html',
+              }}
             />
             <VideoCard
               headerStyle="flex-col-reverse"
@@ -85,8 +88,12 @@ export default function Tg({ params }: TgProps) {
               videoSrc="/assets/videos/superman.mp4"
               desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
           aliquid perspiciatis nisi rem labore."
-              btnLink="/youth"
               btnText="Watch Now"
+              modalConfig={{
+                orientation: 'landscape',
+                iframeSrc:
+                  'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
+              }}
             />
             <ImgCard
               headerStyle="flex-col-reverse"
@@ -94,9 +101,12 @@ export default function Tg({ params }: TgProps) {
               imgSrc="/assets/images/img-card-flashcard.png"
               desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
           aliquid perspiciatis nisi rem labore."
-              btnLink="/teacher"
               btnText="Open Now"
-              modal
+              modalConfig={{
+                orientation: 'portrait',
+                iframeSrc:
+                  'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+              }}
             />
           </div>
         </div>

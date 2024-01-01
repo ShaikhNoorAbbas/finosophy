@@ -4,14 +4,24 @@ import Link from 'next/link';
 import Modal from '../modal/Modal';
 import { useState } from 'react';
 
+interface ModalConfig {
+  orientation: string;
+  iframeSrc: string;
+}
+
 interface ButtonProps {
   href: string;
   text: string;
   style?: string;
-  modal?: boolean;
+  modalConfig?: ModalConfig;
 }
 
-export default function Button({ href, text, style, modal }: ButtonProps) {
+export default function Button({
+  href,
+  text,
+  style,
+  modalConfig,
+}: ButtonProps) {
   const [isModal, setIsModal] = useState(false);
 
   const handleBtnClick = () => setIsModal(true);
@@ -19,7 +29,7 @@ export default function Button({ href, text, style, modal }: ButtonProps) {
 
   return (
     <>
-      {!modal ? (
+      {!modalConfig ? (
         <Link href={href} className={`button ${style}`}>
           {text}
         </Link>
@@ -30,12 +40,7 @@ export default function Button({ href, text, style, modal }: ButtonProps) {
       )}
 
       {isModal && (
-        <Modal
-          open
-          src="https://creations.letstute.com/articulate/level-1/game/story.html"
-          onClose={handleCloseModal}
-          modalConfig={{ orientation: 'portrait' }}
-        />
+        <Modal open onClose={handleCloseModal} modalConfig={modalConfig} />
       )}
     </>
   );

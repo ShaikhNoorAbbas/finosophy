@@ -1,15 +1,20 @@
 import Image from 'next/image';
 import Button from '../button/Button';
 
+interface ModalConfig {
+  orientation: string;
+  iframeSrc: string;
+}
+
 interface ImgCardProps {
   style?: string;
   headerStyle: string;
   heading: string;
   imgSrc: string;
   desc: string;
-  btnLink: string;
+  btnLink?: string;
   btnText: string;
-  modal?: boolean;
+  modalConfig?: ModalConfig;
 }
 
 export default function ImgCard({
@@ -20,7 +25,7 @@ export default function ImgCard({
   desc,
   btnLink,
   btnText,
-  modal,
+  modalConfig,
 }: ImgCardProps) {
   return (
     <div className={`overflow-hidden rounded-lg shadow-lg ${style}`}>
@@ -35,7 +40,7 @@ export default function ImgCard({
       <div className="bg-tertiary-light flex flex-col gap-4 px-4 pb-6 pt-4">
         <p className="flex text-center text-gray-600">{desc}</p>
 
-        {!modal ? (
+        {!modalConfig ? (
           <Button
             href={`${btnLink}`}
             text={`${btnText}`}
@@ -46,7 +51,7 @@ export default function ImgCard({
             href="#"
             text={`${btnText}`}
             style="py-1 px-4 text-lg font-medium bg-secondary text-white self-center"
-            modal
+            modalConfig={modalConfig}
           />
         )}
       </div>
