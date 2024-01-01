@@ -7,6 +7,7 @@ import CourseCard from '@/components/shared/cards/CourseCard';
 import Tabs from '@/components/shared/tabs/Tabs';
 import Image from 'next/image';
 import IconList from '@/components/shared/icon/IconList';
+import Accordion from '@/components/shared/accordion/Accordion';
 
 interface ProductProps {
   params: {
@@ -71,8 +72,46 @@ export default function Product({ params }: ProductProps) {
         </div>
       ),
     },
-    { label: 'Curriculum', content: <p>Content of Tab 2</p> },
-    { label: 'Reviews', content: <p>Content of Tab 3</p> },
+    {
+      label: 'Curriculum',
+      content: (
+        <div className="flex flex-wrap items-start gap-5">
+          {product.curriculum.map((item, i) =>
+            i === 1 || i === 0 ? (
+              <Accordion
+                key={i}
+                title={`${item.chapter}`}
+                defaultOpen
+                style="flex-1 min-w-[500px]"
+              >
+                <ul className="">
+                  {item.topics.map((topic, i) => (
+                    <li key={i} className="list-inside list-disc">
+                      {topic}
+                    </li>
+                  ))}
+                </ul>
+              </Accordion>
+            ) : (
+              <Accordion
+                key={i}
+                title={`${item.chapter}`}
+                style="flex-1 min-w-[500px]"
+              >
+                <ul className="">
+                  {item.topics.map((topic, i) => (
+                    <li key={i} className="list-inside list-disc">
+                      {topic}
+                    </li>
+                  ))}
+                </ul>
+              </Accordion>
+            )
+          )}
+        </div>
+      ),
+    },
+    { label: 'Reviews', content: <p>Reviews here...</p> },
   ];
 
   return (
