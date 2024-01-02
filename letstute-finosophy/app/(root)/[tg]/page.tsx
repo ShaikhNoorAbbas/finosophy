@@ -29,14 +29,14 @@ export default function Tg({ params }: TgProps) {
       <section className="relative pt-20">
         <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
         <div className="absolute inset-0 bg-black opacity-[.07]"></div>
-        <div className="container relative z-10 grid grid-cols-2 gap-14">
-          <div className="slide-in-left flex flex-col items-start gap-y-6">
-            <span className="subheading--fill">{tg.heroSection.heading1}</span>
+        <div className="container relative z-10 grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <div className="slide-in-left flex flex-col items-center gap-y-4 text-center md:items-start md:text-left lg:gap-y-6">
+            <span className="subheading--fill ">{tg.heroSection.heading1}</span>
             <h1 className="h1-bold text-primary">{tg.heroSection.heading2}</h1>
             <span className="subheading">
-              {`${tg.heroSection.heading3.split(' ').slice(0, -1).join(' ')}`}
-              <br />
-              <span className="text-primary text-3xl font-bold">
+              {`${tg.heroSection.heading3.split(' ').slice(0, -1).join(' ')} `}
+              <br className="hidden xl:block" />
+              <span className="text-primary text-2xl font-bold lg:text-3xl">
                 {`${tg.heroSection.heading3.split(' ').pop()}`}
               </span>
             </span>
@@ -52,7 +52,7 @@ export default function Tg({ params }: TgProps) {
               width={500}
               height={500}
               alt="Level 1 Course"
-              className="w-[90%]"
+              className="w-[80%] sm:w-[50%] lg:w-[100%]"
             />
           </div>
         </div>
@@ -68,8 +68,9 @@ export default function Tg({ params }: TgProps) {
             headingStyle="text-center"
           />
 
-          <div className="grid grid-cols-3 items-start gap-10">
+          <div className="flex flex-wrap justify-center gap-10">
             <ImgCard
+              style="flex-1 min-w-[320px] max-w-[418.67px]"
               headerStyle="flex-col-reverse"
               heading="Interactive Activities"
               imgSrc="/assets/images/img-card-activity.png"
@@ -83,6 +84,7 @@ export default function Tg({ params }: TgProps) {
               }}
             />
             <VideoCard
+              style="flex-1 min-w-[320px] max-w-[418.67px]"
               headerStyle="flex-col-reverse"
               heading="High-Quality Videos"
               videoSrc="/assets/videos/superman.mp4"
@@ -96,6 +98,7 @@ export default function Tg({ params }: TgProps) {
               }}
             />
             <ImgCard
+              style="flex-1 min-w-[320px] max-w-[418.67px]"
               headerStyle="flex-col-reverse"
               heading="Interactive Flashcards"
               imgSrc="/assets/images/img-card-flashcard.png"
