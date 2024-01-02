@@ -37,11 +37,11 @@ export default function Product({ params }: ProductProps) {
       label: 'Details',
       content: (
         <div className="flex flex-col gap-y-14">
-          <span className="bg-tertiary-light border-tertiary rounded-lg border-t-4 p-6 text-center text-xl">
+          <span className="bg-tertiary-light border-tertiary rounded-lg border-t-4 p-6 text-center text-lg lg:text-xl">
             {product.desc}
           </span>
 
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 justify-center gap-6 md:grid-cols-2 lg:grid-cols-3">
             {product.features.map((feature, i) => (
               <IconList
                 key={i}
@@ -66,7 +66,7 @@ export default function Product({ params }: ProductProps) {
             <Button
               href={product.purchaseLink}
               text={product.price}
-              style="py-3 px-6 text-xl font-bold text-white"
+              style="py-3 px-6 text-xl font-bold text-white text-center"
             />
           </div>
         </div>
@@ -75,29 +75,20 @@ export default function Product({ params }: ProductProps) {
     {
       label: 'Curriculum',
       content: (
-        <div className="flex flex-wrap items-start gap-5">
+        <div className="grid grid-cols-1 items-start gap-5 lg:grid-cols-2">
           {product.curriculum.map((item, i) =>
             i === 1 || i === 0 ? (
-              <Accordion
-                key={i}
-                title={`${item.chapter}`}
-                defaultOpen
-                style="flex-1 min-w-[500px]"
-              >
+              <Accordion key={i} title={`${item.chapter}`} defaultOpen>
                 <ul className="">
                   {item.topics.map((topic, i) => (
-                    <li key={i} className="list-inside list-disc">
+                    <li key={i} className="ml-2 list-outside list-disc">
                       {topic}
                     </li>
                   ))}
                 </ul>
               </Accordion>
             ) : (
-              <Accordion
-                key={i}
-                title={`${item.chapter}`}
-                style="flex-1 min-w-[500px]"
-              >
+              <Accordion key={i} title={`${item.chapter}`}>
                 <ul className="">
                   {item.topics.map((topic, i) => (
                     <li key={i} className="list-inside list-disc">
@@ -120,8 +111,8 @@ export default function Product({ params }: ProductProps) {
       <section className="relative pt-20">
         <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
         <div className="absolute inset-0 bg-black opacity-[.07]"></div>
-        <div className="container relative z-10 grid grid-cols-2 gap-14">
-          <div className="slide-in-left flex flex-col items-start gap-y-6">
+        <div className="container relative z-10 grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <div className="slide-in-left flex flex-col items-center gap-y-4 text-center md:items-start md:text-left lg:gap-y-6">
             <h2 className="h2-bold text-primary">
               {`Financial Literacy ${product.name}`}
             </h2>
@@ -131,39 +122,39 @@ export default function Product({ params }: ProductProps) {
             <ul className="grid grid-cols-2 gap-4">
               <IconList
                 icon="/assets/icons/globe.svg"
-                iconStyle="h-8 w-8"
+                iconStyle="w-7 lg:w-8"
                 alt="Check badge icon"
                 desc="English Language"
-                descStyle="text-xl font-semibold"
+                descStyle="text:lg lg:text-xl font-semibold"
               />
               <IconList
                 icon="/assets/icons/award.svg"
-                iconStyle="h-8 w-8"
+                iconStyle="w-7 lg:w-8"
                 alt="Check badge icon"
                 desc="Course Certificate"
-                descStyle="text-xl font-semibold"
+                descStyle="text:lg lg:text-xl font-semibold"
               />
               <IconList
                 icon="/assets/icons/laptop-2.svg"
-                iconStyle="h-8 w-8"
+                iconStyle="w-7 lg:w-8"
                 alt="Check badge icon"
                 desc="24/7 Access"
-                descStyle="text-xl font-semibold"
+                descStyle="text:lg lg:text-xl font-semibold"
               />
               <IconList
                 icon="/assets/icons/clock.svg"
-                iconStyle="h-8 w-8"
+                iconStyle="w-7 lg:w-8"
                 alt="Check badge icon"
                 desc={`${
                   product.name === 'eBook' ? 'Lifetime' : '1 Year'
                 } Validity`}
-                descStyle="text-xl font-semibold"
+                descStyle="text:lg lg:text-xl font-semibold"
               />
             </ul>
             <Button
               href={product.purchaseLink}
               text={`${product.price}`}
-              style="py-3 px-6 text-xl font-bold text-white"
+              style="py-3 px-6 text-lg lg:text-xl font-bold text-white"
             />
           </div>
 
@@ -173,7 +164,7 @@ export default function Product({ params }: ProductProps) {
               width={500}
               height={500}
               alt="Level 1 Course"
-              className="w-[85%]"
+              className="w-[80%] sm:w-[50%] lg:w-[100%]"
             />
           </div>
         </div>

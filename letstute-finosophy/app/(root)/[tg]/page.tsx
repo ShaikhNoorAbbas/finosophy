@@ -43,7 +43,7 @@ export default function Tg({ params }: TgProps) {
             <Button
               href="#products"
               text={`Explore Products for ${tg.name}`}
-              style="py-3 px-6 text-xl font-bold text-white"
+              style="py-3 px-6 text-lg lg:text-xl font-bold text-white"
             />
           </div>
           <div className="slide-in-right flex items-center justify-center">
