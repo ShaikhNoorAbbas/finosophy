@@ -1,7 +1,6 @@
 import Button from '@/components/shared/button/Button';
 import SectionHeader from '@/components/shared/header/sectionHeader';
 import { tgs } from '@/datasets/tgs';
-import { products } from '@/datasets/products';
 import { notFound } from 'next/navigation';
 import CourseCard from '@/components/shared/cards/CourseCard';
 import Tabs from '@/components/shared/tabs/Tabs';
@@ -16,19 +15,32 @@ interface ProductProps {
   };
 }
 
-const allProducts = [
-  ...products.academic,
-  products.academicCombo,
-  ...products.youth,
-];
+export async function generateStaticParams() {
+  const tgValues = tgs.map((tg) => tg.name.toLowerCase());
+  const productSlugs = tgs.map((tg) => {
+    return tg.coursesSection.products.map((product) => product.slug);
+  });
+  return tgValues.flatMap((tg) =>
+    productSlugs.map((productSlug) => ({
+      params: { tg, productSlug },
+    }))
+  );
+
+  // return tgs.map((tg) => {
+  //   return tg.coursesSection.products.map((p) => {
+  //     return { product: p.slug };
+  //   });
+  // });
+}
 
 export default function Product({ params }: ProductProps) {
   const [tg] = tgs.filter((tg) => tg.name.toLowerCase() === params.tg);
 
   if (!tg) notFound();
 
-  const productSlug = params.product;
-  const product = allProducts.find((p) => p.slug === productSlug);
+  const product = tg.coursesSection.products.find(
+    (product) => product.slug === params.product
+  );
 
   if (!product) notFound();
 
