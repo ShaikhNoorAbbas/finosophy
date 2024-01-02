@@ -15,16 +15,14 @@ interface ProductProps {
   };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const tgValues = tgs.map((tg) => tg.name.toLowerCase());
   const productSlugs = tgs.flatMap((tg) =>
     tg.coursesSection.products.map((product) => product.slug)
   );
 
   return tgValues.flatMap((tg) =>
-    productSlugs.map((product) => ({
-      params: { tg, product },
-    }))
+    productSlugs.map((product) => ({ tg, product }))
   );
 }
 

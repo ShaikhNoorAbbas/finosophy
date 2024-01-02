@@ -14,7 +14,7 @@ interface TgProps {
   };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return tgs.map((tg) => ({ tg: tg.name.toLowerCase() }));
 }
 
