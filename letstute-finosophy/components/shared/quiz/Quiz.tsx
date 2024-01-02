@@ -55,13 +55,13 @@ const QuizComponent = () => {
   if (quizCompleted) {
     const score = calculateScore();
     return (
-      <div className="p-4">
+      <div className="">
         {score >= 3 ? (
-          <div className="bg-tertiary-light border-tertiary flex flex-col items-center justify-center rounded-lg border-t-8 p-10 shadow-lg">
+          <div className="bg-tertiary-light border-tertiary flex flex-col items-center justify-center rounded-lg border-t-8 p-6 shadow-lg lg:p-10">
             <div className="bg-tertiary mb-4 rounded-lg px-4 py-1 text-xl font-bold text-white">
               Congratulations!
             </div>
-            <div className="mb-8 text-center text-2xl font-bold text-gray-600">
+            <div className="mb-8 text-center text-xl font-bold text-gray-600 lg:text-2xl">
               You scored {score} out of 3. You have won 25% discount on all
               Finosophy products.
             </div>
@@ -73,33 +73,31 @@ const QuizComponent = () => {
             />
           </div>
         ) : (
-          <div className="bg-tertiary-light border-tertiary flex flex-col items-center justify-center rounded-lg border-t-8 p-10 shadow-lg">
+          <div className="bg-tertiary-light border-tertiary flex flex-col items-center justify-center rounded-lg border-t-8 p-6 shadow-lg lg:p-10">
             <div className="bg-tertiary mb-4 rounded-lg px-4 py-1 text-xl font-bold text-white">
               Opps!
             </div>
-            <div className="mb-8 text-center text-2xl font-bold text-gray-600">
-              You scored {score} out of 3. But no worries... we have a great
+            <div className="mb-8 text-center text-xl font-bold text-gray-600 lg:text-2xl">
+              You scored {score} out of 3. But no worries we have a great
               product for you :)
             </div>
 
-            <div className="flex w-full items-center gap-10 rounded-lg bg-white p-4">
+            <div className="flex w-full items-start gap-6 rounded-lg">
               <Image
                 src="https://www.letstute.com/s/pages/assets/images/youth-thumbnail.png"
                 width={522}
                 height={702}
                 alt="Course thumbnail"
-                className="w-[30%] rounded-lg"
+                className="w-[26%] rounded-lg"
               />
-              <div className="flex w-full flex-col gap-y-4">
+              <div className="before--arrow-left relative flex w-full flex-col gap-y-4 rounded-lg bg-white p-4">
                 <h3 className="border-primary text-primary rounded-lg border-2 border-dashed py-[2px] text-center text-base font-semibold">
                   Finosophy eBook
                 </h3>
 
-                <ul className="flex list-inside list-disc flex-col text-gray-500">
+                <ul className="ml-4 flex list-outside list-disc flex-col text-gray-500">
                   <li>31 Amazing Chapters</li>
                   <li>31 Chapters eBook</li>
-                  <li>24 Interactive Activities</li>
-                  <li>31 Interactive Flashcards</li>
                 </ul>
 
                 <Button
@@ -118,9 +116,9 @@ const QuizComponent = () => {
   const { number, question, options } = demoQuestions[currentQuestionIndex];
 
   return (
-    <div className="bg-tertiary-light border-tertiary flex flex-col items-center justify-center rounded-lg border-t-8 p-10 shadow-lg">
+    <div className="bg-tertiary-light border-tertiary flex flex-col items-center justify-center rounded-lg border-t-8 p-6 shadow-lg lg:p-10">
       <div className="bg-tertiary mb-4 rounded-lg px-4 py-1 text-xl font-bold text-white">{`Question No. ${number}`}</div>
-      <div className="mb-8 text-center text-2xl font-bold text-gray-600">
+      <div className="mb-8 text-center text-xl font-bold text-gray-600 md:text-2xl">
         {question}
       </div>
       {options.map((option, index) => (

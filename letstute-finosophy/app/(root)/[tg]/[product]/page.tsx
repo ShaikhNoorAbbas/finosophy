@@ -121,7 +121,7 @@ export default function Product({ params }: ProductProps) {
         <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
         <div className="absolute inset-0 bg-black opacity-[.07]"></div>
         <div className="container relative z-10 grid grid-cols-2 gap-14">
-          <div className="flex flex-col items-start gap-y-6">
+          <div className="slide-in-left flex flex-col items-start gap-y-6">
             <h2 className="h2-bold text-primary">
               {`Financial Literacy ${product.name}`}
             </h2>
@@ -166,7 +166,8 @@ export default function Product({ params }: ProductProps) {
               style="py-3 px-6 text-xl font-bold text-white"
             />
           </div>
-          <div className="flex items-center justify-center">
+
+          <div className="slide-in-right flex items-center justify-center">
             <Image
               src={product.heroImg}
               width={500}
