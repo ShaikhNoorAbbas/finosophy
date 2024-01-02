@@ -17,20 +17,15 @@ interface ProductProps {
 
 export async function generateStaticParams() {
   const tgValues = tgs.map((tg) => tg.name.toLowerCase());
-  const productSlugs = tgs.map((tg) => {
-    return tg.coursesSection.products.map((product) => product.slug);
-  });
-  return tgValues.flatMap((tg) =>
-    productSlugs.map((productSlug) => ({
-      params: { tg, productSlug },
-    }))
+  const productSlugs = tgs.flatMap((tg) =>
+    tg.coursesSection.products.map((product) => product.slug)
   );
 
-  // return tgs.map((tg) => {
-  //   return tg.coursesSection.products.map((p) => {
-  //     return { product: p.slug };
-  //   });
-  // });
+  return tgValues.flatMap((tg) =>
+    productSlugs.map((product) => ({
+      params: { tg, product },
+    }))
+  );
 }
 
 export default function Product({ params }: ProductProps) {
