@@ -246,7 +246,7 @@ export const tgs = [
       ],
     },
     coursesSection: {
-      products: [products.academicCombo, ...products.academic],
+      products: [products.teacherCombo, ...products.teacher],
     },
     faqsSection: {
       faqs: [
@@ -351,7 +351,7 @@ export const tgs = [
       ],
     },
     coursesSection: {
-      products: [products.academicCombo],
+      products: [products.teacherCombo],
     },
     faqsSection: {
       faqs: [
