@@ -24,21 +24,21 @@ export default function Contact() {
         <div className="container">
           <div className="flex flex-wrap justify-center gap-10">
             <ContactCard
-              heading="Our School"
-              desc1="Jln Cempaka Wangi No 22,"
-              desc2="Jakarta - Indonesia"
+              heading="Our Office"
+              desc1="Taikalwadi, Joshi Marg"
+              desc2="Matunga (W), Mumbai-16"
               style="flex-1 min-w-[320px] max-w-[418.67px] bg-primary"
             />
             <ContactCard
               heading="Call Us"
-              desc1="+6221.2002.2012"
-              desc2="+6221.2002.2021"
+              desc1="+91 75063 63600"
+              desc2="+91 93214 21265"
               style="flex-1 min-w-[320px] max-w-[418.67px] bg-secondary"
             />
             <ContactCard
               heading="Mail Us"
-              desc1="support@yourdomain.tld"
-              desc2="hello@yourdomain.tld"
+              desc1="info@letstute.co.in"
+              desc2="info@letstute.com"
               style="flex-1 min-w-[320px] max-w-[418.67px] bg-tertiary"
             />
           </div>

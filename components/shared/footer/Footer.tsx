@@ -19,27 +19,27 @@ export default function Footer() {
               />
             </Link>
             <p>
-              Efficitur potenti maecenas consectetuer mollis tempus ornare erat
-              cursus.
+              Pathway to build financially literate & resilient students through
+              scientifically curated courses.
             </p>
             <div className="flex gap-2">
               <Icon
-                link="#"
+                link="https://www.facebook.com/letstutefinosophy"
                 style="bg-primary"
                 icon="/assets/icons/facebook-f.svg"
               />
               <Icon
-                link="#"
+                link="https://www.instagram.com/letstute_finosophy_"
                 style="bg-tertiary"
                 icon="/assets/icons/instagram.svg"
               />
               <Icon
-                link="#"
+                link="https://twitter.com/finosophy_LT"
                 style="bg-primary-dark"
                 icon="/assets/icons/x-twitter.svg"
               />
               <Icon
-                link="#"
+                link="https://www.youtube.com/@LetstuteHindi"
                 style="bg-secondary"
                 icon="/assets/icons/youtube.svg"
               />
@@ -76,7 +76,7 @@ export default function Footer() {
                 icon="/assets/icons/location-dot-solid.svg"
                 iconStyle="h-9 w-9 p-2"
                 alt="Location"
-                desc="Taikalwadi, Joshi Marg Mahim West, Mumbai - 400016"
+                desc="Taikalwadi, Joshi Marg, Matunga West, Mumbai-16"
               />
               <IconList
                 icon="/assets/icons/envelope-solid.svg"
@@ -88,7 +88,7 @@ export default function Footer() {
                 icon="/assets/icons/phone-solid.svg"
                 iconStyle="h-9 w-9 p-2"
                 alt="Phone"
-                desc="+91 93214 21265"
+                desc="+91 75063 63600"
               />
             </ul>
           </div>

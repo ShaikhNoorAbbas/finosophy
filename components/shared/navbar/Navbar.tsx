@@ -43,7 +43,7 @@ export default function Navbar() {
           </li>
         </ul>
         <Button
-          href="#"
+          href="https://wa.me/917506363600"
           text="Enquire Now!"
           style="py-1 px-4 text-lg font-medium bg-secondary text-white"
         />
