@@ -1,4 +1,6 @@
-import Button from '../button/Button';
+'use client';
+
+import { useState } from 'react';
 
 interface Inputs {
   id: string;
@@ -35,8 +37,20 @@ export default function Form({
   btnStyle,
   btnText,
 }: FormProps) {
+  const [formData, setFormData] = useState({});
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    e.target.reset();
+  };
+
   return (
-    <form action="" className={`${formStyle}`}>
+    <form onSubmit={handleSubmit} className={`${formStyle}`}>
       {inputs?.map((input, i) => (
         <input
           key={i}
@@ -45,6 +59,7 @@ export default function Form({
           id={input.id}
           placeholder={input.placeholder}
           className={`focus:border-secondary w-full rounded-3xl border-2 border-gray-300 outline-none ${inputStyle}`}
+          onChange={handleInputChange}
         />
       ))}
 
@@ -57,14 +72,16 @@ export default function Form({
           rows={textarea.rows}
           placeholder={textarea.placeholder}
           className={`focus:border-secondary w-full rounded-3xl border-2 border-gray-300 outline-none ${textareaStyle}`}
+          onChange={handleInputChange}
         ></textarea>
       ))}
 
-      <Button
-        text={`${btnText}`}
-        href="#"
-        style={`text-center text-white ${btnStyle}`}
-      />
+      <button
+        type="submit"
+        className={`bg-gradient inline-block rounded-full text-center text-white shadow-md ${btnStyle}`}
+      >
+        {btnText}
+      </button>
     </form>
   );
 }
