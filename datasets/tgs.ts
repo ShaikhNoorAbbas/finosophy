@@ -39,7 +39,7 @@ export const tgs = [
       ],
     },
     coursesSection: {
-      products: [...products.academic, products.academicCombo],
+      products: [...products.student, products.studentCombo],
     },
     faqsSection: {
       faqs: [

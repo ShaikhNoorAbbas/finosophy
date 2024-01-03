@@ -68,8 +68,8 @@ export default function SideNavbar({
         </ul>
 
         <Button
-          href="#"
-          text="Book a Visit"
+          href="https://wa.me/917506363600"
+          text="Enquire Now!"
           style="py-1 px-4 text-lg font-medium bg-secondary text-center text-white"
         />
       </div>

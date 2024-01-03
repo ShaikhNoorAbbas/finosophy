@@ -8,7 +8,7 @@ interface Question {
   number: string;
   question: string;
   options: string[];
-  answer: number; // index of the correct answer in the options array
+  answer: number;
 }
 
 const demoQuestions: Question[] = [
@@ -101,7 +101,7 @@ const QuizComponent = () => {
                 </ul>
 
                 <Button
-                  href="/youth/financial-literacy-ebook"
+                  href="/youth/financial-literacy-ebook-for-youth"
                   text="Learn More"
                   style="py-1 text-base text-center bg-secondary text-white"
                 />
