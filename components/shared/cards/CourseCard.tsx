@@ -23,7 +23,7 @@ export default function CourseCard({
         width={522}
         height={702}
         alt=""
-        className="w-[75px] self-start rounded-lg sm:w-[110px]"
+        className="w-[100px] self-start rounded-lg xl:w-[110px]"
       />
 
       <div className="before--arrow-left relative flex w-full flex-col gap-y-5 rounded-lg bg-white p-4">
