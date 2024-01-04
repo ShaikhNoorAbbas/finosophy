@@ -1283,7 +1283,7 @@ export const products = {
         'https://drive.google.com/uc?id=1ukE9yeKfUNiNdE77Gimhg87DnOx5EqyV&export=download',
       thumbnail: '/assets/images/level-1-cover.jpg',
       colorCode: '#53c7f8',
-      heroImg: '/assets/images/academic-level-1.png',
+      heroImg: '/assets/images/teacher-level-1-product-hero-img.png',
       slug: 'financial-literacy-level-1-online-course-for-teacher',
       curriculum: [
         {
@@ -1445,7 +1445,7 @@ export const products = {
         'https://drive.google.com/uc?id=1cA5XoK7OEK32O8myvZoL5mXifI-STEj9&export=download',
       thumbnail: '/assets/images/level-2-cover.jpg',
       colorCode: '#b1cd67',
-      heroImg: '/assets/images/academic-level-2.png',
+      heroImg: '/assets/images/teacher-level-2-product-hero-img.png',
       slug: 'financial-literacy-level-2-online-course-for-teacher',
       curriculum: [
         {
@@ -1633,7 +1633,7 @@ export const products = {
         'https://drive.google.com/uc?id=12RHA4KU-y9n6FNttFdnKkNK5-QEkIIY5&export=download',
       thumbnail: '/assets/images/level-3-cover.jpg',
       colorCode: '#f5b51f',
-      heroImg: '/assets/images/academic-level-3.png',
+      heroImg: '/assets/images/teacher-level-3-product-hero-img.png',
       slug: 'financial-literacy-level-3-online-course-for-teacher',
       curriculum: [
         {
@@ -1839,7 +1839,7 @@ export const products = {
         'https://drive.google.com/uc?id=1MWhfG5nOaiIrtYUcaqVCsH4ogTXpUmA1&export=download',
       thumbnail: '/assets/images/level-4-cover.jpg',
       colorCode: '#f06ea6',
-      heroImg: '/assets/images/academic-level-4.png',
+      heroImg: '/assets/images/teacher-level-4-product-hero-img.png',
       slug: 'financial-literacy-level-4-online-course-for-teacher',
       curriculum: [
         {
@@ -2049,7 +2049,7 @@ export const products = {
         'https://drive.google.com/uc?id=14tnfjFulbq_6sAOkWGFRVPYlgwU7iwG3&export=download',
       thumbnail: '/assets/images/level-5-cover.jpg',
       colorCode: '#49c085',
-      heroImg: '/assets/images/academic-level-5.png',
+      heroImg: '/assets/images/teacher-level-5-product-hero-img.png',
       slug: 'financial-literacy-level-5-online-course-for-teacher',
       curriculum: [
         {
@@ -2233,7 +2233,7 @@ export const products = {
         'https://drive.google.com/uc?id=1UKLJaAZBH6W3QfJam46mq0XlCf-gFWzA&export=download',
       thumbnail: '/assets/images/level-6-cover.jpg',
       colorCode: '#fd906f',
-      heroImg: '/assets/images/academic-level-6.png',
+      heroImg: '/assets/images/teacher-level-6-product-hero-img.png',
       slug: 'financial-literacy-level-6-online-course-for-teacher',
       curriculum: [
         {
@@ -2263,15 +2263,14 @@ export const products = {
       'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
     videoLink:
       'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-    price: 'Enroll Now for ₹5,499/-',
-    purchaseLink:
-      'https://www.letstute.com/single-checkout/6524e058e4b033df1d252911?pid=p1',
+    price: 'Coming soon...',
+    purchaseLink: '#',
     downloadBtnText: 'Download Brochure',
     downloadBtnLink:
       'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
     thumbnail: '/assets/images/level-1-6-combo-pack-cover.jpg',
     colorCode: '#8c52ff',
-    heroImg: '/assets/images/academic-level-1-6-combo-pack.png',
+    heroImg: '/assets/images/teacher-level-1-6-combo-pack-product-hero-img.png',
     slug: 'financial-literacy-level-1-to-6-combo-pack-for-teacher',
     curriculum: [
       {
