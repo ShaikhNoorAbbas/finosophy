@@ -17,21 +17,21 @@ export default function CourseCard({
   link,
 }: CourseCardProps) {
   return (
-    <div className={`flex gap-x-5 overflow-hidden rounded-lg ${style}`}>
+    <div className={`flex w-full gap-x-5 overflow-hidden rounded-lg ${style}`}>
       <Image
         src={imgSrc}
         width={522}
         height={702}
         alt=""
-        className="w-[110px] self-start rounded-lg"
+        className="w-[75px] self-start rounded-lg sm:w-[110px]"
       />
 
-      <div className="before--arrow-left relative flex w-full flex-col gap-y-5 rounded-lg bg-white p-5">
+      <div className="before--arrow-left relative flex w-full flex-col gap-y-5 rounded-lg bg-white p-4">
         <h3 className="border-primary text-primary rounded-lg border-2 border-dashed py-[2px] text-center text-base font-semibold">
           {heading}
         </h3>
 
-        <ul className="flex list-inside list-disc flex-col text-gray-500">
+        <ul className="ml-4 flex list-outside list-disc flex-col text-gray-500">
           {listItems.map((listItem, i) => (
             <li key={i}>{listItem}</li>
           ))}

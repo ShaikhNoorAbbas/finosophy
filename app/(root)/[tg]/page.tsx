@@ -131,7 +131,7 @@ export default function Tg({ params }: TgProps) {
             {tg.coursesSection.products.map((product, i) => (
               <CourseCard
                 key={i}
-                style="flex-1 min-w-[385px] max-w-[418.67px]"
+                style="flex-1 min-w-[340px] max-w-[418.67px]"
                 imgSrc={product.thumbnail}
                 heading={product.name}
                 listItems={product.features}
