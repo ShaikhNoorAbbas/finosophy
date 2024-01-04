@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 
 interface Inputs {
   id: string;
@@ -37,16 +37,17 @@ export default function Form({
   btnStyle,
   btnText,
 }: FormProps) {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState<{ [key: string]: string }>({});
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    e.target.reset();
+    e.currentTarget.reset();
   };
 
   return (
