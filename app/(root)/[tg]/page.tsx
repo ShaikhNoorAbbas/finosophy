@@ -49,8 +49,8 @@ export default function Tg({ params }: TgProps) {
           <div className="slide-in-right flex items-center justify-center">
             <Image
               src={tg.heroSection.img}
-              width={500}
-              height={500}
+              width={640}
+              height={507}
               alt="Level 1 Course"
               className="w-[80%] sm:w-[50%] lg:w-[100%]"
             />

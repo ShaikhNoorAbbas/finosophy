@@ -16,15 +16,15 @@ export default function Home() {
         <div className="container relative z-10 grid grid-cols-1 items-center gap-0 md:grid-cols-2 md:gap-14">
           <Image
             src="/assets/images/hero-img-default.png"
-            width={1500}
-            height={1300}
+            width={1390}
+            height={1250}
             alt="Hero image default"
             className="slide-in-left z-10 hidden md:block"
           />
           <Image
             src="/assets/images/hero-img-responsive.png"
-            width={1500}
-            height={1300}
+            width={1242}
+            height={878}
             alt="Hero image default"
             className="slide-in-left z-10 block md:hidden"
           />

@@ -22,8 +22,7 @@ export const products = {
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1ukE9yeKfUNiNdE77Gimhg87DnOx5EqyV&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png',
+      thumbnail: '/assets/images/level-1-cover.jpg',
       colorCode: '#53c7f8',
       heroImg: '/assets/images/academic-level-1.png',
       slug: 'financial-literacy-level-1-online-course-for-student',
@@ -186,8 +185,7 @@ export const products = {
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1cA5XoK7OEK32O8myvZoL5mXifI-STEj9&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png',
+      thumbnail: '/assets/images/level-2-cover.jpg',
       colorCode: '#b1cd67',
       heroImg: '/assets/images/academic-level-2.png',
       slug: 'financial-literacy-level-2-online-course-for-student',
@@ -376,8 +374,7 @@ export const products = {
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=12RHA4KU-y9n6FNttFdnKkNK5-QEkIIY5&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
+      thumbnail: '/assets/images/level-3-cover.jpg',
       colorCode: '#f5b51f',
       heroImg: '/assets/images/academic-level-3.png',
       slug: 'financial-literacy-level-3-online-course-for-student',
@@ -584,8 +581,7 @@ export const products = {
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1MWhfG5nOaiIrtYUcaqVCsH4ogTXpUmA1&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/letstute-level-4-cover.jpg',
+      thumbnail: '/assets/images/level-4-cover.jpg',
       colorCode: '#f06ea6',
       heroImg: '/assets/images/academic-level-4.png',
       slug: 'financial-literacy-level-4-online-course-for-student',
@@ -796,8 +792,7 @@ export const products = {
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=14tnfjFulbq_6sAOkWGFRVPYlgwU7iwG3&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/letstute-level-5-cover.jpg',
+      thumbnail: '/assets/images/level-5-cover.jpg',
       colorCode: '#49c085',
       heroImg: '/assets/images/academic-level-5.png',
       slug: 'financial-literacy-level-5-online-course-for-student',
@@ -981,8 +976,7 @@ export const products = {
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1UKLJaAZBH6W3QfJam46mq0XlCf-gFWzA&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/letstute-level-6-cover.jpg',
+      thumbnail: '/assets/images/level-6-cover.jpg',
       colorCode: '#fd906f',
       heroImg: '/assets/images/academic-level-6.png',
       slug: 'financial-literacy-level-6-online-course-for-student',
@@ -1020,8 +1014,7 @@ export const products = {
     downloadBtnText: 'Download Brochure',
     downloadBtnLink:
       'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
-    thumbnail:
-      'https://www.letstute.com/s/pages/assets/images/1-6-combo-pack.jpg',
+    thumbnail: '/assets/images/level-1-6-combo-pack-cover.jpg',
     colorCode: '#8c52ff',
     heroImg: '/assets/images/academic-level-1-6-combo-pack.png',
     slug: 'financial-literacy-level-1-to-6-combo-pack-for-student',
@@ -1059,8 +1052,7 @@ export const products = {
       downloadBtnText: 'Download Brochure',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/youth-thumbnail.png',
+      thumbnail: '/assets/images/youth-cover.jpg',
       colorCode: '#f5b51f',
       heroImg: '/assets/images/youth.png',
       slug: 'financial-literacy-online-course-for-youth',
@@ -1250,8 +1242,7 @@ export const products = {
       downloadBtnText: 'Buy eBook for ₹299/-',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/youth-thumbnail.png',
+      thumbnail: '/assets/images/youth-cover.jpg',
       colorCode: '#f5b51f',
       heroImg: '/assets/images/youth.png',
       slug: 'financial-literacy-ebook-for-youth',
@@ -1290,8 +1281,7 @@ export const products = {
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1ukE9yeKfUNiNdE77Gimhg87DnOx5EqyV&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/letstute-level-1-cover.png',
+      thumbnail: '/assets/images/level-1-cover.jpg',
       colorCode: '#53c7f8',
       heroImg: '/assets/images/academic-level-1.png',
       slug: 'financial-literacy-level-1-online-course-for-teacher',
@@ -1453,8 +1443,7 @@ export const products = {
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1cA5XoK7OEK32O8myvZoL5mXifI-STEj9&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/letstute-level-2-cover.png',
+      thumbnail: '/assets/images/level-2-cover.jpg',
       colorCode: '#b1cd67',
       heroImg: '/assets/images/academic-level-2.png',
       slug: 'financial-literacy-level-2-online-course-for-teacher',
@@ -1642,8 +1631,7 @@ export const products = {
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=12RHA4KU-y9n6FNttFdnKkNK5-QEkIIY5&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/letstute-level-3-cover.png',
+      thumbnail: '/assets/images/level-3-cover.jpg',
       colorCode: '#f5b51f',
       heroImg: '/assets/images/academic-level-3.png',
       slug: 'financial-literacy-level-3-online-course-for-teacher',
@@ -1849,8 +1837,7 @@ export const products = {
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1MWhfG5nOaiIrtYUcaqVCsH4ogTXpUmA1&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/letstute-level-4-cover.jpg',
+      thumbnail: '/assets/images/level-4-cover.jpg',
       colorCode: '#f06ea6',
       heroImg: '/assets/images/academic-level-4.png',
       slug: 'financial-literacy-level-4-online-course-for-teacher',
@@ -2060,8 +2047,7 @@ export const products = {
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=14tnfjFulbq_6sAOkWGFRVPYlgwU7iwG3&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/letstute-level-5-cover.jpg',
+      thumbnail: '/assets/images/level-5-cover.jpg',
       colorCode: '#49c085',
       heroImg: '/assets/images/academic-level-5.png',
       slug: 'financial-literacy-level-5-online-course-for-teacher',
@@ -2245,8 +2231,7 @@ export const products = {
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1UKLJaAZBH6W3QfJam46mq0XlCf-gFWzA&export=download',
-      thumbnail:
-        'https://www.letstute.com/s/pages/assets/images/letstute-level-6-cover.jpg',
+      thumbnail: '/assets/images/level-6-cover.jpg',
       colorCode: '#fd906f',
       heroImg: '/assets/images/academic-level-6.png',
       slug: 'financial-literacy-level-6-online-course-for-teacher',
@@ -2284,8 +2269,7 @@ export const products = {
     downloadBtnText: 'Download Brochure',
     downloadBtnLink:
       'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
-    thumbnail:
-      'https://www.letstute.com/s/pages/assets/images/1-6-combo-pack.jpg',
+    thumbnail: '/assets/images/level-1-6-combo-pack-cover.jpg',
     colorCode: '#8c52ff',
     heroImg: '/assets/images/academic-level-1-6-combo-pack.png',
     slug: 'financial-literacy-level-1-to-6-combo-pack-for-teacher',
