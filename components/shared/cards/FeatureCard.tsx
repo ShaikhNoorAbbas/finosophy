@@ -4,12 +4,14 @@ interface FeatureCardProps {
   style?: string;
   imgSrc: string;
   heading: string;
+  desc: string;
 }
 
 export default function FeatureCard({
   style,
   imgSrc,
   heading,
+  desc,
 }: FeatureCardProps) {
   return (
     <div
@@ -19,10 +21,7 @@ export default function FeatureCard({
       <h3 className="text-center text-xl font-semibold text-gray-700">
         {heading}
       </h3>
-      <p className="flex text-center text-gray-500">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-        aliquid perspiciatis nisi rem labore incidunt hic sunt alias eum.
-      </p>
+      <p className="flex text-center text-gray-500">{desc}</p>
     </div>
   );
 }

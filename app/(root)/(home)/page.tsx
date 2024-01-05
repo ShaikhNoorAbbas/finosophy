@@ -116,8 +116,7 @@ export default function Home() {
               headerStyle="flex-col"
               heading="for Student"
               imgSrc="/assets/images/img-card-kids.jpg"
-              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
-          aliquid perspiciatis nisi rem labore."
+              desc="Finosophy entails gaining financial knowledge & confidence to achieve financial independence."
               btnLink="/student"
               btnText="Learn more"
             />
@@ -126,8 +125,7 @@ export default function Home() {
               headerStyle="flex-col"
               heading="for Youth"
               imgSrc="/assets/images/img-card-youth.jpg"
-              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
-          aliquid perspiciatis nisi rem labore."
+              desc="With our Youth Financial Literacy Program, you can take control of your financial destiny."
               btnLink="/youth"
               btnText="Learn more"
             />
@@ -136,8 +134,7 @@ export default function Home() {
               headerStyle="flex-col"
               heading="for Teacher"
               imgSrc="/assets/images/img-card-teacher.jpg"
-              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
-          aliquid perspiciatis nisi rem labore."
+              desc="Enrich your teaching skills & confidence with our Financial Literacy for Teacher program."
               btnLink="/teacher"
               btnText="Learn more"
             />
@@ -146,8 +143,7 @@ export default function Home() {
               headerStyle="flex-col"
               heading="for School"
               imgSrc="/assets/images/img-card-school.jpg"
-              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
-          aliquid perspiciatis nisi rem labore."
+              desc="Unlock valuable benefits for your school with our Financial Literacy for School program."
               btnLink="/school"
               btnText="Learn more"
             />

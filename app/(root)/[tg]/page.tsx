@@ -74,8 +74,7 @@ export default function Tg({ params }: TgProps) {
               headerStyle="flex-col-reverse"
               heading="Interactive Activities"
               imgSrc="/assets/images/img-card-activity.png"
-              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
-          aliquid perspiciatis nisi rem labore."
+              desc="Engage in interactive activities designed to stimulate your learning and enhance your comprehension of complex concepts."
               btnText="Play Now"
               modalConfig={{
                 orientation: 'landscape',
@@ -88,8 +87,7 @@ export default function Tg({ params }: TgProps) {
               headerStyle="flex-col-reverse"
               heading="High-Quality Videos"
               videoSrc="/assets/videos/superman.mp4"
-              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
-          aliquid perspiciatis nisi rem labore."
+              desc="Benefit from high-quality videos that provide clear, concise explanations, making difficult topics easier to understand."
               btnText="Watch Now"
               modalConfig={{
                 orientation: 'landscape',
@@ -102,8 +100,7 @@ export default function Tg({ params }: TgProps) {
               headerStyle="flex-col-reverse"
               heading="Interactive Flashcards"
               imgSrc="/assets/images/img-card-flashcard.png"
-              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit repellat
-          aliquid perspiciatis nisi rem labore."
+              desc="Reinforce your learning with interactive flashcards, a proven method for retaining information and improving recall."
               btnText="Open Now"
               modalConfig={{
                 orientation: 'portrait',
@@ -159,6 +156,7 @@ export default function Tg({ params }: TgProps) {
                 style="flex-1 min-w-[320px] max-w-[418.67px] bg-white"
                 imgSrc={feature.icon}
                 heading={feature.heading}
+                desc={feature.desc}
               />
             ))}
           </div>

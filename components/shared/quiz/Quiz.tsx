@@ -84,7 +84,7 @@ const QuizComponent = () => {
 
             <div className="flex w-full items-start gap-6 rounded-lg">
               <Image
-                src="https://www.letstute.com/s/pages/assets/images/youth-thumbnail.png"
+                src="/assets/images/youth-cover.jpg"
                 width={522}
                 height={702}
                 alt="Course thumbnail"
