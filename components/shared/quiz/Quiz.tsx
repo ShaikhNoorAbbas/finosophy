@@ -57,8 +57,8 @@ const QuizComponent = () => {
     return (
       <div className="">
         {score >= 3 ? (
-          <div className="bg-tertiary-light border-tertiary flex flex-col items-center justify-center rounded-lg border-t-8 p-6 shadow-lg lg:p-10">
-            <div className="bg-tertiary mb-4 rounded-lg px-4 py-1 text-xl font-bold text-white">
+          <div className="flex flex-col items-center justify-center rounded-lg border-t-8 border-tertiary bg-tertiary-light p-6 shadow-lg lg:p-10">
+            <div className="mb-4 rounded-lg bg-tertiary px-4 py-1 text-xl font-bold text-white">
               Congratulations!
             </div>
             <div className="mb-8 text-center text-xl font-bold text-gray-600 lg:text-2xl">
@@ -73,8 +73,8 @@ const QuizComponent = () => {
             />
           </div>
         ) : (
-          <div className="bg-tertiary-light border-tertiary flex flex-col items-center justify-center rounded-lg border-t-8 p-6 shadow-lg lg:p-10">
-            <div className="bg-tertiary mb-4 rounded-lg px-4 py-1 text-xl font-bold text-white">
+          <div className="flex flex-col items-center justify-center rounded-lg border-t-8 border-tertiary bg-tertiary-light p-6 shadow-lg lg:p-10">
+            <div className="mb-4 rounded-lg bg-tertiary px-4 py-1 text-xl font-bold text-white">
               Opps!
             </div>
             <div className="mb-8 text-center text-xl font-bold text-gray-600 lg:text-2xl">
@@ -91,7 +91,7 @@ const QuizComponent = () => {
                 className="w-[26%] rounded-lg"
               />
               <div className="before--arrow-left relative flex w-full flex-col gap-y-4 rounded-lg bg-white p-4">
-                <h3 className="border-primary text-primary rounded-lg border-2 border-dashed py-[2px] text-center text-base font-semibold">
+                <h3 className="rounded-lg border-2 border-dashed border-primary py-[2px] text-center text-base font-semibold text-primary">
                   Finosophy eBook
                 </h3>
 
@@ -116,15 +116,15 @@ const QuizComponent = () => {
   const { number, question, options } = demoQuestions[currentQuestionIndex];
 
   return (
-    <div className="bg-tertiary-light border-tertiary flex flex-col items-center justify-center rounded-lg border-t-8 p-6 shadow-lg lg:p-10">
-      <div className="bg-tertiary mb-4 rounded-lg px-4 py-1 text-xl font-bold text-white">{`Question No. ${number}`}</div>
+    <div className="flex flex-col items-center justify-center rounded-lg border-t-8 border-tertiary bg-tertiary-light p-6 shadow-lg lg:p-10">
+      <div className="mb-4 rounded-lg bg-tertiary px-4 py-1 text-xl font-bold text-white">{`Question No. ${number}`}</div>
       <div className="mb-8 text-center text-xl font-bold text-gray-600 md:text-2xl">
         {question}
       </div>
       {options.map((option, index) => (
         <button
           key={index}
-          className="hover:bg-tertiary mb-4 w-full rounded-lg bg-white p-2 text-xl shadow-md hover:text-white"
+          className="mb-4 w-full rounded-lg bg-white p-2 text-xl shadow-md lg:hover:bg-tertiary lg:hover:text-white"
           onClick={() => handleOptionSelect(index)}
         >
           {option}
