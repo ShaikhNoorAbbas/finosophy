@@ -26,6 +26,7 @@ interface FormProps {
   textareas?: TextAreas[];
   btnStyle?: string;
   btnText: string;
+  googleScriptURL: string;
 }
 
 export default function Form({
@@ -36,6 +37,7 @@ export default function Form({
   textareas,
   btnStyle,
   btnText,
+  googleScriptURL,
 }: FormProps) {
   const [formData, setFormData] = useState<{ [key: string]: string }>({});
 
@@ -47,6 +49,19 @@ export default function Form({
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    try {
+      const res = await fetch('/api/submit-form', {
+        method: 'POST',
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      console.log(data);
+    } catch (err) {
+      console.error(err);
+    }
+
     e.currentTarget.reset();
   };
 
@@ -59,7 +74,7 @@ export default function Form({
           name={input.name}
           id={input.id}
           placeholder={input.placeholder}
-          className={`focus:border-secondary w-full rounded-3xl border-2 border-gray-300 outline-none ${inputStyle}`}
+          className={`w-full rounded-3xl border-2 border-gray-300 outline-none focus:border-secondary ${inputStyle}`}
           onChange={handleInputChange}
         />
       ))}
@@ -72,7 +87,7 @@ export default function Form({
           cols={textarea.cols}
           rows={textarea.rows}
           placeholder={textarea.placeholder}
-          className={`focus:border-secondary w-full rounded-3xl border-2 border-gray-300 outline-none ${textareaStyle}`}
+          className={`w-full rounded-3xl border-2 border-gray-300 outline-none focus:border-secondary ${textareaStyle}`}
           onChange={handleInputChange}
         ></textarea>
       ))}

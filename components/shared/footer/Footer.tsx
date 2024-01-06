@@ -6,9 +6,9 @@ import Form from '../form/Form';
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-dark mt-20">
+    <footer className="mt-20 bg-primary-dark">
       <div className="container">
-        <div className="border-primary-dark relative top-[-4rem] grid grid-cols-1 gap-10 rounded-b-3xl border-t-8 bg-white p-10 shadow-lg sm:grid-cols-2 lg:grid-cols-4">
+        <div className="relative top-[-4rem] grid grid-cols-1 gap-10 rounded-b-3xl border-t-8 border-primary-dark bg-white p-10 shadow-lg sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col gap-y-5">
             <Link href="/">
               <Image
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-y-5">
-            <h4 className="text-primary-dark text-xl font-semibold">
+            <h4 className="text-xl font-semibold text-primary-dark">
               Useful Links
             </h4>
 
@@ -68,7 +68,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-y-5">
-            <h4 className="text-primary-dark text-xl font-semibold">
+            <h4 className="text-xl font-semibold text-primary-dark">
               Contact Us
             </h4>
             <ul className="flex flex-col gap-y-2">
@@ -94,7 +94,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-y-5">
-            <h4 className="text-primary-dark text-xl font-semibold">
+            <h4 className="text-xl font-semibold text-primary-dark">
               Subscribe Newsletter
             </h4>
 
@@ -112,6 +112,7 @@ export default function Footer() {
               ]}
               btnStyle="self-start px-[1rem] py-[.3rem] text-base"
               btnText="Submit"
+              googleScriptURL=""
             />
           </div>
         </div>
