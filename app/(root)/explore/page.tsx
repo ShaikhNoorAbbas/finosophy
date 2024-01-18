@@ -32,7 +32,36 @@ export default function Explore() {
             headingBg="#f4313f"
             heading="Interactive Flashcards"
           >
-            <div className=""></div>
+            <div className="grid grid-cols-4 gap-10">
+              <div className="relative" style={{ paddingBottom: '177.78%' }}>
+                <iframe
+                  className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
+                  src="http://creations.letstute.com/articulate/demo/story.html"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="relative" style={{ paddingBottom: '177.78%' }}>
+                <iframe
+                  className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
+                  src="http://creations.letstute.com/articulate/demo/story.html"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="relative" style={{ paddingBottom: '177.78%' }}>
+                <iframe
+                  className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
+                  src="http://creations.letstute.com/articulate/demo/story.html"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="relative" style={{ paddingBottom: '177.78%' }}>
+                <iframe
+                  className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
+                  src="http://creations.letstute.com/articulate/demo/story.html"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
           </ExploreCard>
 
           <ExploreCard
