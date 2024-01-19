@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="_6R7XLvdrCKy" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+      <general>
+        <title>
+          <langstring xml:lang="x-none">Flashcard Chap 7 Mutual Funds and SIP</langstring>
+        </title>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="x-none">1</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <metametadata>
+        <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      </metametadata>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H0M0S</datetime>
+        </typicallearningtime>
+      </educational>
+      <rights>
+        <cost>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </cost>
+        <copyrightandotherrestrictions>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </copyrightandotherrestrictions>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations default="Flashcard_Chap_7_Mutual_Funds_and_SIP_ORG">
+    <organization identifier="Flashcard_Chap_7_Mutual_Funds_and_SIP_ORG">
+      <title>Flashcard Chap 7 Mutual Funds and SIP</title>
+      <item identifier="Lv3_Flashcard_Chapter_7_SCO" isvisible="true" identifierref="__6R7XLvdrCKy_RES">
+        <title>Flashcard Chap 7 Mutual Funds and SIP</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="__6R7XLvdrCKy_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+      <file href="story_content/thumbnail.jpg" />
+      <file href="mobile/5rHJcjLBBff.png" />
+      <file href="mobile/5WUI9cAr3ft_P_308_210_383_207.png" />
+      <file href="mobile/6QYf6ytQFym.jpg" />
+      <file href="mobile/6m6l0rnddOV_P_65_90_1901_1222.jpg" />
+      <file href="mobile/5XfqGClQsRz.png" />
+      <file href="mobile/6Pjvh5G3qTb_P_93_244_1827_1555.jpg" />
+      <file href="mobile/5Z6lTKT1pqL_P_182_185_1604_1540.jpg" />
+      <file href="mobile/6VflKUosgch_P_0_190_2000_1170.jpg" />
+      <file href="mobile/5X6r1z4v3gV_P_273_247_1476_1462.png" />
+      <file href="mobile/6nVrPjYCFPy.jpg" />
+      <file href="meta.xml" />
+      <file href="story_content/user.js" />
+      <file href="html5/data/css/output.min.css" />
+      <file href="html5/data/js/5fjgCJRieuF.js" />
+      <file href="html5/data/js/5zjrPUK00lh.js" />
+      <file href="html5/data/js/5ZZlelKO6MW.js" />
+      <file href="html5/data/js/65I18dJeysA.js" />
+      <file href="html5/data/js/6fb8FD8GJ88.js" />
+      <file href="html5/data/js/6ioIu7EmUue.js" />
+      <file href="html5/data/js/6pbIldEZge3.js" />
+      <file href="html5/data/js/6XUUoobS1SW.js" />
+      <file href="html5/data/js/data.js" />
+      <file href="html5/data/js/frame.js" />
+      <file href="html5/data/js/paths.js" />
+      <file href="html5/lib/hls/hls.min.js" />
+      <file href="html5/lib/scripts/bootstrapper.min.js" />
+      <file href="html5/lib/scripts/frame.desktop.min.js" />
+      <file href="html5/lib/scripts/frame.mobile.min.js" />
+      <file href="html5/lib/scripts/slides.min.js" />
+      <file href="html5/lib/stylesheets/desktop.min.css" />
+      <file href="html5/lib/stylesheets/mobile.min.css" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-bold.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-light.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-regular.woff" />
+      <file href="analytics-frame.html" />
+      <file href="story.html" />
+      <file href="index_lms.html" />
+      <file href="lms/AICCComm.html" />
+      <file href="lms/blank.html" />
+      <file href="lms/browsersniff.js" />
+      <file href="lms/goodbye.html" />
+      <file href="lms/scormdriver.js" />
+    </resource>
+  </resources>
+</manifest>

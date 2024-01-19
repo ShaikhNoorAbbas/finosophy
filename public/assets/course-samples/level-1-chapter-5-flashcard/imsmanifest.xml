@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="_6R0Jp4yJE89" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+      <general>
+        <title>
+          <langstring xml:lang="x-none">Lv1 Flashcard Chapter 5</langstring>
+        </title>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="x-none">1</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <metametadata>
+        <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      </metametadata>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H0M0S</datetime>
+        </typicallearningtime>
+      </educational>
+      <rights>
+        <cost>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </cost>
+        <copyrightandotherrestrictions>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </copyrightandotherrestrictions>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations default="Lv1_Flashcard_Chapter_5_ORG">
+    <organization identifier="Lv1_Flashcard_Chapter_5_ORG">
+      <title>Lv1 Flashcard Chapter 5</title>
+      <item identifier="Flashcard_Money_SCO" isvisible="true" identifierref="__6R0Jp4yJE89_RES">
+        <title>Lv1 Flashcard Chapter 5</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="__6R0Jp4yJE89_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+      <file href="story_content/thumbnail.jpg" />
+      <file href="mobile/5sPJyIGOniT_P_4_0_271_37.png" />
+      <file href="mobile/5aS9eMJqrQV_M_516_516.png" />
+      <file href="mobile/6DSC3SE0ngH_M_704_704.png" />
+      <file href="mobile/5vLUEZcyx6a_FFFFFF_P_39_64_545_302.png" />
+      <file href="mobile/5k9fzio9kWx_FFFFFF.png" />
+      <file href="mobile/6DcLAFQlGb5_FFFFFF.png" />
+      <file href="mobile/6Vxn0hRTiGi_P_337_348_1327_1154.png" />
+      <file href="mobile/5rbxqMfx62O_P_59_155_680_438.jpg" />
+      <file href="mobile/5WBwEic9RPn_EEDCC5_P_305_192_1242_1040.png" />
+      <file href="mobile/5xxKB7nLMYf_P_51_30_536_360.jpg" />
+      <file href="mobile/5jDFXv4x4a6_P_54_45_530_245.jpg" />
+      <file href="mobile/5ZpGfwH71lv_FFFFFF_P_54_94_511_438.png" />
+      <file href="mobile/5WoKYAn6JeK_FFFFFF.png" />
+      <file href="meta.xml" />
+      <file href="story_content/user.js" />
+      <file href="html5/data/css/output.min.css" />
+      <file href="html5/data/js/5qxP3qLsERG.js" />
+      <file href="html5/data/js/6cnMWa5irzV.js" />
+      <file href="html5/data/js/6ggV5oKk5qT.js" />
+      <file href="html5/data/js/6J4Ye6JRpIb.js" />
+      <file href="html5/data/js/6JwMz3GmPsY.js" />
+      <file href="html5/data/js/data.js" />
+      <file href="html5/data/js/frame.js" />
+      <file href="html5/data/js/paths.js" />
+      <file href="html5/lib/hls/hls.min.js" />
+      <file href="html5/lib/scripts/bootstrapper.min.js" />
+      <file href="html5/lib/scripts/frame.desktop.min.js" />
+      <file href="html5/lib/scripts/frame.mobile.min.js" />
+      <file href="html5/lib/scripts/slides.min.js" />
+      <file href="html5/lib/stylesheets/desktop.min.css" />
+      <file href="html5/lib/stylesheets/mobile.min.css" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-bold.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-light.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-regular.woff" />
+      <file href="analytics-frame.html" />
+      <file href="story.html" />
+      <file href="index_lms.html" />
+      <file href="lms/AICCComm.html" />
+      <file href="lms/blank.html" />
+      <file href="lms/browsersniff.js" />
+      <file href="lms/goodbye.html" />
+      <file href="lms/scormdriver.js" />
+    </resource>
+  </resources>
+</manifest>

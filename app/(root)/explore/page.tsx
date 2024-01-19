@@ -36,21 +36,21 @@ export default function Explore() {
               <div className="relative" style={{ paddingBottom: '177.78%' }}>
                 <iframe
                   className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
-                  src="http://creations.letstute.com/articulate/demo/story.html"
+                  src="/assets/course-samples/level-1-chapter-5-flashcard/story.html"
                   allowFullScreen
                 ></iframe>
               </div>
               <div className="relative" style={{ paddingBottom: '177.78%' }}>
                 <iframe
                   className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
-                  src="http://creations.letstute.com/articulate/demo/story.html"
+                  src="/assets/course-samples/level-3-chapter-7-flashcard/story.html"
                   allowFullScreen
                 ></iframe>
               </div>
               <div className="relative" style={{ paddingBottom: '177.78%' }}>
                 <iframe
                   className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
-                  src="http://creations.letstute.com/articulate/demo/story.html"
+                  src="/assets/course-samples/level-5-chapter-7-flashcard/story.html"
                   allowFullScreen
                 ></iframe>
               </div>
