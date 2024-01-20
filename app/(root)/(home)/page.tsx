@@ -37,7 +37,7 @@ export default function Home() {
       {/* Showreel Section */}
       <section className="relative py-20">
         <div className="absolute inset-0 bg-[url('/assets/images/section-bg-img.jpg')] bg-cover bg-center opacity-30"></div>
-        <div className="bg-primary-dark absolute inset-0 opacity-[.85]"></div>
+        <div className="absolute inset-0 bg-primary-dark opacity-[.85]"></div>
         <div className="container relative z-10 flex flex-col gap-y-16">
           <SectionHeader
             style="items-center"
@@ -114,7 +114,7 @@ export default function Home() {
             <ImgCard
               style="bg-tertiary"
               headerStyle="flex-col"
-              heading="for Student"
+              heading="Student"
               imgSrc="/assets/images/img-card-kids.jpg"
               desc="Finosophy entails gaining financial knowledge & confidence to achieve financial independence."
               btnLink="/student"
@@ -123,7 +123,7 @@ export default function Home() {
             <ImgCard
               style="bg-tertiary"
               headerStyle="flex-col"
-              heading="for Youth"
+              heading="Youth"
               imgSrc="/assets/images/img-card-youth.jpg"
               desc="With our Youth Financial Literacy Program, you can take control of your financial destiny."
               btnLink="/youth"
@@ -132,7 +132,7 @@ export default function Home() {
             <ImgCard
               style="bg-tertiary"
               headerStyle="flex-col"
-              heading="for Teacher"
+              heading="Teacher"
               imgSrc="/assets/images/img-card-teacher.jpg"
               desc="Enrich your teaching skills & confidence with our Financial Literacy for Teacher program."
               btnLink="/teacher"
@@ -141,7 +141,7 @@ export default function Home() {
             <ImgCard
               style="bg-tertiary"
               headerStyle="flex-col"
-              heading="for School"
+              heading="School"
               imgSrc="/assets/images/img-card-school.jpg"
               desc="Unlock valuable benefits for your school with our Financial Literacy for School program."
               btnLink="/school"

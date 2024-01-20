@@ -13,22 +13,22 @@ export default function Navbar() {
           </li>
           <li>
             <Link href="/student" className="link">
-              for Student
+              Student
             </Link>
           </li>
           <li>
             <Link href="/youth" className="link">
-              for Youth
+              Youth
             </Link>
           </li>
           <li>
             <Link href="/teacher" className="link">
-              for Teacher
+              Teacher
             </Link>
           </li>
           <li>
             <Link href="/school" className="link">
-              for School
+              School
             </Link>
           </li>
           <li>
