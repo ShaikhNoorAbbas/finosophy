@@ -17,14 +17,31 @@ export default function Explore() {
       </section>
 
       {/* Games Category Section */}
-      <div className="py-20">
-        <div className="container flex flex-col gap-y-16">
+      <div className="pb-20 pt-24">
+        <div className="container flex flex-col gap-y-24">
           <ExploreCard
             bgColor="#e3d8f2"
             headingBg="#753cbe"
             heading="Interactive Games"
           >
-            <div className=""></div>
+            <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 md:gap-10">
+              <div className="relative" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
+                  style={{ outline: '3px solid #753cbe' }}
+                  src="/assets/course-samples/level-1-chapter-5-game/story.html"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="relative" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
+                  style={{ outline: '3px solid #753cbe' }}
+                  src="/assets/course-samples/level-3-chapter-5-game/story.html"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
           </ExploreCard>
 
           <ExploreCard
@@ -32,10 +49,11 @@ export default function Explore() {
             headingBg="#f4313f"
             heading="Interactive Flashcards"
           >
-            <div className="grid grid-cols-4 gap-10">
+            <div className="grid grid-cols-1 gap-7 sm:grid-cols-3 md:gap-10">
               <div className="relative" style={{ paddingBottom: '177.78%' }}>
                 <iframe
                   className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
+                  style={{ outline: '3px solid #f4313f' }}
                   src="/assets/course-samples/level-1-chapter-5-flashcard/story.html"
                   allowFullScreen
                 ></iframe>
@@ -43,6 +61,7 @@ export default function Explore() {
               <div className="relative" style={{ paddingBottom: '177.78%' }}>
                 <iframe
                   className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
+                  style={{ outline: '3px solid #f4313f' }}
                   src="/assets/course-samples/level-3-chapter-7-flashcard/story.html"
                   allowFullScreen
                 ></iframe>
@@ -50,13 +69,7 @@ export default function Explore() {
               <div className="relative" style={{ paddingBottom: '177.78%' }}>
                 <iframe
                   className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
-                  src="/assets/course-samples/level-5-chapter-7-flashcard/story.html"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className="relative" style={{ paddingBottom: '177.78%' }}>
-                <iframe
-                  className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
+                  style={{ outline: '3px solid #f4313f' }}
                   src="http://creations.letstute.com/articulate/demo/story.html"
                   allowFullScreen
                 ></iframe>
@@ -69,7 +82,30 @@ export default function Explore() {
             headingBg="#00a09b"
             heading="High-Quality Videos"
           >
-            <div className=""></div>
+            <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 md:gap-10">
+              <div className="relative" style={{ paddingBottom: '56.25%' }}>
+                <video
+                  className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
+                  style={{ outline: '3px solid #00a09b' }}
+                  src="/assets/course-samples/level-3-course-video.mp4"
+                  controls
+                  loop
+                  muted
+                  autoPlay
+                ></video>
+              </div>
+              <div className="relative" style={{ paddingBottom: '56.25%' }}>
+                <video
+                  className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
+                  style={{ outline: '3px solid #00a09b' }}
+                  src="/assets/course-samples/level-5-course-video.mp4"
+                  controls
+                  loop
+                  muted
+                  autoPlay
+                ></video>
+              </div>
+            </div>
           </ExploreCard>
         </div>
       </div>
