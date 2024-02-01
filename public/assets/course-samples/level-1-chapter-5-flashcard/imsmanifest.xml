@@ -6,7 +6,7 @@
     <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
       <general>
         <title>
-          <langstring xml:lang="x-none">Lv1 Flashcard Chapter 5</langstring>
+          <langstring xml:lang="x-none">lv1 flashcard chapter 5</langstring>
         </title>
       </general>
       <lifecycle>
@@ -50,11 +50,11 @@
       </rights>
     </lom>
   </metadata>
-  <organizations default="Lv1_Flashcard_Chapter_5_ORG">
-    <organization identifier="Lv1_Flashcard_Chapter_5_ORG">
-      <title>Lv1 Flashcard Chapter 5</title>
+  <organizations default="lv1_flashcard_chapter_5_ORG">
+    <organization identifier="lv1_flashcard_chapter_5_ORG">
+      <title>lv1 flashcard chapter 5</title>
       <item identifier="Flashcard_Money_SCO" isvisible="true" identifierref="__6R0Jp4yJE89_RES">
-        <title>Lv1 Flashcard Chapter 5</title>
+        <title>lv1 flashcard chapter 5</title>
       </item>
     </organization>
   </organizations>

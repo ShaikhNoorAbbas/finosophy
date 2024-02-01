@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest identifier="_6R7XLvdrCKy" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+<manifest identifier="_6S377w6ZBvg" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
   <metadata>
     <schema>ADL SCORM</schema>
     <schemaversion>1.2</schemaversion>
     <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
       <general>
         <title>
-          <langstring xml:lang="x-none">Flashcard Chap 7 Mutual Funds and SIP</langstring>
+          <langstring xml:lang="x-none">Lv3 Flashcard Chapter 5 Investment in a company (Debentures)</langstring>
         </title>
       </general>
       <lifecycle>
@@ -50,38 +50,30 @@
       </rights>
     </lom>
   </metadata>
-  <organizations default="Flashcard_Chap_7_Mutual_Funds_and_SIP_ORG">
-    <organization identifier="Flashcard_Chap_7_Mutual_Funds_and_SIP_ORG">
-      <title>Flashcard Chap 7 Mutual Funds and SIP</title>
-      <item identifier="Lv3_Flashcard_Chapter_7_SCO" isvisible="true" identifierref="__6R7XLvdrCKy_RES">
-        <title>Flashcard Chap 7 Mutual Funds and SIP</title>
+  <organizations default="Lv3_Flashcard_Chapter_5_Investment_in_a_company_(Debentures)_ORG">
+    <organization identifier="Lv3_Flashcard_Chapter_5_Investment_in_a_company_(Debentures)_ORG">
+      <title>Lv3 Flashcard Chapter 5 Investment in a company (Debentures)</title>
+      <item identifier="Flashcard_Money_SCO" isvisible="true" identifierref="__6S377w6ZBvg_RES">
+        <title>Lv3 Flashcard Chapter 5 Investment in a company (Debentures)</title>
       </item>
     </organization>
   </organizations>
   <resources>
-    <resource identifier="__6R7XLvdrCKy_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+    <resource identifier="__6S377w6ZBvg_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
       <file href="story_content/thumbnail.jpg" />
-      <file href="mobile/5rHJcjLBBff.png" />
-      <file href="mobile/5WUI9cAr3ft_P_308_210_383_207.png" />
-      <file href="mobile/6QYf6ytQFym.jpg" />
-      <file href="mobile/6m6l0rnddOV_P_65_90_1901_1222.jpg" />
-      <file href="mobile/5XfqGClQsRz.png" />
-      <file href="mobile/6Pjvh5G3qTb_P_93_244_1827_1555.jpg" />
-      <file href="mobile/5Z6lTKT1pqL_P_182_185_1604_1540.jpg" />
-      <file href="mobile/6VflKUosgch_P_0_190_2000_1170.jpg" />
+      <file href="mobile/5n4Ul95xbLh_P_0_10_408_50.png" />
+      <file href="mobile/67ZO30hDUBQ.jpg" />
+      <file href="mobile/6gRYtpTt2w9.png" />
       <file href="mobile/5X6r1z4v3gV_P_273_247_1476_1462.png" />
-      <file href="mobile/6nVrPjYCFPy.jpg" />
+      <file href="mobile/6Vxn0hRTiGi_P_337_348_1327_1154.png" />
       <file href="meta.xml" />
       <file href="story_content/user.js" />
       <file href="html5/data/css/output.min.css" />
-      <file href="html5/data/js/5fjgCJRieuF.js" />
-      <file href="html5/data/js/5zjrPUK00lh.js" />
-      <file href="html5/data/js/5ZZlelKO6MW.js" />
-      <file href="html5/data/js/65I18dJeysA.js" />
-      <file href="html5/data/js/6fb8FD8GJ88.js" />
-      <file href="html5/data/js/6ioIu7EmUue.js" />
-      <file href="html5/data/js/6pbIldEZge3.js" />
-      <file href="html5/data/js/6XUUoobS1SW.js" />
+      <file href="html5/data/js/6cnMWa5irzV.js" />
+      <file href="html5/data/js/6ggV5oKk5qT.js" />
+      <file href="html5/data/js/6J4Ye6JRpIb.js" />
+      <file href="html5/data/js/6JwMz3GmPsY.js" />
+      <file href="html5/data/js/6PkygUVisSi.js" />
       <file href="html5/data/js/data.js" />
       <file href="html5/data/js/frame.js" />
       <file href="html5/data/js/paths.js" />
