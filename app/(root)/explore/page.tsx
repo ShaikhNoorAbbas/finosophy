@@ -70,7 +70,7 @@ export default function Explore() {
                 <iframe
                   className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
                   style={{ outline: '3px solid #f4313f' }}
-                  src="http://creations.letstute.com/articulate/demo/story.html"
+                  src="/assets/course-samples/level-5-chapter-7-flashcard/story.html"
                   allowFullScreen
                 ></iframe>
               </div>
