@@ -971,8 +971,9 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-      price: 'Coming soon...',
-      purchaseLink: '#',
+      price: 'Enroll Now for ₹499/- per year',
+      purchaseLink:
+        'https://www.letstute.com/single-checkout/659f81cae4b0d894121211ac?pid=p1',
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1UKLJaAZBH6W3QfJam46mq0XlCf-gFWzA&export=download',
@@ -1046,7 +1047,7 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-      price: 'Enroll Now for ₹499/- per year',
+      price: 'Enroll Now for ₹799/- per year',
       purchaseLink:
         'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p1',
       downloadBtnText: 'Download Brochure',
@@ -1236,16 +1237,16 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-      price: 'Buy eBook for ₹499/-',
+      price: 'Buy Book for ₹699/-',
       purchaseLink:
-        'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p1',
+        'https://www.letstute.com/single-checkout/65bcd068e4b059261e5ee82a?pid=p1',
       downloadBtnText: 'Buy eBook for ₹299/-',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
       thumbnail: '/assets/images/youth-cover.jpg',
       colorCode: '#f5b51f',
       heroImg: '/assets/images/youth.png',
-      slug: 'financial-literacy-ebook-for-youth',
+      slug: 'financial-literacy-book-for-youth',
       curriculum: [
         {
           chapter: 'Money',
@@ -1335,7 +1336,7 @@ export const products = {
         '31 Amazing Chapters',
         '10 Complementary Videos',
         'Real-life Examples',
-        'Get 1 Year Validity',
+        'Affordable Price',
       ],
       game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
       flashcard:
@@ -1344,7 +1345,7 @@ export const products = {
         'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
       price: 'Buy eBook for ₹499/-',
       purchaseLink:
-        'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p1',
+        'https://www.letstute.com/single-checkout/654e0291e4b00b8f10b73ef7?pid=p1',
       downloadBtnText: 'Buy eBook for ₹299/-',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
@@ -1452,7 +1453,7 @@ export const products = {
         'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
       price: 'Enroll Now for ₹999/- per year',
       purchaseLink:
-        'https://www.letstute.com/single-checkout/644fa8cfe4b04f2ff1c08255?pid=p1',
+        'https://www.letstute.com/single-checkout/64f81896e4b002bd529682a9?pid=p1',
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:
         'https://drive.google.com/uc?id=1ukE9yeKfUNiNdE77Gimhg87DnOx5EqyV&export=download',
@@ -2007,7 +2008,7 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-      price: 'Coming soon',
+      price: 'Coming soon...',
       purchaseLink: '#',
       downloadBtnText: 'Download Curriculum',
       downloadBtnLink:

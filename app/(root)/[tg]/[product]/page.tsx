@@ -151,7 +151,10 @@ export default function Product({ params }: ProductProps) {
                 iconStyle="w-7 lg:w-8"
                 alt="Check badge icon"
                 desc={`${
-                  product.name === 'eBook' ? 'Lifetime' : '1 Year'
+                  product.name === 'Youth Book' ||
+                  product.name === 'Youth eBook'
+                    ? 'Lifetime'
+                    : '1 Year'
                 } Validity`}
                 descStyle="text:lg lg:text-xl font-semibold"
               />
