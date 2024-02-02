@@ -1221,15 +1221,15 @@ export const products = {
       ],
     },
     {
-      name: 'Youth eBook',
+      name: 'Youth Book',
       age: '16+',
       desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
       features: [
+        'Hard Copy Available',
         '31 Amazing Chapters',
-        '10 Complementary Videos',
-        'Chapter Summaries',
+        'Scan for the Bonus Video',
         'Real-life Examples',
-        'Get Lifetime Validity',
+        'Affordable Price',
       ],
       game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
       flashcard:
@@ -1248,12 +1248,187 @@ export const products = {
       slug: 'financial-literacy-ebook-for-youth',
       curriculum: [
         {
-          chapter: 'Chapter One',
+          chapter: 'Money',
+          topics: ['Introduction to Money and Plastic Money', 'E-Money'],
+        },
+        {
+          chapter: 'Household Economics',
+          topics: ['Common Types of Expenses & Budgeting'],
+        },
+        {
+          chapter: 'Banking',
           topics: [
-            'Banking - Banking of Complaints - PDF',
-            'Chapter One - Interactive Game',
-            'Chapter One - Flashcard',
+            'Banking Products and Services',
+            'Opening a Bank Account',
+            'How to Transact with Banks',
+            'Simple and Compound Interest',
+            'Difference between Banks and Money Lenders',
+            'Micro Finance',
           ],
+        },
+        {
+          chapter: 'Investment',
+          topics: [
+            'Basic of Investment',
+            'Investment Options - Banks and Post Office Schemes',
+            'Investment in a Company - Shares',
+            'Mutual Funds and SIP',
+            'Power of Compounding',
+          ],
+        },
+        {
+          chapter: 'Financial Planning',
+          topics: [
+            'Introduction to Financial Planning',
+            'Household Financial Health Check-up',
+          ],
+        },
+        {
+          chapter: 'Insurance',
+          topics: [
+            'Meaning & Benefits of Insurance',
+            'Type of Insurance',
+            'Transaction Cycle',
+            'Nomination and Assignment',
+          ],
+        },
+        {
+          chapter: 'Securities Market',
+          topics: [
+            'Securities Market and Stock Exchange - An Introduction',
+            'Basic Terms and Processes in Securities Market',
+            'Introduction to Indices (Sensex and Nifty)',
+            'Investment vs Speculation',
+          ],
+        },
+        {
+          chapter: "Use of Technology - Do's and Dont's",
+          topics: ['Safeguarding your Digital World'],
+        },
+        {
+          chapter: 'Scams, Frauds and Ponzi',
+          topics: ['Phishing Mails', 'Unregulated Schemes'],
+        },
+        {
+          chapter: 'Borrowings and Needs for Borrowings',
+          topics: [
+            'Borrowings and Interest - An Introduction',
+            'Factors to Consider while Borrowing',
+          ],
+        },
+        {
+          chapter: 'Taxes',
+          topics: ['Taxes:Meaning and Types'],
+        },
+        {
+          chapter: 'Importance of Maintaining Financial Records',
+          topics: ['Importance of PAN Card and Aadhaar Card'],
+        },
+      ],
+    },
+    {
+      name: 'Youth eBook',
+      age: '16+',
+      desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
+      features: [
+        'Soft Copy Available',
+        '31 Amazing Chapters',
+        '10 Complementary Videos',
+        'Real-life Examples',
+        'Get 1 Year Validity',
+      ],
+      game: 'https://creations.letstute.com/articulate/level-1/game/story.html',
+      flashcard:
+        'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
+      videoLink:
+        'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
+      price: 'Buy eBook for ₹499/-',
+      purchaseLink:
+        'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p1',
+      downloadBtnText: 'Buy eBook for ₹299/-',
+      downloadBtnLink:
+        'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
+      thumbnail: '/assets/images/youth-cover.jpg',
+      colorCode: '#f5b51f',
+      heroImg: '/assets/images/youth.png',
+      slug: 'financial-literacy-ebook-for-youth',
+      curriculum: [
+        {
+          chapter: 'Money',
+          topics: ['Introduction to Money and Plastic Money', 'E-Money'],
+        },
+        {
+          chapter: 'Household Economics',
+          topics: ['Common Types of Expenses & Budgeting'],
+        },
+        {
+          chapter: 'Banking',
+          topics: [
+            'Banking Products and Services',
+            'Opening a Bank Account',
+            'How to Transact with Banks',
+            'Simple and Compound Interest',
+            'Difference between Banks and Money Lenders',
+            'Micro Finance',
+          ],
+        },
+        {
+          chapter: 'Investment',
+          topics: [
+            'Basic of Investment',
+            'Investment Options - Banks and Post Office Schemes',
+            'Investment in a Company - Shares',
+            'Mutual Funds and SIP',
+            'Power of Compounding',
+          ],
+        },
+        {
+          chapter: 'Financial Planning',
+          topics: [
+            'Introduction to Financial Planning',
+            'Household Financial Health Check-up',
+          ],
+        },
+        {
+          chapter: 'Insurance',
+          topics: [
+            'Meaning & Benefits of Insurance',
+            'Type of Insurance',
+            'Transaction Cycle',
+            'Nomination and Assignment',
+          ],
+        },
+        {
+          chapter: 'Securities Market',
+          topics: [
+            'Securities Market and Stock Exchange - An Introduction',
+            'Basic Terms and Processes in Securities Market',
+            'Introduction to Indices (Sensex and Nifty)',
+            'Investment vs Speculation',
+          ],
+        },
+        {
+          chapter: "Use of Technology - Do's and Dont's",
+          topics: ['Safeguarding your Digital World'],
+        },
+        {
+          chapter: 'Scams, Frauds and Ponzi',
+          topics: ['Phishing Mails', 'Unregulated Schemes'],
+        },
+        {
+          chapter: 'Borrowings and Needs for Borrowings',
+          topics: [
+            'Borrowings and Interest - An Introduction',
+            'Factors to Consider while Borrowing',
+          ],
+        },
+        {
+          chapter: 'Taxes',
+          topics: ['Taxes:Meaning and Types'],
+        },
+        {
+          chapter: 'Importance of Maintaining Financial Records',
+          topics: ['Importance of PAN Card and Aadhaar Card'],
         },
       ],
     },
