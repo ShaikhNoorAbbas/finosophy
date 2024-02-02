@@ -31,8 +31,8 @@ export default function Contact() {
             />
             <ContactCard
               heading="Call Us"
-              desc1="+91 75063 63600"
-              desc2="+91 93214 21265"
+              desc1="+91 88281 36533"
+              desc2="+91 75063 63600"
               style="flex-1 min-w-[320px] max-w-[418.67px] bg-secondary"
             />
             <ContactCard

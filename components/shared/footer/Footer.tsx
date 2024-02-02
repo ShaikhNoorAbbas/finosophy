@@ -88,7 +88,7 @@ export default function Footer() {
                 icon="/assets/icons/phone-solid.svg"
                 iconStyle="h-9 w-9 p-2"
                 alt="Phone"
-                desc="+91 75063 63600"
+                desc="+91 88281 36533"
               />
             </ul>
           </div>
