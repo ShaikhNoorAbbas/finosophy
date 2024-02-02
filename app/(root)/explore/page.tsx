@@ -87,7 +87,7 @@ export default function Explore() {
                 <video
                   className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
                   style={{ outline: '3px solid #00a09b' }}
-                  src="/assets/course-samples/level-3-course-video.mp4"
+                  src="https://player.vimeo.com/progressive_redirect/download/908957775/rendition/1080p/level-3-course-video%20%281080p%29.mp4?loc=external&signature=992eb095d8d85d63ed1a8e998abed2663c9bbdb20bca5696004fc26086a9b693"
                   controls
                   loop
                   muted
@@ -98,7 +98,7 @@ export default function Explore() {
                 <video
                   className="absolute inset-0 h-full w-full rounded-lg shadow-lg"
                   style={{ outline: '3px solid #00a09b' }}
-                  src="/assets/course-samples/level-5-course-video.mp4"
+                  src="https://player.vimeo.com/progressive_redirect/playback/908957560/rendition/1080p/file.mp4?loc=external&log_user=0&signature=d4333f0db40330d5f655230835659a02259659e1956051ffdc3e5f7a3fc1cee0"
                   controls
                   loop
                   muted
