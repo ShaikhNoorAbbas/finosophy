@@ -49,7 +49,6 @@ export async function appendDataToSheet(data: any) {
       });
     }
 
-    console.log(response);
     return response;
   } catch (error) {
     console.error('The API returned an error: ' + error);
@@ -59,7 +58,6 @@ export async function appendDataToSheet(data: any) {
 
 export async function handleFormSubmit(formData: FormData) {
   const data = Object.fromEntries(formData.entries());
-  console.log(data);
 
   await appendDataToSheet(data);
 }
