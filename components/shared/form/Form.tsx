@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import { handleFormSubmit } from '@/app/actions';
+import { useFormStatus } from 'react-dom';
 
 interface Inputs {
   id: string;
@@ -24,9 +25,28 @@ interface FormProps {
   inputs?: Inputs[];
   textareaStyle?: string;
   textareas?: TextAreas[];
-  btnStyle?: string;
+  btnStyle?: any;
+  btnText: any;
+  spreadsheetId: string;
+  sheetName: string;
+}
+
+interface SubmitButtonProps {
+  btnStyle: string;
   btnText: string;
-  googleScriptURL: string;
+}
+
+function SubmitButton({ btnStyle, btnText }: SubmitButtonProps) {
+  const { pending } = useFormStatus();
+
+  return (
+    <button
+      type="submit"
+      className={`bg-gradient inline-block rounded-full text-center text-white shadow-md ${btnStyle}`}
+    >
+      {pending ? 'Submitting...' : btnText}
+    </button>
+  );
 }
 
 export default function Form({
@@ -37,36 +57,13 @@ export default function Form({
   textareas,
   btnStyle,
   btnText,
-  googleScriptURL,
+  spreadsheetId,
+  sheetName,
 }: FormProps) {
-  const [formData, setFormData] = useState<{ [key: string]: string }>({});
-
-  const handleInputChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    try {
-      const res = await fetch('/api/submit-form', {
-        method: 'POST',
-        body: JSON.stringify(formData),
-      });
-
-      const data = await res.json();
-      console.log(data);
-    } catch (err) {
-      console.error(err);
-    }
-
-    e.currentTarget.reset();
-  };
-
   return (
-    <form onSubmit={handleSubmit} className={`${formStyle}`}>
+    <form action={handleFormSubmit} className={`${formStyle}`}>
+      <input type="text" name="spreadsheetId" value={spreadsheetId} hidden />
+      <input type="text" name="sheetName" value={sheetName} hidden />
       {inputs?.map((input, i) => (
         <input
           key={i}
@@ -75,7 +72,6 @@ export default function Form({
           id={input.id}
           placeholder={input.placeholder}
           className={`w-full rounded-3xl border-2 border-gray-300 outline-none focus:border-secondary ${inputStyle}`}
-          onChange={handleInputChange}
         />
       ))}
 
@@ -88,16 +84,10 @@ export default function Form({
           rows={textarea.rows}
           placeholder={textarea.placeholder}
           className={`w-full rounded-3xl border-2 border-gray-300 outline-none focus:border-secondary ${textareaStyle}`}
-          onChange={handleInputChange}
         ></textarea>
       ))}
 
-      <button
-        type="submit"
-        className={`bg-gradient inline-block rounded-full text-center text-white shadow-md ${btnStyle}`}
-      >
-        {btnText}
-      </button>
+      <SubmitButton btnStyle={btnStyle} btnText={btnText} />
     </form>
   );
 }

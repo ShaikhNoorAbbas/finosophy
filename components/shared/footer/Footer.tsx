@@ -112,7 +112,8 @@ export default function Footer() {
               ]}
               btnStyle="self-start px-[1rem] py-[.3rem] text-base"
               btnText="Submit"
-              googleScriptURL=""
+              spreadsheetId="1QacWTp_9u-HV7KwobWLYe88t3as7kNeliJKUTBDI5iU"
+              sheetName="newsletter"
             />
           </div>
         </div>

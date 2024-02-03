@@ -92,7 +92,8 @@ export default function Contact() {
               ]}
               btnStyle="col-span-2 px-6 py-3 text-lg"
               btnText="Send My Message"
-              googleScriptURL="https://script.google.com/macros/s/AKfycbz7wXHlSX395rd5XfJsyN0UJ8frO0A2N98J8JC97QA1oUrbnJDtJI_B1-yOsJh5I0bI/exec"
+              spreadsheetId="1QacWTp_9u-HV7KwobWLYe88t3as7kNeliJKUTBDI5iU"
+              sheetName="contact"
             />
           </div>
         </div>

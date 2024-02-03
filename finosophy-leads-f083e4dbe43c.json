@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "finosophy-leads",
+  "private_key_id": "f083e4dbe43c4f5d2aa270912d0bf5985678bff3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCrvNmjKLGa0CWH\nyJMJpKpWLEcHaEK5oASswuEScU489qM66DBuHwqvlsLQd48C3YZW2KfvrJqJAfPW\nbrlkSCG6eqL9Old5BSsURXG5pD3mDxoKwuedmI3yBzOSqcfzstxc+iEPsbXqoggw\nPHMUkdF6snEmPfyiXe7hsqF/vH+FUhb3YICSvXJ9GMsy1fGP2c7EIm4GNjpItoRu\nC4Id2kRGP1LzqLZo9BVU7CJKP/SDiOQTCKIYSROptqCsb4SOsM7A1VyeW2IGP0T2\nEFA5p3ASTOmrRAQRooCO8HG8hjwkI1n7+zD0XkUty/hkb9/10httKj3REyJ9uy7m\nnaah1zTnAgMBAAECggEADHAkiRMY7d/2X+OwdonVBmG1kT1FW+FRhVul5mqLYpHw\nV4Nagpc/9GCkYmnOU0RNBvwxCYREOvkHuneReMhanQFlzZZMoIi1yoWPC4VwMDnW\nxoHAOaNDYIyR+STPxQAmwpshCtxxkvlCQ5AVO5+l/s9ur3jc07ue4fzIgpJZ4ANo\nI9kDUGhIHuqFNYFRN3HP8IboQTFhkFv/c9h/MgwmkaBmelHImZWt3dulYiDu3nRd\nJtT/KVyF5I5UKs2ED2QbwOcpV0pq5s66lhQ0tNOmC/you/jrUeG+lRS2KT/niDYe\nnvfe9ltrIEqwPdispZpoVN7uN7bgjqphQE5JJO7HVQKBgQDTdoZWMEEMFFxrO7VI\nqV/woMdVVbqqtJ58Pr6KQS/fWEDDZ3L6al9eIdJjWgXn42/Exq5ibU8cquPJ30js\n3dhifj4xZQzVIkHSBjjN74Z8lVBqNHrzu5IX+/7wjMqqdr8SC6bBultqDac04I2a\nV8ZIruuCXo5N+SHZ8+pk+N3pdQKBgQDP6HO8OlOY2qoxM+kKlqbGQPlhApcwPIA+\nV+qCM5bdG5IXxjqzXz5QsfQq35kOFnHdn1mFW98eY+ls8qb9r5iHmrJyT+Q1SfI1\nmMacsFC+b7UTpFMltHkR/dpF1Wp2n3fsFWkDpFly299gDuCnflRsK/XqeGtpkEd2\nul0ZTib9awKBgHut+BZS9MiW5BMIAhi0j9uSfePIV3xeVc+/dvwv8ksEOCTRzarv\nKkZJK99WGNwu5wFFX1tMKZhPzxkUUnfPrS62PbPwMVg7SBoJ75FrRdJ6FmV3um3x\nyBnlFpAlGKgo+coZLHhkgfD+eUxxBgE+00dRn4dJvJuYWhc7FV3nPQu9AoGAXqKZ\nY7lM6gvGYkUVs5slaKKUoOKz/OHdIgOUnBVte1GcazPw7krRK5wE3ysOGQqAY/ev\noPNTmRqzWsMM3fZ6wGbbCQtyfgsds+XJqfLbngNs8fbfXg9K+LSLETR2lG48APsx\n5NV/XbfVcnzzJ2pqdR6Bfmu3wMJKtTFZRTZ8qucCgYBrYddohxE/DAdlfhIb6UwL\nCck8IcjVTuOxxu2qo2Brtg3RIEK71LCtbweLyVu/lB+rPsZBNASUIvS8IjM7rAS6\nstyBRGx98l7qmVulU9i7Ve6rYvZg+Au7Iu3aZFwqM9UEFiSsQS1uWC/f6JO/8IJ2\nbrRs7pLoBmyePb87SBra9w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "nextjs-sheets-integration@finosophy-leads.iam.gserviceaccount.com",
+  "client_id": "112029084092487614320",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nextjs-sheets-integration%40finosophy-leads.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
