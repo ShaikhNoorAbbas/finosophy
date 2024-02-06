@@ -3,7 +3,7 @@ import CourseCard from '@/components/shared/cards/CourseCard';
 import FeatureCard from '@/components/shared/cards/FeatureCard';
 import ImgCard from '@/components/shared/cards/ImgCard';
 import VideoCard from '@/components/shared/cards/VideoCard';
-import SectionHeader from '@/components/shared/header/sectionHeader';
+import SectionHeader from '@/components/shared/header/SectionHeader';
 import { tgs } from '@/datasets/tgs';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -36,7 +36,7 @@ export default function Tg({ params }: TgProps) {
             <span className="subheading">
               {`${tg.heroSection.heading3.split(' ').slice(0, -1).join(' ')} `}
               <br className="hidden xl:block" />
-              <span className="text-primary text-2xl font-bold lg:text-3xl">
+              <span className="text-2xl font-bold text-primary lg:text-3xl">
                 {`${tg.heroSection.heading3.split(' ').pop()}`}
               </span>
             </span>
@@ -115,7 +115,7 @@ export default function Tg({ params }: TgProps) {
       {/* Products Section */}
       <section className="relative py-20" id="products">
         <div className="absolute inset-0 bg-[url('/assets/images/section-bg-img.jpg')] bg-cover bg-center opacity-30"></div>
-        <div className="bg-primary-dark absolute inset-0 opacity-[.85]"></div>
+        <div className="absolute inset-0 bg-primary-dark opacity-[.85]"></div>
         <div className="container relative z-10 flex flex-col gap-y-16">
           <SectionHeader
             style="items-center"

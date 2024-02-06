@@ -1,5 +1,5 @@
 import FeatureCard from '@/components/shared/cards/FeatureCard';
-import SectionHeader from '@/components/shared/header/sectionHeader';
+import SectionHeader from '@/components/shared/header/SectionHeader';
 import ProgressBar from '@/components/shared/progress-bar/ProgressBar';
 import Image from 'next/image';
 

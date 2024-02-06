@@ -1,7 +1,7 @@
 'use client';
 
 import Footer from '@/components/shared/footer/Footer';
-import Header from '@/components/shared/header/header';
+import Header from '@/components/shared/header/Header';
 import Navbar from '@/components/shared/navbar/Navbar';
 import SideNavbar from '@/components/shared/navbar/SideNavbar';
 import React, { useState } from 'react';

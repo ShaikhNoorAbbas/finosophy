@@ -1,7 +1,7 @@
 import ContactCard from '@/components/shared/cards/ContactCard';
 import Form from '@/components/shared/form/Form';
 import Map from '@/components/shared/map/Map';
-import SectionHeader from '@/components/shared/header/sectionHeader';
+import SectionHeader from '@/components/shared/header/SectionHeader';
 
 export default function Contact() {
   return (

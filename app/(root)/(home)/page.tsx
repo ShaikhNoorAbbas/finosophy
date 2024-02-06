@@ -1,6 +1,6 @@
 import Button from '@/components/shared/button/Button';
 import ImgCard from '@/components/shared/cards/ImgCard';
-import SectionHeader from '@/components/shared/header/sectionHeader';
+import SectionHeader from '@/components/shared/header/SectionHeader';
 import IconList from '@/components/shared/icon/IconList';
 import Quiz from '@/components/shared/quiz/Quiz';
 import Quote from '@/components/shared/quote/Quote';

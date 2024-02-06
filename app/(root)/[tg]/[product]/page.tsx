@@ -1,5 +1,5 @@
 import Button from '@/components/shared/button/Button';
-import SectionHeader from '@/components/shared/header/sectionHeader';
+import SectionHeader from '@/components/shared/header/SectionHeader';
 import { tgs } from '@/datasets/tgs';
 import { notFound } from 'next/navigation';
 import CourseCard from '@/components/shared/cards/CourseCard';
