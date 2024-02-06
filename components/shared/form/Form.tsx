@@ -62,8 +62,14 @@ export default function Form({
 }: FormProps) {
   return (
     <form action={handleFormSubmit} className={`${formStyle}`}>
-      <input type="text" name="spreadsheetId" value={spreadsheetId} hidden />
-      <input type="text" name="sheetName" value={sheetName} hidden />
+      <input
+        type="text"
+        name="spreadsheetId"
+        value={spreadsheetId}
+        hidden
+        readOnly
+      />
+      <input type="text" name="sheetName" value={sheetName} hidden readOnly />
       {inputs?.map((input, i) => (
         <input
           key={i}
