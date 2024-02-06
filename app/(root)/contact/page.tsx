@@ -11,7 +11,7 @@ export default function Contact() {
         <div className="container">
           <div className="absolute inset-0 bg-[url('/assets/images/bg-img.png')] bg-cover bg-center opacity-30"></div>
           <div className="absolute inset-0 bg-black opacity-[.07]"></div>
-          <div className="relative z-10 grid grid-cols-2 gap-14">
+          <div className="relative z-10">
             <div className="flex flex-col items-start gap-y-5">
               <h1 className="h1-bold text-primary">Contact Us</h1>
             </div>
