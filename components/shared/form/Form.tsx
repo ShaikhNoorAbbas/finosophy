@@ -1,7 +1,6 @@
 'use client';
 
-import { handleFormSubmit } from '@/app/actions';
-import { useFormStatus } from 'react-dom';
+import { useState } from 'react';
 
 interface Inputs {
   id: string;
@@ -31,24 +30,6 @@ interface FormProps {
   sheetName: string;
 }
 
-interface SubmitButtonProps {
-  btnStyle: string;
-  btnText: string;
-}
-
-function SubmitButton({ btnStyle, btnText }: SubmitButtonProps) {
-  const { pending } = useFormStatus();
-
-  return (
-    <button
-      type="submit"
-      className={`bg-gradient inline-block rounded-full text-center text-white shadow-md ${btnStyle}`}
-    >
-      {pending ? 'Submitting...' : btnText}
-    </button>
-  );
-}
-
 export default function Form({
   formStyle,
   inputStyle,
@@ -60,8 +41,53 @@ export default function Form({
   spreadsheetId,
   sheetName,
 }: FormProps) {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const currentDate = new Date();
+    const monthNames = [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
+    ];
+
+    const formattedDate = `${currentDate.getDate()}-${
+      monthNames[currentDate.getMonth()]
+    }-${currentDate.getFullYear()}`;
+
+    formData.append('date', formattedDate);
+
+    const data = Object.fromEntries(formData.entries());
+
+    setIsLoading(true);
+
+    await fetch('api/form', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    setIsLoading(false);
+
+    event.target.reset();
+  };
+
   return (
-    <form action={handleFormSubmit} className={`${formStyle}`}>
+    <form onSubmit={handleSubmit} className={`${formStyle}`}>
       <input
         type="text"
         name="spreadsheetId"
@@ -93,7 +119,11 @@ export default function Form({
         ></textarea>
       ))}
 
-      <SubmitButton btnStyle={btnStyle} btnText={btnText} />
+      <button
+        className={`bg-gradient inline-block rounded-full text-center text-white shadow-md ${btnStyle}`}
+      >
+        {isLoading ? 'Sending...' : btnText}
+      </button>
     </form>
   );
 }
