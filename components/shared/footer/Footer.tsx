@@ -118,7 +118,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="relative top-[-2rem] text-center text-gray-400">
+        <p className="relative top-[-2rem] pb-10 text-center text-gray-400">
           Copyright © 2024 Finosophy, All rights reserved. Presented by Letstute
         </p>
       </div>

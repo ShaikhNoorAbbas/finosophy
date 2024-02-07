@@ -7,6 +7,7 @@ import Tabs from '@/components/shared/tabs/Tabs';
 import Image from 'next/image';
 import IconList from '@/components/shared/icon/IconList';
 import Accordion from '@/components/shared/accordion/Accordion';
+import { useCoupon } from '@/context/CouponContext';
 
 interface ProductProps {
   params: {
@@ -27,6 +28,8 @@ export function generateStaticParams() {
 }
 
 export default function Product({ params }: ProductProps) {
+  const coupon = useCoupon;
+
   const [tg] = tgs.filter((tg) => tg.name.toLowerCase() === params.tg);
 
   if (!tg) notFound();
@@ -70,7 +73,7 @@ export default function Product({ params }: ProductProps) {
           <div className="flex items-center justify-center">
             <Button
               href={product.purchaseLink}
-              text={product.price}
+              text={coupon ? 'Coupon applied' : product.price}
               style="py-3 px-6 text-xl font-bold text-white text-center"
             />
           </div>
