@@ -1,17 +1,38 @@
-'use client';
-
-import React, { useState } from 'react';
-import { useCoupon } from '@/context/CouponContext';
+import React, { useContext, useState, useEffect } from 'react';
+import { CouponContext } from '@/contexts/CouponContext';
 
 export default function CouponForm() {
-  const { setCoupon } = useCoupon();
-  const [inputValue, setInputValue] = useState('');
+  const [inputCode, setInputCode] = useState('');
+  const [applied, setApplied] = useState(false); // Track if coupon is applied
+  const context = useContext(CouponContext);
 
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-    setCoupon(inputValue);
-    setInputValue('');
+  if (!context) {
+    throw new Error('CouponForm must be used within a CouponProvider');
+  }
+
+  const { couponCode, setCouponCode } = context;
+
+  useEffect(() => {
+    setApplied(!!couponCode); // This will set 'applied' to true if 'couponCode' is not null or empty
+  }, [couponCode]);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setCouponCode(inputCode);
+    // No need to set 'applied' here since it's handled by the useEffect based on 'couponCode'
   };
+
+  const handleRemove = () => {
+    localStorage.removeItem('couponCode');
+    setCouponCode('');
+    setInputCode('');
+    // 'applied' will be set to false by the useEffect when 'couponCode' changes
+  };
+
+  // Determine the placeholder text based on 'applied' state
+  const placeholderText = applied
+    ? `${couponCode} applied!`
+    : 'Enter coupon code';
 
   return (
     <div className="fixed bottom-0 left-0 z-50 w-full bg-primary-dark">
@@ -20,16 +41,18 @@ export default function CouponForm() {
           <input
             type="text"
             name="coupon-code"
-            placeholder="Enter coupon code"
+            placeholder={placeholderText}
             className="rounded-lg px-2 py-1"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
+            value={inputCode}
+            onChange={(e) => setInputCode(e.target.value)}
+            disabled={applied}
           />
           <button
-            type="submit"
+            type={applied ? 'button' : 'submit'}
             className="bg-gradient inline-block rounded-lg px-2 py-1 text-center text-white shadow-md"
+            onClick={applied ? handleRemove : undefined}
           >
-            Apply
+            {applied ? 'Remove' : 'Apply'}
           </button>
         </form>
       </div>

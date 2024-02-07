@@ -1,3 +1,5 @@
+'use client';
+
 import Button from '@/components/shared/button/Button';
 import SectionHeader from '@/components/shared/header/SectionHeader';
 import { tgs } from '@/datasets/tgs';
@@ -7,7 +9,8 @@ import Tabs from '@/components/shared/tabs/Tabs';
 import Image from 'next/image';
 import IconList from '@/components/shared/icon/IconList';
 import Accordion from '@/components/shared/accordion/Accordion';
-import { useCoupon } from '@/context/CouponContext';
+import React, { useContext } from 'react';
+import { CouponContext } from '@/contexts/CouponContext';
 
 interface ProductProps {
   params: {
@@ -16,19 +19,26 @@ interface ProductProps {
   };
 }
 
-export function generateStaticParams() {
-  const tgValues = tgs.map((tg) => tg.name.toLowerCase());
-  const productSlugs = tgs.flatMap((tg) =>
-    tg.coursesSection.products.map((product) => product.slug)
-  );
+// export function generateStaticParams() {
+//   const tgValues = tgs.map((tg) => tg.name.toLowerCase());
+//   const productSlugs = tgs.flatMap((tg) =>
+//     tg.coursesSection.products.map((product) => product.slug)
+//   );
 
-  return tgValues.flatMap((tg) =>
-    productSlugs.map((product) => ({ tg, product }))
-  );
-}
+//   return tgValues.flatMap((tg) =>
+//     productSlugs.map((product) => ({ tg, product }))
+//   );
+// }
 
 export default function Product({ params }: ProductProps) {
-  const coupon = useCoupon;
+  const context = useContext(CouponContext);
+
+  if (!context) {
+    throw new Error('CoursePage must be used within a CouponProvider');
+  }
+
+  const { couponCode } = context;
+  console.log(couponCode);
 
   const [tg] = tgs.filter((tg) => tg.name.toLowerCase() === params.tg);
 
@@ -73,7 +83,7 @@ export default function Product({ params }: ProductProps) {
           <div className="flex items-center justify-center">
             <Button
               href={product.purchaseLink}
-              text={coupon ? 'Coupon applied' : product.price}
+              text={couponCode ? 'applied' : product.price}
               style="py-3 px-6 text-xl font-bold text-white text-center"
             />
           </div>
