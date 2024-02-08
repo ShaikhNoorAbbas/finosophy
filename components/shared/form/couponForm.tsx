@@ -5,8 +5,8 @@ export default function CouponForm() {
   const { couponCode, setCouponCode }: any = useContext(CouponContext);
 
   const [inputCode, setInputCode] = useState('');
-  const [placeholderText, setPlaceholderText] = useState('Enter coupon code');
   const [applied, setApplied] = useState(false);
+  const [placeholderText, setPlaceholderText] = useState('Enter coupon code');
 
   useEffect(() => {
     if (couponCode) {
@@ -20,13 +20,15 @@ export default function CouponForm() {
 
     if (inputCode === 'FINO25') {
       localStorage.setItem('couponCode', inputCode);
-      setApplied(true);
+
       setCouponCode(inputCode);
+      setApplied(true);
+      setInputCode('');
       setPlaceholderText(`${inputCode} applied!`);
     } else {
-      setPlaceholderText(`Invalid code`);
       setApplied(false);
       setInputCode('');
+      setPlaceholderText(`Invalid code`);
     }
   };
 
@@ -34,10 +36,11 @@ export default function CouponForm() {
     e.preventDefault();
 
     localStorage.removeItem('couponCode');
+
     setCouponCode('');
-    setPlaceholderText('Enter coupon code');
     setApplied(false);
     setInputCode('');
+    setPlaceholderText('Enter coupon code');
   };
 
   return (
