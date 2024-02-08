@@ -12,20 +12,13 @@ export const CouponContext = createContext<CouponContextType | undefined>(
 export const CouponProvider = ({ children }: { children: ReactNode }) => {
   const [couponCode, setCouponCode] = useState('');
 
-  // Load any saved coupon code from Local Storage when the provider mounts
   useEffect(() => {
-    const savedCouponCode = localStorage.getItem('couponCode');
-    if (savedCouponCode) {
-      setCouponCode(savedCouponCode);
+    const storedCouponCode = localStorage.getItem('couponCode');
+
+    if (storedCouponCode === 'FINO25') {
+      setCouponCode(storedCouponCode);
     }
   }, []);
-
-  // Save the coupon code to Local Storage whenever it changes
-  useEffect(() => {
-    if (couponCode) {
-      localStorage.setItem('couponCode', couponCode);
-    }
-  }, [couponCode]);
 
   return (
     <CouponContext.Provider value={{ couponCode, setCouponCode }}>

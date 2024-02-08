@@ -31,14 +31,7 @@ interface ProductProps {
 // }
 
 export default function Product({ params }: ProductProps) {
-  const context = useContext(CouponContext);
-
-  if (!context) {
-    throw new Error('CoursePage must be used within a CouponProvider');
-  }
-
-  const { couponCode } = context;
-  console.log(couponCode);
+  const { couponCode }: any = useContext(CouponContext);
 
   const [tg] = tgs.filter((tg) => tg.name.toLowerCase() === params.tg);
 
