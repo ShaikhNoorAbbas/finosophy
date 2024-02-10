@@ -30,6 +30,22 @@ interface ProductProps {
 //   );
 // }
 
+function discountPriceStr(
+  btnText: string,
+  price: string,
+  discountPrice: string
+): React.ReactElement {
+  return (
+    <span>
+      {btnText}{' '}
+      <span className="line-through decoration-primary decoration-2">
+        ₹{price}/-
+      </span>{' '}
+      ₹{discountPrice}/-
+    </span>
+  );
+}
+
 export default function Product({ params }: ProductProps) {
   const { couponCode }: any = useContext(CouponContext);
 
@@ -80,7 +96,11 @@ export default function Product({ params }: ProductProps) {
               }
               text={
                 couponCode
-                  ? `${product.purchaseBtnText} ₹${product.discountPrice}/-`
+                  ? discountPriceStr(
+                      product.purchaseBtnText,
+                      product.price,
+                      product.discountPrice
+                    )
                   : `${product.purchaseBtnText} ₹${product.price}/-`
               }
               style="py-3 px-6 text-xl font-bold text-white text-center"
@@ -177,10 +197,14 @@ export default function Product({ params }: ProductProps) {
               }
               text={
                 couponCode
-                  ? `${product.purchaseBtnText} ₹${product.discountPrice}/-`
+                  ? discountPriceStr(
+                      product.purchaseBtnText,
+                      product.price,
+                      product.discountPrice
+                    )
                   : `${product.purchaseBtnText} ₹${product.price}/-`
               }
-              style="py-3 px-6 text-lg lg:text-xl font-bold text-white"
+              style="py-3 px-6 text-xl font-bold text-white text-center"
             />
           </div>
 

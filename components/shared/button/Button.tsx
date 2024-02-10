@@ -11,7 +11,7 @@ interface ModalConfig {
 
 interface ButtonProps {
   href: string;
-  text: string;
+  text: any;
   style?: string;
   modalConfig?: ModalConfig;
 }

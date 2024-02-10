@@ -1,9 +1,21 @@
+'use client';
+
 import FeatureCard from '@/components/shared/cards/FeatureCard';
 import SectionHeader from '@/components/shared/header/SectionHeader';
 import ProgressBar from '@/components/shared/progress-bar/ProgressBar';
 import Image from 'next/image';
 
 export default function About() {
+  const test = function (text: any) {
+    // Using a span element with CSS:
+    const strikeElement = document.createElement('span');
+    strikeElement.textContent = text;
+    strikeElement.style.textDecoration = 'line-through';
+
+    return strikeElement.outerHTML;
+  };
+  console.log(test('499'));
+
   return (
     <>
       {/* Hero Section */}
