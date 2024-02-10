@@ -75,8 +75,14 @@ export default function Product({ params }: ProductProps) {
 
           <div className="flex items-center justify-center">
             <Button
-              href={product.purchaseLink}
-              text={couponCode ? 'applied' : product.price}
+              href={
+                couponCode ? product.discountPurchaseLink : product.purchaseLink
+              }
+              text={
+                couponCode
+                  ? `${product.purchaseBtnText} ₹${product.discountPrice}/-`
+                  : `${product.purchaseBtnText} ₹${product.price}/-`
+              }
               style="py-3 px-6 text-xl font-bold text-white text-center"
             />
           </div>
@@ -166,8 +172,14 @@ export default function Product({ params }: ProductProps) {
               />
             </ul>
             <Button
-              href={product.purchaseLink}
-              text={`${product.price}`}
+              href={
+                couponCode ? product.discountPurchaseLink : product.purchaseLink
+              }
+              text={
+                couponCode
+                  ? `${product.purchaseBtnText} ₹${product.discountPrice}/-`
+                  : `${product.purchaseBtnText} ₹${product.price}/-`
+              }
               style="py-3 px-6 text-lg lg:text-xl font-bold text-white"
             />
           </div>

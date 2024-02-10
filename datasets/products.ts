@@ -16,12 +16,13 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-      price: 'Enroll Now for ₹499/- per year',
+      purchaseBtnText: 'Enroll Now for',
+      price: '499',
       purchaseLink:
         'https://www.letstute.com/single-checkout/644fa8cfe4b04f2ff1c08255?pid=p1',
-      downloadBtnText: 'Download Curriculum',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=1ukE9yeKfUNiNdE77Gimhg87DnOx5EqyV&export=download',
+      discountPrice: '375',
+      discountPurchaseLink:
+        'https://www.letstute.com/single-checkout/644fa8cfe4b04f2ff1c08255?pid=p2',
       thumbnail: '/assets/images/level-1-cover.jpg',
       colorCode: '#53c7f8',
       heroImg: '/assets/images/academic-level-1.png',
@@ -179,12 +180,13 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-      price: 'Enroll Now for ₹499/- per year',
+      purchaseBtnText: 'Enroll Now for',
+      price: '499',
       purchaseLink:
         'https://www.letstute.com/single-checkout/64817b66e4b09ba937123fb9?pid=p1',
-      downloadBtnText: 'Download Curriculum',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=1cA5XoK7OEK32O8myvZoL5mXifI-STEj9&export=download',
+      discountPrice: '375',
+      discountPurchaseLink:
+        'https://www.letstute.com/single-checkout/64817b66e4b09ba937123fb9?pid=p2',
       thumbnail: '/assets/images/level-2-cover.jpg',
       colorCode: '#b1cd67',
       heroImg: '/assets/images/academic-level-2.png',
@@ -368,12 +370,13 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-      price: 'Enroll Now for ₹499/- per year',
+      purchaseBtnText: 'Enroll Now for',
+      price: '499',
       purchaseLink:
         'https://www.letstute.com/single-checkout/64b7b516e4b067424cc6f47b?pid=p1',
-      downloadBtnText: 'Download Curriculum',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=12RHA4KU-y9n6FNttFdnKkNK5-QEkIIY5&export=download',
+      discountPrice: '375',
+      discountPurchaseLink:
+        'https://www.letstute.com/single-checkout/64b7b516e4b067424cc6f47b?pid=p2',
       thumbnail: '/assets/images/level-3-cover.jpg',
       colorCode: '#f5b51f',
       heroImg: '/assets/images/academic-level-3.png',
@@ -575,12 +578,13 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-      price: 'Enroll Now for ₹499/- per year',
+      purchaseBtnText: 'Enroll Now for',
+      price: '499',
       purchaseLink:
         'https://www.letstute.com/single-checkout/64f02ffee4b0d0e2871bd909?pid=p1',
-      downloadBtnText: 'Download Curriculum',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=1MWhfG5nOaiIrtYUcaqVCsH4ogTXpUmA1&export=download',
+      discountPrice: '375',
+      discountPurchaseLink:
+        'https://www.letstute.com/single-checkout/64f02ffee4b0d0e2871bd909?pid=p2',
       thumbnail: '/assets/images/level-4-cover.jpg',
       colorCode: '#f06ea6',
       heroImg: '/assets/images/academic-level-4.png',
@@ -786,12 +790,13 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-      price: 'Enroll Now for ₹499/- per year',
+      purchaseBtnText: 'Enroll Now for',
+      price: '499',
       purchaseLink:
         'https://www.letstute.com/single-checkout/65325bb9e4b020072f2094ac?pid=p1',
-      downloadBtnText: 'Download Curriculum',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=14tnfjFulbq_6sAOkWGFRVPYlgwU7iwG3&export=download',
+      discountPrice: '375',
+      discountPurchaseLink:
+        'https://www.letstute.com/single-checkout/65325bb9e4b020072f2094ac?pid=p2',
       thumbnail: '/assets/images/level-5-cover.jpg',
       colorCode: '#49c085',
       heroImg: '/assets/images/academic-level-5.png',
@@ -971,12 +976,13 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
-      price: 'Enroll Now for ₹499/- per year',
+      purchaseBtnText: 'Enroll Now for',
+      price: '499',
       purchaseLink:
         'https://www.letstute.com/single-checkout/659f81cae4b0d894121211ac?pid=p1',
-      downloadBtnText: 'Download Curriculum',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=1UKLJaAZBH6W3QfJam46mq0XlCf-gFWzA&export=download',
+      discountPrice: '375',
+      discountPurchaseLink:
+        'https://www.letstute.com/single-checkout/659f81cae4b0d894121211ac?pid=p2',
       thumbnail: '/assets/images/level-6-cover.jpg',
       colorCode: '#fd906f',
       heroImg: '/assets/images/academic-level-6.png',
@@ -1009,12 +1015,13 @@ export const products = {
       'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
     videoLink:
       'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-    price: 'Enroll Now for ₹2,499/-',
+    purchaseBtnText: 'Enroll Now for',
+    price: '2,499',
     purchaseLink:
       'https://www.letstute.com/single-checkout/6524e058e4b033df1d252911?pid=p1',
-    downloadBtnText: 'Download Brochure',
-    downloadBtnLink:
-      'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
+    discountPrice: '1875',
+    discountPurchaseLink:
+      'https://www.letstute.com/single-checkout/6524e058e4b033df1d252911?pid=p2',
     thumbnail: '/assets/images/level-1-6-combo-pack-cover.jpg',
     colorCode: '#8c52ff',
     heroImg: '/assets/images/academic-level-1-6-combo-pack.png',
@@ -1047,12 +1054,13 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-      price: 'Enroll Now for ₹799/- per year',
+      purchaseBtnText: 'Enroll Now for',
+      price: '799',
       purchaseLink:
         'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p1',
-      downloadBtnText: 'Download Brochure',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
+      discountPrice: '600',
+      discountPurchaseLink:
+        'https://www.letstute.com/single-checkout/654b316ce4b02a857b5537bd?pid=p2',
       thumbnail: '/assets/images/youth-cover.jpg',
       colorCode: '#f5b51f',
       heroImg: '/assets/images/youth.png',
@@ -1237,12 +1245,13 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-      price: 'Buy Book for ₹699/-',
+      purchaseBtnText: 'Buy Book for',
+      price: '699',
       purchaseLink:
         'https://www.letstute.com/single-checkout/65bcd068e4b059261e5ee82a?pid=p1',
-      downloadBtnText: 'Buy eBook for ₹299/-',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
+      discountPrice: '525',
+      discountPurchaseLink:
+        'https://www.letstute.com/single-checkout/65bcd068e4b059261e5ee82a?pid=p3',
       thumbnail: '/assets/images/youth-cover.jpg',
       colorCode: '#f5b51f',
       heroImg: '/assets/images/youth.png',
@@ -1343,12 +1352,13 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-      price: 'Buy eBook for ₹499/-',
+      purchaseBtnText: 'Buy eBook for',
+      price: '499',
       purchaseLink:
         'https://www.letstute.com/single-checkout/654e0291e4b00b8f10b73ef7?pid=p1',
-      downloadBtnText: 'Buy eBook for ₹299/-',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
+      discountPrice: '375',
+      discountPurchaseLink:
+        'https://www.letstute.com/single-checkout/654e0291e4b00b8f10b73ef7?pid=p2',
       thumbnail: '/assets/images/youth-cover.jpg',
       colorCode: '#f5b51f',
       heroImg: '/assets/images/youth.png',
@@ -1451,12 +1461,13 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
-      price: 'Enroll Now for ₹999/- per year',
+      purchaseBtnText: 'Enroll Now for',
+      price: '999',
       purchaseLink:
         'https://www.letstute.com/single-checkout/64f81896e4b002bd529682a9?pid=p1',
-      downloadBtnText: 'Download Curriculum',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=1ukE9yeKfUNiNdE77Gimhg87DnOx5EqyV&export=download',
+      discountPrice: '750',
+      discountPurchaseLink:
+        'https://www.letstute.com/single-checkout/64f81896e4b002bd529682a9?pid=p3',
       thumbnail: '/assets/images/level-1-cover.jpg',
       colorCode: '#53c7f8',
       heroImg: '/assets/images/teacher-level-1-product-hero-img.png',
@@ -1614,11 +1625,11 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+      purchaseBtnText: 'Enroll Now for',
       price: 'Coming soon...',
       purchaseLink: '#',
-      downloadBtnText: 'Download Curriculum',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=1cA5XoK7OEK32O8myvZoL5mXifI-STEj9&export=download',
+      discountPrice: 'Coming soon...',
+      discountPurchaseLink: '#',
       thumbnail: '/assets/images/level-2-cover.jpg',
       colorCode: '#b1cd67',
       heroImg: '/assets/images/teacher-level-2-product-hero-img.png',
@@ -1802,11 +1813,11 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+      purchaseBtnText: 'Enroll Now for',
       price: 'Coming soon...',
       purchaseLink: '#',
-      downloadBtnText: 'Download Curriculum',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=12RHA4KU-y9n6FNttFdnKkNK5-QEkIIY5&export=download',
+      discountPrice: 'Coming soon...',
+      discountPurchaseLink: '#',
       thumbnail: '/assets/images/level-3-cover.jpg',
       colorCode: '#f5b51f',
       heroImg: '/assets/images/teacher-level-3-product-hero-img.png',
@@ -2008,11 +2019,11 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+      purchaseBtnText: 'Enroll Now for',
       price: 'Coming soon...',
       purchaseLink: '#',
-      downloadBtnText: 'Download Curriculum',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=1MWhfG5nOaiIrtYUcaqVCsH4ogTXpUmA1&export=download',
+      discountPrice: 'Coming soon...',
+      discountPurchaseLink: '#',
       thumbnail: '/assets/images/level-4-cover.jpg',
       colorCode: '#f06ea6',
       heroImg: '/assets/images/teacher-level-4-product-hero-img.png',
@@ -2218,11 +2229,11 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+      purchaseBtnText: 'Enroll Now for',
       price: 'Coming soon...',
       purchaseLink: '#',
-      downloadBtnText: 'Download Curriculum',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=14tnfjFulbq_6sAOkWGFRVPYlgwU7iwG3&export=download',
+      discountPrice: 'Coming soon...',
+      discountPurchaseLink: '#',
       thumbnail: '/assets/images/level-5-cover.jpg',
       colorCode: '#49c085',
       heroImg: '/assets/images/teacher-level-5-product-hero-img.png',
@@ -2402,11 +2413,11 @@ export const products = {
         'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
       videoLink:
         'https://player.vimeo.com/video/850805049?autoplay=1&loop=1&muted=1',
+      purchaseBtnText: 'Enroll Now for',
       price: 'Coming soon...',
       purchaseLink: '#',
-      downloadBtnText: 'Download Curriculum',
-      downloadBtnLink:
-        'https://drive.google.com/uc?id=1UKLJaAZBH6W3QfJam46mq0XlCf-gFWzA&export=download',
+      discountPrice: 'Coming soon...',
+      discountPurchaseLink: '#',
       thumbnail: '/assets/images/level-6-cover.jpg',
       colorCode: '#fd906f',
       heroImg: '/assets/images/teacher-level-6-product-hero-img.png',
@@ -2439,11 +2450,11 @@ export const products = {
       'https://creations.letstute.com/articulate/level-1/flashcard/story.html',
     videoLink:
       'https://player.vimeo.com/video/870947079?autoplay=1&loop=1&muted=1',
+    purchaseBtnText: 'Enroll Now for',
     price: 'Coming soon...',
     purchaseLink: '#',
-    downloadBtnText: 'Download Brochure',
-    downloadBtnLink:
-      'https://drive.google.com/uc?id=1kI7ABMquU4lNJnwVIwROf53K8DB4KMbf&export=download',
+    discountPrice: 'Coming soon...',
+    discountPurchaseLink: '#',
     thumbnail: '/assets/images/level-1-6-combo-pack-cover.jpg',
     colorCode: '#8c52ff',
     heroImg: '/assets/images/teacher-level-1-6-combo-pack-product-hero-img.png',
