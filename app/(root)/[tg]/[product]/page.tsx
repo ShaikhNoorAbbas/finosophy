@@ -95,7 +95,9 @@ export default function Product({ params }: ProductProps) {
                 couponCode ? product.discountPurchaseLink : product.purchaseLink
               }
               text={
-                couponCode
+                product.purchaseBtnText === 'Coming soon...'
+                  ? product.purchaseBtnText
+                  : couponCode
                   ? discountPriceStr(
                       product.purchaseBtnText,
                       product.price,
@@ -196,7 +198,9 @@ export default function Product({ params }: ProductProps) {
                 couponCode ? product.discountPurchaseLink : product.purchaseLink
               }
               text={
-                couponCode
+                product.purchaseBtnText === 'Coming soon...'
+                  ? product.purchaseBtnText
+                  : couponCode
                   ? discountPriceStr(
                       product.purchaseBtnText,
                       product.price,
