@@ -5,6 +5,13 @@ import IconList from '@/components/shared/icon/IconList';
 import Quiz from '@/components/shared/quiz/Quiz';
 import Quote from '@/components/shared/quote/Quote';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Financial Literacy - Financial Education & Investment Awareness',
+  description:
+    'Finosophy is an essential course that empowers individuals to make informed and responsible decisions regarding their personal finances.We Letstute designed this course to provide financial education and Knowledge for students and adults.',
+};
 
 export default function Home() {
   return (

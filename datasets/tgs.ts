@@ -3,6 +3,11 @@ import { products } from './products';
 export const tgs = [
   {
     name: 'Student',
+    metaData: {
+      title: 'Financial Literacy - Essential Guide for Students',
+      description:
+        'Discover the key to financial success with our Financial Literacy guide for students. Learn essential budgeting, saving, and investing skills for a prosperous future.',
+    },
     heroSection: {
       heading1: 'Seeking Financial Education for Your Child?',
       heading2: 'Everything You Need is Here!!',
@@ -99,6 +104,11 @@ export const tgs = [
   },
   {
     name: 'Youth',
+    metaData: {
+      title: 'Financial Literacy - Essential Guide for Youth',
+      description:
+        'Discover the key to financial success with our Financial Literacy guide for youth. Learn essential budgeting, saving, and investing skills for a prosperous future.',
+    },
     heroSection: {
       heading1: 'Looking for Financial Literacy Program?',
       heading2: 'Everything You Need is Here!!',
@@ -220,6 +230,11 @@ export const tgs = [
   },
   {
     name: 'Teacher',
+    metaData: {
+      title: 'Empowering Teachers with Financial Literacy Skills',
+      description:
+        'Enhance financial literacy with our comprehensive guide for teachers, empowering personal and classroom success.',
+    },
     heroSection: {
       heading1: 'Want to Become a Certified Financial Tutor?',
       heading2: 'Everything You Need is Here!!',
@@ -330,6 +345,11 @@ export const tgs = [
   },
   {
     name: 'School',
+    metaData: {
+      title: 'Financial Literacy - Essential Guide for School',
+      description:
+        'Discover the key to financial success with our Financial Literacy guide for school. Learn essential budgeting, saving, and investing skills for a prosperous future.',
+    },
     heroSection: {
       heading1: 'Looking for Financial Literacy Program?',
       heading2: 'Everything You Need is Here!!',

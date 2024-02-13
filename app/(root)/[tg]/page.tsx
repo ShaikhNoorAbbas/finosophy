@@ -7,6 +7,8 @@ import SectionHeader from '@/components/shared/header/SectionHeader';
 import { tgs } from '@/datasets/tgs';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
+import console from 'console';
 
 interface TgProps {
   params: {
@@ -14,8 +16,28 @@ interface TgProps {
   };
 }
 
-export function generateStaticParams() {
-  return tgs.map((tg) => ({ tg: tg.name.toLowerCase() }));
+// export function generateStaticParams() {
+//   return tgs.map((tg) => ({ tg: tg.name.toLowerCase() }));
+// }
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { tg: string };
+}): Promise<Metadata> {
+  const tg = tgs.find(
+    (tg) => tg.name.toLowerCase() === params.tg.toLowerCase()
+  );
+
+  if (!tg) {
+    console.error('TG not found', params.tg);
+    throw new Error(`TG not found: ${params.tg}`);
+  }
+
+  return {
+    title: tg.metaData.title,
+    description: tg.metaData.description,
+  };
 }
 
 export default function Tg({ params }: TgProps) {

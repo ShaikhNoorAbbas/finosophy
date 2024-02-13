@@ -12,12 +12,14 @@ interface ModalConfig {
 interface ButtonProps {
   href: string;
   text: any;
+  targetBlank?: boolean;
   style?: string;
   modalConfig?: ModalConfig;
 }
 
 export default function Button({
   href,
+  targetBlank,
   text,
   style,
   modalConfig,
@@ -30,9 +32,15 @@ export default function Button({
   return (
     <>
       {!modalConfig ? (
-        <Link href={href} className={`button ${style}`}>
-          {text}
-        </Link>
+        targetBlank ? (
+          <Link href={href} target="blank" className={`button ${style}`}>
+            {text}
+          </Link>
+        ) : (
+          <Link href={href} className={`button ${style}`}>
+            {text}
+          </Link>
+        )
       ) : (
         <button onClick={handleBtnClick} className={`button ${style}`}>
           {text}
