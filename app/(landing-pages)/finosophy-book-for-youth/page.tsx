@@ -3,9 +3,13 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <>
+      {/* Section 1 */}
       <section className="py-4 text-gray-800">
         <div className="container flex flex-col items-center gap-y-4 text-center">
-          <span className="text-2xl" style={{ backgroundColor: '#ffff00' }}>
+          <span
+            className="px-2 text-2xl"
+            style={{ backgroundColor: '#ffff00' }}
+          >
             Want To Geometrically Grow Your Company Online?
           </span>
           <h1 className="text-6xl font-bold">
@@ -45,6 +49,30 @@ export default function Page() {
                 muted
                 autoPlay
               ></video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 2 */}
+      <section className="">
+        <div className="container flex justify-center">
+          <div className="relative w-[72%] rounded-lg bg-primary-dark">
+            <Image
+              src="/assets/images/lp/dotcom-secrets-min.png"
+              width={300}
+              height={291}
+              alt="red"
+              className="absolute left-[-1rem] top-[-.5rem]"
+            />
+            <div className="ml-80 flex flex-col items-center justify-center py-6 pr-6 text-center text-white">
+              <h1 className="text-[2.6rem] font-bold">
+                Send Me Your Address...
+              </h1>
+              <span className="text-2xl">
+                I&apos;d like to rush a FREE copy of my brand new hardcover book
+                to your doorstep, ASAP!
+              </span>
             </div>
           </div>
         </div>
