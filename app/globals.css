@@ -138,6 +138,10 @@ body {
 }
 
 @layer utilities {
+  .lp-container {
+    @apply w-full mx-auto px-4 md:px-6;
+  }
+
   .button {
     @apply inline-block rounded-full bg-gradient shadow-md;
   }

@@ -8,20 +8,23 @@ export default function Page() {
     <>
       {/* Section 1 */}
       <section className="mb-10 py-4 text-gray-800">
-        <div className="container flex flex-col items-center gap-y-4 text-center">
+        <div className="lp-container flex flex-col items-center gap-y-4 text-center">
           <span
-            className="px-2 text-2xl"
+            className="p-2 text-xl sm:text-2xl"
             style={{ backgroundColor: '#ffff00' }}
           >
             Want To Geometrically Grow Your Company Online?
           </span>
-          <h1 className="text-6xl font-bold">
+
+          <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
             &quot;New FREE BOOK Shows <br /> 28 Virtually UNKNOWN Secrets
           </h1>
-          <span className="text-4xl">
+
+          <span className="text-2xl sm:text-3xl md:text-4xl">
             To Grow Any Company Online{' '}
             <span className="underline">With Sales Funnels</span>...&quot;
           </span>
+
           <div className="relative flex flex-col items-center">
             <Image
               src="/assets/images/lp/red.png"
@@ -30,9 +33,9 @@ export default function Page() {
               alt="red"
               className="absolute"
             />
-            <div className="z-10 w-[74%] overflow-hidden rounded-lg shadow-lg">
-              <div className="w-full bg-secondary text-xl text-white">
-                <span className="font-bold">
+            <div className="z-10 w-[95%] overflow-hidden rounded-lg shadow-lg md:w-[74%]">
+              <div className="flex w-full flex-col justify-center bg-secondary p-1 text-sm text-white sm:text-base md:text-lg lg:flex-row">
+                <span className="px-4 font-bold">
                   <Image
                     src="/assets/icons/lp/volume-high-solid.svg"
                     width={20}
@@ -41,8 +44,8 @@ export default function Page() {
                     className="inline"
                   />{' '}
                   Make Sure Your Sound Is Turned ON!
-                </span>{' '}
-                (Please Wait For Video To Fully Load)
+                </span>
+                <span>(Please Wait For Video To Fully Load)</span>
               </div>
               <video
                 className="shadow-xl"
@@ -78,8 +81,11 @@ export default function Page() {
               </span>
               <LpButton
                 href="#"
+                iconStyle="w-[1.25rem]"
                 text1="YES! RESERVE MY FREE COPY NOW!"
                 text2="Offer ends at 4.30pm (limited time deal)"
+                text1Style="text-xl lg:text-2xl font-bold"
+                text2Style="text-base lg:text-lg"
               />
             </div>
           </div>
@@ -87,16 +93,16 @@ export default function Page() {
       </section>
 
       {/* Section 3 */}
-      <section className="mb-20 text-gray-800">
+      <section className="mb-10 text-gray-800">
         <div className="container flex flex-col items-center gap-y-4 text-center">
-          <div className="mb-7 w-[50%]">
-            <span className="text-[2.5rem] font-bold leading-none">
+          <div className="mb-7 w-full sm:w-[75%] lg:w-[50%]">
+            <span className="text-3xl font-bold leading-none md:text-4xl lg:text-[2.5rem]">
               What Others Are Saying About &apos;<i>Finosophy Youth eBook?</i>{' '}
               &apos;
             </span>
           </div>
 
-          <div className="grid w-[74%] grid-cols-2 gap-10">
+          <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:w-[74%] md:grid-cols-2">
             <LpVideoCard
               src="https://player.vimeo.com/progressive_redirect/download/912881735/rendition/720p/lp-review-1%20%28720p%29.mp4?loc=external&signature=e369cebac4e4e25d9f0e666fd1b4042da226c8026766f11f5523e4f000c517b4"
               testimonial={`"I've underlined something in almost every page! I wish I wrote this book - it's
@@ -122,13 +128,31 @@ REALLY THAT GOOD!"`}
               author="— Jeff Walker"
             />
           </div>
+
+          <div className="w-full sm:w-[75%] lg:w-[50%]">
+            <LpButton
+              href="#"
+              iconStyle="w-[1.25rem]"
+              text1="YES! RESERVE MY FREE COPY NOW!"
+              text2="Offer ends at 4.30pm (limited time deal)"
+              text1Style="text-xl lg:text-2xl font-bold"
+              text2Style="text-base lg:text-lg"
+            />
+          </div>
         </div>
       </section>
 
       {/* Section 4 */}
-      <section className="">
+      <section className="bg-gray-100 py-10">
         <div className="container flex justify-center">
-          <div className="flex w-[56%] flex-col items-center gap-y-4">
+          <div className="flex w-full flex-col items-center gap-y-3 text-center sm:w-[75%] lg:w-[56%]">
+            <span className="text-2xl leading-none sm:text-3xl lg:text-[2.7rem]">
+              Claim Your FREE Book Now and
+            </span>
+            <span className="mb-4 text-2xl font-bold leading-none text-secondary sm:text-3xl lg:text-[2.7rem]">
+              Get These FREE Bonuses!
+            </span>
+
             <LpBonusCard
               title1Num="Bonus #1 - "
               title1="The 3 Core Funnels eBook"
@@ -136,8 +160,6 @@ REALLY THAT GOOD!"`}
               price="Total Value: $47.00"
               src="/assets/images/lp/funnelu-trans.png"
               desc1="After almost 21 years of being online, I discovered that there are CONSISTENTLY just 3 basic funnels that are responsible for the wealth and success of most online businesses."
-              desc2="It doesn’t matter if you’re just starting out, with NO LIST and NO SALES, or you already have a business that you’re looking to GROW and SCALE."
-              desc3="The 3 Funnels I’m going to share with you...when teamed with the right offer, can help you attract more leads and make more sales than you ever imagined!"
               bottomBonus="Get This For FREE When You Order Your Copy Of DotCom Secrets Today! "
             />
           </div>
