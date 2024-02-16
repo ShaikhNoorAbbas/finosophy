@@ -105,9 +105,9 @@ export const tgs = [
   {
     name: 'Youth',
     metaData: {
-      title: 'Financial Literacy - Essential Guide for Youth',
+      title: "Financial Literacy - A Beginner's Guide for Youth",
       description:
-        'Discover the key to financial success with our Financial Literacy guide for youth. Learn essential budgeting, saving, and investing skills for a prosperous future.',
+        'Empower youth with essential financial knowledge through our specialized course.',
     },
     heroSection: {
       heading1: 'Looking for Financial Literacy Program?',
@@ -346,9 +346,9 @@ export const tgs = [
   {
     name: 'School',
     metaData: {
-      title: 'Financial Literacy - Essential Guide for School',
+      title: 'Financial Literacy - A Comprehensive Guide for Schools',
       description:
-        'Discover the key to financial success with our Financial Literacy guide for school. Learn essential budgeting, saving, and investing skills for a prosperous future.',
+        'Enhance financial literacy in schools with our comprehensive resources and expert guidance.',
     },
     heroSection: {
       heading1: 'Looking for Financial Literacy Program?',

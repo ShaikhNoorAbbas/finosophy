@@ -2,6 +2,11 @@ export const products = {
   student: [
     {
       name: 'Level 1 Course',
+      metaData: {
+        title: 'Financial Literacy Level 1 Online Course for Students',
+        description:
+          'Gain essential financial literacy skills through our comprehensive online course. Learn to budget, save, invest, manage credit, and handle debt with real-world examples and activities.',
+      },
       age: '10-11',
       desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
       features: [
@@ -166,6 +171,11 @@ export const products = {
     },
     {
       name: 'Level 2 Course',
+      metaData: {
+        title: 'Financial Literacy Level 2 Online Course for Students',
+        description:
+          'Empower youth with essential financial knowledge through our specialized course.',
+      },
       age: '11-12',
       desc: 'The Financial Literacy Online Course Level 2 is a thorough course that builds on Level 1, focusing on advanced concepts and strategies in finance, such as investing, retirement planning, and risk management, through interactive lessons and practical exercises.',
       features: [
@@ -356,6 +366,11 @@ export const products = {
     },
     {
       name: 'Level 3 Course',
+      metaData: {
+        title: 'Financial Literacy Level 3 Online Course for Students',
+        description:
+          'Level up your finance knowledge with Level 3: Master advanced finance. Learn about Household Economics, Securities Market, Savings, Investments, and Behavior Aspects for confident financial decision-making.',
+      },
       age: '12-13',
       desc: 'Master advanced finance in Level 3: from Household Economics to Securities Market. Gain expertise in Savings, Investments, and Behavior Aspects. Acquire practical skills for confident financial decision-making.',
       features: [
@@ -564,6 +579,11 @@ export const products = {
     },
     {
       name: 'Level 4 Course',
+      metaData: {
+        title: 'Financial Literacy Level 4 Online Course for Students',
+        description:
+          'Enhance your financial knowledge with Level 4 and explore intricate topics such as banking, consumer protection, investments, and behavioral aspects. Learn to safeguard your assets and make informed financial choices.',
+      },
       age: '13-14',
       desc: 'Improve your financial understanding with Level 4. Discover complex subjects including banking and consumer protection, as well as investments and behavioral aspects. learn how to protect your assets and make good financial decisions.',
       features: [
@@ -776,6 +796,11 @@ export const products = {
     },
     {
       name: 'Level 5 Course',
+      metaData: {
+        title: 'Financial Literacy Level 5 Online Course for Students',
+        description:
+          'Enhance your financial expertise with advanced banking, investment, and behavior insights. Master asset allocation, risk assessment, and tax return essentials for a secure retirement.',
+      },
       age: '14-15',
       desc: 'This Course takes your financial knowledge to new heights. Explore advanced banking, investment, and behavior aspects. Get savvy with asset allocation and risk assessment. Plan for retirement, safeguard against scams, and master tax return essentials.',
       features: [
@@ -962,6 +987,11 @@ export const products = {
     },
     {
       name: 'Level 6 Course',
+      metaData: {
+        title: 'Financial Literacy Level 6 Online Course for Students',
+        description:
+          'Unlock financial expertise with Level 6 and discover the secrets to informed financial decisions, from banking intricacies to investment strategies, retirement planning, scam avoidance, and tax reduction.',
+      },
       age: '15-16',
       desc: "With Level 6, you'll be a financial expert. Explore the ways in which you can make informed financial decisions, including banking intricacies and investment strategies. Find out how to plan for retirement, avoid scams, and reduce taxes.",
       features: [
@@ -1001,6 +1031,11 @@ export const products = {
   ],
   studentCombo: {
     name: 'Level 1-6 Combo Pack',
+    metaData: {
+      title: 'Financial Literacy Level 1 Online Course for Students',
+      description:
+        'Gain essential financial literacy skills through our comprehensive online course. Learn to budget, save, invest, manage credit, and handle debt with real-world examples and activities.',
+    },
     age: '10-16',
     desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
     features: [
@@ -1040,6 +1075,11 @@ export const products = {
   youth: [
     {
       name: 'Online Course',
+      metaData: {
+        title: 'Financial Literacy Level 1 Online Course for Students',
+        description:
+          'Gain essential financial literacy skills through our comprehensive online course. Learn to budget, save, invest, manage credit, and handle debt with real-world examples and activities.',
+      },
       age: '16+',
       desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
       features: [
@@ -1447,6 +1487,11 @@ export const products = {
   teacher: [
     {
       name: 'Level 1 Course',
+      metaData: {
+        title: 'Financial Literacy Level 1 Online Course for Teachers',
+        description:
+          'This extensive online course will teach you the fundamentals of financial literacy. Learn about credit management, investing, budgeting, saving, and debt management through practical exercises and examples. With confidence, take charge of your financial future.',
+      },
       age: '10-11',
       desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
       features: [
@@ -1611,6 +1656,11 @@ export const products = {
     },
     {
       name: 'Level 2 Course',
+      metaData: {
+        title: 'Financial Literacy Level 2 Online Course for Teachers',
+        description:
+          'With our extensive Level 2 online course, you can increase your financial literacy by learning sophisticated ideas and strategies related to investing, retirement planning, and risk management.',
+      },
       age: '11-12',
       desc: 'The Financial Literacy Online Course Level 2 is a thorough course that builds on Level 1, focusing on advanced concepts and strategies in finance, such as investing, retirement planning, and risk management, through interactive lessons and practical exercises.',
       features: [
@@ -1799,6 +1849,11 @@ export const products = {
     },
     {
       name: 'Level 3 Course',
+      metaData: {
+        title: 'Financial Literacy Level 3 Online Course for Teachers',
+        description:
+          'Master confident financial decision-making by becoming an expert in investments, savings, and behavioral factors with our Level 3 advanced finance curriculum.',
+      },
       age: '12-13',
       desc: 'Master advanced finance in Level 3: from Household Economics to Securities Market. Gain expertise in Savings, Investments, and Behavior Aspects. Acquire practical skills for confident financial decision-making.',
       features: [
@@ -2005,6 +2060,11 @@ export const products = {
     },
     {
       name: 'Level 4 Course',
+      metaData: {
+        title: 'Financial Literacy Level 4 Online Course for Teachers',
+        description:
+          'Level 4 will help you have a better understanding of finances. Learn about a variety of challenging topics, such as investing, consumer protection, banking, and behavioral elements. Discover how to safeguard your possessions and make wise financial choices.',
+      },
       age: '13-14',
       desc: 'Improve your financial understanding with Level 4. Discover complex subjects including banking and consumer protection, as well as investments and behavioral aspects. learn how to protect your assets and make good financial decisions.',
       features: [
@@ -2215,6 +2275,11 @@ export const products = {
     },
     {
       name: 'Level 5 Course',
+      metaData: {
+        title: 'Financial Literacy Level 5 Online Course for Teachers',
+        description:
+          'Invest in your financial knowledge by taking this in-depth course on behavioral elements, investment methods, and advanced banking. Study the fundamentals of tax returns, asset allocation, risk assessment, retirement planning, and scam avoidance.',
+      },
       age: '14-15',
       desc: 'This Course takes your financial knowledge to new heights. Explore advanced banking, investment, and behavior aspects. Get savvy with asset allocation and risk assessment. Plan for retirement, safeguard against scams, and master tax return essentials.',
       features: [
@@ -2399,6 +2464,11 @@ export const products = {
     },
     {
       name: 'Level 6 Course',
+      metaData: {
+        title: 'Financial Literacy Level 6 Online Course for Teachers',
+        description:
+          'Learn how to become financially literate with Level 6, which will enable you to make wise choices about banking, investing, retirement planning, avoiding scams, and paying less in taxes.',
+      },
       age: '15-16',
       desc: "With Level 6, you'll be a financial expert. Explore the ways in which you can make informed financial decisions, including banking intricacies and investment strategies. Find out how to plan for retirement, avoid scams, and reduce taxes.",
       features: [
@@ -2436,6 +2506,11 @@ export const products = {
   ],
   teacherCombo: {
     name: 'Level 1-6 Combo Pack',
+    metaData: {
+      title: 'Financial Literacy Level 1 Online Course for Students',
+      description:
+        'Gain essential financial literacy skills through our comprehensive online course. Learn to budget, save, invest, manage credit, and handle debt with real-world examples and activities.',
+    },
     age: '10-16',
     desc: 'This extensive online course will educate you on vital financial literacy skills. Through real-world examples and activities, you may learn how to set up a budget, save money, invest, manage your credit, and handle debt. We will build up your confidence and you can control your financial future.',
     features: [

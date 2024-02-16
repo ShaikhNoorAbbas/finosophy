@@ -8,7 +8,6 @@ import { tgs } from '@/datasets/tgs';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
-import console from 'console';
 
 interface TgProps {
   params: {
