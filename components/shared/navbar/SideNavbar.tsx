@@ -56,6 +56,11 @@ export default function SideNavbar({
             </Link>
           </li>
           <li>
+            <Link href="/blog" className="link">
+              Blog
+            </Link>
+          </li>
+          <li>
             <Link href="/school" className="link">
               School
             </Link>

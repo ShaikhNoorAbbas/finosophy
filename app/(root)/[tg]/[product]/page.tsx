@@ -184,12 +184,7 @@ export default function Product({ params }: ProductProps) {
                 icon="/assets/icons/clock.svg"
                 iconStyle="w-7 lg:w-8"
                 alt="Check badge icon"
-                desc={`${
-                  product.name === 'Youth Book' ||
-                  product.name === 'Youth eBook'
-                    ? 'Lifetime'
-                    : '1 Year'
-                } Validity`}
+                desc={`${product.validity} Validity`}
                 descStyle="text:lg lg:text-xl font-semibold"
               />
             </ul>

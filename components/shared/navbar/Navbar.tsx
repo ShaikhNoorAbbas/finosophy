@@ -37,6 +37,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link href="/blog" className="link">
+              Blog
+            </Link>
+          </li>
+          <li>
             <Link href="/about" className="link">
               About
             </Link>
