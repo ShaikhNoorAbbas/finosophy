@@ -1,3 +1,9 @@
+import SignUpForm from '@/components/shared/form/SignUpForm';
+
 export default function Page() {
-  return <div className="">SignUp</div>;
+  return (
+    <section className="flex items-center justify-center">
+      <SignUpForm />
+    </section>
+  );
 }

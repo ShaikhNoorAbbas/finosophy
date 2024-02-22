@@ -1,27 +1,9 @@
-'use client';
-
-import { authenticate } from '@/app/lib/actions';
-import { useFormState, useFormStatus } from 'react-dom';
+import SignInForm from '@/components/shared/form/SignInForm';
 
 export default function Page() {
-  const [errorMessage, dispatch] = useFormState(authenticate, undefined);
-
   return (
-    <form action={dispatch}>
-      <input type="email" name="email" placeholder="Email" required />
-      <input type="password" name="password" placeholder="Password" required />
-      <div>{errorMessage && <p>{errorMessage}</p>}</div>
-      <LoginButton />
-    </form>
-  );
-}
-
-function LoginButton() {
-  const { pending } = useFormStatus();
-
-  return (
-    <button aria-disabled={pending} type="submit">
-      Login
-    </button>
+    <section className="flex items-center justify-center">
+      <SignInForm />
+    </section>
   );
 }
